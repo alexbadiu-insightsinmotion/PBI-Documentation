@@ -1,6 +1,8 @@
 #Documentation/Part1
 
-![[Pasted image 20241126155326.png]]
+<img width="511" alt="image" src="https://github.com/user-attachments/assets/c6417ad3-c123-4856-86eb-47ab5c33fa80" />
+
+
 
 Ever found yourself staring at an old Power BI report, thinking, _“**What was I doing here six months ago**?”_ _You’re not alone_. Revisiting a project without documentation can feel like trying to solve a puzzle with missing pieces. 
 **The struggle is real and it's costing you time!** 

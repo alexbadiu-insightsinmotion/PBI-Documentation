@@ -1,6 +1,7 @@
 #Documentation/Part0
 
-![[Pasted image 20250110112324.png]]
+<img width="247" alt="image" src="https://github.com/user-attachments/assets/a1b059b8-2bca-4740-b155-6f40d017206f" />
+
 
 **Why is Documentation so underrated?**
 

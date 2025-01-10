@@ -13,7 +13,7 @@ Here’s the thing: documentation isn’t just about writing things down. It’s
 
 This topic got me and **Greg Philps** thinking: **What should the Power BI community invest more time in learning, from our perspective, to make a difference?** And, honestly, documentation doesn’t get the attention it deserves. That’s why we’re diving deeper to propose something the community can actually use in their daily work.
 
-Starting this week, **Greg** and I will alternate posting ideas and hopefully useful actionable tips about Power Bi Documentation. These posts will cover different topics related to documentation. 
+Starting this week, **Greg** and I will alternate posting ideas and hopefully useful actionable tips about Power BI Documentation. These posts will cover different topics related to documentation. 
 
 We’ll save them all on a dedicated **GitHub repo** for easy reference.
 

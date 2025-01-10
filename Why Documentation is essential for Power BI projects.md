@@ -12,7 +12,7 @@ Let’s flip the script. Contrary to popular belief, **Power BI documentation i
 
 ## **1. Keep Scope in Check**
 
-Users always want “**just one more thing**”, "**a last quick change"**, right? Documenting your scope early prevents scope creep and keeps everyone aligned. It also explains the “why” behind your design decisions, bridging gaps between developers and end users. On top of that, it fully supports iterative development by deferring lower-priority features and behaviors.
+Users always want “**just one more thing**”, "**a last quick change"**, right? Documenting your scope early prevents scope creep and keeps everyone aligned. It also explains the “why” behind your design decisions, bridging gaps between developers and end users. On top of that, it fully supports iterative development by prioritizing high-priority items and deferring lower-priority features and behaviors.
 
 ## **2. State the Problems and Solutions**
 

@@ -1,5 +1,7 @@
 #Documentation/Part0
 
+<img width="1920" alt="Issue #1" src="https://github.com/user-attachments/assets/f551a9b6-d1ca-4bdc-b56f-323f5f5186ed" />
+
 <img width="247" alt="image" src="https://github.com/user-attachments/assets/a1b059b8-2bca-4740-b155-6f40d017206f" />
 
 

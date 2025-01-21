@@ -3,6 +3,7 @@
 <img width="1920" alt="Issue #1" src="https://github.com/user-attachments/assets/f551a9b6-d1ca-4bdc-b56f-323f5f5186ed" />
 
 
+
 **Why is Documentation so underrated?**
 
 **Picture this**: Your teammate goes on vacation. An urgent request lands on your desk, and you open his Power BI report to find a chaotic and massive data model. You scramble for documentation, only to discover a dump of all the DAX measures in the model... Familiar pain? 

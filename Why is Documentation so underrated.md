@@ -4,6 +4,7 @@
 
 
 
+
 **Why is Documentation so underrated?**
 
 **Picture this**: Your teammate goes on vacation. An urgent request lands on your desk, and you open his Power BI report to find a chaotic and massive data model. You scramble for documentation, only to discover a dump of all the DAX measures in the model... Familiar pain? 

@@ -56,3 +56,5 @@ Let's face it, clear **documentation is what truly separates seasoned pro from n
 ## **The Bottom Line**
 
 Investing in Power BI documentation isn’t just about saving time, **it’s about building trust**, **fostering collaboration, and creating scalable solutions**. It’s your key to becoming a more efficient developer, a better collaborator, and a strategic thinker.
+
+LinkedIn post: https://www.linkedin.com/posts/alexandru-badiu_pks-powerbi-documentationmatters-activity-7292459395110559744-by85?utm_source=share&utm_medium=member_desktop

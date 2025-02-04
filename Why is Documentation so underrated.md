@@ -1,4 +1,5 @@
 #Documentation/Issue1
+LinkedIn post : https://www.linkedin.com/posts/alexandru-badiu_powerbi-documentationmatters-dataanalytics-activity-7289922690218377216-p-55?utm_source=share&utm_medium=member_desktop
 
 <img width="1920" alt="Issue #1" src="https://github.com/user-attachments/assets/f551a9b6-d1ca-4bdc-b56f-323f5f5186ed" />
 

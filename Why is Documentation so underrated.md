@@ -25,6 +25,6 @@ How far can we take this? That’s up to you. Jump in, share your thoughts, sugg
 
 #PowerBI, #DocumentationMatters, #DataAnalytics
 LinkedIn post :
-[# Issue 1](https://www.linkedin.com/posts/alexandru-badiu_powerbi-documentationmatters-dataanalytics-activity-7289922690218377216-p-55?)
+[# Issue 1 : 𝗪𝗵𝘆 𝗶𝘀 𝗗𝗼𝗰𝘂𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻 𝘀𝗼 𝘂𝗻𝗱𝗲𝗿𝗿𝗮𝘁𝗲𝗱? ](https://www.linkedin.com/posts/alexandru-badiu_powerbi-documentationmatters-dataanalytics-activity-7289922690218377216-p-55?)
 
 

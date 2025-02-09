@@ -24,5 +24,7 @@ How far can we take this? That’s up to you. Jump in, share your thoughts, sugg
 **Let’s go!** 🚀
 
 #PowerBI, #DocumentationMatters, #DataAnalytics
-LinkedIn post : https://www.linkedin.com/posts/alexandru-badiu_powerbi-documentationmatters-dataanalytics-activity-7289922690218377216-p-55?
+LinkedIn post :
+[# Issue 1](https://www.linkedin.com/posts/alexandru-badiu_powerbi-documentationmatters-dataanalytics-activity-7289922690218377216-p-55?)
+
 

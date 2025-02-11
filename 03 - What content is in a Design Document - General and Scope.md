@@ -1,4 +1,4 @@
-<<< INSERT IMAGE LINK >>>
+<img width="1920" alt="03 - Image - Title - General and Scope" src="https://github.com/user-attachments/assets/8cc575b1-04a8-4c1d-bf23-3ef29b56847d" />
 
 **What content is in a Design Document?**
 
@@ -56,8 +56,7 @@ Another common hindrance to communication on a Power BI project is a difference 
 
 A table of contents can speed navigation within the design document when the pane is turned on.
 
-<<< INSERT IMAGE OF WORD NAVIGATION PANE >>>
-
+<img width="1119" alt="03 - Image - Navigation Pane" src="https://github.com/user-attachments/assets/fb20d524-5a03-492f-b151-5cde892a869c" />
 
 **Introduction**
 

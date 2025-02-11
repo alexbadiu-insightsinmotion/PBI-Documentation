@@ -114,9 +114,7 @@ Here's an example:
 
 | *ID* | *Deferred Scope Item* | *Description/Reason/Version* |
 |--|--|--|
-| *SD-1* | *Language - Add multiple languages* | *D=A future release of the reports will contain translated labels and data for multiple languages. In addition to the already-provided English and French data, translations for Spanish, German, Italian, and Portuguese will be added, and all label and data calculations will be adjusted accordingly.
-R=Corporate translation policies are currently under review and the level of effort cannot be properly scoped and planned at this time.
-V=2.x* |
+| *SD-1* | *Language - Add multiple languages* | *D=A future release of the reports will contain translated labels and data for multiple languages. In addition to the already-provided English and French data, translations for Spanish, German, Italian, and Portuguese will be added, and all label and data calculations will be adjusted accordingly. R=Corporate translation policies are currently under review and the level of effort cannot be properly scoped and planned at this time. V=2.x* |
 	
 
 ## Sample

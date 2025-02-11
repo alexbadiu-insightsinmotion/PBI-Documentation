@@ -121,6 +121,6 @@ Here's an example:
 
 A sample document fragment covering these sections is available at:
 
-<<< INSERT WORD FRAGMENT LINK >>>
+[Design Document - Sample Fragment 01 - General and Scope -](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Power%20BI%20Documentation%20-%20Design%20Document%20-%20Sample%20Fragment%2001%20-%20General%20and%20Scope%20-%20V0.1.docx)
 
 #PowerBI, #DocumentationMatters, #DataAnalytics

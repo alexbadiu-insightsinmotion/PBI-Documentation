@@ -129,7 +129,6 @@ Incorporating these annotations or descriptions not only fosters better communic
 ---
 <br><br><br>
 ### **4. `INFO.VIEW.RELATIONSHIPS()`**: Streamlining Complex Schemas
-<br><br><br>
 ![](https://powerbiblogsfd-ep-aveghkfaexa3e4bx.b02.azurefd.net//wp-content/uploads/2024/10/a-white-background-with-text-on-it-description-au-2.png)
 ![](https://powerbiblogsfd-ep-aveghkfaexa3e4bx.b02.azurefd.net//wp-content/uploads/2024/10/word-image-28196-25-2.png)
 <br><br><br>

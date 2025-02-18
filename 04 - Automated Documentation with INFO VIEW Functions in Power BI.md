@@ -171,3 +171,4 @@ Source:
 ---
 <br><br><br>
 **What’s your favorite part of the new INFO DAX Functions? Are you using them?** Drop your thoughts in the LinkedIn post: We’d love to keep the discussion going!
+LinkedIn post: [# Issue 4 : 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗲𝗱 𝗗𝗼𝗰𝘂𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻 𝘄𝗶𝘁𝗵 𝗜𝗡𝗙𝗢 𝗗𝗔𝗫 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝘀 𝗶𝗻 PBI ](https://www.linkedin.com/posts/alexandru-badiu_powerbi-documentationmatters-dataanalytics-activity-7297534340001923072-zGkz?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAd2rAYBtqG-2bVNWh14j0hOzgmbFYqs3hE)

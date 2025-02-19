@@ -18,6 +18,7 @@ The design document is not just of use during development (i.e., a "one-and-done
 The content in a design document can itself be grouped into many major sections, including:
 - General (identification, version history, acronyms/abbreviations/definitions, table of contents, introduction)
 - Scope (included, excluded, deferred)
+- Workflow
 - Issues (resolved, deferred/known)
 - Business rules (calculations, filters, performance, audiences, security)
 - Data sources (filters, refresh frequencies, aggregations, credentials, environments [e.g., DEV, TEST, PROD], workflow, gateways, endorsement)

@@ -1,4 +1,4 @@
-<<< INSERT TITLE IMAGE LINK >>>
+<img width="1920" alt="05 - Image - Title - Workflow Issues Business Rules" src="https://github.com/user-attachments/assets/cd70cfda-307e-4009-8403-2fc749f53cf7" />
 
 **How can you record Workflow, Issues, and Business Rules in a Design Document?**
 
@@ -7,9 +7,6 @@ Provide high-level descriptions of the data provision and preparation *workflow*
 Identify *issues* and resolve them during a project. Having their resolution clearly stated is essential for the design and acceptance of the solution. Documenting their evolution not only traces the decision process but also can be a useful reference for retrospectives and future projects.
 
 Document the corporate *business rules*, as filters and calculations are often organization-specific. This increases solution acceptance as all stakeholders (e.g., analyst, developer, and tester are using the same algorithms.
-
-The first issue of this series dealing with the design document covered the General and Scope major sections. <br>
-<<< INSERT LINKEDIN LINK >>>
 
 This issue deals with the Workflow, Issues, and Business Rules major sections, and the remaining sections will be covered in subsequent issues.
 
@@ -26,9 +23,8 @@ Here's an example:
 5. The data in the reporting tables will then be automatically loaded into a common semantic model (dataset) in the Power BI Service on a scheduled basis.
 6. The end user will then use a browser to access on-demand the [Invoicing] Power BI App in the [Invoicing] Power BI workspace and select the desired page in the desired Power BI report (which uses the data from the common semantic model).
 
-A flowchart of the data workflow is:
-
-<<< INSERT FLOWCHART IMAGE >>>
+A flowchart of the data workflow is:<br>
+![05 - Image - Workflow Flowchart](https://github.com/user-attachments/assets/ed2b9adc-a5f1-4d93-8018-f6710b22cfe1)
 
 ## Issues
 
@@ -66,7 +62,7 @@ Here's an example:
 
 The LinkedIn posts covering the the design document are listed below: <br>
 [1. General and Scope](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7295051537129615362-px8i) <br>
-[2. Workflow, Issues, and Business Rules](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7295051537129615362-px8i) <br>
+[2. Workflow, Issues, and Business Rules](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7295051537129615362-px8i) <br> *** FIX ***
 
 *Samples*
 

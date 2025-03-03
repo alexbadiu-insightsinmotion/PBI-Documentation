@@ -1,5 +1,6 @@
 
-<img width="1920" alt="Issue #4" src="https://github.com/user-attachments/assets/28a1736f-7f43-41a8-92e2-c719fca22469" /> &nbsp;
+<img width="1920" alt="Issue #4" src="https://github.com/user-attachments/assets/8fce7820-4ff0-48ef-886c-a703e52b4e74" />
+
 <br><br><br>
 
 ### Introduction

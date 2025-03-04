@@ -1,0 +1,14 @@
+EVALUATE
+ADDCOLUMNS(
+    SUMMARIZE(
+        Sales,
+        Sales[Year]
+    ),
+    "Base Revenue", [Base Revenue],
+    "Discounts", [Total Discounts],
+    "Taxes", [Total Taxes],
+    "Expected Net Revenue", [Base Revenue] - [Total Discounts] + [Total Taxes],
+    "Actual Net Revenue", [Net Revenue],
+    "Difference", [Net Revenue] - ([Base Revenue] - [Total Discounts] + [Total Taxes]),
+    "Test Passed", ABS([Net Revenue] - ([Base Revenue] - [Total Discounts] + [Total Taxes])) < 0.01
+)

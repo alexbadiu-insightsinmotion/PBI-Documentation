@@ -1,0 +1,8 @@
+EVALUATE
+ROW(
+    "Test Name", "F_Client_Overdraft with Invalid Code MIG",
+    "Expected Value", 0,
+    "Actual Value", COUNTROWS(FILTER(F_CLIENT_OVERDRAFT, NOT(F_CLIENT_OVERDRAFT[CODE_MIG] IN VALUES(D_STRUCTURES[CODE_MIG])))),
+    "Allowed variance %", 0,
+    "Test Passed", COUNTROWS(FILTER(F_CLIENT_OVERDRAFT, NOT(F_CLIENT_OVERDRAFT[CODE_MIG] IN VALUES(D_STRUCTURES[CODE_MIG])))) = 0
+)

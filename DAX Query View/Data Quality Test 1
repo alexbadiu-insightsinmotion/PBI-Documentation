@@ -1,0 +1,8 @@
+EVALUATE
+ROW(
+    "Test Name", "Customer Table - Count of Distinct Countries",
+    "Expected Value", 45,
+    "Actual Value", DISTINCTCOUNT('Customer'[Country]),
+    "Allowed variance %", 0,
+    "Test Passed", DISTINCTCOUNT('Customer'[Country]) = 45
+)

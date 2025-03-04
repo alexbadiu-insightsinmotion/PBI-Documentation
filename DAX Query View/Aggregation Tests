@@ -1,0 +1,8 @@
+EVALUATE
+ROW(
+    "Test Name", "Total Revenue equals sum of regional revenues",
+    "Total Revenue", [Total Revenue],
+    "Sum of Regions", SUMX(VALUES(Region[RegionName]), CALCULATE([Total Revenue])),
+    "Difference", [Total Revenue] - SUMX(VALUES(Region[RegionName]), CALCULATE([Total Revenue])),
+    "Test Passed", ABS([Total Revenue] - SUMX(VALUES(Region[RegionName]), CALCULATE([Total Revenue]))) < 0.01
+)

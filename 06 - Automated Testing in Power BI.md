@@ -28,7 +28,7 @@ A common challenge persists across many organizations and that is **the lack of 
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8. Aggregation Tests](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/06%20-%20Automated%20Testing%20in%20Power%20BI.md#8-aggregation-tests) <br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[9. Schema Tests](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/06%20-%20Automated%20Testing%20in%20Power%20BI.md#9-schema-tests) <br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[10. Consolidation Testing Approach](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/06%20-%20Automated%20Testing%20in%20Power%20BI.md#consolidated-testing-approach) <br>
-[Summary]([https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/06%20-%20BEFORE%20RELEASE%20-%20Automated%20Testing%20in%20Power%20BI.md#summary](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/06%20-%20Automated%20Testing%20in%20Power%20BI.md#summary)) <br>
+[Summary](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/06%20-%20BEFORE%20RELEASE%20-%20Automated%20Testing%20in%20Power%20BI.md#summary](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/06%20-%20Automated%20Testing%20in%20Power%20BI.md#summary)) <br>
 [Conclusion](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/06%20-%20Automated%20Testing%20in%20Power%20BI.md#conclusion) <br>
 [Read More](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/06%20-%20Automated%20Testing%20in%20Power%20BI.md#read-more)
 

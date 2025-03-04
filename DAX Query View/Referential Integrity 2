@@ -1,0 +1,69 @@
+DEFINE
+// Identify all storage tables in the model that have referential integrity violations
+VAR _RIViolations = 
+    FILTER(
+        INFO.STORAGETABLES(), 
+        [RIVIOLATION_COUNT] > 0
+    )
+
+// Assign a sequential number to each table with RI violations for easier reference
+VAR _RIViolationsWithIndex =
+    ADDCOLUMNS(
+        _RIViolations,
+        "@Index", RANKX(_RIViolations, [DIMENSION_NAME], [DIMENSION_NAME], ASC, Dense)
+    )
+    
+// Standardize column names for clarity and create a join column for later use
+VAR _RIViolationsRenamed =
+    SELECTCOLUMNS(
+        _RIViolationsWithIndex,
+        "JoinKey", [DIMENSION_NAME],        // Create column for joining tables
+        "ToTable", [DIMENSION_NAME],        // Rename dimension table for clearer understanding
+        "@Index", [@Index],                // Preserve the index for selection
+        "RIVIOLATION_COUNT", [RIVIOLATION_COUNT]  // Keep count of violations
+    )
+    
+// Extract all active relationships from the model and add the same join column
+VAR _Relationships = 
+    ADDCOLUMNS(
+        SELECTCOLUMNS(
+            INFO.VIEW.RELATIONSHIPS(),
+            "FromTable", [FromTable],      // Source table (typically fact table)
+            "FromColumn", [FromColumn],    // Foreign key column
+            "ToTable", [ToTable],          // Target table (typically dimension table)
+            "ToColumn", [ToColumn],        // Primary key column
+            "IsActive", [IsActive]         // Whether relationship is active
+        ),
+        "JoinKey", [ToTable]               // Create matching join key based on dimension table name
+    )
+    
+// Select a specific violation to analyze (change index number to test different violations)
+VAR _FilterOnASingleRIViolation = 
+    FILTER(_RIViolationsRenamed, [@Index] = 2)   // MODIFY THIS INDEX VALUE TO TEST DIFFERENT VIOLATIONS
+    
+// Join the relationships info with the selected violation to get complete context
+VAR _MyTable =
+    NATURALINNERJOIN(_Relationships, _FilterOnASingleRIViolation)
+    
+// Extract fact table name from the joined data for test construction
+VAR _FactTableName = 
+    MINX(_MyTable, [FromTable])   // Source table with foreign key issues
+    
+// Extract dimension table name from the joined data for test construction
+VAR _DimTableName = 
+    MINX(_MyTable, [ToTable])     // Referenced dimension table
+    
+// Extract dimension table's primary key column from joined data
+VAR _DimTableColumn = 
+    MINX(_MyTable, [ToColumn])    // Primary key column in dimension table
+
+// FINAL TEST: This checks for rows in the fact table that have no matching records in the dimension table
+// CUSTOMIZE THIS: Replace table and column names below with values from variables above
+EVALUATE
+ROW(
+    "Test Name", "Opportunity FK to Calendar",
+    "Expected Value", 0,
+    "Actual Value", COUNTROWS(FILTER(F_CLIENT_OVERDRAFT, ISBLANK(RELATED(D_STRUCTURES[CODE_MIG])))),
+    "Allowed variance %", 0,
+    "Test Passed", COUNTROWS(FILTER(F_CLIENT_OVERDRAFT, ISBLANK(RELATED(D_STRUCTURES[CODE_MIG])))) = 0
+)

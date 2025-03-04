@@ -1,0 +1,12 @@
+EVALUATE
+ROW(
+    "Test Name", "Product Categories - All expected categories present",
+    "Expected Value", 10,
+    "Actual Value", COUNTROWS(FILTER('Product Categories', 
+                       [Category] IN {"Category1", "Category2", "Category3", "Category4", "Category5", 
+                                     "Category6", "Category7", "Category8", "Category9", "Category10"})),
+    "Allowed variance %", 0,
+    "Test Passed", COUNTROWS(FILTER('Product Categories', 
+                   [Category] IN {"Category1", "Category2", "Category3", "Category4", "Category5", 
+                                 "Category6", "Category7", "Category8", "Category9", "Category10"})) = 10
+)

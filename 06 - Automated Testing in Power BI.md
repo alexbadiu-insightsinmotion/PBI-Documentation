@@ -2,7 +2,8 @@
 
 ### Data Quality and Automated Testing in Power BI
 
-<img width="1920" alt="Issue 6" src="https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Images/Issue%206.png" />
+<img width="1920" alt="Issue 6" src="https://github.com/user-attachments/assets/953efa1b-1be3-47f0-adb9-7bb60d430a2b" />
+
 
 
 Ever had a report go live after testing, only to have end users report issues that could have been identified earlier?
@@ -136,13 +137,14 @@ For each new KPI created, document the definition and business rules as explaine
 
 Integrate this file as a disconnected table in your model.
 
-<img width="920" alt="Issue 6" src="https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Images/Pasted%20image%2020250302174444.png" />
+<img width="364" alt="Pasted image 20250302174444" src="https://github.com/user-attachments/assets/823384b5-b892-4cbf-931f-ccb43d644bb7" />
+
 
 ##### 3. Create a DAX Query in DAX Query View
 
 Use the following structure for your tests:
 
-<img width="1920" alt="Issue 6" src="https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Images/Pasted%20image%2020250302174647.png" /> <br>
+<img width="478" alt="Pasted image 20250302174647" src="https://github.com/user-attachments/assets/229500ec-d477-4107-a89f-66b96ffd61b4" /> <br>
 
 ##### You can access the DAX CODE HERE -> [DAX Query View | Script - DAX Test Pattern](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/DAX%20Query%20View/DAX%20Test%20Pattern) 
 
@@ -177,7 +179,9 @@ ROW(
 
 Another example:
 
-<img width="1920" alt="Issue 6" src="https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Images/Pasted%20image%2020250302164910.png" />
+![Pasted image 20250302164910](https://github.com/user-attachments/assets/4171912c-b2bf-47c0-988a-0563c729c0f0)
+
+
 
 ##### You can access the DAX CODE HERE -> [DAX Query View | Script - Data Quality Test 2](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/DAX%20Query%20View/Data%20Quality%20Test%202) 
 
@@ -197,12 +201,14 @@ INFO.STORAGETABLES(),
 ```
 ##### You can access the DAX CODE HERE -> [DAX Query View | Script - Referential Integrity 1](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/DAX%20Query%20View/Referential%20Integrity%201) 
 
-<img width="1920" alt="Issue 6" src="https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Images/Pasted%20image%2020250302163340.png" />
+![Pasted image 20250302163340](https://github.com/user-attachments/assets/21a01e15-9e0c-4701-80c4-bed1c7739aaf)
+
 
 
 A more detailed query identifying what Dimensions are in RI violation and the exact number of rows impacted.
 
-<img width="1920" alt="Issue 6" src="https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Images/Pasted%20image%2020250302163105.png" />
+![Pasted image 20250302163105](https://github.com/user-attachments/assets/025c8392-b63e-48bf-af4c-ec8d78fb5239)
+
 
 ##### You can access the DAX CODE HERE -> [DAX Query View | Script - Referential Integrity 2](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/DAX%20Query%20View/Referential%20Integrity%202) 
 
@@ -220,7 +226,8 @@ ROW(
 ```
 ##### You can access the DAX CODE HERE -> [DAX Query View | Script - Referential Integrity 3](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/DAX%20Query%20View/Referential%20Integrity%203) 
 
-<img width="1920" alt="Issue 6" src="https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Images/Pasted%20image%2020250302164128.png" />
+![Pasted image 20250302164128](https://github.com/user-attachments/assets/e1df296a-0a27-4409-84bf-e3ac23a64a34)
+
 
 #### 3. Calculation Consistency Tests
 
@@ -345,25 +352,30 @@ Validating schema consistency is crucial because any unexpected changes in your 
 
 ##### You can access the DAX CODE HERE -> [DAX Query View | Script - Schema Test](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/DAX%20Query%20View/Schema%20Tests) 
 
-<img width="1920" alt="Issue 6" src="https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Images/Pasted%20image%2020250302164756.png" />
+![Pasted image 20250302164756](https://github.com/user-attachments/assets/530d67f0-4f11-4945-b7a1-d8b0b5a9bd33)
+
 
 #### Consolidated Testing Approach
 
 All of the tests described above **can be integrated into** the structure shown in section 3, allowing you to have **a single query that runs all tests with one click**. This provides a comprehensive overview of your model's quality and accuracy. Here's how you can consolidate them:
 
 Your excel structure should be similar to this :
-<img width="1920" alt="Issue 6" src="https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Images/Pasted%20image%2020250302170807.png" />
+<img width="685" alt="Pasted image 20250302170807" src="https://github.com/user-attachments/assets/0982555f-96be-4397-9260-fea42e4b7646" />
+
 
 DAX Query structure :
-<img width="1920" alt="Issue 6" src="https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Images/Pasted%20image%2020250302170649.png" />
+<img width="920" alt="Pasted image 20250302170649" src="https://github.com/user-attachments/assets/dbcc438d-a312-4482-83e9-bdd9cf1d0937" />
+
 
 **DAX Code** based on excel <br>
-<img width="520" alt="Issue 6" src="https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Images/Pasted%20image%2020250302171047.png" />
+<img width="203" alt="Pasted image 20250302171047" src="https://github.com/user-attachments/assets/ab5e07e0-addf-4689-a5b8-57e174841aac" />
+
 
 ##### You can access the DAX CODE HERE -> [DAX Query View | Script - DAX Code Script](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/DAX%20Query%20View/Excel%20Consolidated%20DAX) 
 
 Result of "DAX Code"  in Visual Studio Code -> Copy for each ID test the corresponding DAX formula
-<img width="1920" alt="Issue 6" src="https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Images/Pasted%20image%2020250302171019.png" />
+<img width="763" alt="Pasted image 20250302171019" src="https://github.com/user-attachments/assets/7fe83ac3-b03c-40a1-bb57-7e361aacb053" />
+
 
 This way, you can run your entire test suite with a single click in DAX Query View, giving you a comprehensive snapshot of your model's quality and reliability. The results will show you at a glance which tests have passed and which need attention **BEFORE considering publishing** to DEV environment or committing to a dev branch.
 

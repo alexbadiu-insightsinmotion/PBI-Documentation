@@ -1,0 +1,13 @@
+EVALUATE
+	{
+		"Automated Test Measure Actual Value = SWITCH(
+    SELECTEDVALUE(TestList[Test ID])" & UNICHAR(10) &
+		UNICHAR(9) & ", " & CONCATENATEX(
+			TestList,
+			TestList[Test ID] & ", " & TestList[DAX Code],
+			UNICHAR(10) & UNICHAR(9) & ", ",
+			TestList[Test ID],
+			ASC
+		)
+		& UNICHAR(10) & ")"
+	}

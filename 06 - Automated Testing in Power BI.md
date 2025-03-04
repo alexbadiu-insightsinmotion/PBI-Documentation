@@ -123,7 +123,7 @@ By implementing this approach, you can significantly **increase confidence** in 
 
 ##### 1. Create a Reference Excel File
 
-Document with the PO or business expert matter the automated tests to be performed:
+Document with the PO (Product Owner) or business expert matter the automated tests to be performed:
 
 - Test name
 - Priority
@@ -359,7 +359,7 @@ Validating schema consistency is crucial because any unexpected changes in your 
 
 All of the tests described above **can be integrated into** the structure shown in section 3, allowing you to have **a single query that runs all tests with one click**. This provides a comprehensive overview of your model's quality and accuracy. Here's how you can consolidate them:
 
-Your excel structure should be similar to this :
+Your Excel structure should be similar to this :
 <img width="685" alt="Pasted image 20250302170807" src="https://github.com/user-attachments/assets/0982555f-96be-4397-9260-fea42e4b7646" />
 
 
@@ -367,7 +367,7 @@ DAX Query structure :
 <img width="920" alt="Pasted image 20250302170649" src="https://github.com/user-attachments/assets/dbcc438d-a312-4482-83e9-bdd9cf1d0937" />
 
 
-**DAX Code** based on excel <br>
+**DAX Code** based on Excel <br>
 <img width="203" alt="Pasted image 20250302171047" src="https://github.com/user-attachments/assets/ab5e07e0-addf-4689-a5b8-57e174841aac" />
 
 
@@ -377,16 +377,16 @@ Result of "DAX Code"  in Visual Studio Code -> Copy for each ID test the corresp
 <img width="763" alt="Pasted image 20250302171019" src="https://github.com/user-attachments/assets/7fe83ac3-b03c-40a1-bb57-7e361aacb053" />
 
 
-This way, you can run your entire test suite with a single click in DAX Query View, giving you a comprehensive snapshot of your model's quality and reliability. The results will show you at a glance which tests have passed and which need attention **BEFORE considering publishing** to DEV environment or committing to a dev branch.
+This way, you can run your entire test suite with a single click in DAX Query View, giving you a comprehensive snapshot of your model's quality and reliability. The results will show you at a glance which tests have passed and which need attention **BEFORE considering publishing** to PBI service (DEV environment) or committing to a dev branch.
 
 
 ### Summary
 
-Implementing a formal Definition of Done with embedded testing improves significantly Power BI development. By documenting expected outcomes in an Excel and validating them with DAX Query queries tests, teams can objectively measure when a report meets business requirements. This structured approach **ensures consistency, builds confidence in reports, and significantly reduces errors in production.**
+Implementing a formal Definition of Done with embedded testing can significantly improve Power BI development. By documenting expected outcomes in an Excel and validating them with DAX Query queries tests, teams can objectively measure when a report meets business requirements. This structured approach **ensures consistency, builds confidence in reports, and significantly reduces errors in production.**
 
 ### Conclusion
 
-While this article focuses on testing within Power BI using DAX Query View, it's crucial to understand **that data quality testing should be included throughout the entire project lifecycle**, from data ingestion to final report distribution. The testing methodology described here addresses the Power BI developer's scope, but represents just one component of a comprehensive data quality strategy.
+While this article focuses on testing within Power BI using DAX Query View, it's crucial to understand that **data quality testing should be conducted throughout the entire project lifecycle**, from data ingestion to final report distribution. The testing methodology described here addresses the Power BI developer's scope, but represents just one component of a comprehensive data quality strategy.
 
 Effective organizations implement quality gates at multiple stages: during ingestion, ETL (Extract Transform Load), data pipeline development, within the data warehouse / lakehouse, and finally in Power BI reports. For advanced implementations, consider exploring CI/CD Azure pipelines with PR-triggered (Pull Request) automated tests. For guidance on implementing these advanced techniques, see our read more section. Each layer should have appropriate testing mechanisms that verify data integrity, transformation accuracy, and business rule compliance.
 

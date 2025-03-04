@@ -1,0 +1,24 @@
+DEFINE
+	/* Data Quality Checks */
+	VAR _PercentageOfNullValuesInAppearances = DIVIDE(
+				COUNTROWS('Opportunities') - COUNT('Opportunities'[customerid]),
+				COUNT('Opportunities'[customerid]),0)
+	
+	/*Run Tests*/
+	VAR _Tests = UNION(
+		ROW(
+			"TestName", "Opportunities Fact: Customer ID has no null values.",
+			"ExpectedValue", 0,
+			"ActualValue", COUNTROWS('Opportunities') - COUNT('Opportunities'[Created Date])
+		),
+		ROW(
+			"TestName", "Opportunities Fact: Campaign ID has distinct values.",
+			"ExpectedValue", COUNTROWS('Opportunities'),
+			"ActualValue", DISTINCTCOUNTNOBLANK('Opportunities'[campaignid])
+		),
+		ROW(
+			"TestName", "Opportunities Fact: Percentage of null values does not exceed 15%.",
+			"ExpectedValue", 1,
+			"AcutalValue", IF(_PercentageOfNullValuesInAppearances < .15 ,1,0)
+			)
+		)

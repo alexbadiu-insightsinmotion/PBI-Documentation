@@ -1,0 +1,8 @@
+EVALUATE
+ROW(
+    "Test Name", "Average Order Value - Within historical bounds",
+    "Min Historical", 250,
+    "Max Historical", 350,
+    "Current Value", [Average Order Value],
+    "Test Passed", [Average Order Value] >= 250 && [Average Order Value] <= 350
+)

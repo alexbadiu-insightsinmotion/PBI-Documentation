@@ -1,0 +1,8 @@
+EVALUATE
+ROW(
+    "Test Name", "Gross Margin always positive",
+    "Expected Value", 0,
+    "Actual Value", COUNTROWS(FILTER(Sales, [Gross Margin] < 0)),
+    "Allowed variance %", 0,
+    "Test Passed", COUNTROWS(FILTER(Sales, [Gross Margin] < 0)) = 0
+)

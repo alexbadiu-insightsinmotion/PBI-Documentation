@@ -1,0 +1,9 @@
+EVALUATE
+ROW(
+    "Test Name", "Total Sales - Sum equals aggregated quarters",
+    "Expected Value", [Total Sales],
+    "Actual Value", [Q1 Sales] + [Q2 Sales] + [Q3 Sales] + [Q4 Sales],
+    "Allowed variance %", 0.001,
+    "Variance %", ABS(1-DIVIDE([Total Sales], [Q1 Sales] + [Q2 Sales] + [Q3 Sales] + [Q4 Sales])),
+    "Test Passed", ABS(1-DIVIDE([Total Sales], [Q1 Sales] + [Q2 Sales] + [Q3 Sales] + [Q4 Sales])) <= 0.001
+)

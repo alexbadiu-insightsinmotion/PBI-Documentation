@@ -65,7 +65,7 @@ Implementation of custom drill-through functionality allowing users to navigate 
 >   - Testing completed with various data volumes (small, medium, large selections)
 >   - Edge cases handled (null values, etc.)
 >   - Dedicated accuracy tests developed for automated testing
->   - If the testing is conducted in the TEST environment, the results may not be at all reflective of the PROD environment, which likely has different networks performance and security criteria.
+>   - If the testing is conducted in the TEST environment, the results may not be at all reflective of the PROD environment, which likely has different network performance and security criteria.
 > 4. **Documentation and training**
 >   - Technical documentation updated with implementation details
 >   - User guide created with step-by-step instructions

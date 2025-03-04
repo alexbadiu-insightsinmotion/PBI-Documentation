@@ -1,0 +1,25 @@
+EVALUATE
+ADDCOLUMNS(
+UNION(
+ROW(
+    "Test Name", CALCULATE(MAX(TestList[Test Name]), TestList[Test ID] = 1)
+    ,"Expected Value", CALCULATE(MAX(TestList[Expected Value]), TestList[Test ID] = 1)
+    ,"Actual Value", CALCULATE([Revenue], 'Calendar'[Year] in {2021, 2022, 2023}, 'Industry'[Industry] = "Building Supply Retail")
+    ,"Allowed variance %", CALCULATE(MAX(TestList[Allowed Variance %]), TestList[Test ID] = 1)
+)
+,ROW(
+    "Test Name", CALCULATE(MAX(TestList[Test Name]), TestList[Test ID] = 2)
+    ,"Expected Value", CALCULATE(MAX(TestList[Expected Value]), TestList[Test ID] = 2)
+    ,"Actual Value", CALCULATE([Revenue Lost], 'Calendar'[Year] in {2022, 2023}, 'Industry'[Industry] = "Building Supply Retail")
+    ,"Allowed variance %", CALCULATE(MAX(TestList[Allowed Variance %]), TestList[Test ID] = 2)
+)
+,ROW(
+    "Test Name", CALCULATE(MAX(TestList[Test Name]), TestList[Test ID] = 3)
+    ,"Expected Value", CALCULATE(MAX(TestList[Expected Value]), TestList[Test ID] = 3)
+    ,"Actual Value", CALCULATE([Return rate], 'Calendar'[Year] in {2023}) + 0.01
+    ,"Allowed variance %", CALCULATE(MAX(TestList[Allowed Variance %]), TestList[Test ID] = 3)
+)
+)
+,"Variance %", ABS(1-DIVIDE([Actual Value], [Expected Value]))
+,"Test Passed", ABS(1-DIVIDE([Actual Value], [Expected Value])) <= [Allowed variance %]
+)

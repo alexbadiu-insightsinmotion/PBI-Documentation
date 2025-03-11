@@ -10,7 +10,7 @@ This issue deals with the Data major section, and the remaining sections will be
 
 ## Environments
 
-Describe the different separate environments to be used in the project. (For example, in a 3-tier layout, separate instances of the source application(s), databases, and target report sharing platform will be available and used [DEV, TEST, PROD]. In a 4-tier layout, the environments may be named DEV, TEST, STAGE, and PROD.)
+Describe the different separate environments to be used in the project. (For example, in a 3-tier layout, separate instances of the source application(s), databases, and target report sharing platform will be available and used [e.g., DEV, TEST, PROD]. In a 4-tier layout, the environments may be named DEV, TEST, STAGE, and PROD.)
 
 Evaluate the (paraphrased) statement,
 

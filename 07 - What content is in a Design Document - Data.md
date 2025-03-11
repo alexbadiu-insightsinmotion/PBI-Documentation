@@ -161,7 +161,7 @@ Here are a few best practices to consider:
 
 ## Dataflows
 
-Describe the design of all dataflows that will be developed for this (series) of reports. Include the type (e.g., staging, fact, dimension, supporting, etc.) and all filters and transformations that will be applied to the dataflow
+Describe the design of all dataflows that will be developed for this (series) of reports. Include the type (e.g., staging, fact, dimension, supporting, etc.) and all filters and transformations that will be applied to the dataflow.
 
 > [!NOTE]  
 > Dataflows should be written for people; the computer will execute working code regardless of clarity. Use whitespace and long and descriptive variable and step names (the computer will internally tokenize them anyway, so ...) and write for those who will be updating the code in the future (which just may be you in 6 months). Don't be the only one who understands your code (don't let your code "fail the bus test").

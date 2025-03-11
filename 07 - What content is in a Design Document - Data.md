@@ -133,8 +133,8 @@ Here's an example:
 
 Describe any gateways that will allow indirect connection to on-premises data sources such that they can be accessed by the Power BI Service, including ID, type (new, existing, standby), and status (online, offline, etc.). 
 Ideally all gateways will use service accounts with full permission to read all source records (i.e., no security restrictions).
-(For all gateways, describe the environment, availability [clustered; standalone] and use [e.g., dedicated to a single gateway; shared by multiple gateways; used by other services, etc.]).
-(For any standby gateways, describe the required takeover verification intervals and any characteristics that differ from the primary gateway.)
+<br>(For all gateways, describe the environment, availability [clustered; standalone] and use [e.g., dedicated to a single gateway; shared by multiple gateways; used by other services, etc.]).
+<br>(For any standby gateways, describe the required takeover verification intervals and any characteristics that differ from the primary gateway.)
 
 Here’s an example:
 

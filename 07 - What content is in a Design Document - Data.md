@@ -55,26 +55,11 @@ Here's an example:
 | **ID** | **Name** | **Environment** | **Credentials** |
 | --- | --- | --- | --- |
 | *C-11* | *Customer Data Source Credentials* | *DEV* | *IP/URL: 192.1.1.1*<br>*Account name: serviceDYN-DEV@abc.ca*<br>*Password=(retrieve from Keepass)*<br>*- Entry=serviceDYN-DEV*<br>*- Vault= Insert Key Vault Name]*<br>*- Secret=[Insert Secret Name]* |
-| *C-12* | *Customer Data Source Credentials* | *TEST* | *IP/URL: dynamics-TEST.abc.com*<br>*Account name: serviceDYN-TEST@abc.ca*<br>*Password=(retrieve from Keepass)
-•	Entry=serviceDYN-TEST
-•	Vault= Insert Key Vault Name]
-•	Secret=[Insert Secret Name]* |
-| *C-13* | *Customer Data Source Credentials* | *PROD* | *IP/URL: dynamics.abc.com*<br>*Account name: serviceDYN@abc.ca*<br>*Password=(retrieve from Keepass)
-•	Entry=serviceDYN
-•	Vault= Insert Key Vault Name]
-•	Secret=[Insert Secret Name]* |
-| *C-21* | *Invoice Data Source Credentials* | *DEV* | *IP/URL: 192.2.2.2*<br>*Account name: serviceSAP-DEV@abc.ca*<br>*Password=(retrieve from Keepass)
-•	Entry=serviceSAP-DEV
-•	Vault= Insert Key Vault Name]
-•	Secret=[Insert Secret Name]* |
-| *C-22* | *Invoice Data Source Credentials* | *TEST* | *IP/URL: sap-TEST.abc.com*<br>*Account name: serviceSAP-TEST@abc.ca*<br>*Password=(retrieve from Keepass)
-•	Entry=serviceSAP-TEST
-•	Vault= Insert Key Vault Name]
-•	Secret=[Insert Secret Name]* |
-| *C-23* | *Invoice Data Source Credentials* | *PROD* | *IP/URL: sap.abc.com*<br>*Account name: serviceSAP@abc.ca*<br>*Password=(retrieve from Keepass)
-•	Entry=serviceSAP
-•	Vault= Insert Key Vault Name]
-•	Secret=[Insert Secret Name]* |
+| *C-12* | *Customer Data Source Credentials* | *TEST* | *IP/URL: dynamics-TEST.abc.com*<br>*Account name: serviceDYN-TEST@abc.ca*<br>*Password=(retrieve from Keepass)*<br>*- Entry=serviceDYN-TEST*<br>*- Vault= Insert Key Vault Name]*<br>*- Secret=[Insert Secret Name]* |
+| *C-13* | *Customer Data Source Credentials* | *PROD* | *IP/URL: dynamics.abc.com*<br>*Account name: serviceDYN@abc.ca*<br>*Password=(retrieve from Keepass)*<br>*- Entry=serviceDYN*<br>*- Vault= Insert Key Vault Name]*<br>*- Secret=[Insert Secret Name]* |
+| *C-21* | *Invoice Data Source Credentials* | *DEV* | *IP/URL: 192.2.2.2*<br>*Account name: serviceSAP-DEV@abc.ca*<br>*Password=(retrieve from Keepass)*<br>*- Entry=serviceSAP-DEV*<br>*- Vault= Insert Key Vault Name]*<br>*- Secret=[Insert Secret Name]* |
+| *C-22* | *Invoice Data Source Credentials* | *TEST* | *IP/URL: sap-TEST.abc.com*<br>*Account name: serviceSAP-TEST@abc.ca*<br>*Password=(retrieve from Keepass)*<br>*- Entry=serviceSAP-TEST*<br>*- Vault= Insert Key Vault Name]*<br>*- Secret=[Insert Secret Name]* |
+| *C-23* | *Invoice Data Source Credentials* | *PROD* | *IP/URL: sap.abc.com*<br>*Account name: serviceSAP@abc.ca*<br>*Password=(retrieve from Keepass)*<br>*- Entry=serviceSAP*<br>*- Vault= Insert Key Vault Name]*<br>*- Secret=[Insert Secret Name]* |
 
 ### Volume
 

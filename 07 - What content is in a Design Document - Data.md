@@ -16,7 +16,7 @@ Evaluate the (paraphrased) statement,
 
 > *“Everybody has a TEST environment; some are lucky enough to also have a PROD environment.”*
 
-If you choose to test in production, then you accept the impacts and risks (e.g., degraded performance, responsiveness, reliability/downtime, etc.)
+If you choose to test in production, then you accept the impacts and risks (e.g., degraded performance, responsiveness, reliability/downtime, etc.).
 
 Note whether dedicated source applications are available in each environment, or if it is necessary, for example, to use the PROD environment for development and acceptance testing.
 

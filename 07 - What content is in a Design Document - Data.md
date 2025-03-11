@@ -86,7 +86,7 @@ Here's an example:
 
 ### Refresh
 
-THere's no sense in refreshing data that hasn't changed since the last update. Further, if the report(s) in question will be analysing, say performance up to the end of the previous month, then a daily refresh frequency will consume resources while offering no value. Said another way,
+There's no sense in refreshing data that hasn't changed since the last update. Further, if the report(s) in question will be analysing, say performance up to the end of the previous month, then a daily refresh frequency will consume resources while offering no value. Said another way,
 
 > *“Consider both the source update frequency and the report(s) analysis period before setting the data refresh criteria that will provide the needed value while minimizing the resources required”*
 

@@ -177,7 +177,7 @@ Here's an example:
 | *D-2* | *RAW Invoices* | *Staging* | *S=operational system*<br>*F=only last 2 fiscal years*<br>*T=none* |
 | *D-3* | *Customers* | *Dimension* | *S=reference of D-1 (RAW Customers)*<br>*F=none*<br>*T=*<br>* *columns renamed to Proper Case*<br>* *column data types verified* |
 | *D-4* | *Invoices* | *Fact* | *S=reference of D-2 (RAW Invoices)*<br>*F=none*<br>*T=*<br>* *columns renamed to Proper Case*<br>* *column data types verified* |
-| *D-5* | *Regions* | *Dimension* | *S=reference of D-1 (RAW Customers)*<br>*F=none*<br>*T=*<br>* *columns renamed to Proper Case*<br>* *column data types verified*<br>* *duplicates removed* *<br>*index added* |
+| *D-5* | *Regions* | *Dimension* | *S=reference of D-1 (RAW Customers)*<br>*F=none*<br>*T=*<br>* *columns renamed to Proper Case*<br>* *column data types verified*<br>* *duplicates removed*<br>* *index added* |
 | *D-6* | *Aging Buckets<br>(0-30d, 31-60d, 61-90d,<br>91-180d, 181d+)* | *Supporting* | *S=Excel spreadsheet*<br>*F=none*<br>*T=none* |
 
 ## Semantic Model

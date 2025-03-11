@@ -127,7 +127,7 @@ Here's an example:
 
 | **ID** | **Name** | **Description** | **Type / Location / Folder / Responsibility / Filename** |
 | --- | --- | --- | --- |
-| CD-1 | Aging Buckets | Excel worksheet with 5 buckets<br>for categorizing invoice data<br>Initial values:<br>- 0-30 days<br>- 31-60 days<br>- 61-90 days<br>- 91-180 days<br>- 181 days and over<br><br>To be used as the data source for the [Aging] supporting table | T=Excel<br>L=SharePoint<br>Folder=Accounting/Master Data/<br>R=Jennifer Smith/Accounting<br>Filename=Invoice Aging.xlsx
+| CD-1 | Aging Buckets | Excel worksheet with 5 buckets<br>for categorizing invoice data<br>Initial values:<br>- 0-30 days<br>- 31-60 days<br>- 61-90 days<br>- 91-180 days<br>- 181 days and over<br><br>To be used as the data source <br>for the [Aging] supporting table | T=Excel<br>L=SharePoint<br>Folder=Accounting/Master Data/<br>R=Jennifer Smith/Accounting<br>Filename=Invoice Aging.xlsx
 
 ### Gateway
 

@@ -213,6 +213,6 @@ The LinkedIn posts covering the design document are listed below: <br>
 
 Sample document fragments covering specific sections are available in the GitHub repo: <br>
 
-<<< INSERT SAMPLE 01 WORD FRAGMENT LINK - GENERAL AND SCOPE >>> <br>
-<<< INSERT SAMPLE 02 WORD FRAGMENT LINK - WORKFLOW, ISSUES, AND BUSINESS RULES >>> <br>
-<<< INSERT SAMPLE 03 WORD FRAGMENT LINK - DATA >>>
+[1, Design Document - Sample Fragment 01 - General and Scope](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Design%20Document%20-%20Sample%20Fragment%2001%20-%20General%20and%20Scope%20-%20V0.1.docx) <br>
+[2. Design Document - Sample Fragment 02 - Workflow, Issues, and Business Rules](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Design%20Document%20-%20Sample%20Fragment%2002%20-%20Workflow%20Issues%20and%20Business%20Rules%20-%20V0.2.docx) <br>
+[3. Design Document - Sample Fragment 03 - Data](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Design%20Document%20-%20Sample%20Fragment%2003%20-%20Data%20-%20V0.3.docx) <br>

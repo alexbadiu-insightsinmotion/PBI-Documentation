@@ -191,7 +191,7 @@ Describe the design of the semantic model, including all fact tables, dimension 
 Assign an [ID] to each relationship and fully describe it, including the fields/columns that will be used to link tables, the cardinality, and the directionality of each relationship.
 
 > [!NOTE]  
-> *(This is the design intent, not the implementation; the DAX INFO functions will be used in the appendices [a subsequent issue] to extract the actual relationships from the developed model.)*
+> *This is the design intent, not the implementation; the DAX INFO functions will be used in the appendices [an example will be presented in a subsequent issue] to extract the actual relationships from the developed model*
 
 Here's an example:
 

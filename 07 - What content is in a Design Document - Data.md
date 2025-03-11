@@ -1,4 +1,4 @@
-<<< INSERT TITLE IMAGE LINK >>>
+<img width="1920" alt="07 - Image - Title - Data" src="https://github.com/user-attachments/assets/a0ac9319-73ea-4506-b5ba-e507d080ca47" />
 
 **What Data characteristics should be described in a Design Document?**
 
@@ -101,8 +101,6 @@ Here's an example:
 | *R-1* | *Customer Data Refresh* | *Monthly* | *P=Manual via Excel file*<br>*T=Dedicated SharePoint folder*<br>*M=Sue Jones (IT department)*<br>*R=Jane Doe (sales department)* |
 | *R-2* | *Invoice Data Refresh* | *Daily* | *P=Automatic via scheduled dataflow*<br>*T=Dedicated SharePoint folder*<br>*M=Sue Jones (IT department)*<br>*R=John Smith (accounting department)* |
 
-*** NEW ***
-
 ## Data Connections
 Power BI can connect to data in 3 ways:
 * Direct
@@ -124,22 +122,12 @@ Cloud Connections are ***external*** (Internet, or Web) sources ***hosted*** on 
 ### Direct
 
 Describe each internal data connection that will be directly accessed, including ID, type, location, folder, responsibility, and filename.
-Here’s an example:
-ID	Name	Description	Type / Location / Folder / Responsibility / Filename
-CD-1	Aging Buckets	Excel worksheet with five buckets for categorizing invoice data
-•	0-30 days
-•	31-60 days
-•	61-90 days
-•	91-180 days
-•	181 days and over
 
-To be used as the data source for the [Aging] supporting table	T=Excel
-L=SharePoint
-Folder=Accounting/Master Data/
-R=Jennifer Smith/Accounting
-Filename=Invoice Aging.xlsx
+Here's an example:
 
-
+| **ID** | **Name** | **Description** | **Type / Location / Folder / Responsibility / Filename** |
+| --- | --- | --- | --- |
+| CD-1 | Aging Buckets | Excel worksheet with five buckets for categorizing invoice data<br>- 0-30 days<br>- 31-60 days<br>- 61-90 days<br>- 91-180 days<br>- 181 days and over<br><br>To be used as the data source for the [Aging] supporting table | T=Excel<br>L=SharePoint<br>Folder=Accounting/Master Data/<br>R=Jennifer Smith/Accounting<br>Filename=Invoice Aging.xlsx
 
 ### Gateway
 
@@ -156,9 +144,6 @@ Here’s an example:
 | *CG-2* | *On-premises Financial System (Primary)* | *New Power BI Gateway permitting read access by the Power BI Service*<br>* *(List of tables exposed and time horizon for each)*<br>* *Invoices (current fiscal year)*<br>* *Invoices (previous fiscal year)*<br>* *Invoices (historical [that is, before previous fiscal year])*<br>* *Payments (current fiscal year, previous fiscal year)* | *T=New*<br>*S=Offline*<br>*E=PROD (no DEV or TEST gateway)*<br>*A=Standalone*<br>*U=Shared/multiple*<br>*R=locally monitored and managed by accounting department*<br>*V=n/a*<br>*O=none* |
 | *CG-3* | *On-premises Financial System (Standby)* | *Standby Power BI Gateway to provide the same access as the primary financial system Power BI Gateway (CG-2)* | *T=Standby*<br>*S=Offline*<br>*E=PROD (no DEV or TEST gateway)*<br>*A=Standalone*<br>*U=Shared/multiple (common standby gateway that provides failover protection for multiple primary gateways)*<br>*R=locally monitored and managed by accounting department*<br>*V=monthly for 24 hours (on first Monday on or after the 15th of the month; full takeover [disable primary, enable standby])*<br>*O=memory (16 GB vs. 256 GB for CG-2)* |
 
-
-
-
 ### Cloud
 
 Describe all details necessary to configure the connection, including type, credential type, credentials, authentication method, etc.
@@ -173,31 +158,6 @@ Here are a few best practices to consider:
     - Service Principals: No Power BI license needed, centralized security, governance
     - Service Accounts: Power BI license needed, distributed security (credentials must be shared), no-notice password expiry
     - Personal Accounts: Power BI license needed, security managed by others, no-notice credential activation and permission changes (e.g., reassignment, promotion/demotion, retirement, leaving, etc.)
-
-*** NEW ***
-
-*** OLD ***
-## Gateways
-
-Power BI, being a cloud service, can easily access data sources that are already in the cloud.
-
-Describe any gateways that will allow on-premises data sources to be accessed by the Power BI Service, including ID, type (new, existing, standby), and status (online, offline, etc.).
-
-Ideally all gateways will use service accounts with full permission to read all source records (i.e., no security restrictions).
-
-*(For all gateways, describe the environment, availability [clustered; standalone] and use [e.g., dedicated to a single gateway; shared by multiple gateways; used by other services, etc.]*
-
-*(For any standby gateways, describe the required takeover verification intervals and any characteristics that differ from the primary gateway.)*
-
-Here's an example:
-
-| **ID** | **Name** | **Description** | **Type / Status / Environment / Availability / Use /**  **Responsibility / Verification** |
-| --- | --- | --- | --- |
-| *G-1* | *On-premises HR System (Sole)* | *Existing Power BI Gateway already permitting read access by the Power BI Service to Customer data*<br>* *(List of tables exposed and time horizon for each)*<br>* *Customers*<br>* *Contacts*<br>* *Addresses (current)*<br>* *Addresses (historical)*<br>* *Regions* | *T=Existing*<br>*S=Online*<br>*E=PROD (no DEV or TEST gateway)*<br>*A=Power Platform Gateway Cluster GC-1)*<br>*U=Dedicated/single*<br>*R=centrally monitored and managed by corporate tenant administrators*<br>*V=n/a* |
-| *G-2* | *On-premises Financial System (Primary)* | *New Power BI Gateway permitting read access by the Power BI Service*<br>* *(List of tables exposed and time horizon for each)*<br>* *Invoices (current fiscal year)*<br>* *Invoices (previous fiscal year)*<br>* *Invoices (historical [that is, before previous fiscal year])*<br>* *Payments (current fiscal year, previous fiscal year)* | *T=New*  *S=Offline*<br>*E=PROD (no DEV or TEST gateway)*<br>*A=Standalone*<br>*U=Shared/multiple*<br>*R=locally monitored and managed by accounting department*<br>*V=n/a* |
-| *G-3* | *On-premises Financial System (Standby)* | *Standby Power BI Gateway to provide the same access as the primary financial system Power BI Gateway (G-2)* | *T=Standby*<br>*S=Offline*<br>*E=PROD (no DEV or TEST gateway)*<br>*A=Standalone*<br>*U=Shared/multiple (common standby gateway that provides failover protection for multiple primary gateways)*<br>*R=locally monitored and managed by accounting department*<br>*V=monthly for 24 hours (on first Monday on or after the 15th of the month; full takeover [disable primary, enable standby])* |
-*** OLD ***
-
 
 ## Dataflows
 
@@ -224,7 +184,7 @@ Here's an example:
 
 Include an image of the data model and arrange tables for clarity (e.g., waterfall design, with dimension [lookup] tables at the top, fact tables in the middle, supporting tables in the bottom-left, and measure tables in the top-right, etc.)
 
-<<< INSERT DATA MODEL IMAGE >>>
+<img width="1273" alt="07 - Image - Data Model" src="https://github.com/user-attachments/assets/cf7471b0-7cd4-4d87-be85-df1b486bc1ad" />
 
 Describe the design of the semantic model, including all fact tables, dimension (or lookup) tables, and supporting tables.
 

@@ -54,7 +54,7 @@ Here's an example:
 
 | **ID** | **Name** | **Environment** | **Credentials** |
 | --- | --- | --- | --- |
-| *C-11* | *Customer Data Source Credentials* | *DEV* | *IP/URL: 192.1.1.1*<br>*Account name: serviceDYN-DEV@abc.ca*<br>*Password=(retrieve from Keepass)*<br>**- Entry=serviceDYN-DEV*<br>*- Vault= Insert Key Vault Name]*<br>*- Secret=[Insert Secret Name]* |
+| *C-11* | *Customer Data Source Credentials* | *DEV* | *IP/URL: 192.1.1.1*<br>*Account name: serviceDYN-DEV@abc.ca*<br>*Password=(retrieve from Keepass)*<br>*- Entry=serviceDYN-DEV*<br>*- Vault= Insert Key Vault Name]*<br>*- Secret=[Insert Secret Name]* |
 | *C-12* | *Customer Data Source Credentials* | *TEST* | *IP/URL: dynamics-TEST.abc.com*<br>*Account name: serviceDYN-TEST@abc.ca*<br>*Password=(retrieve from Keepass)
 •	Entry=serviceDYN-TEST
 •	Vault= Insert Key Vault Name]

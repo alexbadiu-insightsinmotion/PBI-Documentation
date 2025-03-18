@@ -1,0 +1,49 @@
+var dateTableName = "Dates"; // Name of your date table
+var dateKeyColName = "Date"; // Name of the date key column in the table
+var colOperations = new List<Tuple<string, string, bool>>(){
+    Tuple.Create("Quarter & Year", "QuarternYear", true),
+    Tuple.Create("Month & Year", "MonthnYear", true),
+    Tuple.Create("Month Name", "MonthOfYear", true),
+    Tuple.Create("Month Short", "MonthOfYear", true),
+    Tuple.Create("Month Initial", "MonthOfYear", true),
+    Tuple.Create("Week & Year", "WeeknYear", true),
+    Tuple.Create("Day of Week Name", "DayOfWeek", true),
+    Tuple.Create("Day of Week Initial", "DayOfWeek", true),
+    Tuple.Create("ISO Quarter & Year", "ISO QuarternYear", true),
+    Tuple.Create("ISO Quarter", "ISO QuarterOfYear", true),
+    Tuple.Create("Fiscal Year", "FiscalYearOffset", false),
+    Tuple.Create("Fiscal Quarter", "FQuarternYear", false),
+    Tuple.Create("Fiscal Period", "FPeriodnYear", false),
+    Tuple.Create("Fiscal Week", "FWeeknYear", false)
+};
+var dateTable = Model.Tables.FirstOrDefault(t => t.Name == dateTableName);
+if (dateTable != null){
+    dateTable.DataCategory = "Time"; // Mark as Date table
+
+    foreach (var column in dateTable.Columns){
+        var operation = colOperations.FirstOrDefault(op => op.Item1 == column.Name);
+        if (operation != null){
+            var sortByColumn = dateTable.Columns.FirstOrDefault(c => c.Name == operation.Item2);
+            if (sortByColumn != null){
+                column.SortByColumn = sortByColumn; // Set Sort By
+                sortByColumn.IsHidden = operation.Item3; // Set Hidden
+            }
+        }
+
+        switch (column.DataType){
+            case DataType.Double:
+            case DataType.Int64:
+            column.SummarizeBy = AggregateFunction.None; // Set Summarize By
+            column.FormatString = "0"; // Set format numeric fields
+            break;
+            case DataType.DateTime:
+            column.FormatString = "Short Date"; // Set format date fields
+            break;
+        }
+    }
+
+    var dateColumn = dateTable.Columns.FirstOrDefault(c => c.Name == dateKeyColName);
+    if (dateColumn != null){
+        dateColumn.IsKey = true; // Mark the column as a key
+    }
+}

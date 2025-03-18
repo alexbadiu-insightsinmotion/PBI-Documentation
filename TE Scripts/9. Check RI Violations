@@ -1,0 +1,73 @@
+// source Data Goblin: https://gist.github.com/data-goblin/bf3e46d3b7031b8b2d7a97dcd91a247d
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Evaluates a DMV to get the number of RI Violations
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+// Query the DISCOVER_STORAGE_TABLES DMV to find only tables with RI violations
+var query = "SELECT [RIVIOLATION_COUNT], [DIMENSION_NAME] FROM $SYSTEM.DISCOVER_STORAGE_TABLES WHERE RIVIOLATION_COUNT > 0";
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Initialize Variables
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+int RI_Violations = 0;
+int _nrows = 0;
+string _emptystring = "";
+string _RI_string = "";
+List<string> RI_Tables = new List<string>();
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Execute Query
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+using(var daxReader = ExecuteReader(query))
+{
+    // Read the query results, iterating through each row in the rowset
+    while(daxReader.Read())
+    
+    {
+        var rowValues = new object[daxReader.FieldCount];
+        daxReader.GetValues(rowValues);
+        var row = rowValues.Select(v => v == null ? "" : v).Cast<object>().ToList();
+
+        // Count the number of rows in the iteration (# tables)
+        _nrows = _nrows + 1;
+
+        // Count the number of Row violations, adding the value from each row in the iteration
+        RI_Violations = RI_Violations + Convert.ToInt32(row.ElementAt(0));
+
+        // Reset the row string
+        _RI_string = _emptystring;
+
+        foreach ( var i in row )
+            {
+            // Get the index of the item in the list
+            int index = row.FindIndex(a => a == i);
+
+            // Append the field values for the row together into a single string
+            _RI_string = _RI_string + row[index] + " - ";
+            }
+
+        // Add the row to the list RI_Tables
+        RI_Tables.Add(_RI_string);
+
+    }
+
+    // Close the reader
+    daxReader.Close();
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Report out the result
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+Info ( "There are " + RI_Violations + " RI Violations from " + _nrows + " table(s): \n\n" + string.Join( ",", RI_Tables.ToArray() ) );

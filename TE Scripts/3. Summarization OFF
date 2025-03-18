@@ -1,0 +1,4 @@
+foreach(var c in Model.AllColumns)
+{
+    c.SummarizeBy = AggregateFunction.None;
+}

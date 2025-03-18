@@ -1,0 +1,32 @@
+//https://data-goblins.com/power-bi/te-dmv-scripts
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Evaluates a DMV to determine the last time the model was processed (refreshed)
+//
+// Original method from Marco Russo https://www.sqlbi.com/articles/last-process-date-in-ssas-tabular/
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+// Query to be evaluated
+string _dmv = "SELECT TOP 1 [LAST_DATA_UPDATE] FROM $SYSTEM.MDSCHEMA_CUBES";
+
+// Evaluate the query
+using(var daxReader = ExecuteReader(_dmv))
+{
+    // Read the results
+    while(daxReader.Read())
+    
+    {
+        var rowValues = new object[daxReader.FieldCount];
+        daxReader.GetValues(rowValues);
+        var row = rowValues.Select(v => v == null ? "" : v);
+
+        // Convert the scalar value to a string
+        string _processdate = row.ElementAt(0).ToString();
+        Info ( "The model was last processed at " + _processdate);
+    }
+
+    // Close the reader
+    daxReader.Close();
+
+}

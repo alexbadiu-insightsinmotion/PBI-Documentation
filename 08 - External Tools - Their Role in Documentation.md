@@ -3,24 +3,24 @@
 
 ##### Table of Contents  
 [External Tools - Their Role in Documentation]() <br>
-	&nbsp;&nbsp;[1. DAX Studio](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#1-dax-studio---view-model) <br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1. Guiding Informed Modeling Decisions](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#1-guiding-informed-modeling-decisions) <br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2. Document Performance Evolution](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#2-document-performance-evolution) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3. Verify Power BI Aggregations are being hit and document impact](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#3-verify-power-bi-aggregations-are-being-hit-and-document-impact) <br>
-	&nbsp;&nbsp;[2. Tabular Editor](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#2-tabular-editor) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1. BPA - Best Practice Analyzer](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#1-bpa-best-practice-analyzer) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2. Customizable Best Practice Rules](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#2-customizable-best-practice-rules) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3. C# Scripts code](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#3-c-scripts-code) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1. Format all Measures](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#1-format-all-measures) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2. Hide columns on many side](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#2-hide-columns-on-many-side) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3. Summarization Off](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#3-summarization-off) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4. Data Quality checks](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#4-data-quality-checks) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5. Import VPAX Data into Tabular Editor annotations](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#5-import-vpax-data-into-tabular-editor-annotations) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6. Remove Unnecessary Columns](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#6-remove-unnecessary-columns) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7. Copy DAX in field's description](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#7-copy-dax-in-fieldss-description) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8. Check last refresh time](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#8-check-last-refresh-time) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[9. Check RI Violations](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#9-check-ri-violations) <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[10.Extended Date Table](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/08%20-%20BEFORE%20RELEASE%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#10-extended-date-table-from-melissa-de-korte) <br>
+	&nbsp;&nbsp;[1. DAX Studio](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#1-dax-studio---view-model) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1. Guiding Informed Modeling Decisions](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#1-guiding-informed-modeling-decisions) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2. Document Performance Evolution](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#2-document-performance-evolution) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3. Verify Power BI Aggregations are being hit and document impact](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#3-verify-power-bi-aggregations-are-being-hit-and-document-impact) <br>
+	&nbsp;&nbsp;[2. Tabular Editor](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#2-tabular-editor) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1. BPA - Best Practice Analyzer](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#1-bpa-best-practice-analyzer) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2. Customizable Best Practice Rules](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#2-customizable-best-practice-rules) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3. C# Scripts code](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#3-c-scripts-code) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1. Format all Measures](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#1-format-all-measures) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2. Hide columns on many side](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#2-hide-columns-on-many-side) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3. Summarization Off](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#3-summarization-off) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4. Data Quality checks](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#4-data-quality-checks) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5. Import VPAX Data into Tabular Editor annotations](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#5-import-vpax-data-into-tabular-editor-annotations) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6. Remove Unnecessary Columns](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#6-remove-unnecessary-columns) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7. Copy DAX in field's description](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#7-copy-dax-in-fieldss-description) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8. Check last refresh time](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#8-check-last-refresh-time) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[9. Check RI Violations](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#9-check-ri-violations) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[10.Extended Date Table](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/08%20-%20External%20Tools%20-%20Their%20Role%20in%20Documentation.md#10-extended-date-table-from-melissa-de-korte) <br>
 
 Documentation provides **rhythm and clarity** to a project, setting expectations and showing the path to achieving goals without ambiguity in rules and processes. <br><br>
 
@@ -224,6 +224,7 @@ Here are the top 10 C# scripts I've found particularly helpful when documenting 
 ```
 Model.AllMeasures.FormatDax();
 ```
+[You can find the C# script here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/TE%20Scripts/1.%20Format%20all%20Measures)
 
 ##### 2. Hide columns on many side 
 ```
@@ -245,6 +246,7 @@ foreach (var r in Model.Relationships)
     Model.Tables[t].Columns[c].IsHidden = true;
 }
 ```
+[You can find the C# script here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/TE%20Scripts/2.%20Hide%20columns%20on%20many%20side)
 
 ##### 3. Summarization Off
 ```
@@ -253,631 +255,19 @@ foreach(var c in Model.AllColumns)
     c.SummarizeBy = AggregateFunction.None;
 }
 ```
+[You can find the C# script here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/TE%20Scripts/3.%20Summarization%20OFF)
 
 ##### 4. Data Quality checks
-```
-//Select the desired table to store all data quality measures
-
-
-string overallCounterExpression = "";
-string overallCounterName = "Total Unmapped Items";
-
-string overallDetailExpression = "\"\"";
-string overallDetailName = "Data Problems";
-
-Table tableToStoreMeasures = Selected.Tables.First();
-
-foreach (var r in Model.Relationships)
-{
-
-
-    bool isOneToMany =
-        r.FromCardinality == RelationshipEndCardinality.One
-        & r.ToCardinality == RelationshipEndCardinality.Many;
-
-    bool isManyToOne =
-        r.FromCardinality == RelationshipEndCardinality.Many
-        & r.ToCardinality == RelationshipEndCardinality.One;
-
-    Column manyColumn = null as Column;
-    Column oneColumn = null as Column;
-    bool isOneToManyOrManyToOne = true;
-    if (isOneToMany)
-    {
-        manyColumn = r.ToColumn;
-        oneColumn = r.FromColumn;
-
-    }
-    else if (isManyToOne)
-    {
-        manyColumn = r.FromColumn;
-        oneColumn = r.ToColumn;
-    }
-    else
-    {
-        isOneToManyOrManyToOne = false;
-    }
-
-    if (isOneToManyOrManyToOne)
-    {
-
-        string orphanCountExpression =
-            "CALCULATE("
-                + "SUMX(VALUES(" + manyColumn.DaxObjectFullName + "),1),"
-                + oneColumn.DaxObjectFullName + " = BLANK()"
-            + ")";
-        string orphanMeasureName =
-            manyColumn.Name + " not mapped in " + manyColumn.Table.Name;
-
-        Measure newCounter = tableToStoreMeasures.AddMeasure(name: orphanMeasureName, expression: orphanCountExpression,displayFolder:"_Data quality Measures");
-        newCounter.FormatDax(); 
-
-        string orphanTableTitleMeasureExpression = newCounter.DaxObjectFullName + " & \" " + newCounter.Name + "\"";
-        string orphanTableTitleMeasureName = newCounter.Name + " Title";
-
-        Measure newTitle = tableToStoreMeasures.AddMeasure(name: orphanTableTitleMeasureName, expression: orphanTableTitleMeasureExpression, displayFolder: "_Data quality Titles");
-        newTitle.FormatDax();
-
-        overallCounterExpression = overallCounterExpression + "+" + newCounter.DaxObjectFullName;
-        overallDetailExpression = overallDetailExpression
-                + " & IF(" + newCounter.DaxObjectFullName + "> 0,"
-                            + newTitle.DaxObjectFullName + " & UNICHAR(10))";
-
-    };
-
-};
-
-Measure counter = tableToStoreMeasures.AddMeasure(name: overallCounterName, expression: overallCounterExpression);
-counter.FormatDax();
-
-
-Measure descr = tableToStoreMeasures.AddMeasure(name: overallDetailName, expression: overallDetailExpression);
-descr.FormatDax();
-```
+[You can find the C# script here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/TE%20Scripts/4.%20Data%20Quality%20Checks)
 
 ##### 5. Import VPAX Data into Tabular Editor annotations
 [Import VPAX Data into Tabular Editor](https://www.elegantbi.com/post/vpaxtotabulareditor#:~:text=Paste%20the%20script%20into%20the%20Advanced%20Scripting%20window,file.%20Click%20the%20play%20button%20%28or%20press%20%27F5%27%29.)
 
 This code can be used to add annotations into Tabular Editor using information from a Vertipaq Analyzer (VPAX) file. And now, you can holistically check the integrity of your model via BPA rules which reference these annotations.
-
-```
-//https://www.elegantbi.com/post/vpaxtotabulareditor#:~:text=Paste%20the%20script%20into%20the%20Advanced%20Scripting%20window,file.%20Click%20the%20play%20button%20%28or%20press%20%27F5%27%29.
-
-// Download from DAX Studio VPAX and in TE File->Preferences-> and set ‘Allow unsupported Power BI features’
-
-#r "System.IO"
-#r "System.IO.Compression.FileSystem"
-
-using System.IO;
-using System.IO.Compression;
-
-string vpaxFile = @"C:\Desktop\ModelVertipaq.vpax"; // Enter .vpax file path
-
-string fileExt = Path.GetExtension(vpaxFile);
-
-if (fileExt != ".vpax")
-{
-    Error("Must use a valid .vpax file");
-}
-
-string fileName = Path.GetFileNameWithoutExtension(vpaxFile);
-string folderName = Path.GetDirectoryName(vpaxFile) + @"\";
-string zipPath = folderName + fileName + ".zip";
-string unzipPath = folderName + fileName;
-
-try
-{
-    // Make a copy of a vpax and turn it into a zip file
-    File.Copy(vpaxFile, zipPath);
-    // Unzip file
-    System.IO.Compression.ZipFile.ExtractToDirectory(zipPath, unzipPath);
-    // Delete zip file
-    File.Delete(zipPath);
-}
-
-catch
-{
-    Error("File does not exist. Must use a valid .vpax file");
-}
-
-// Remove Existing Vertipaq Annotations
-Model.RemoveAnnotation("Vertipaq_ModelSize");
-
-foreach (var o in Model.AllHierarchies)
-{
-    o.RemoveAnnotation("Vertipaq_UserHierarchySize");
-    o.RemoveAnnotation("Vertipaq_TableSizePctOfModel");
-}
-
-foreach (var o in Model.AllColumns)
-{
-    o.RemoveAnnotation("Vertipaq_ColumnHierarchySize");
-    o.RemoveAnnotation("Vertipaq_DataSize");
-    o.RemoveAnnotation("Vertipaq_DictionarySize");
-    o.RemoveAnnotation("Vertipaq_Cardinality");
-    o.RemoveAnnotation("Vertipaq_ColumnSize");
-    o.RemoveAnnotation("Vertipaq_ColumnSizePctOfTable");
-    o.RemoveAnnotation("Vertipaq_ColumnSizePctOfModel");
-}
-
-foreach (var o in Model.Relationships.ToList())
-{        
-    o.RemoveAnnotation("Vertipaq_RelationshipSize"); 
-    o.RemoveAnnotation("Vertipaq_MaxFromCardinality");
-    o.RemoveAnnotation("Vertipaq_MaxToCardinality");
-    o.RemoveAnnotation("Vertipaq_RIViolationInvalidRows");
-}
-
-foreach (var o in Model.Tables.ToList())
-{     
-    o.RemoveAnnotation("Vertipaq_RowCount");
-    o.RemoveAnnotation("Vertipaq_TableSize");
-}
-
-foreach (var o in Model.AllPartitions)
-{       
-    o.RemoveAnnotation("Vertipaq_RecordCount");
-    o.RemoveAnnotation("Vertipaq_RecordsPerSegment");
-    o.RemoveAnnotation("Vertipaq_SegmentCount");
-}
-
-// Deseralize json file
-string jsonFilePath = folderName + fileName + @"\" + "DaxVpaView.json";
-var unformattedJson = File.ReadAllText(jsonFilePath,System.Text.UnicodeEncoding.Unicode);
-var formattedJson = Newtonsoft.Json.Linq.JToken.Parse(unformattedJson).ToString();
-
-dynamic json = Newtonsoft.Json.Linq.JObject.Parse(formattedJson);
-
-// Delete previously created folder
-try
-{
-    Directory.Delete(folderName + fileName,true);
-}
-catch
-{
-}
-
-int tableCount = (int)json["Tables"].Count;
-int columnCount = (int)json["Columns"].Count;
-int relationshipCount = (int)json["Relationships"].Count;
-int hierarchiesCount = (int)json["UserHierarchies"].Count;
-int columnSegmentCount = (int)json["ColumnsSegments"].Count;
-
-// Add table annotations
-for (int i=0; i<tableCount; i++)
-{
-    string tableName = (string)json["Tables"][i]["TableName"];
-    string rowCount = (string)json["Tables"][i]["RowsCount"];
-    string tableSize = (string)json["Tables"][i]["TableSize"];
-    
-    if (Model.Tables.Where(a => a.Name == tableName).Count() == 1)
-    {
-        var obj = Model.Tables[tableName];
-        
-        obj.SetAnnotation("Vertipaq_RowCount",rowCount);
-        obj.SetAnnotation("Vertipaq_TableSize",tableSize);
-    }
-}
-
-// Add column annotations
-for (int i=0; i<columnCount; i++)
-{
-    string columnName = (string)json["Columns"][i]["ColumnName"];
-    string tableName = (string)json["Columns"][i]["TableName"];
-    string columnCardinality = (string)json["Columns"][i]["ColumnCardinality"];
-    string dictionarySize = (string)json["Columns"][i]["DictionarySize"];
-    string dataSize = (string)json["Columns"][i]["DataSize"];
-    string hierarchiesSize = (string)json["Columns"][i]["HierarchiesSize"];
-    string totalSize = (string)json["Columns"][i]["TotalSize"];
-    
-    if (Model.Tables.Where(a => a.Name == tableName && a.Columns.Any(b => b.Name == columnName)).Count() == 1)
-    
-    {
-        var obj = Model.Tables[tableName].Columns[columnName];
-    
-        obj.SetAnnotation("Vertipaq_Cardinality",columnCardinality);
-        obj.SetAnnotation("Vertipaq_ColumnHierarchySize",hierarchiesSize);
-        obj.SetAnnotation("Vertipaq_ColumnSize",totalSize);
-        obj.SetAnnotation("Vertipaq_DataSize",dataSize);
-        obj.SetAnnotation("Vertipaq_DictionarySize",dictionarySize);
-    }      
-}
-
-// Add relationship annotations
-for (int i=0; i<relationshipCount; i++)
-{
-    string relationshipName = (string)json["Relationships"][i]["RelationshipName"];
-    string fromCardinality = (string)json["Relationships"][i]["FromCardinality"];
-    string toCardinality = (string)json["Relationships"][i]["ToCardinality"];
-    string usedSize = (string)json["Relationships"][i]["UsedSize"];
-    string invalidRows = (string)json["Relationships"][i]["InvalidRows"];
-    
-    if (Model.Relationships.Where(a => a.ID == relationshipName).Count() == 1)
-    {
-        var obj = Model.Relationships[relationshipName];
-    
-        obj.SetAnnotation("Vertipaq_MaxFromCardinality",fromCardinality);
-        obj.SetAnnotation("Vertipaq_MaxToCardinality",toCardinality);
-        obj.SetAnnotation("Vertipaq_RelationshipSize",usedSize);
-        obj.SetAnnotation("Vertipaq_RIViolationInvalidRows",invalidRows);
-    }
-}
-
-// Add hierarchies annotations
-for (int i=0; i<hierarchiesCount; i++)
-{
-    string hierarchyName = (string)json["UserHierarchies"][i]["UserHierarchyName"];
-    string tableName = (string)json["UserHierarchies"][i]["TableName"];
-    string usedSize = (string)json["UserHierarchies"][i]["UsedSize"];
-    
-    if (Model.AllHierarchies.Where(a => a.Name == hierarchyName && a.Table.Name == tableName).Count() == 1)
-    {
-        var obj = Model.Tables[tableName].Hierarchies[hierarchyName];
-    
-        obj.SetAnnotation("Vertipaq_UserHierarchySize",usedSize);
-    }
-}
-
-// Add partition annotations
-for (int i=0; i<columnSegmentCount; i++)
-{
-    string tableName = (string)json["ColumnsSegments"][i]["TableName"];
-    string partitionName = (string)json["ColumnsSegments"][i]["PartitionName"];
-    string columnName = (string)json["ColumnsSegments"][i]["ColumnName"];
-    string segmentNumber = (string)json["ColumnsSegments"][i]["SegmentNumber"];
-    string tablePartitionNumber = (string)json["ColumnsSegments"][i]["TablePartitionNumber"];
-    string segmentRows = (string)json["ColumnsSegments"][i]["SegmentRows"];
-    int segmentNumberInt = Convert.ToInt32(segmentNumber);
-    int tablePartitionNumberInt = Convert.ToInt32(tablePartitionNumber);
-    long segmentRowsInt = Convert.ToInt64(segmentRows);
-    
-    var obj = Model.Tables[tableName].Partitions[partitionName];
-    
-    int s = 0;
-    foreach (var t in Model.Tables.Where(a => a.Name == tableName).ToList())
-    {
-        foreach (var p in t.Partitions.Where(b => b.MetadataIndex < tablePartitionNumberInt))
-        {
-            s = s + Convert.ToInt32(p.GetAnnotation("Vertipaq_SegmentCount"));
-        }
-    }
-    
-    obj.SetAnnotation("Vertipaq_SegmentCount",(segmentNumberInt - s + 1).ToString());
-    
-    if (columnName.StartsWith("RowNumber-"))
-    {            
-        long rc = Convert.ToInt64(obj.GetAnnotation("Vertipaq_RecordCount"));
-        obj.SetAnnotation("Vertipaq_RecordCount",(segmentRowsInt + rc).ToString());
-    }
-}
-
-// Add Records per Segment
-long maxRPS = 8388608;
-foreach (var t in Model.Tables.ToList())
-{
-    foreach (var p in t.Partitions.ToList())
-    {
-        long rc = Convert.ToInt64(p.GetAnnotation("Vertipaq_RecordCount"));
-        long sc = Convert.ToInt64(p.GetAnnotation("Vertipaq_SegmentCount"));
-        string rps = "Vertipaq_RecordsPerSegment";
-        
-        if (sc > 1)
-        {
-            p.SetAnnotation(rps,maxRPS.ToString());            
-        }
-        else if (sc == null || sc == 0)
-        {
-            p.SetAnnotation(rps,"0");
-        }
-        else
-        {
-            p.SetAnnotation(rps,(rc / sc).ToString());
-        }
-    }
-}
-
-// Add model size annotation
-string ms = Model.Tables.Sum(a => Convert.ToInt64(a.GetAnnotation("Vertipaq_TableSize"))).ToString();
-Model.SetAnnotation("Vertipaq_ModelSize",ms);
-
-// Percent of Table and Model
-float modelSize = Convert.ToInt64(Model.GetAnnotation("Vertipaq_ModelSize"));
-
-foreach (var t in Model.Tables.ToList())
-{
-    string tableName = t.Name;
-    var obj = Model.Tables[tableName];
-    
-    float tableSize = Convert.ToInt64(obj.GetAnnotation("Vertipaq_TableSize"));
-    double tblpct = Math.Round(tableSize / modelSize,3);
-        
-    obj.SetAnnotation("Vertipaq_TableSizePctOfModel",tblpct.ToString());
-    
-    foreach (var c in t.Columns.ToList())
-    {
-        string colName = c.Name;
-        var col = Model.Tables[tableName].Columns[colName];
-        
-        float colSize = Convert.ToInt64(col.GetAnnotation("Vertipaq_ColumnSize"));
-        double colpctTbl = Math.Round(colSize / tableSize,3);
-        double colpctModel = Math.Round(colSize / modelSize,3);
-        
-        col.SetAnnotation("Vertipaq_ColumnSizePctOfTable",colpctTbl.ToString());
-        col.SetAnnotation("Vertipaq_ColumnSizePctOfModel",colpctModel.ToString());
-    }
-}
-```
-
+[You can find the C# script here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/TE%20Scripts/5.%20Import%20VPAX%20Data%20into%20Tabular%20Editor%20annotations)
 
 ##### 6. Remove Unnecessary Columns
-
-```
-//https://www.elegantbi.com/post/vpaxtotabulareditor#:~:text=Paste%20the%20script%20into%20the%20Advanced%20Scripting%20window,file.%20Click%20the%20play%20button%20%28or%20press%20%27F5%27%29.
-
-// Download from DAX Studio VPAX and in TE File->Preferences-> and set ‘Allow unsupported Power BI features’
-
-#r "System.IO"
-#r "System.IO.Compression.FileSystem"
-
-using System.IO;
-using System.IO.Compression;
-
-string vpaxFile = @"C:\Desktop\ModelVertipaq.vpax"; // Enter .vpax file path
-
-string fileExt = Path.GetExtension(vpaxFile);
-
-if (fileExt != ".vpax")
-{
-    Error("Must use a valid .vpax file");
-}
-
-string fileName = Path.GetFileNameWithoutExtension(vpaxFile);
-string folderName = Path.GetDirectoryName(vpaxFile) + @"\";
-string zipPath = folderName + fileName + ".zip";
-string unzipPath = folderName + fileName;
-
-try
-{
-    // Make a copy of a vpax and turn it into a zip file
-    File.Copy(vpaxFile, zipPath);
-    // Unzip file
-    System.IO.Compression.ZipFile.ExtractToDirectory(zipPath, unzipPath);
-    // Delete zip file
-    File.Delete(zipPath);
-}
-
-catch
-{
-    Error("File does not exist. Must use a valid .vpax file");
-}
-
-// Remove Existing Vertipaq Annotations
-Model.RemoveAnnotation("Vertipaq_ModelSize");
-
-foreach (var o in Model.AllHierarchies)
-{
-    o.RemoveAnnotation("Vertipaq_UserHierarchySize");
-    o.RemoveAnnotation("Vertipaq_TableSizePctOfModel");
-}
-
-foreach (var o in Model.AllColumns)
-{
-    o.RemoveAnnotation("Vertipaq_ColumnHierarchySize");
-    o.RemoveAnnotation("Vertipaq_DataSize");
-    o.RemoveAnnotation("Vertipaq_DictionarySize");
-    o.RemoveAnnotation("Vertipaq_Cardinality");
-    o.RemoveAnnotation("Vertipaq_ColumnSize");
-    o.RemoveAnnotation("Vertipaq_ColumnSizePctOfTable");
-    o.RemoveAnnotation("Vertipaq_ColumnSizePctOfModel");
-}
-
-foreach (var o in Model.Relationships.ToList())
-{        
-    o.RemoveAnnotation("Vertipaq_RelationshipSize"); 
-    o.RemoveAnnotation("Vertipaq_MaxFromCardinality");
-    o.RemoveAnnotation("Vertipaq_MaxToCardinality");
-    o.RemoveAnnotation("Vertipaq_RIViolationInvalidRows");
-}
-
-foreach (var o in Model.Tables.ToList())
-{     
-    o.RemoveAnnotation("Vertipaq_RowCount");
-    o.RemoveAnnotation("Vertipaq_TableSize");
-}
-
-foreach (var o in Model.AllPartitions)
-{       
-    o.RemoveAnnotation("Vertipaq_RecordCount");
-    o.RemoveAnnotation("Vertipaq_RecordsPerSegment");
-    o.RemoveAnnotation("Vertipaq_SegmentCount");
-}
-
-// Deseralize json file
-string jsonFilePath = folderName + fileName + @"\" + "DaxVpaView.json";
-var unformattedJson = File.ReadAllText(jsonFilePath,System.Text.UnicodeEncoding.Unicode);
-var formattedJson = Newtonsoft.Json.Linq.JToken.Parse(unformattedJson).ToString();
-
-dynamic json = Newtonsoft.Json.Linq.JObject.Parse(formattedJson);
-
-// Delete previously created folder
-try
-{
-    Directory.Delete(folderName + fileName,true);
-}
-catch
-{
-}
-
-int tableCount = (int)json["Tables"].Count;
-int columnCount = (int)json["Columns"].Count;
-int relationshipCount = (int)json["Relationships"].Count;
-int hierarchiesCount = (int)json["UserHierarchies"].Count;
-int columnSegmentCount = (int)json["ColumnsSegments"].Count;
-
-// Add table annotations
-for (int i=0; i<tableCount; i++)
-{
-    string tableName = (string)json["Tables"][i]["TableName"];
-    string rowCount = (string)json["Tables"][i]["RowsCount"];
-    string tableSize = (string)json["Tables"][i]["TableSize"];
-    
-    if (Model.Tables.Where(a => a.Name == tableName).Count() == 1)
-    {
-        var obj = Model.Tables[tableName];
-        
-        obj.SetAnnotation("Vertipaq_RowCount",rowCount);
-        obj.SetAnnotation("Vertipaq_TableSize",tableSize);
-    }
-}
-
-// Add column annotations
-for (int i=0; i<columnCount; i++)
-{
-    string columnName = (string)json["Columns"][i]["ColumnName"];
-    string tableName = (string)json["Columns"][i]["TableName"];
-    string columnCardinality = (string)json["Columns"][i]["ColumnCardinality"];
-    string dictionarySize = (string)json["Columns"][i]["DictionarySize"];
-    string dataSize = (string)json["Columns"][i]["DataSize"];
-    string hierarchiesSize = (string)json["Columns"][i]["HierarchiesSize"];
-    string totalSize = (string)json["Columns"][i]["TotalSize"];
-    
-    if (Model.Tables.Where(a => a.Name == tableName && a.Columns.Any(b => b.Name == columnName)).Count() == 1)
-    
-    {
-        var obj = Model.Tables[tableName].Columns[columnName];
-    
-        obj.SetAnnotation("Vertipaq_Cardinality",columnCardinality);
-        obj.SetAnnotation("Vertipaq_ColumnHierarchySize",hierarchiesSize);
-        obj.SetAnnotation("Vertipaq_ColumnSize",totalSize);
-        obj.SetAnnotation("Vertipaq_DataSize",dataSize);
-        obj.SetAnnotation("Vertipaq_DictionarySize",dictionarySize);
-    }      
-}
-
-// Add relationship annotations
-for (int i=0; i<relationshipCount; i++)
-{
-    string relationshipName = (string)json["Relationships"][i]["RelationshipName"];
-    string fromCardinality = (string)json["Relationships"][i]["FromCardinality"];
-    string toCardinality = (string)json["Relationships"][i]["ToCardinality"];
-    string usedSize = (string)json["Relationships"][i]["UsedSize"];
-    string invalidRows = (string)json["Relationships"][i]["InvalidRows"];
-    
-    if (Model.Relationships.Where(a => a.ID == relationshipName).Count() == 1)
-    {
-        var obj = Model.Relationships[relationshipName];
-    
-        obj.SetAnnotation("Vertipaq_MaxFromCardinality",fromCardinality);
-        obj.SetAnnotation("Vertipaq_MaxToCardinality",toCardinality);
-        obj.SetAnnotation("Vertipaq_RelationshipSize",usedSize);
-        obj.SetAnnotation("Vertipaq_RIViolationInvalidRows",invalidRows);
-    }
-}
-
-// Add hierarchies annotations
-for (int i=0; i<hierarchiesCount; i++)
-{
-    string hierarchyName = (string)json["UserHierarchies"][i]["UserHierarchyName"];
-    string tableName = (string)json["UserHierarchies"][i]["TableName"];
-    string usedSize = (string)json["UserHierarchies"][i]["UsedSize"];
-    
-    if (Model.AllHierarchies.Where(a => a.Name == hierarchyName && a.Table.Name == tableName).Count() == 1)
-    {
-        var obj = Model.Tables[tableName].Hierarchies[hierarchyName];
-    
-        obj.SetAnnotation("Vertipaq_UserHierarchySize",usedSize);
-    }
-}
-
-// Add partition annotations
-for (int i=0; i<columnSegmentCount; i++)
-{
-    string tableName = (string)json["ColumnsSegments"][i]["TableName"];
-    string partitionName = (string)json["ColumnsSegments"][i]["PartitionName"];
-    string columnName = (string)json["ColumnsSegments"][i]["ColumnName"];
-    string segmentNumber = (string)json["ColumnsSegments"][i]["SegmentNumber"];
-    string tablePartitionNumber = (string)json["ColumnsSegments"][i]["TablePartitionNumber"];
-    string segmentRows = (string)json["ColumnsSegments"][i]["SegmentRows"];
-    int segmentNumberInt = Convert.ToInt32(segmentNumber);
-    int tablePartitionNumberInt = Convert.ToInt32(tablePartitionNumber);
-    long segmentRowsInt = Convert.ToInt64(segmentRows);
-    
-    var obj = Model.Tables[tableName].Partitions[partitionName];
-    
-    int s = 0;
-    foreach (var t in Model.Tables.Where(a => a.Name == tableName).ToList())
-    {
-        foreach (var p in t.Partitions.Where(b => b.MetadataIndex < tablePartitionNumberInt))
-        {
-            s = s + Convert.ToInt32(p.GetAnnotation("Vertipaq_SegmentCount"));
-        }
-    }
-    
-    obj.SetAnnotation("Vertipaq_SegmentCount",(segmentNumberInt - s + 1).ToString());
-    
-    if (columnName.StartsWith("RowNumber-"))
-    {            
-        long rc = Convert.ToInt64(obj.GetAnnotation("Vertipaq_RecordCount"));
-        obj.SetAnnotation("Vertipaq_RecordCount",(segmentRowsInt + rc).ToString());
-    }
-}
-
-// Add Records per Segment
-long maxRPS = 8388608;
-foreach (var t in Model.Tables.ToList())
-{
-    foreach (var p in t.Partitions.ToList())
-    {
-        long rc = Convert.ToInt64(p.GetAnnotation("Vertipaq_RecordCount"));
-        long sc = Convert.ToInt64(p.GetAnnotation("Vertipaq_SegmentCount"));
-        string rps = "Vertipaq_RecordsPerSegment";
-        
-        if (sc > 1)
-        {
-            p.SetAnnotation(rps,maxRPS.ToString());            
-        }
-        else if (sc == null || sc == 0)
-        {
-            p.SetAnnotation(rps,"0");
-        }
-        else
-        {
-            p.SetAnnotation(rps,(rc / sc).ToString());
-        }
-    }
-}
-
-// Add model size annotation
-string ms = Model.Tables.Sum(a => Convert.ToInt64(a.GetAnnotation("Vertipaq_TableSize"))).ToString();
-Model.SetAnnotation("Vertipaq_ModelSize",ms);
-
-// Percent of Table and Model
-float modelSize = Convert.ToInt64(Model.GetAnnotation("Vertipaq_ModelSize"));
-
-foreach (var t in Model.Tables.ToList())
-{
-    string tableName = t.Name;
-    var obj = Model.Tables[tableName];
-    
-    float tableSize = Convert.ToInt64(obj.GetAnnotation("Vertipaq_TableSize"));
-    double tblpct = Math.Round(tableSize / modelSize,3);
-        
-    obj.SetAnnotation("Vertipaq_TableSizePctOfModel",tblpct.ToString());
-    
-    foreach (var c in t.Columns.ToList())
-    {
-        string colName = c.Name;
-        var col = Model.Tables[tableName].Columns[colName];
-        
-        float colSize = Convert.ToInt64(col.GetAnnotation("Vertipaq_ColumnSize"));
-        double colpctTbl = Math.Round(colSize / tableSize,3);
-        double colpctModel = Math.Round(colSize / modelSize,3);
-        
-        col.SetAnnotation("Vertipaq_ColumnSizePctOfTable",colpctTbl.ToString());
-        col.SetAnnotation("Vertipaq_ColumnSizePctOfModel",colpctModel.ToString());
-    }
-}
-```
+[You can find the C# script here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/TE%20Scripts/6.%20Remove%20Unnecessary%20Columns)
 
 ##### 7. Copy DAX in fields's description
 
@@ -895,6 +285,7 @@ foreach (var m in Model.AllMeasures) {
   m.Description = m.Expression;
 }
 ```
+[You can find the C# script here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/TE%20Scripts/7.%20Copy%20DAX%20in%20field's%20description)
 
 ![Pasted image 20250315172622](https://github.com/user-attachments/assets/7090dd22-9d7a-449e-9f10-eb00e553bf60)
 
@@ -937,87 +328,13 @@ using(var daxReader = ExecuteReader(_dmv))
 }
 
 ```
+[You can find the C# script here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/TE%20Scripts/8.%20Check%20last%20refresh%20time)
 
 ![Pasted image 20250315173324](https://github.com/user-attachments/assets/4f9ce10a-ef15-467b-acd3-889fff5587a9)
 
 
 ##### 9. Check RI Violations
-
-```
-// source Data Goblin: https://gist.github.com/data-goblin/bf3e46d3b7031b8b2d7a97dcd91a247d
-/////////////////////////////////////////////////////////////////////////////////////////////
-//
-// Evaluates a DMV to get the number of RI Violations
-//
-/////////////////////////////////////////////////////////////////////////////////////////////
-
-// Query the DISCOVER_STORAGE_TABLES DMV to find only tables with RI violations
-var query = "SELECT [RIVIOLATION_COUNT], [DIMENSION_NAME] FROM $SYSTEM.DISCOVER_STORAGE_TABLES WHERE RIVIOLATION_COUNT > 0";
-
-/////////////////////////////////////////////////////////////////////////////////////////////
-//
-// Initialize Variables
-//
-/////////////////////////////////////////////////////////////////////////////////////////////
-
-int RI_Violations = 0;
-int _nrows = 0;
-string _emptystring = "";
-string _RI_string = "";
-List<string> RI_Tables = new List<string>();
-
-/////////////////////////////////////////////////////////////////////////////////////////////
-//
-// Execute Query
-//
-/////////////////////////////////////////////////////////////////////////////////////////////
-
-using(var daxReader = ExecuteReader(query))
-{
-    // Read the query results, iterating through each row in the rowset
-    while(daxReader.Read())
-    
-    {
-        var rowValues = new object[daxReader.FieldCount];
-        daxReader.GetValues(rowValues);
-        var row = rowValues.Select(v => v == null ? "" : v).Cast<object>().ToList();
-
-        // Count the number of rows in the iteration (# tables)
-        _nrows = _nrows + 1;
-
-        // Count the number of Row violations, adding the value from each row in the iteration
-        RI_Violations = RI_Violations + Convert.ToInt32(row.ElementAt(0));
-
-        // Reset the row string
-        _RI_string = _emptystring;
-
-        foreach ( var i in row )
-            {
-            // Get the index of the item in the list
-            int index = row.FindIndex(a => a == i);
-
-            // Append the field values for the row together into a single string
-            _RI_string = _RI_string + row[index] + " - ";
-            }
-
-        // Add the row to the list RI_Tables
-        RI_Tables.Add(_RI_string);
-
-    }
-
-    // Close the reader
-    daxReader.Close();
-
-}
-
-/////////////////////////////////////////////////////////////////////////////////////////////
-//
-// Report out the result
-//
-/////////////////////////////////////////////////////////////////////////////////////////////
-
-Info ( "There are " + RI_Violations + " RI Violations from " + _nrows + " table(s): \n\n" + string.Join( ",", RI_Tables.ToArray() ) );
-```
+[You can find the C# script here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/TE%20Scripts/9.%20Check%20RI%20Violations)
 
 
 ![Pasted image 20250315173433](https://github.com/user-attachments/assets/218dd179-f376-4f70-bc4d-c78e2ded15b2)

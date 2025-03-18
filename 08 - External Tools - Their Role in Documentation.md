@@ -33,7 +33,7 @@ This approach emphasizes that **documentation serves three purposes:**
 - as a record of excellence in the final product.
 - as a starting point for evaluating and making any future changes
 
-To achieve these goals effectively, complementary external tools are vital. In this week's issue 8, we will provide an overview external of two tools that can help streamline documentation and accelerate development in a professional manner.
+To achieve these goals effectively, complementary external tools are vital. In this week's issue 8, we will provide an overview of two external tools that can help streamline documentation and accelerate development in a professional manner.
 
 Without further ado, let's jump right in:
 

@@ -397,3 +397,8 @@ By integrating testing across the entire data flow and making it a core part of 
 - Great detailed presentation on IOWA PBI User Group with James Bartlett and Narayana Windenberger : https://www.youtube.com/live/PL7Xw2dvVrE?si=FJ7j7ZLtLiiWrKTl
 
 - John Kerski blog: [DAX Query View Testing Pattern | John Kerski’s Blog](https://www.kerski.tech/bringing-dataops-to-power-bi-part36/)
+
+💬 Let’s discuss: 
+Drop your thoughts in the LinkedIn post: We’d love to keep the discussion going! LinkedIn post: [06 - Automated Testing in Power BI ](https://www.linkedin.com/posts/alexandru-badiu_powerbi-dataquality-automation-activity-7302650391723147264-sOIN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAd2rAYBtqG-2bVNWh14j0hOzgmbFYqs3hE)
+
+

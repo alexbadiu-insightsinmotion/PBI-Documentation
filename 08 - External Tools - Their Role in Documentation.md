@@ -345,7 +345,11 @@ using(var daxReader = ExecuteReader(_dmv))
 
 
 
-
+💬 Let’s discuss: 
+- What’s your go-to tool for Power BI documentation?
+- What’s the biggest challenge you’ve faced in keeping reports well-documented?
+  
+Drop your thoughts in the LinkedIn post: We’d love to keep the discussion going! LinkedIn post: [#Issue 8 - External Tools - Their Role in Documentation ](https://www.linkedin.com/posts/alexandru-badiu_powerbi-dataquality-automation-activity-7308082688777736192-xMxk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAd2rAYBtqG-2bVNWh14j0hOzgmbFYqs3hE)
 
 
 

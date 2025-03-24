@@ -74,9 +74,9 @@ Here's an example:
 | --- | --- | --- |
 | *N-1* | *Invoices* | *DESIGN:*<br>* *Type=button*<br>* *Shape=any, with border=off*<br>* *Action=page navigation (subcategory 1)*<br><br>*DEFAULT (selected):*<br>* *Font=Segoe UI, white, 10 pt*<br>* *Background=dark blue*<br>* *Navigation=page, Invoices-All*<br><br>*DEFAULT (unselected):*<br>* *Font=Segoe UI, medium grey, 10 pt*<br>* *Background=medium blue*<br>* *Navigation=page, Invoices-All*<br><br>*HOVER:*<br>* *Font=Segoe UI, dark grey,* ***11 pt***<br>* *Background=medium grey*<br>* *Navigation=page, Invoices-All* |
 | *N-2* | *Invoices / All* | *(same as N-1 above, but with adjusted page navigation)* |
-| *N-3* | *Invoices / Current* | *(same as N-1 above, but with adjusted page navigation and selected and unselcted defaults reversed)* |
-| *N-4* | *Invoices / Upcoming* | *(same as N-1 above, but with adjusted page navigation and selected and unselcted defaults reversed)* |
-| *N-5* | *Invoices / Historical* | *(same as N-1 above, but with adjusted page navigation and selected and unselcted defaults reversed)* |
+| *N-3* | *Invoices / Current* | *(same as N-1 above, but with adjusted page navigation and<br>selected and unselcted defaults reversed)* |
+| *N-4* | *Invoices / Upcoming* | *(same as N-1 above, but with adjusted page navigation and<br>selected and unselcted defaults reversed)* |
+| *N-5* | *Invoices / Historical* | *(same as N-1 above, but with adjusted page navigation and<br>selected and unselcted defaults reversed)* |
 
 *NOTE: Drill-through is not navigation and should rather be described in each specific report.*
 

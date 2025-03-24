@@ -1,4 +1,4 @@
-<<< INSERT TITLE IMAGE LINK >>>
+<img width="1920" alt="09 - Image - Title - Reports" src="https://github.com/user-attachments/assets/124ffa1b-0dd0-4ba9-a9d6-2c6e95a39302" />
 
 **What Report characteristics should be described in a Design Document?**
 
@@ -33,7 +33,7 @@ Describe the filters that will be applied to every report:
 
 Here's an example:
 
-<<< INSERT FILTER PANE IMAGE >>>
+<img width="160" alt="09 - Image - Filter Pane" src="https://github.com/user-attachments/assets/3ae730cc-9061-4ed0-a746-ba40e986e865" />
 
 Filters specific to each report should be listed in their respective sections below.
 
@@ -161,11 +161,12 @@ Here's an example:
 
 Include an image of each specific data model in each specific report and arrange tables for clarity (e.g., waterfall design, with dimension (lookup) tables at the top, fact tables in the middle, supporting tables in the bottom-left, and measure tables in the top-right, etc.)
 
-<<< INSERT DATA MODEL IMAGE >>>
+<img width="1272" alt="09 - Image - Data Model - Light Mode" src="https://github.com/user-attachments/assets/b1da368c-84bf-47c0-8472-ba117593c45b" />
 
 ### AR01 – All Invoices
 
 This report shows summary and KPI information about all invoices, and includes the following:
+
 
 Filters:
 

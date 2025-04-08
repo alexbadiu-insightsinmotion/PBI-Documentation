@@ -89,10 +89,11 @@ By implementing this systematic approach to performance testing, **you transform
 
 
 
+![Pasted image 20250314164229](https://github.com/user-attachments/assets/8e206e59-811c-4a60-a909-190f1eb1f17a)
 
-![Pasted image 20250314164229](https://github.com/user-attachments/assets/e59c868e-f359-4fdd-a578-21592643ff3a)
 
-<img width="622" alt="Pasted image 20250314164512" src="https://github.com/user-attachments/assets/5b6e9472-d752-414a-8375-926173a131c9" />
+<img width="622" alt="Pasted image 20250314164512" src="https://github.com/user-attachments/assets/1111ef6b-604a-412b-8b43-644df03892ea" />
+
 <br><br>
 
 
@@ -158,7 +159,8 @@ foreach (var a in bpa.AnalyzeAll().ToList())
 sb.Output();
 ```
 
-<img width="766" alt="Pasted image 20250315164412" src="https://github.com/user-attachments/assets/81f40687-4382-416c-a6eb-341abe11a614" />
+
+<img width="766" alt="Pasted image 20250315164412" src="https://github.com/user-attachments/assets/ca163343-21be-4e43-9d4b-dd13fa0716d5" />
 
 
 
@@ -174,9 +176,10 @@ To load Tabular Editor with these rules (so they can be applied to your reports)
 
 4. Close and reopen Tabular Editor
 
-![Pasted image 20240726170921](https://github.com/user-attachments/assets/2a5b86ff-a75a-4483-bdc8-5fbd26bc7672)
+<img width="766" alt="Pasted image 20250315164412" src="https://github.com/user-attachments/assets/1312843c-229f-4433-9f4d-9795065dae57" />
 
-![Pasted image 20240726170929](https://github.com/user-attachments/assets/f78dc0c6-25e7-4e42-8497-9f81890c6b24)
+![Pasted image 20240726170929](https://github.com/user-attachments/assets/1be968cb-7b84-4ccf-b752-3d04d02d0956)
+
 
 
 
@@ -198,23 +201,28 @@ This not only documents your report but also ensures adherence to best practices
 ###### Loading the rules
 
 Click on John Kerski Github, go to **PQ_Rules.json,** click **Raw** and copy the link
-![Pasted image 20250315170325](https://github.com/user-attachments/assets/d1a8e6f4-57ec-4466-8b05-71f8a1fab35c)
+![Pasted image 20250315170325](https://github.com/user-attachments/assets/deffca2e-5d12-4912-b9a2-cfb683a8e791)
+
 
 
 Go to Tabular Editor (2 or 3) - **Tools / Manage BPA rules** and **Include Rule File from URL**
-<img width="410" alt="Pasted image 20250315165831" src="https://github.com/user-attachments/assets/74859cf1-b3f2-411a-a62b-4e7a7cdbd864" />
+<img width="410" alt="Pasted image 20250315165831" src="https://github.com/user-attachments/assets/58677e35-1d0c-45a9-82fa-deabcabee3e3" />
+
 
 
 Copy the link you copied from the raw file.
-<img width="789" alt="Pasted image 20250315165901" src="https://github.com/user-attachments/assets/5052da89-977b-4547-a65d-935dccdf63b6" />
+![Pasted image 20240726170929](https://github.com/user-attachments/assets/de0613fd-8f34-4eb4-ae52-5db3312b2404)
+
 
 Now you can see the rules
-![Pasted image 20250315165940](https://github.com/user-attachments/assets/1e34c0dd-02dd-40b6-b2e7-48038e6d7873)
+![Pasted image 20250315165940](https://github.com/user-attachments/assets/015e50f8-f5ff-4eae-8b89-6fa75926a714)
+
 
 
 These BPA rules not only provide an excellent resource for documenting your reports and demonstrating adherence to best practices, but they also drive you to enhance your in-tool documentation.
 
-![Pasted image 20250315170118](https://github.com/user-attachments/assets/913d8428-7039-46da-a522-97cea985f869)
+![Pasted image 20250315170118](https://github.com/user-attachments/assets/4e980ef8-3c01-4021-b46f-681f5d5d502f)
+
 
 
 #### 3. C# Scripts code
@@ -288,7 +296,8 @@ foreach (var m in Model.AllMeasures) {
 ```
 [You can find the C# script here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/TE%20Scripts/7.%20Copy%20DAX%20in%20field's%20description)
 
-![Pasted image 20250315172622](https://github.com/user-attachments/assets/7090dd22-9d7a-449e-9f10-eb00e553bf60)
+
+![Pasted image 20250315172622](https://github.com/user-attachments/assets/b2cd3cf9-b663-4abb-aef5-7c152f5d9b13)
 
 
 
@@ -331,14 +340,16 @@ using(var daxReader = ExecuteReader(_dmv))
 ```
 [You can find the C# script here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/TE%20Scripts/8.%20Check%20last%20refresh%20time)
 
-![Pasted image 20250315173324](https://github.com/user-attachments/assets/4f9ce10a-ef15-467b-acd3-889fff5587a9)
+![Pasted image 20250315173324](https://github.com/user-attachments/assets/8ff3a777-d202-424e-a4c1-0f3c932bade7)
+
 
 
 ##### 9. Check RI Violations
 [You can find the C# script here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/TE%20Scripts/9.%20Check%20RI%20Violations)
 
+![Pasted image 20250315173433](https://github.com/user-attachments/assets/b820b0c1-66b9-424a-95c2-1fbcb7d8b589)
 
-![Pasted image 20250315173433](https://github.com/user-attachments/assets/218dd179-f376-4f70-bc4d-c78e2ded15b2)
+
 
 
 ##### 10. Extended Date Table from Melissa de Korte

@@ -263,6 +263,7 @@ I created three bookmarks in the demo file.
 
 <br><br>
  PowerOps provides a very useful view where we can see the settings chosen. It's the same information we can obtain if we check the individual bookmarks on Power BI, but in a format we can snip or export easily.
+![Uploading Pasted image 20250406153740.png…]()
 
 
 

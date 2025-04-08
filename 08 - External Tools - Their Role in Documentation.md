@@ -1,5 +1,6 @@
 
-<img width="1920" alt="Issue 8 1" src="https://github.com/user-attachments/assets/65ec72a0-0911-45bf-8e8d-e6322a46b880" /> <br><br>
+ <img width="1920" alt="Issue 8 1" src="https://github.com/user-attachments/assets/4fa50890-197e-41de-9128-4a20bae2c7f8" />
+<br><br>
 
 ##### Table of Contents  
 [External Tools - Their Role in Documentation]() <br>

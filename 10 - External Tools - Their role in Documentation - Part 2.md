@@ -77,17 +77,20 @@ During code reviews, having only essential elements in your model is a key requi
 [Measure Killer | Brunner BI](https://en.brunner.bi/measurekiller)
 
 *An example of "Measure Killer" audit.*<br><br>
-<img width="634" alt="Pasted image 20250405154916" src="https://github.com/user-attachments/assets/35f31d66-85ae-4ec7-b37d-3f15250cb197" />
+<img width="634" alt="Pasted image 20250405154916" src="https://github.com/user-attachments/assets/94ccd58a-01bf-4698-a9bd-dc17fbe82eab" />
+
 
 
 Another feature I appreciate using is the integration and the scoring methodology built on top of Best Practice Analyzer.  
 Ensure your reports avoid the "blood red" classification of "Power BI criminal"! ;)
 
-<img width="388" alt="Pasted image 20250405155427" src="https://github.com/user-attachments/assets/3d34a8a6-0792-47e4-bb25-03c27160fc0c" />
+<img width="388" alt="Pasted image 20250405155427" src="https://github.com/user-attachments/assets/efa6c3bb-1f08-4b05-a255-c21524f7c1fd" />
+
+
+<img width="374" alt="Pasted image 20250405155614" src="https://github.com/user-attachments/assets/1a43a3d8-c534-4a0d-bab1-29ba05eab173" />
 
 
 
-<img width="374" alt="Pasted image 20250405155614" src="https://github.com/user-attachments/assets/670580c4-99bf-4f33-8e2e-64942008549e" />
 
 <br><br>
 
@@ -100,7 +103,8 @@ Ensure your reports avoid the "blood red" classification of "Power BI criminal"!
 
 *Overview of the external tool*
 [Powerops](https://powerops.app/downloads)
-<img width="1274" alt="Pasted image 20250405161028" src="https://github.com/user-attachments/assets/5cd314e7-8bb3-4b95-b660-5e219102998d" />
+<img width="1274" alt="Pasted image 20250405161028" src="https://github.com/user-attachments/assets/d8e983e0-4cae-445f-8ba6-2b1e1017aec3" />
+
 
 
 **Learn more** - *I recommend reading the following article for a more in depth overview:* [Meet Powerops - Your New Best Power BI "External Friend"! - Data Mozart](https://data-mozart.com/meet-powerops-your-new-best-power-bi-external-friend/)
@@ -115,7 +119,8 @@ This tool functions as your "intelligence agent". Imagine inheriting a report wi
 Consider the following jobs: 
 
 - **Visualize Measure Dependencies**: Discover measure branching patterns and measure-to-column relationships
-<img width="581" alt="Pasted image 20250405161513" src="https://github.com/user-attachments/assets/07049f1f-02ea-4166-a603-c478c33a5483" />
+<img width="581" alt="Pasted image 20250405161513" src="https://github.com/user-attachments/assets/501015de-be29-400a-a2a5-26d081ea0844" />
+
 
 <br><br>
 >[!Warning]
@@ -139,21 +144,25 @@ Consider the following jobs:
 <br><br>
 
 *Example of more complex measure branching*
-<img width="739" alt="Pasted image 20250405162624" src="https://github.com/user-attachments/assets/d0bbcdfd-7dfd-449a-8d9f-1f807b6b3e54" />
+<img width="739" alt="Pasted image 20250405162624" src="https://github.com/user-attachments/assets/23f03956-83ed-42d1-b56b-2b56e310875f" />
+
 
 >
 - **Trace Measure Usage**: Identify which measures power each graph or page 
 
-<img width="894" alt="Pasted image 20250405161657" src="https://github.com/user-attachments/assets/14c053f9-a3fc-4c02-9fdd-1b573ef6e944" />
+<img width="894" alt="Pasted image 20250405161657" src="https://github.com/user-attachments/assets/e3c19bda-13d3-4952-a3ee-da870f16fc48" />
+
 
 - **Understand Power Query Dependencies** : Easily visualize your sources 
-<img width="743" alt="Pasted image 20250405161809" src="https://github.com/user-attachments/assets/2457cfe3-ee81-4610-b99a-13c5d3543c8b" />
+<img width="743" alt="Pasted image 20250405161809" src="https://github.com/user-attachments/assets/c5d78836-5568-4488-befe-8d1340385a39" />
+
 
 - **Best Practices Comparison**: Automatically benchmark reports against industry standards
 
 This tool also incorporates Best Practice Analyzer. What I value in this experience is the concise explanation of why each rule constitutes a best practice.
 
-<img width="1135" alt="Pasted image 20250405163812" src="https://github.com/user-attachments/assets/e64603ef-fc96-4c76-abea-529aa85bab08" />
+<img width="1135" alt="Pasted image 20250405163812" src="https://github.com/user-attachments/assets/e315c0f8-b315-4493-a82c-cde7160df149" />
+
 
 
 - **Comprehensive Overview**:
@@ -162,10 +171,12 @@ This tool also incorporates Best Practice Analyzer. What I value in this experie
 	- Action tracking
 	- Custom visual identification
 
-<img width="1160" alt="Pasted image 20250405164911" src="https://github.com/user-attachments/assets/342bd44e-1d03-4707-817d-dbdd4f15cfd0" />
+<img width="1160" alt="Pasted image 20250405164911" src="https://github.com/user-attachments/assets/d259a41d-12ac-4dd4-9cc0-33beda8f98cb" />
 
 
-<img width="1157" alt="Pasted image 20250405164255" src="https://github.com/user-attachments/assets/e5192aa0-5362-4afb-ae45-c73f08a07913" />
+
+<img width="1157" alt="Pasted image 20250405164255" src="https://github.com/user-attachments/assets/a9825187-ff74-4485-8d61-0f0afab0bda9" />
+
 
 <br><br>
 These views offer **a wealth of information in a user-friendly format.** 
@@ -233,27 +244,31 @@ I created three bookmarks in the demo file.
 
 **1st Bookmark** is a straightforward one, it impacts all visuals on the page and their underlying data.
 
-<img width="320" alt="Bookmark1" src="https://github.com/user-attachments/assets/a5c9c7e4-e1fb-4d9c-8ada-72942c47d0c5" />
+<img width="320" alt="Bookmark1" src="https://github.com/user-attachments/assets/32a5103a-ee92-4079-8463-4d010667ff06" />
+
 
 
 <br><br>
 **2nd Bookmark** is a bit more complex. Only 1 visual slicer is impacted by the selected visual
 *UI limits today: what is the selected visual used for the second bookmark?*
 
-<img width="323" alt="Bookmark2" src="https://github.com/user-attachments/assets/33a266d4-4f4b-4aa0-b9ce-89e4746bf618" />
+<img width="323" alt="Bookmark2" src="https://github.com/user-attachments/assets/6011614c-5530-41e5-8798-5667c30cdc61" />
+
 
 <br><br>
 **3rd Bookmark** is what I call "the documentation nightmare". Multiple visuals are impacted by the bookmark, data is not ticked, selection items not renamed or grouped in an intuitive way.
 
-<img width="319" alt="Bookmark3" src="https://github.com/user-attachments/assets/85b900db-bede-4ab6-a300-42efaae36875" />
+<img width="319" alt="Bookmark3" src="https://github.com/user-attachments/assets/fe92d7c4-ffc1-4514-9bab-b34eea1b0a7a" />
+
 
 <br><br>
  PowerOps provides a very useful view where we can see the settings chosen. It's the same information we can obtain if we check the individual bookmarks on Power BI, but in a format we can snip or export easily.
 
-![Pasted image 20250406153740](https://github.com/user-attachments/assets/ae25ffce-c187-4307-b51d-a1d9b9494cf4)
+
 
 export excel
-![Pasted image 20250406154020](https://github.com/user-attachments/assets/4da9a6cc-1cfd-4816-93e5-b9d36c381984)
+![Pasted image 20250406154020](https://github.com/user-attachments/assets/8476d8c2-6a69-4644-ad91-fc7d049ea9c9)
+
 
 
 What we cannot find is information about which visuals were selected in bookmarks. External tools like PowerOps can help document some bookmark aspects, but they still can't fully compensate for Power BI's lack of searchable bookmark metadata, particularly regarding which visuals were selected in each bookmark. This limitation reinforces why proper documentation is essential.
@@ -282,7 +297,8 @@ As the potential of TMDL continues to be uncovered and the community shares new,
 
 [Source post on LinkedIn](https://www.linkedin.com/posts/maxanatsko_powerbi-tmdl-datamodeling-activity-7305923704616611841-BOvZ/?utm_source=share&utm_medium=member_android&rcm=ACoAAAd2rAYBtqG-2bVNWh14j0hOzgmbFYqs3hE)
 
-<img width="938" alt="Pasted image 20250313135846" src="https://github.com/user-attachments/assets/7d09e760-72a5-460d-8c19-8cc25de11b36" />
+<img width="938" alt="Pasted image 20250313135846" src="https://github.com/user-attachments/assets/27e95ea9-5340-4da1-aae8-1a5fa4928eaf" />
+
 
 
 
@@ -298,28 +314,33 @@ In his article [Visualise your Power BI Refresh](https://dax.tips/2021/02/15/vis
 ##### 1. Launch the Traces 
 Begin by initiating the traces to capture events.
 
-![Pasted image 20250325140444](https://github.com/user-attachments/assets/3ae6930e-e9c6-4955-80ef-3607dda1237f)
+![Pasted image 20250325140444](https://github.com/user-attachments/assets/37dd5fa5-bea9-4227-9ec1-91c39a528af2)
 
 
-![Pasted image 20250325140452](https://github.com/user-attachments/assets/f9ee94ea-efc3-48a0-9647-7e28196d3df1)
+
+![Pasted image 20250325140452](https://github.com/user-attachments/assets/cf5e6fcf-4d48-42f3-870a-6f1b8adb9611)
+
 
 
 ##### 2. Trigger the Semantic Model Dataset Refresh and Save XML file 
 Start the refresh process and save the resulting traces. 
 
 Save the trace file
-![Pasted image 20250325140529](https://github.com/user-attachments/assets/5962f7b1-a262-4f69-a923-e84518c12e49)
+![Pasted image 20250325140529](https://github.com/user-attachments/assets/e9eea18c-5dc6-407c-840c-2e786221b68a)
+
 
 ##### 3. Update Parameters
 Use the provided Power BI PBIX (developed by Phil Seamark) and update parameters.
 
-![Pasted image 20250325140547](https://github.com/user-attachments/assets/3e6c6ddb-8188-4e27-9dfd-8ef8504ff3b1)
+![Pasted image 20250325140547](https://github.com/user-attachments/assets/54d0d286-c087-4be1-9838-034a9600414b)
+
 
 
 ##### 4. The results
 Visualize and Document Model Refresh
 
-![Pasted image 20250324181506](https://github.com/user-attachments/assets/2ec1efa7-c467-4459-8ab3-f93577a1074a)
+![Pasted image 20250324181506](https://github.com/user-attachments/assets/5aa82ff2-47c5-4ce7-a0a1-4ab6419a8c28)
+
 
 
 #### Why Visualize and Document Model Refresh?

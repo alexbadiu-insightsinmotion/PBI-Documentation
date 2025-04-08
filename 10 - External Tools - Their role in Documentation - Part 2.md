@@ -350,4 +350,8 @@ Incorporating visual model refresh diagrams into your overall project documentat
 
 In Issue #10, we explored various tools that not only enhance your work but also ensure the quality of your output. We discussed their advantages, what they bring to the table, and how best to leverage them. However, I want to stress again that these tools are not a replacement for proper documentation, they act as accelerators and aides. In a broader sense, they are part of a process driven by a genuine need.
 
-What are your thoughts? Please leave a comment on the LinkedIn post and share your perspective. Let's keep the conversation going.
+💬 Let’s discuss:
+
+What’s your go-to tool for Power BI documentation?
+What’s the biggest challenge you’ve faced in keeping reports well-documented?
+Drop your thoughts in the LinkedIn post: We’d love to keep the discussion going! LinkedIn post: #Issue 10 - External Tools - Their Role in Documentation - Part 2

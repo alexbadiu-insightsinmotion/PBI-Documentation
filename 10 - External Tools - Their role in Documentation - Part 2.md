@@ -1,5 +1,17 @@
 <img width="1920" alt="Issue 10" src="https://github.com/user-attachments/assets/10f0087b-09dd-485c-9270-1ac63176a100" />
 
+##### Table of Contents  
+[External Tools - Their Role in Documentation - part 2]() <br>
+	&nbsp;&nbsp;[1. Measure Killer](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/10%20-%20External%20Tools%20-%20Their%20role%20in%20Documentation%20-%20Part%202.md#1-measure-killer) <br>
+	&nbsp;&nbsp;[2. PowerOps](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/10%20-%20External%20Tools%20-%20Their%20role%20in%20Documentation%20-%20Part%202.md#2-powerops) <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Bookmark Documentation](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/10%20-%20External%20Tools%20-%20Their%20role%20in%20Documentation%20-%20Part%202.md#bookmark-documentation) <br>
+    	&nbsp;&nbsp;[3. TMDL Explorer](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/10%20-%20External%20Tools%20-%20Their%20role%20in%20Documentation%20-%20Part%202.md#3-tmdl-explorer) <br>
+        &nbsp;&nbsp;[4. SQL Server Profiler](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/10%20-%20External%20Tools%20-%20Their%20role%20in%20Documentation%20-%20Part%202.md#4-visualize-model-refresh---sql-server-profiler) <br>
+	&nbsp;&nbsp;[Quick Recap](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/10%20-%20External%20Tools%20-%20Their%20role%20in%20Documentation%20-%20Part%202.md#quick-recap) <br>
+<br><br><br>
+
+   
+
 
 If you're in charge of Power BI development and documentation is "your territory", **you're the one** who makes things happen. You need the right tools to keep your things clean, efficient and under control. 
 

@@ -354,4 +354,4 @@ In Issue #10, we explored various tools that not only enhance your work but also
 
 What’s your go-to tool for Power BI documentation?
 What’s the biggest challenge you’ve faced in keeping reports well-documented?
-Drop your thoughts in the LinkedIn post: We’d love to keep the discussion going! LinkedIn post: #Issue 10 - External Tools - Their Role in Documentation - Part 2
+Drop your thoughts in the LinkedIn post: We’d love to keep the discussion going! LinkedIn post: [#Issue 10 - External Tools - Their Role in Documentation - Part 2](https://www.linkedin.com/posts/alexandru-badiu_powerbi-documentation-dataanalytis-activity-7315308684941688833-7Dn3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAd2rAYBtqG-2bVNWh14j0hOzgmbFYqs3hE)

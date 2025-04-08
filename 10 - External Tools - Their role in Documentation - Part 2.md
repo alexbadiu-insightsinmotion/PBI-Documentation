@@ -33,7 +33,7 @@ This week, we continue our conversation about the role of external tools in docu
 <br><br>
 
 >[!Warning]
-><mark>**A word of caution**: Don't expect an exhaustive list of all tools available —there are many other tools inside or outside the Microsoft ecosystem. I have no allegiances, no strings attached. The opinions are entirely my own. What I'm sharing are practical insights drawn from my actual field experience, deliberately focusing on a highly curated selection of tools.</mark>
+>**A word of caution**: Don't expect an exhaustive list of all tools available —there are many other tools inside or outside the Microsoft ecosystem. I have no allegiances, no strings attached. The opinions are entirely my own. What I'm sharing are practical insights drawn from my actual field experience, deliberately focusing on a highly curated selection of tools.
 <br><br>
 
 Before diving in, I must emphasize **the golden rule: Process is king! No tool performs miracles without a solid process behind it.**

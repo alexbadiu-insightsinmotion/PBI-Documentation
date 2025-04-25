@@ -317,8 +317,9 @@ Good documentation prevents costly rework by ensuring everyone agrees on what pr
 By documenting problems clearly, testing solutions thoroughly, and maintaining good communication with stakeholders, you'll build Power BI solutions that truly deliver value to your organization.
 
 > [!IMPORTANT]
->The entire series aims to establish a comprehensive, standardized process, helping you prioritize what truly matters. We provide in the GitHub shared in the posts comments documentation procedures, processes, practical tips, recommendations, and code snippets to help all developers enhance their documentation practices and become better professionals.
+>To help you dive deeper, I’ve also put together a focused cheat sheet summarizing the key ideas — feel free to explore it here. [Problem Focused Documentation Cheat-Sheet.pdf](https://github.com/user-attachments/files/19904854/Problem.Focused.Documentation.Cheat-Sheet.pdf)
 >
+
 
 
 💬 Let’s discuss:

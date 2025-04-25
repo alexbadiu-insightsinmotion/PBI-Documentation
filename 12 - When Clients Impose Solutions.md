@@ -1,6 +1,29 @@
 
 <img width="1920" alt="Issue 12" src="https://github.com/user-attachments/assets/40b03ce5-3221-4291-9c9c-d5e824e74cc1" />
 
+##### Table of Contents  
+[Documentation: Focusing on PROBLEMS to build better Power BI solutions]() <br>
+	&nbsp;&nbsp;[Why problem-focused documentation works](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#why-problem-focused-documentation-works) <br>
+  &nbsp;&nbsp;[Example: Problem vs. Solution documentation](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#example-problem-vs-solution-documentation) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Solution-focused documentation](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#example-problem-vs-solution-documentation) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Problem-focused documentation](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#example-problem-vs-solution-documentation) <br>
+  &nbsp;&nbsp;[Following Progressive Disclosure Principles](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#following-progressive-disclosure-principles) <br>
+  &nbsp;&nbsp;[Acceptance Testing: Validating your solution](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#acceptance-testing-validating-your-solution) <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1. Define Acceptance Criteria](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#1-define-acceptance-criteria) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2. Data Validation](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#2-data-validation) <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3. Visuals & Interactions Validation](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#3-visuals--interactions-validation) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4. Functional Testing](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#4-functional-testing) <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5. Edge Case testing](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#5-edge-case-testing) <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6. Documentation & Sign-Off](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#6-documentation--sign-off) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7. RACI Matrix](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#7-raci-matrix) <br>
+  &nbsp;&nbsp;[When clients skip the problem and jump to solutions](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#when-clients-skip-the-problem-and-jump-to-solutions) <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Why is this Gauge visualization problematic?](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#why-is-this-gauge-visualization-problematic) <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Better alternatives](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#better-alternatives) <br>
+  &nbsp;&nbsp;[Problem Documentation Framework](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#problem-documentation-framework) <br>
+  &nbsp;&nbsp;[Documentation and Design Thinking Work Together](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#documentation-and-design-thinking-work-together) <br>
+  &nbsp;&nbsp;[Documentation in agile environments](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#documentation-in-agile-environments) <br>
+  &nbsp;&nbsp;[Where to store your documentation for Power BI Projects](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#where-to-store-your-documentation-for-power-bi-projects) <br>
+  &nbsp;&nbsp;[Conclusion](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/12%20-%20When%20Clients%20Impose%20Solutions.md#conclusion) <br>
 
 
 # Documentation: Focusing on PROBLEMS to build better Power BI solutions
@@ -318,6 +341,7 @@ By documenting problems clearly, testing solutions thoroughly, and maintaining g
 
 > [!IMPORTANT]
 >To help you dive deeper, I’ve also put together a focused cheat sheet summarizing the key ideas — feel free to explore it here. [Problem Focused Documentation Cheat-Sheet.pdf](https://github.com/user-attachments/files/19904854/Problem.Focused.Documentation.Cheat-Sheet.pdf)
+> <img width="703" alt="image" src="https://github.com/user-attachments/assets/fa5126fc-6279-4542-85ad-17c8f021fb17" />
 >
 
 

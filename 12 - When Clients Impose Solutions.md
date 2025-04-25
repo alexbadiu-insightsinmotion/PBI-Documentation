@@ -1,5 +1,6 @@
 
-<img width="1920" alt="Issue 12" src="https://github.com/user-attachments/assets/a2c27a8c-e6cd-4be6-9234-2142dfa89d52" />
+<img width="1920" alt="Issue 12" src="https://github.com/user-attachments/assets/40b03ce5-3221-4291-9c9c-d5e824e74cc1" />
+
 
 
 # Documentation: Focusing on PROBLEMS to build better Power BI solutions
@@ -29,7 +30,8 @@ This ensures everyone understands and is aligned on the same goals and can make 
 
 By following these instructions precisely, we’ll build a report page featuring a single map that displays sales by region or state, either as varying-sized bubbles or a filled choropleth map. Each bubble or state can be clicked to drill-through to detailed product-level information. 
 
-<img width="925" alt="image" src="https://github.com/user-attachments/assets/5ea904b0-18e9-4b98-b20b-009d94c36696" />
+<img width="925" alt="Solution First" src="https://github.com/user-attachments/assets/5f60ba32-1185-4eb8-8735-3bc8e03f3597" />
+
 
 
 
@@ -61,7 +63,8 @@ For example, we can:
 <br>
 
 _An initial iteration based on problem-focused documentation_ 
-<img width="605" alt="image" src="https://github.com/user-attachments/assets/3697b8df-cb58-45e7-af0a-c95580ce477b" />
+<img width="925" alt="Problem First" src="https://github.com/user-attachments/assets/0cec8651-11c1-44dd-88c4-5e7d4bb296e1" />
+
 
 <br>
 <br>
@@ -178,7 +181,8 @@ Sometimes clients come with ready-made solutions instead of discussing the probl
 >
 > Users frequently try to impose their own solutions, such as requesting a KPI presented as the following _gauge_ indicator. Although this type of visual may lack relevance, can be confusing, and has a debatable aesthetic appeal, **the client remains the final decision-maker.**
 
-<img width="234" alt="Pasted image 20250422131650" src="https://github.com/user-attachments/assets/b9580a64-1439-496c-b414-11c885aa1a76" />
+<img width="234" alt="Gauge" src="https://github.com/user-attachments/assets/9e040981-81bb-4151-b2e4-b87abaa98a61" />
+
 
 ### Why is this Gauge visualization problematic?
 
@@ -312,8 +316,16 @@ Good documentation prevents costly rework by ensuring everyone agrees on what pr
 
 By documenting problems clearly, testing solutions thoroughly, and maintaining good communication with stakeholders, you'll build Power BI solutions that truly deliver value to your organization.
 
+> [!IMPORTANT]
+>The entire series aims to establish a comprehensive, standardized process, helping you prioritize what truly matters. We provide in the GitHub shared in the posts comments documentation procedures, processes, practical tips, recommendations, and code snippets to help all developers enhance their documentation practices and become better professionals.
+>
+
+
 💬 Let’s discuss:
 
 What’s your go-to tool for Power BI documentation?
 What’s the biggest challenge you’ve faced in keeping reports well-documented?
 Drop your thoughts in the LinkedIn post: We’d love to keep the discussion going! LinkedIn post: [#Issue 12 - When Clients Impose Solutions](https:/linkedin.com)
+
+
+

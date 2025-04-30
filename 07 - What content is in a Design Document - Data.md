@@ -48,7 +48,7 @@ Here's an example:
 Assign an [ID] to each credential set that will be used to access each data source in each environment and the IP address/URL, account name, and password that will be used to connect to it, ideally service accounts created and used exclusively for data access by other services.
 
 > [!NOTE] 
-> *these credentials should refer to* ***system*** *accounts and not personal accounts, as personal accounts can be subject to changes by others outside of the reporting system without notice (e.g., reassignment, promotion/demotion, retirement, leaving, etc.).*
+> *These credentials should refer to* ***system*** *accounts and not personal accounts, as personal accounts can be subject to changes by others outside of the reporting system without notice (e.g., reassignment, promotion/demotion, retirement, leaving, etc.).*
 
 Here's an example:
 

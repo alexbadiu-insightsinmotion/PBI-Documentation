@@ -3,18 +3,18 @@
 
 ##### Table of Contents  
 [Enhancing User Adoption]() <br>
-	&nbsp;&nbsp;[1. Problem Diagnosis]() <br>
-  	&nbsp;&nbsp;[2. How to build a Power BI report promotion strategy]() <br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Define what success looks like]() <br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Identify what end users need to know to feel confident using the report]() <br>
- 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Recap]() <br>
-  	&nbsp;&nbsp;[3. Experience & Onboarding options today]() <br>
-   	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1 Intuitive Design and standardized resources]() <br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Info Buttons : Help at the right time]() <br>
- 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.3 "What’s New" notification : Improve awareness]() <br>
-   	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.4 Release Page : Share the roadmap]() <br>
-   	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.5 Collect feedback directly in Power BI using Apps]() <br>
-   	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.6 Teams Digest to keep users engaged]() <br>
+	&nbsp;&nbsp;[1. Problem Diagnosis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/14%20-%20Enhancing%20User%20Adoption%20-%20Part%201.md#1-problem-diagnosis) <br>
+  	&nbsp;&nbsp;[2. How to build a Power BI report promotion strategy](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/14%20-%20Enhancing%20User%20Adoption%20-%20Part%201.md#2-how-to-build-a-power-bi-report-promotion-strategy) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Define what success looks like](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/14%20-%20Enhancing%20User%20Adoption%20-%20Part%201.md#1-define-what-success-looks-like) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Identify what end users need to know to feel confident using the report](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/14%20-%20Enhancing%20User%20Adoption%20-%20Part%201.md#2-identify-what-end-users-need-to-know-to-feel-confident-using-the-report) <br>
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Recap](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/14%20-%20Enhancing%20User%20Adoption%20-%20Part%201.md#recap-are-you-ready-to-move-to-onboarding) <br>
+  	&nbsp;&nbsp;[3. Experience & Onboarding options today](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/14%20-%20Enhancing%20User%20Adoption%20-%20Part%201.md#2-experience--onboarding-options-today) <br>
+   	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1 Intuitive Design and standardized resources](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/14%20-%20Enhancing%20User%20Adoption%20-%20Part%201.md#1-intuitive-design-and-standardized-resources) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Info Buttons : Help at the right time](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/14%20-%20Enhancing%20User%20Adoption%20-%20Part%201.md#2-info-buttons-help-at-the-right-time) <br>
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.3 "What’s New" notification : Improve awareness](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/14%20-%20Enhancing%20User%20Adoption%20-%20Part%201.md#3-whats-new-notification-improve-awareness) <br>
+   	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.4 Release Page : Share the roadmap](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/14%20-%20Enhancing%20User%20Adoption%20-%20Part%201.md#4-release-page-share-the-roadmap) <br>
+   	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.5 Collect feedback directly in Power BI using Apps](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/14%20-%20Enhancing%20User%20Adoption%20-%20Part%201.md#5-collect-feedback-directly-in-power-bi-using-apps) <br>
+   	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.6 Teams Digest to keep users engaged](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/14%20-%20Enhancing%20User%20Adoption%20-%20Part%201.md#6-teams-digest-to-keep-users-engaged) <br>
 
  
 # Enhancing User Adoption
@@ -103,7 +103,7 @@ If the answer to the second question is **YES** - amazing. **Share your approach
 
 A well-defined approach centered on **purpose, communication, and user engagement** is essential for effectively promoting your report and driving its adoption.
 
-#### 1. Define what success looks like:
+#### 2.1. Define what success looks like:
 
 Start by identifying **how you’ll measure adoption, engagement, and business value**. 
 Ask yourself:
@@ -168,7 +168,7 @@ Ask yourself:
 >
 
 
-#### 2. Identify what end users need to know to feel confident using the report
+#### 2.2. Identify what end users need to know to feel confident using the report
 
 Before users fully trust and adopt your report, they need clarity. They will need answers to a few fundamental questions. It is important to mention that often these questions are unspoken, but they are critical. Addressing these questions upfront reduces friction, increases confidence and leads to higher adoption
 
@@ -240,7 +240,7 @@ If users need to hunt for answers or worse, don’t know what to ask, they’ll 
 
 ---
 
-### Recap: Are You Ready to Move to Onboarding?
+#### 2.3 Recap: Are You Ready to Move to Onboarding?
 
 Before diving into onboarding techniques, let’s take a moment to review the essentials.
 
@@ -256,7 +256,7 @@ Use the checklists below to validate your foundation:
 
 ---
 
-## 2. Experience & Onboarding options today  
+## 3. Experience & Onboarding options today  
 
 
 Let’s get something clear: onboarding isn't just a welcome email or a kickoff session. It's the **user’s journey** the first time (and every time) they open the report. It's **what they see**, **what they understand**, and **what decisions they feel empowered to make**.
@@ -267,7 +267,7 @@ Let’s get something clear: onboarding isn't just a welcome email or a kickoff 
 
 Here’s how:
 
-### 1. Intuitive Design and standardized resources
+### 3.1. Intuitive Design and standardized resources
 
 **Consistency** is what makes a report feel “easy to use” before a single number is read or chart is seen. Great experiences are **predictable**, familiar, and low-friction. That doesn’t happen by accident; it’s the result of **intentional design**.
 
@@ -306,7 +306,7 @@ You don’t need to reinvent the wheel for every project. Create a base of desig
 
 ---
 
-### 2. Info Buttons: Help at the right time
+### 3.2. Info Buttons: Help at the right time
 
 Don’t wait for users to ask for help. Instead, **build help into the report**.
 
@@ -337,7 +337,6 @@ Examples: <br>
 
 
 
-
 🔁 **Best practices:**
 
 - Use a consistent icon (e.g., a question mark in a circle, an ℹ️ info symbol, etc.)
@@ -350,7 +349,7 @@ Examples: <br>
 
 ---
 
-### 3. "What’s New" notification: Improve awareness
+### 3.3. "What’s New" notification: Improve awareness
 
 Whenever your report gets updated, you should **make it visible**.  
 Place a small but noticeable **red badge or “What’s New” button** on the top right corner or navigation pane. Link it to:
@@ -367,7 +366,7 @@ Place a small but noticeable **red badge or “What’s New” button** on the t
 
 ---
 
-### 4. Release Page: Share the roadmap
+### 3.4. Release Page: Share the roadmap
 
 Create a dedicated page in your Power BI report showing:
 
@@ -388,7 +387,7 @@ For inspiration, check out **Miguel Myers’s Core Visuals Vision Board**. Even 
 
 ---
 
-### 5. Collect feedback directly in Power BI using Apps 
+### 3.5. Collect feedback directly in Power BI using Apps 
 
 One of the most effective ways to share and promote Power BI reports is through **Power BI Apps**. 
 
@@ -421,7 +420,7 @@ You can use these forms to:
 
 ---
 
-### 6. Teams Digest to keep users engaged
+### 3.6. Teams Digest to keep users engaged
 
 Email overload is real and it is getting worse. Instead, use **Microsoft Teams** to notify users of important changes directly in a space where they already work.
 

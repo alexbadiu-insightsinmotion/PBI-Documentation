@@ -350,7 +350,7 @@ By documenting problems clearly, testing solutions thoroughly, and maintaining g
 
 What’s your go-to tool for Power BI documentation?
 What’s the biggest challenge you’ve faced in keeping reports well-documented?
-Drop your thoughts in the LinkedIn post: We’d love to keep the discussion going! LinkedIn post: [#Issue 12 - When Clients Impose Solutions](https:/linkedin.com)
+Drop your thoughts in the LinkedIn post: We’d love to keep the discussion going! LinkedIn post: [#Issue 12 - When Clients Impose Solutions](https://www.linkedin.com/posts/alexandru-badiu_powerbi-documentation-dataanalysis-activity-7321464467895029760-VX0C?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAd2rAYBtqG-2bVNWh14j0hOzgmbFYqs3hE)
 
 
 

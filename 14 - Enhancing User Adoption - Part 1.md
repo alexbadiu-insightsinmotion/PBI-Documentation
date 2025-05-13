@@ -1,5 +1,20 @@
 
-<img width="1920" alt="Issue 14 (1)" src="https://github.com/user-attachments/assets/946a2ed2-1a36-4ad9-b71c-c97c4fc980fd" />
+<img width="1920" alt="Issue 14 (User Adoption)" src="https://github.com/user-attachments/assets/188fa5bf-360a-45dd-bb79-e20d6d88ea94" />
+
+##### Table of Contents  
+[Enhancing User Adoption]() <br>
+	&nbsp;&nbsp;[1. Problem Diagnosis]() <br>
+  	&nbsp;&nbsp;[2. How to build a Power BI report promotion strategy]() <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Define what success looks like]() <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Identify what end users need to know to feel confident using the report]() <br>
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Recap]() <br>
+  	&nbsp;&nbsp;[3. Experience & Onboarding options today]() <br>
+   	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1 Intuitive Design and standardized resources]() <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Info Buttons : Help at the right time]() <br>
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.3 "What’s New" notification : Improve awareness]() <br>
+   	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.4 Release Page : Share the roadmap]() <br>
+   	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.5 Collect feedback directly in Power BI using Apps]() <br>
+   	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.6 Teams Digest to keep users engaged]() <br>
 
  
 # Enhancing User Adoption
@@ -316,7 +331,8 @@ Examples: <br>
 
 **How**? 
 *Each comment is a shape whose background and font colors are driven by DAX-based conditional formatting. You can assign each shape a number to define its sequence on the play axis. When the play axis’s current value matches a shape’s number, its background and font colors appear; otherwise, both remain transparent.*
-![Pasted image 20250507174507](https://github.com/user-attachments/assets/eed4b460-d507-4b98-beb0-abd87050e23e)
+![Pasted image 20250507174507](https://github.com/user-attachments/assets/209a75f0-03e7-4ea1-8790-c0436d15a9a4)
+
 
 
 
@@ -362,7 +378,8 @@ Create a dedicated page in your Power BI report showing:
 For inspiration, check out **Miguel Myers’s Core Visuals Vision Board**. Even better, learn how it was built. There are community-created video tutorials and additional resources to help you get started.
 [Core Visuals Vision Board - Tutorials & PBIX | LinkedIn](https://www.linkedin.com/pulse/core-visuals-vision-board-tutorials-pbix-pbicorevisuals-jkwkf/)
 
-![Pasted image 20250507180434](https://github.com/user-attachments/assets/f9c0f63b-bcca-495a-848f-2b06da6daebf)
+![Pasted image 20250507180434](https://github.com/user-attachments/assets/a3071b0a-95e8-4424-b675-5ef4bf0b4d1c)
+
 
 >[!Tip]
 >*Bonus*: You build transparency, even before people ask for it. <br>

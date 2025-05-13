@@ -452,3 +452,11 @@ What if **guides themselves evolved** into something more accessible, easy to cr
 
 And that's where we will focus in the next article. 
 **Stay tuned for part 2.**
+
+
+💬 Let’s discuss:
+
+- What's your most effective tactic for driving report adoption?
+- What adoption challenge has been hardest to overcome?
+
+Drop your thoughts in the LinkedIn post: We’d love to keep the discussion going! LinkedIn post: [#Issue 14 - Enhancing User Adoption - Part 1](https://www.linkedin.com)

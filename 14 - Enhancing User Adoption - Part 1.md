@@ -250,7 +250,7 @@ Before diving into onboarding techniques, let’s take a moment to review the es
 
 Use the checklists below to validate your foundation:
 
-#### ✅ Power BI Report Success Checklist → [Click here to view more details]([#power-bi-report-success-checklist](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Cheat-Sheet/PBI%20Report%20Success%20checklist.pdf))
+#### ✅ Power BI Report Success Checklist → [Click here to view more details](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Cheat-Sheet/PBI%20Report%20Success%20checklist.pdf)
 #### ✅ Power BI User Confidence Checklist → [Under development](#power-bi-user-confidence-checklist)
 
 

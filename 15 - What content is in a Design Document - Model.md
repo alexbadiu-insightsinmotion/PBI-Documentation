@@ -379,7 +379,7 @@ The LinkedIn posts covering the design document are listed below: <br>
 [4. Reports](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7310232246613934082-w7iW) <br>
 [5. Validation](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7317852256215662593-MvcI) <br>
 [6. Deployment](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7322931000085295104-BIIF) <br>
-[7. Model](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7310232246613934082-w7iW) *** FIX *** <br>
+[7. Model](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7330534859825639427-JRdN) <br>
 
 *Samples*
 

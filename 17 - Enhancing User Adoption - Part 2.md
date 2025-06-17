@@ -2,6 +2,21 @@
 
 <img width="1920" alt="Issue 17 1" src="https://github.com/user-attachments/assets/1e908332-8534-4a1e-8300-feb62387e68e" />
 
+##### Table of Contents  
+[Enhancing User Adoption]() <br>
+	&nbsp;&nbsp;[Intro](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/17%20-%20Enhancing%20User%20Adoption%20-%20Part%202.md#intro) <br>
+  	&nbsp;&nbsp;[1. AI-generated Onboarding videos](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/17%20-%20Enhancing%20User%20Adoption%20-%20Part%202.md#1-ai-generated-onboarding-videos) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Why bother?](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/17%20-%20Enhancing%20User%20Adoption%20-%20Part%202.md#why-bother) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.2 How it works](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/17%20-%20Enhancing%20User%20Adoption%20-%20Part%202.md#how-it-works) <br>
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.3 Pros & Cons](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/17%20-%20Enhancing%20User%20Adoption%20-%20Part%202.md#pros--cons) <br>
+  	&nbsp;&nbsp;[2. AI-generated Slide Decks](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/17%20-%20Enhancing%20User%20Adoption%20-%20Part%202.md#2-ai-generated-slide-decks) <br>
+   	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Why slides?](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/17%20-%20Enhancing%20User%20Adoption%20-%20Part%202.md#why-slides) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.2 How it works](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/17%20-%20Enhancing%20User%20Adoption%20-%20Part%202.md#how-it-works-1) <br>
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Why it matters](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/17%20-%20Enhancing%20User%20Adoption%20-%20Part%202.md#why-it-matters-1) <br>
+	&nbsp;&nbsp;[3. What's Next](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/17%20-%20Enhancing%20User%20Adoption%20-%20Part%202.md#3-whats-next) <br>
+	&nbsp;&nbsp;[The Bottom Line](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/17%20-%20Enhancing%20User%20Adoption%20-%20Part%202.md#the-bottom-line) <br>
+	&nbsp;&nbsp;[Conclusion](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/17%20-%20Enhancing%20User%20Adoption%20-%20Part%202.md#conclusion) <br>
+  
 
 ## Enhancing User Adoption – Part 2: AI-powered solutions for rapid onboarding
 

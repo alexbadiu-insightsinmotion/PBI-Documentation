@@ -1,5 +1,6 @@
 
-![[Issue 17 1.png]]
+
+<img width="1920" alt="Issue 17 1" src="https://github.com/user-attachments/assets/1e908332-8534-4a1e-8300-feb62387e68e" />
 
 
 ## Enhancing User Adoption – Part 2: AI-powered solutions for rapid onboarding
@@ -37,20 +38,21 @@ Using **HeyGen** **AI** and **ChatGPT**, I created a two-minute onboarding video
 
 Here’s my process:
 
-1. **Extract**
+1. **Extract** <br>
     I wrote down the report’s essence in bullet points: key metrics, context, navigation tips. I then provided ChatGPT with that outline plus a screenshot of the report. Within seconds, I had a first version of a two-minute script.
     
-2. **Generate  
+2. **Generate**  
     **HeyGen AI** turned the script into a natural-sounding voiceover and let me pick a customizable on-screen avatar.
     
 3. **Integrate**  
     I layered the report screenshot behind the avatar. This process took about 15 minutes. More time and I could have added highlights, zoom ins and other, but the result was good enough for my purpose.
     
-4. **Localize**
+4. **Localize** <br>
     In a real rollout, I’d run an iterative feedback cycle to fine-tune tone and accuracy of the message. I’d also use HeyGen to create multilingual versions for broader reach. That would surely bring some extra points for adoption!
 
 *onboarding video created with AI*
-![[Pasted image 20250616222529.png]]
+<img width="1222" alt="Pasted image 20250616222529" src="https://github.com/user-attachments/assets/a69c169c-8462-4dd9-81bf-9043e1290a74" />
+
 
 ---
 
@@ -123,7 +125,8 @@ Some people prefer consuming information content looking at videos. These videos
 **Down-side:** Layouts can feel generic and not yet pixel perfect.
 
 *Slide deck created with AI based on this blog post*
-![[Pasted image 20250616223004.png]]
+<img width="1147" alt="Pasted image 20250616223004" src="https://github.com/user-attachments/assets/7a5aa571-42e8-4e4c-b8aa-7c228d0b7f21" />
+
 
 #### Why it matters
 
@@ -146,19 +149,19 @@ For rapid Power BI onboarding, AI-generated decks mean trainers can create tailo
 - **Interactive Walkthroughs**  
     Imagine an AI agent embedded inside a Power BI that guides each user, step by step, through your reports, adapting in real time to their clicks, filters, and selections.
 
-- **AI Voice**
+- **AI Voice** <br>
 	Voice interfaces could let in the future first-time users narrate their data journey, like speaking aloud what they see and feeding recommendations later back to developers. The system might prompt end users to describe the order of on-screen elements they see, test how they perceive and understand certain KPIs (“What does this metric represent?”), or state their goal before any clicks (“How do I filter by region?”). This live, conversational feedback loop delivers an incredible experience: an always-on AI coach that feels like an expert sitting beside you, in the language of your choice.
 
 - **Automated Review**  
     Next-gen AI may analyze your data model and auto-generate daily "summarized news" podcast with topics you care about, propose tutorial scripts and examples, propose user journeys for better UX/UI experience, propose improvements, spot on weaknesses and risks, perform tests & accuracy, send notifications to Teams with proposed solutions and perform them after validation, etc.
     
-- **Translytical Feature in Fabric**
+- **Translytical Feature in Fabric** <br>
     With Fabric’s translytical new feature, Power BI can not only visualize but also trigger Python UDFs directly from the tool. The simulations built for analysis in Power BI can now be stored and shared after validation. Any data-driven actions that you can think about is now possible. AI assistants will help generate and refine Python code, making advanced analytics accessible to every data analyst.
 
-- **Templates & Component re use**
+- **Templates & Component re use** <br>
 	Future copilots will recommend and even auto-insert your organization’s proven patterns: bilingual layouts, accessibility alerts, Deneb visuals, and best-practice UDF snippets drawn from your own company's collective intelligence.
 
-- **Governance, Documentation & Collaboration** 
+- **Governance, Documentation & Collaboration** <br>
 	As AI capabilities multiply, a robust governance framework, clear documentation of prompts and processes, and iterative review cycles will be essential to maintain control, ensure quality, and drive sustainable adoption.
 
 

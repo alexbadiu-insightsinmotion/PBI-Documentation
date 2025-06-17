@@ -65,7 +65,7 @@ Here’s my process:
 4. **Localize** <br>
     In a real rollout, I’d run an iterative feedback cycle to fine-tune tone and accuracy of the message. I’d also use HeyGen to create multilingual versions for broader reach. That would surely bring some extra points for adoption!
 
-*onboarding video created with AI*
+[*Onboarding video created with AI*](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Presentations/Formula%201%20video.mp4) 
 <img width="1222" alt="Pasted image 20250616222529" src="https://github.com/user-attachments/assets/a69c169c-8462-4dd9-81bf-9043e1290a74" />
 
 
@@ -139,7 +139,7 @@ Some people prefer consuming information content looking at videos. These videos
 **Up-side:** Fast, consistent, well designed.  
 **Down-side:** Layouts can feel generic and not yet pixel perfect.
 
-*Slide deck created with AI based on this blog post*
+[*Slide deck created with AI based on this blog post*](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Presentations/Issue17%20Generated%20PDF.pdf) 
 <img width="1147" alt="Pasted image 20250616223004" src="https://github.com/user-attachments/assets/7a5aa571-42e8-4e4c-b8aa-7c228d0b7f21" />
 
 

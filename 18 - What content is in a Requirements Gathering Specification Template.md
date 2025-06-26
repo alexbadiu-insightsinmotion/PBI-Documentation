@@ -1,4 +1,4 @@
-<<< INSERT TITLE IMAGE >>>
+![18 - Image - Title - Requirements Gathering Specification Templates](https://github.com/user-attachments/assets/43f99a32-f757-470f-bee6-42c760d518fa)
 
 ***What content is in a Requirements Gathering Specification Template?***
 

@@ -94,5 +94,5 @@ The LinkedIn post covering the covering the requirements gathering specification
 
 Sample requirements gathering specification templates are available in the GitHub repo:
 <br>
-[1. Requirements Template - Power BI Report](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Design%20Document%20-%20Sample%20Fragment%2006%20-%20Model%20-%20V0.7.docx) *** FIX *** <br>
-[2. Requirements Template - Power BI Environment](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Design%20Document%20-%20Sample%20Power%20BI%20File.pbix) *** FIX *** <br>
+[1. Requirements Template - Power BI Report](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Requirements%20Template%20-%20Power%20BI%20Report%20-%20V0.81.docx) <br>
+[2. Requirements Template - Power BI Environment](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Requirements%20Template%20-%20Power%20BI%20Environment%20-%20V0.82.docx) <br>

@@ -88,7 +88,7 @@ To serve as a starting point for the development of a new Power BI environment (
 
 The LinkedIn post covering the covering the requirements gathering specification templates is:
 <br>
-[Requirements Gathering Specification Templates](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7310232246613934082-w7iW) *** FIX *** <br><br>
+[Requirements Gathering Specification Templates](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7343958251413139461-FgAL) <br><br>
 
 *Samples*
 

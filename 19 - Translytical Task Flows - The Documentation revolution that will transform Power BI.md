@@ -1,5 +1,6 @@
 
-<img width="1920" alt="Issue 19" src="https://github.com/user-attachments/assets/195ff0e7-9d4d-4d12-a75e-4f1873a319b6" />
+<img width="1920" alt="Issue 19" src="https://github.com/user-attachments/assets/215e1958-e899-4a9b-9c21-8d43780cb0d7" />
+
 
 
 ### *How Microsoft's newest capability transforms analytics from passive reporting to active business operation and why your documentation strategy must evolve to avoid operational chaos*

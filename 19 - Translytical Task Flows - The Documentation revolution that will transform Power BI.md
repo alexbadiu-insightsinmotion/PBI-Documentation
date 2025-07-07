@@ -21,16 +21,16 @@ Microsoft's Translytical Task Flows represent the most significant evolution in 
 
 ### Table of Contents
 
-1. [Introduction: The evolution we've been waiting for](#introduction)
-2. [What Are Translytical Task Flows and why should you care?](#what-are-translytical)
-3. [Six game-changing capabilities and their potential](#capabilities)
-4. [Step-by-Step implementation guide](#implementation)
-5. [Why Documentation matters more than ever](#documentation-importance)
+1. [Introduction: The evolution we've been waiting for](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/19%20-%20Translytical%20Task%20Flows%20-%20The%20Documentation%20revolution%20that%20will%20transform%20Power%20BI.md#1-introduction-the-evolution-weve-been-waiting-for)
+2. [What Are Translytical Task Flows and why should you care?](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/19%20-%20Translytical%20Task%20Flows%20-%20The%20Documentation%20revolution%20that%20will%20transform%20Power%20BI.md#2-what-are-translytical-task-flows-and-why-should-you-care)
+3. [Six game-changing capabilities and their potential](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/19%20-%20Translytical%20Task%20Flows%20-%20The%20Documentation%20revolution%20that%20will%20transform%20Power%20BI.md#3-six-game-changing-capabilities-and-their-potential)
+4. [Step-by-Step implementation guide](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/19%20-%20Translytical%20Task%20Flows%20-%20The%20Documentation%20revolution%20that%20will%20transform%20Power%20BI.md#4-step-by-step-implementation-guide)
+5. [Why Documentation matters more than ever](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/19%20-%20Translytical%20Task%20Flows%20-%20The%20Documentation%20revolution%20that%20will%20transform%20Power%20BI.md#5-why-documentation-matters-more-than-ever)
 6. [How Documentation requirements transform](#documentation-transformation)
-7. [Best practices for Translytical documentation](#best-practices)
-8. [Practical implementation approach](#practical-approach)
-9. [Future evolution: AI and dynamic documentation](#future-evolution)
-10. [Conclusion: Documentation as strategic asset](#conclusion)
+7. [Best practices for Translytical documentation](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/19%20-%20Translytical%20Task%20Flows%20-%20The%20Documentation%20revolution%20that%20will%20transform%20Power%20BI.md#7-best-practices-for-translytical-documentation)
+8. [Practical implementation approach](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/19%20-%20Translytical%20Task%20Flows%20-%20The%20Documentation%20revolution%20that%20will%20transform%20Power%20BI.md#8-practical-implementation-approach)
+9. [Future evolution: AI and dynamic documentation](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/19%20-%20Translytical%20Task%20Flows%20-%20The%20Documentation%20revolution%20that%20will%20transform%20Power%20BI.md#9-future-evolution-ai-and-dynamic-documentation)
+10. [Conclusion: Documentation as strategic asset](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/19%20-%20Translytical%20Task%20Flows%20-%20The%20Documentation%20revolution%20that%20will%20transform%20Power%20BI.md#10-conclusion-documentation-as-a-strategic-asset)
 
 ### 1. Introduction: The evolution we've been waiting for
 
@@ -194,7 +194,8 @@ Annotations become living documentation within the report itself. We need to est
 
  **[Maxim Anatsko's Line Chart Annotation Demo](https://www.linkedin.com/posts/maxanatsko_powerbi-powerbi-microsoftfabric-activity-7339708262474305537-Q-33)** - Shows how to annotate line charts with native writeback
 
-<img width="303" alt="Pasted image 20250628165628" src="https://github.com/user-attachments/assets/24dacff1-66cd-4ff3-ad62-5e397ac5c3a1" />
+<img width="303" alt="Pasted image 20250628165628" src="https://github.com/user-attachments/assets/8378dbfe-0b5c-46b8-89ad-26b3e662535f" />
+
 
 
 

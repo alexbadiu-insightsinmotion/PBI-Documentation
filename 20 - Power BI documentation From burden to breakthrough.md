@@ -3,16 +3,17 @@
 
 ### Table of Contents
 
-1. [Introduction: The documentation problem that's killing us](#introduction)
-2. [The revolution: Second Brain meets AI](#what-are-translytical)
-3. [x](#capabilities)
-4. [xx](#implementation)
-5. [xxx](#documentation-importance)
-6. [xxxx](#documentation-transformation)
-7. [xxxxx](#best-practices)
-8. [xxx](#practical-approach)
-9. [xxx](#future-evolution)
-10. [x](#conclusion)
+1. [Introduction: The documentation problem that's killing us](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/20%20-%20Power%20BI%20documentation%20From%20burden%20to%20breakthrough.md#1-the-documentation-problem-thats-killing-us)
+2. [The revolution: Second Brain meets AI](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/20%20-%20Power%20BI%20documentation%20From%20burden%20to%20breakthrough.md#2-the-revolution-second-brain-meets-ai)
+3. [Enter the game changers](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/20%20-%20Power%20BI%20documentation%20From%20burden%20to%20breakthrough.md#3-enter-the-game-changers)
+4. [The AI breakthrough](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/20%20-%20Power%20BI%20documentation%20From%20burden%20to%20breakthrough.md#4-the-ai-breakthrough)
+5. [The 60 second revolution](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/20%20-%20Power%20BI%20documentation%20From%20burden%20to%20breakthrough.md#5-the-60-second-revolution)
+6. [The multiplier effect](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/20%20-%20Power%20BI%20documentation%20From%20burden%20to%20breakthrough.md#6-the-multiplier-effect)
+7. [Beyond documentation: Strategic advantage](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/20%20-%20Power%20BI%20documentation%20From%20burden%20to%20breakthrough.md#7-beyond-documentation-strategic-advantage)
+8. [The movement starts now](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/20%20-%20Power%20BI%20documentation%20From%20burden%20to%20breakthrough.md#8-the-movement-starts-now)
+9. [Common questions](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/20%20-%20Power%20BI%20documentation%20From%20burden%20to%20breakthrough.md#9-common-questions)
+10. [How to](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/20%20-%20Power%20BI%20documentation%20From%20burden%20to%20breakthrough.md#10-how-to)
+11. [Conclusion](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/20%20-%20Power%20BI%20documentation%20From%20burden%20to%20breakthrough.md#conclusion)
 
 
 ## 1. The documentation problem that's killing us

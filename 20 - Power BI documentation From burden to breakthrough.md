@@ -1,5 +1,19 @@
 
-<img width="1920" height="960" alt="Issue 21" src="https://github.com/user-attachments/assets/10f08ee1-735b-4ef8-9994-300051b90466" />
+<img width="1920" height="960" alt="Issue 20" src="https://github.com/user-attachments/assets/8d1bfab7-f027-4a7b-a288-164c71b36ac9" />
+
+### Table of Contents
+
+1. [Introduction: The documentation problem that's killing us](#introduction)
+2. [The revolution: Second Brain meets AI](#what-are-translytical)
+3. [x](#capabilities)
+4. [xx](#implementation)
+5. [xxx](#documentation-importance)
+6. [xxxx](#documentation-transformation)
+7. [xxxxx](#best-practices)
+8. [xxx](#practical-approach)
+9. [xxx](#future-evolution)
+10. [x](#conclusion)
+
 
 ## 1. The documentation problem that's killing us
 
@@ -85,11 +99,13 @@ You've captured six months of Power BI insights in your notes. Random observatio
 **Obsidian** becomes your knowledge center. Using templates eliminates blank page syndrome. You know exactly what you need to do. Smart search finds that DAX pattern you used six months ago. Graph view reveals connections between projects you never noticed. Properties track the context time, author, and the spark of inspiration that led to each solution.
 
 *Graph view Obsidian* <br>
-<img width="598" height="586" alt="Pasted image 20250727172242" src="https://github.com/user-attachments/assets/91fda790-c1b0-48d7-b41e-b0504180cf90" />
+<img width="598" height="586" alt="Pasted image 20250727172242" src="https://github.com/user-attachments/assets/da897bbf-fc21-4be7-8611-0d60ad97ff2c" />
+
 
 
 *Properties added to a template* <br>
-<img width="344" height="387" alt="Pasted image 20250727172457" src="https://github.com/user-attachments/assets/913ddadc-5325-40fa-87fc-8992058c85a3" />
+<img width="344" height="387" alt="Pasted image 20250727172457" src="https://github.com/user-attachments/assets/d9820007-95c8-413d-8c26-61407915e8cb" />
+
 
 
 > [!IMPORTANT] 
@@ -233,7 +249,7 @@ Use the documentation template created in Obsidian/Notion.
 Use it on a project.  <br>
 Improve it. **Share your results** ! <br>
 
-You can find an example of the generated [template here](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Power%20BI%20Environment%20Specification%20Template.docx) == UPDATE HERE ==  
+You can find an example of the generated [template here](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Cheat-Sheet/Power%20BI%20Project%20Documentation%20Template.md)  
 
 > [!TIP]  
 > A markdown generated template will be added in the repository as an example.

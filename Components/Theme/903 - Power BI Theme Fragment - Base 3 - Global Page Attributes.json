@@ -1,0 +1,38 @@
+{
+  "name": "Custom Theme 903 - Global Page Attributes",
+  "dataColors": ["#0B31A5", "#0641C8", "#0050EB", "#0078ED", "#008CEE", "#009FEF", "#46B3F3", "#8BC7F7"],
+  "good": "#00FF00",
+  "bad": "#FF0000",
+  "neutral": "#FFFF00",
+  "maximum": "#118DFF",
+  "center": "#D9B300",
+  "minimum": "#DEEFFF",
+  "visualStyles": {
+    "page": {
+      "*": {
+        "pageSize": [
+          {
+            "pageSizeTypes": "Custom",
+            "pageSizeWidth": 1600,
+            "pageSizeHeight": 900
+          }
+        ],
+        "displayArea": [
+          {
+            "verticalAlignment": "Middle"
+          }
+        ],
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F0F0F0"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

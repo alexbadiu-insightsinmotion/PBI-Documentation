@@ -1,0 +1,188 @@
+{
+  "name": "Basic Theme - Global Attributes",
+  "dataColors": ["#0B31A5", "#0641C8", "#0050EB", "#0078ED", "#008CEE", "#009FEF", "#46B3F3", "#8BC7F7"],
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F0F0F0"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "*": {
+      "*": {
+        "*": [
+          {
+            "wordWrap": false,
+            "rectangleRoundedCurve": 8,
+            "roundEdge": 8
+          }
+        ],
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E3E3E3"
+              }
+            },
+            "width": 1,
+            "radius": 8
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#969696"
+              }
+            },
+            "preset": "Custom",
+            "shadowSpread": 1,
+            "shadowBlur": 4,
+            "angle": 0,
+            "shadowDistance": 0,
+            "transparency": 70
+          }
+        ],
+        "general": [
+          {
+            "keepLayerOrder": true,
+            "responsive": false,
+            "responsiveLegacy": false
+          }
+        ],
+        "outline": [
+          {
+            "transparency": 0
+          }
+        ],
+        "padding": [
+          {
+            "top": 10,
+            "bottom": 10,
+            "left": 10,
+            "right": 10
+          }
+        ],
+        "legend": [
+          {
+            "show": true,
+            "showTitle": false,
+            "fontFamily": "Segoe UI",
+            "fontSize": 8,
+            "labelColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "position": "TopLeft"
+          }
+        ],
+        "selection": [
+          {
+            "selectAllCheckboxEnabled": true
+          }
+        ],
+        "slicerSettings": [
+          {
+            "multiselect": true
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "fontFamily": "Segoe UI",
+            "fontSize": 12,
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "bold": true,
+            "italic": false,
+            "underline": false,
+            "alignment": "left",
+            "heading": "Normal",
+            "titleWrap": false,
+            "text": "<<< TEST - TITLE PLACEHOLDER >>>"
+          }
+        ],
+        "categoryAxis": [
+          {
+            "show": true,
+            "showAxisTitle": false,
+            "fontFamily": "Segoe UI",
+            "fontSize": 10,
+            "labelColor": {
+              "solid": {
+                "color": "#969696"
+              }
+            },
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "gridlineShow": true
+          }
+        ],
+        "valueAxis": [
+          {
+            "show": true,
+            "showAxisTitle": false,
+            "fontFamily": "Segoe UI",
+            "fontSize": 10,
+            "labelColor": {
+              "solid": {
+                "color": "#969696"
+              }
+            },
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "gridlineShow": true
+          }
+        ],
+        "labels": [
+          {
+            "show": true,
+            "fontFamily": "Segoe UI",
+            "fontSize": 8,
+            "color": {
+              "solid": {
+                "color": "#C9C9C9"
+              }
+            },
+            "bold": false,
+            "italic": false,
+            "underline": false,
+            "labelPrecision": 0
+          }
+        ]
+      }
+    }
+  }
+}

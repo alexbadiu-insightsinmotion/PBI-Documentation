@@ -30,11 +30,13 @@ I then saved the Power BI report under the PBIP Format in a Folder called DemoDa
 
 Let's open this report in Visual Studio Code and have a look at the PBIR bookmark JSON
 
-<img width="375" height="348" alt="Pasted image 20250901131852" src="https://github.com/user-attachments/assets/7493707e-4c88-404c-b494-2fa46c1e6748" />
+<img width="375" height="348" alt="Pasted image 20250901131852" src="https://github.com/user-attachments/assets/35b0542f-93cb-44de-8331-8a4b7c679bd2" />
+
 
 *Open Folder > Chose the folder > DemoDataset*
 
-<img width="695" height="509" alt="Pasted image 20250901132221" src="https://github.com/user-attachments/assets/1eb4b8bc-137e-4dc7-b0f8-a028f5788004" />
+<img width="695" height="509" alt="Pasted image 20250901132221" src="https://github.com/user-attachments/assets/f35ecebc-18bd-47b2-8552-a484455b9fbe" />
+
 
 
 The report definition is stored inside the `definition\` folder with the following structure: (bookmark first, pages and visuals second)
@@ -485,11 +487,11 @@ Using Visual Studio Code, I can easily access the bookmark's JSON structure.
 ### Step 2: Add the bookmark and the page to the AI context chat in Visual Studio Code
 
 
-<img width="608" height="599" alt="Pasted image 20250729160823" src="https://github.com/user-attachments/assets/bdfbe1d4-8c20-4072-a7b6-a917a15c1937" />
+**IMAGE**
 
 
 ### Step 3: Choose your LLM of choice
-<img width="257" height="142" alt="Pasted image 20250901134123" src="https://github.com/user-attachments/assets/50b6e8c9-b5bf-4046-89e3-77937205658a" />
+**IMAGE**
 
 
 ### Step 4: Add the following prompt
@@ -588,12 +590,12 @@ Organize related bookmarks into groups. The group names appear in the JSON as `p
 Add a new visual after creating your bookmark and test the behavior. This will reveal whether your bookmark truly applies to "all visuals" or just the selected ones.
 
 **I did this exercise to 'test' what I learned. I added a new visual (scatter chart) and hid it on the page**
- <img width="1945" height="598" alt="Pasted image 20250729171021" src="https://github.com/user-attachments/assets/99ec5251-726c-4d8b-8fd0-3446aae36b30" />
+**IMAGE**
 
 
 **When I navigate to other bookmarks and back to Reset Filters I see again the visual.**
 
-<img width="969" height="389" alt="Pasted image 20250729171117" src="https://github.com/user-attachments/assets/486bd7a5-e9ff-4d7b-a38a-98fd702c631e" />
+**IMAGE**
 
 
 **Observation:**
@@ -629,11 +631,11 @@ To further demonstrate the power of this documentation approach, I tested it on 
 
 **Details**: There selection on the Gender slicer is set to "Male". The clustered bar chart is filtered to "North America". There is no visibility selection on the ribbon chart. This means that when the user navigates to the "RibbonChart" bookmark and then back to the "FocusSpecific" bookmark, instead of seeing the clustered bar chart, he/she will see the ribbon chart filtered on "North America". A filter applied to all pages for the year 2019 completes this complex bookmark behavior.
 
-<img width="1060" height="398" alt="Pasted image 20250729175157" src="https://github.com/user-attachments/assets/eed92e59-81b2-470a-b356-ec04d06c2086" />
+**IMAGE**
 
 
 'FocusSpecific' changes when we navigate to the 'Ribbon Chart' bookmark first and then back to 'FocusSpecific'
-<img width="569" height="439" alt="Pasted image 20250902171223" src="https://github.com/user-attachments/assets/68b2806f-1f94-435c-897f-59a9f9380a9e" />
+**IMAGE**
 
 
 

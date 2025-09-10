@@ -487,11 +487,13 @@ Using Visual Studio Code, I can easily access the bookmark's JSON structure.
 ### Step 2: Add the bookmark and the page to the AI context chat in Visual Studio Code
 
 
-**IMAGE**
+<img width="608" height="599" alt="Pasted image 20250729160823" src="https://github.com/user-attachments/assets/a8731b20-0579-4545-a7ec-687202bab855" />
+
 
 
 ### Step 3: Choose your LLM of choice
-**IMAGE**
+<img width="257" height="142" alt="Pasted image 20250901134123" src="https://github.com/user-attachments/assets/d649c9c3-5ef5-4ce2-bde4-af6638373483" />
+
 
 
 ### Step 4: Add the following prompt
@@ -590,12 +592,13 @@ Organize related bookmarks into groups. The group names appear in the JSON as `p
 Add a new visual after creating your bookmark and test the behavior. This will reveal whether your bookmark truly applies to "all visuals" or just the selected ones.
 
 **I did this exercise to 'test' what I learned. I added a new visual (scatter chart) and hid it on the page**
-**IMAGE**
+<img width="1945" height="598" alt="Pasted image 20250729171021" src="https://github.com/user-attachments/assets/ec781a59-d2f3-409e-9ec1-3800b12bd38a" />
+
 
 
 **When I navigate to other bookmarks and back to Reset Filters I see again the visual.**
 
-**IMAGE**
+<img width="969" height="389" alt="Pasted image 20250729171117" src="https://github.com/user-attachments/assets/6ebc3ee2-4c8f-4c8d-b92d-dc43ac4a8a3e" />
 
 
 **Observation:**
@@ -631,11 +634,13 @@ To further demonstrate the power of this documentation approach, I tested it on 
 
 **Details**: There selection on the Gender slicer is set to "Male". The clustered bar chart is filtered to "North America". There is no visibility selection on the ribbon chart. This means that when the user navigates to the "RibbonChart" bookmark and then back to the "FocusSpecific" bookmark, instead of seeing the clustered bar chart, he/she will see the ribbon chart filtered on "North America". A filter applied to all pages for the year 2019 completes this complex bookmark behavior.
 
-**IMAGE**
+<img width="1060" height="398" alt="Pasted image 20250729175157" src="https://github.com/user-attachments/assets/89465279-75ee-457b-b070-7ff6dc77b0fb" />
+
 
 
 'FocusSpecific' changes when we navigate to the 'Ribbon Chart' bookmark first and then back to 'FocusSpecific'
-**IMAGE**
+<img width="569" height="439" alt="Pasted image 20250902171223" src="https://github.com/user-attachments/assets/6b78cbe6-6750-442c-a1eb-5e724868b380" />
+
 
 
 

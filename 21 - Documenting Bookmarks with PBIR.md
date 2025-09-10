@@ -1,4 +1,5 @@
-![Issue #21](https://github.com/user-attachments/assets/8d486788-761e-45c4-b026-66296aff5411)
+
+![Issue #21](https://github.com/user-attachments/assets/d39b541e-ef45-48cd-88ca-15466fd1cd82)
 
 
 # Documenting Power BI bookmarks: From PBIR JSON to clear documentation
@@ -14,7 +15,8 @@ PBIR is associated with **Power BI Project files (.pbip)**, which store reports
 When creating bookmarks in Power BI, the UI can be misleading. I discovered this firsthand when analyzing a "**Reset Filters**" bookmark that appeared to apply to "**All Visuals**" in the UI but behaved differently in the JSON.
 
 
-<img width="516" height="353" alt="Pasted image 20250729162114" src="https://github.com/user-attachments/assets/5140b6bb-aa07-477d-937b-a5c6ee19b28e" />
+<img width="516" height="353" alt="Pasted image 20250729162114" src="https://github.com/user-attachments/assets/a127debe-a809-477f-a8a8-4c164b84e07f" />
+
 
 How I created the bookmark: **I selected all items in the page to make sure it applies to all visuals and pressed Update** with the above settings. 
 I then saved the Power BI report under the PBIP Format in a Folder called DemoDataset.

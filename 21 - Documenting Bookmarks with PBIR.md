@@ -632,7 +632,7 @@ Add a new visual after creating your bookmark and test the behavior. This will r
 To further demonstrate the power of this documentation approach, I tested it on a more sophisticated bookmark that would have been much trickier to document manually. 
 
 
-**Details**: There selection on the Gender slicer is set to "Male". The clustered bar chart is filtered to "North America". There is no visibility selection on the ribbon chart. This means that when the user navigates to the "RibbonChart" bookmark and then back to the "FocusSpecific" bookmark, instead of seeing the clustered bar chart, he/she will see the ribbon chart filtered on "North America". A filter applied to all pages for the year 2019 completes this complex bookmark behavior.
+**Details**: The selection on the Gender slicer is set to "Male". The clustered bar chart is filtered to "North America". There is no visibility selection on the ribbon chart. This means that when the user navigates to the "RibbonChart" bookmark and then back to the "FocusSpecific" bookmark, instead of seeing the clustered bar chart, he/she will see the ribbon chart filtered on "North America". A filter applied to all pages for the year 2019 completes this complex bookmark behavior.
 
 <img width="1060" height="398" alt="Pasted image 20250729175157" src="https://github.com/user-attachments/assets/89465279-75ee-457b-b070-7ff6dc77b0fb" />
 

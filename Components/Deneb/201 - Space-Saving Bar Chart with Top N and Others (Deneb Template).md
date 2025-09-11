@@ -277,16 +277,16 @@ This template displays a number of Deneb/Vega-Lite features, including:
 
 2 - Bar:
 - a ***bar*** mark using a named style with:
-	- conditional colour (for top N, Power BI theme colour 1; grey for *Other*)
-	- conditional opacity (for top N, 1 - rank/12; 1 for *Other*)
+	- ***conditional colour*** (for top N, Power BI theme colour 1; grey for *Other*)
+	- ***conditional opacity*** (for top N, 1 - rank/12; 1 for *Other*)
 	- X-axis with 
 		- conditional label and grid colour (transparent) to *hide* the zero entry
-		- Power BI formatting for the axis labels
+		- ***Power BI formatting*** for the axis labels
 
 3 - Data Label:
 - a ***text*** mark using a named style with:
 	- an X position of the category aggregate value
-	- Power BI formatting for the aggregate value
+	- ***Power BI formatting*** for the aggregate value
 
 In addition, many configuration values were set in the ***Config*** section, including both axis formats and named styles.
 
@@ -313,4 +313,3 @@ Here's an example Power BI file using the template with two different datasets:
     - data label format changed to "#0,,.0 M" (millions) (line 182)
 
 [901.2 - PBIX - Deneb Example - Space-Saving Bar Chart with Top N and Others](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/901.2%20-%20Deneb%20Reusable%20Components%20-%20Space-Saving%20Bar%20Chart%20with%20Top%20N%20and%20Others%20-%20V1.8.1.pbix)
-

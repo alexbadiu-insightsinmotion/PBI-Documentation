@@ -280,7 +280,7 @@ This template displays a number of Deneb/Vega-Lite features, including:
 	- ***conditional colour*** (for top N, Power BI theme colour 1; grey for *Other*)
 	- ***conditional opacity*** (for top N, 1 - rank/12; 1 for *Other*)
 	- X-axis with 
-		- conditional label and grid colour (transparent) to *hide* the zero entry
+		- ***conditional label and grid colour*** (transparent) to *hide* the zero entry
 		- ***Power BI formatting*** for the axis labels
 
 3 - Data Label:

@@ -277,7 +277,7 @@ In addition, many configuration values were set in the ***Config*** section, inc
 
 Here's the template:
 
-[JSON - Deneb Template - Space-Saving Bar Chart with Top N and Others](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Components/Deneb/901%20-%20BEFORE%20RELEASE%20-%20deneb_template.space_saving_bar_chart_with_top_n_and_others.v1.json) *** CONFIRM/FIX ***
+[901.1 - JSON - Deneb Template - Space-Saving Bar Chart with Top N and Others](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/901.1%20-%20deneb_template.space_saving_bar_chart_with_top_n_and_others.v1.8.1.json)
 
 <br>
 
@@ -293,5 +293,5 @@ Here's an example Power BI file using the template with two different datasets:
     - X-axis format changed to "#0,,. M" (millions) (line 138)
     - data label format changed to "#0,,.0 M" (millions) (line 182)
 
-[PBIX - Deneb Example - Space-Saving Bar Chart with Top N and Others](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Components/Deneb/901%20-%20BEFORE%20RELEASE%20-%20Deneb%20Reusable%20Components%20-%20Space-Saving%20Bar%20Chart%20with%20Top%20N%20and%20Others%20-%20V1.pbix) *** CONFIRM/FIX ***
+[901.2 - PBIX - Deneb Example - Space-Saving Bar Chart with Top N and Others](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/901.2%20-%20Deneb%20Reusable%20Components%20-%20Space-Saving%20Bar%20Chart%20with%20Top%20N%20and%20Others%20-%20V1.8.1.pbix)
 

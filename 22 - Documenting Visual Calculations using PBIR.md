@@ -1,6 +1,7 @@
 
 
-![Issue #22](https://github.com/user-attachments/assets/6080e843-a82c-4932-b757-2c4e4d3e75ad)
+
+<img width="955" height="478" alt="Pasted image 20250911155155" src="https://github.com/user-attachments/assets/f26f8d5c-b327-478a-b440-c1254b119780" />
 
 
 Power BI Visual Calculations represent an important shift in how we approach analytics within reports. While they offer incredible simplicity and performance benefits, they introduce a new challenge: **visibility and documentation**. Unlike traditional DAX measures that appear in model metadata, Visual Calculations are hidden within individual visuals, making them difficult to inventory, understand, and maintain at scale.
@@ -104,7 +105,8 @@ This format makes financial information accessible to non-financial stakeholders
 
 Finally, I find very attractive the combination of numeric precision with visual clarity to make financial information more actionable and digestible. 
 
-<img width="814" height="417" alt="Pasted image 20250910114822" src="https://github.com/user-attachments/assets/9967d37a-54c1-4897-b4a7-116aafb65c2b" />
+<img width="814" height="417" alt="Pasted image 20250910114822" src="https://github.com/user-attachments/assets/487832f7-e0bf-48fd-8a3f-a15f84176238" />
+
 
 
 <br><br><br>
@@ -120,7 +122,8 @@ One of the first steps is to **identify which visuals contain visual calculation
 
 Using Visual Studio Code, add the entire report to your chat context and use this prompt: <br>
 
-<img width="275" height="335" alt="Pasted image 20250910121509" src="https://github.com/user-attachments/assets/70389bfe-f2e2-4cca-9971-a14c3a056ac4" />
+<img width="275" height="335" alt="Pasted image 20250910121509" src="https://github.com/user-attachments/assets/b2455be9-9b43-4875-a5fc-0422fd6dc8a1" />
+
 
 
 
@@ -131,19 +134,22 @@ Scan all pages and identify which visuals contain visual calculations
 
 This gives you a complete inventory across your entire report. 
 
-<img width="443" height="212" alt="Pasted image 20250910121556" src="https://github.com/user-attachments/assets/0a404495-5542-4711-824d-5081055dabe0" />
+<img width="443" height="212" alt="Pasted image 20250910121556" src="https://github.com/user-attachments/assets/cd0398f0-ab51-41b3-ba0f-6182eeb52db5" />
+
 
 
 <br><br>
 As a best practice, it's highly recommended that you familiarize yourself with the various properties available to you.
-<img width="1270" height="676" alt="Pasted image 20250910114058" src="https://github.com/user-attachments/assets/9cb53ce2-88a8-48e4-b9de-3bbc399bec0f" />
+<img width="1270" height="676" alt="Pasted image 20250910114058" src="https://github.com/user-attachments/assets/76b77965-285c-40b0-87ff-fd245178ae46" />
+
 
 
 >**Tip**
 > Quick method to identify the technical name of a visual when creating documentation.
 
 Go to **File > Options and settings > Report settings > Report objects** and enable the _Copy object names when right clicking on report objects_ setting. This only needs to be done once.
-<img width="867" height="685" alt="Pasted image 20250913162954" src="https://github.com/user-attachments/assets/1d312cd9-e947-415d-8057-7fbfeffd16e6" />
+<img width="867" height="685" alt="Pasted image 20250913162954" src="https://github.com/user-attachments/assets/5c521dea-a5e0-428a-91c3-0138c0633f34" />
+
 
 
 Right click on any report object and select _Copy object name_.
@@ -159,7 +165,8 @@ With the object name copied to your clipboard, you can easily enter it into the 
 
 For each visual containing Visual Calculations, **add the specific visual JSON file to your chat context** and use this comprehensive prompt:
 
-<img width="522" height="667" alt="Pasted image 20250913163636" src="https://github.com/user-attachments/assets/0e87e34c-d44d-4cb5-9931-f1c83b7d50ca" />
+<img width="522" height="667" alt="Pasted image 20250913163636" src="https://github.com/user-attachments/assets/eae744b7-653f-49f8-9c73-0bea8aacb7b5" />
+
 
 <br><br>
 

@@ -669,7 +669,7 @@ This template displays a number of Deneb/Vega-Lite features, including:
 
 Here's the template:
 
-[902.1 - JSON - Deneb Template - Bullet Chart ](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Components/Deneb/902%20-%20BEFORE%20RELEASE%20-%20deneb_template.bullet_chart.v1.json) *** CONFIRM/FIX ***
+[902.1 - JSON - Deneb Template - Bullet Chart ](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/902.1%20-%20deneb_template.bullet_chart.v1.8.1.json)
 
 <br>
 
@@ -678,6 +678,8 @@ Here's an example Power BI file using the template:
   - no changes in Deneb
   - the Power BI container size was changed to suit the increased number of datset selections
 
-[902.2 - PBIX - Deneb Example - Bullet Chart](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Components/Deneb/902%20-%20BEFORE%20RELEASE%20-%20Deneb%20Reusable%20Components%20-%20Bullet%20Chart%20-%20V1.pbix) *** CONFIRM/FIX ***
+[902.2 - PBIX - Deneb Example - Bullet Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/902.2%20-%20Deneb%20Reusable%20Components%20-%20Bullet%20Chart%20-%20V1.8.1.pbix)
 
 *-- eof*
+
+==============================================================================

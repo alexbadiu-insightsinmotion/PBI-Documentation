@@ -1,0 +1,567 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "information": {
+      "uuid": "f3c7581f-3949-4343-a9ef-6ab4617305f8",
+      "generated": "2025-09-17T12:43:08.399Z",
+      "previewImageBase64PNG": "data:image/png;base64,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",
+      "name": "Bullet Chart",
+      "description": "Overlapping bar chart by channel, another aggregated bar for total sales, and a 50% tick mark",
+      "author": "Greg Philps"
+    },
+    "deneb": {
+      "build": "1.8.1.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "6.1.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "selectionMode": "simple",
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "config": "{\r\n  \"view\": {\r\n    \"stroke\": null\r\n  },\r\n  \"axisY\": {\r\n    \"ticks\": false,\r\n    \"grid\": false,\r\n    \"domain\": false,\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelFontSize\": 12,\r\n    \"labelColor\": \"#4A4A4A\",\r\n    \"title\": null,\r\n    // horizontally offset the Y axis labels from the categories\r\n    \"labelPadding\": 4\r\n  },\r\n  \"axisX\": {\r\n    \"ticks\": false,\r\n    \"grid\": true,\r\n    \"domain\": false,\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelFontSize\": 10,\r\n    \"titleFont\": \"Segoe UI\",\r\n    \"titleFontSize\": 10,\r\n    \"titleColor\": \"#999999\",\r\n    \"titlePadding\": 15,\r\n    \"gridOpacity\": 1,\r\n    \"gridWidth\": 0.5\r\n  },\r\n  \"legend\": {\r\n    \"orient\": \"top-left\",\r\n    \"direction\": \"horizontal\",\r\n    \"title\": null,\r\n    \"offset\": 10,\r\n    \"padding\": 0,\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelFontSize\": 12,\r\n    \"labelColor\": \"#4A4A4A\",\r\n    \"symbolSize\": 120\r\n  },\r\n  \"title\": {\r\n    \"font\": \"Segoe UI\",\r\n    \"fontSize\": 24,\r\n    \"fontWeight\": \"bold\",\r\n    \"fontStyle\": \"italic\",\r\n    \"color\": \"#4A4A4A\",\r\n    \"subtitleFont\": \"Segoe UI\",\r\n    \"subtitleFontSize\": 12,\r\n    \"subtitleFontWeight\": \"normal\",\r\n    \"subtitleFontStyle\": \"italic\",\r\n    \"subtitleColor\": \"#969696\"\r\n  },\r\n  \"style\": {\r\n    \"_divider_rule_style\": {\r\n      \"color\": \"#969696\"\r\n    },\r\n    \"_total_bar_style\": {\r\n      \"cornerRadiusEnd\": 4,\r\n      \"opacity\": 1,\r\n      \"color\": \"#F5F5F5\",\r\n      \"stroke\": \"#E0E0E0\",\r\n      \"strokeWidth\": 0.5\r\n    },\r\n    \"_total_data_label_style\": {\r\n      \"align\": \"left\",\r\n      \"dx\": 4,\r\n      \"font\": \"Segoe UI\",\r\n      \"fontSize\": 10,\r\n      \"color\": \"#333333\",\r\n      \"fontWeight\": \"normal\"\r\n    },\r\n    \"_50_percent_total_tick_style\": {\r\n      \"thickness\": 2,\r\n      \"color\": \"black\"\r\n    },\r\n    \"_category1_bar_style\": {\r\n      \"cornerRadiusEnd\": 4,\r\n      \"opacity\": 0.9,\r\n      \"color\": {\r\n        \"expr\": \"pbiColor(0)\"\r\n      }\r\n    },\r\n    \"_category2_bar_style\": {\r\n      \"cornerRadiusEnd\": 4,\r\n      \"opacity\": 0.9,\r\n      \"color\": {\r\n        \"expr\": \"pbiColor(1)\"\r\n      }\r\n    },\r\n    \"_category3_bar_style\": {\r\n      \"cornerRadiusEnd\": 4,\r\n      \"opacity\": 0.9,\r\n      \"color\": {\r\n        \"expr\": \"pbiColor(2)\"\r\n      }\r\n    }\r\n  }\r\n}",
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Country",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__1__",
+        "name": "Channel",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__2__",
+        "name": "Total Sales",
+        "description": "",
+        "kind": "measure",
+        "type": "numeric"
+      }
+    ]
+  },
+  "title": {
+    "anchor": "start",
+    "align": "left",
+    "offset": 10,
+    "text": "Bullet Chart",
+    "subtitle": "Displays the total and channel sales, along with a vertical bar at the 50% mark of total sales to add context"
+  },
+  // set the desired padding (0 used to minimize white space)
+  "padding": {
+    "top": 0,
+    "bottom": 0,
+    "left": 0,
+    "right": 0
+  },
+  // dataset (from Power BI)
+  "data": {
+    "name": "dataset"
+  },
+  // extend dataset with country sales, 50% country sales, channel sales ratio, country rank, and composite label
+  "transform": [
+    // calculate country sales, 50% country sales, and channel sales ratio
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "__2__",
+          "as": "_country_sales"
+        }
+      ],
+      "groupby": [
+        "__0__"
+      ]
+    },
+    {
+      "calculate": "datum['_country_sales'] / 2",
+      "as": "_50_percent_country_sales"
+    },
+    {
+      "calculate": "datum['__2__'] / datum['_country_sales']",
+      "as": "_channel_sales_ratio"
+    },
+    // calculate country rank
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "_country_rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "_country_sales",
+          "order": "descending"
+        }
+      ]
+    },
+    // compose a composite label (rank-category)
+    {
+      "calculate": "pad( datum['_country_rank'], 2, '0', 'left' ) + '-' + datum['__0__']",
+      "as": "_country_rank_and_label"
+    }
+  ],
+  // set the vertical space between concatenated visuals
+  "spacing": 10,
+  // vertically concatenate a custom legend and a bullet chart
+  "vconcat": [
+    {
+      "name": "DIVIDER",
+      "width": 520,
+      "height": 10,
+      // hard-code a single-record dataset
+      "data": {
+        "values": [
+          {
+            "id": 1
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "xOffset": -100,
+        "style": "_divider_rule_style"
+      },
+      "encoding": {
+        "y": {
+          "datum": 2,
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "axis": null
+        },
+        "x": {
+          "datum": -100,
+          "axis": null
+        },
+        "x2": {
+          "datum": 100
+        }
+      }
+    },
+    {
+      "name": "LEGEND",
+      "width": 480,
+      "height": 10,
+      // hard-code the legend dataset
+      "data": {
+        "values": [
+          {
+            "legend_id": 1,
+            "legend_size": 1,
+            "legend_label": "Total"
+          },
+          {
+            "legend_id": 2,
+            "legend_size": 1,
+            "legend_label": "50% Total"
+          },
+          {
+            "legend_id": 3,
+            "legend_size": 1,
+            "legend_label": "Export"
+          },
+          {
+            "legend_id": 4,
+            "legend_size": 1,
+            "legend_label": "Distributor"
+          },
+          {
+            "legend_id": 5,
+            "legend_size": 1,
+            "legend_label": "Wholesale"
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        // set the radius to 0 to hide the visual but show the legend
+        "radius": 0
+      },
+      "encoding": {
+        "theta": {
+          "field": "legend_size",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "legend_label",
+          "type": "nominal",
+          // use a custom scale to set the colours
+          "scale": {
+            "domain": [
+              "Total",
+              "50% Total",
+              "Export",
+              "Distributor",
+              "Wholesale"
+            ],
+            "range": [
+              "#EEEEEE",
+              "black",
+              {
+                "expr": "pbiColor(0)"
+              },
+              {
+                "expr": "pbiColor(1)"
+              },
+              {
+                "expr": "pbiColor(2)"
+              }
+            ]
+          },
+          "legend": {
+            // use a conditional symbol type
+            "symbolType": {
+              "expr": "datum.value == 'Total' ? 'square' : datum.value == '50% Total' ? 'stroke' : 'circle'"
+            },
+            // if a "line" (that is, a "stroke") is one of the symbols used, set the stroke colour to a value, and the others to "transparent"
+            "symbolStrokeColor": {
+              "expr": "datum.value == '50% Total' ? 'black' : 'transparent'"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BULLET_CHART",
+      "width": 480,
+      "height": 490,
+      // locate shared (common) X and Y encoding outside layer block
+      "encoding": {
+        "y": {
+          "field": "_country_rank_and_label",
+          "type": "nominal",
+          "axis": {
+            "tickCount": 5,
+            // extract just the category from the composite label
+            "labelExpr": "slice( datum.value, 3, 100 )"
+          }
+        },
+        "x": {
+          "title": "Sales",
+          "type": "quantitative",
+          "axis": {
+            "tickCount": 5,
+            // don't show the X axis = 0 label (make it transparent)
+            "labelColor": {
+              "expr": "datum.value == 0 ? 'transparent' : '#C9C9C9'"
+            },
+            // don't show the X axis = 0 grid line (make it transparent)
+            "gridColor": {
+              "expr": "datum.value == 0 ? 'transparent' : '#8A8A8A'"
+              // "expr": "datum.value == 0 ? 'transparent' : '#EEEEEE'"
+            },
+            "formatType": "pbiFormat",
+            // adjust Power BI format string as desired to suit dataset
+            "format": "0,,. M"
+          }
+        }
+      },
+      // layer block for 5 marks (total, 50% total, export, distributor, wholesale)
+      "layer": [
+        {
+          "name": "COUNTRY_TOTAL_SALES_HALO",
+          // return only a single row per country
+          "transform": [
+            { // choose any channel; "Export" is chosen in this example
+              "filter": "datum['__1__'] == 'Export'"
+            }
+          ],
+          "mark": {
+            "type": "bar",
+            "height": {
+              "band": 0.7
+            },
+            "color": "white"
+          },
+          "encoding": {
+            "x": {
+              "field": "_country_sales",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "name": "COUNTRY_TOTAL_SALES",
+          // return only a single row per country
+          "transform": [
+            { // choose any channel; "Export" is chosen in this example
+              "filter": "datum['__1__'] == 'Export'"
+            }
+          ],
+          "mark": {
+            "type": "bar",
+            "height": {
+              "band": 0.6
+            },
+            "tooltip": true,
+            "style": "_total_bar_style"
+          },
+          "encoding": {
+            "x": {
+              "field": "_country_sales",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "__0__"
+              },
+              {
+                "field": "_country_sales",
+                "title": "__2__",
+                "formatType": "pbiFormat",
+                // adjust Power BI format string as desired to suit dataset
+                "format": "#,##0."
+              }
+            ]
+          }
+        },
+        {
+          "name": "COUNTRY_TOTAL_SALES_LABEL_BACKGROUND",
+          // return only a single row per country
+          "transform": [
+            {
+              "filter": "datum['__1__'] == 'Export'"
+            }
+          ],
+          "mark": {
+            "type": "rect",
+            "align": "left",
+            "width": 40,
+            "height": 20,
+            "color": "white"
+          },
+          "encoding": {
+            "x": {
+              "field": "_country_sales",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "_country_rank_and_label",
+              "type": "nominal",
+              "sort": {
+                "field": "_country_rank",
+                "order": "ascending"
+              }
+            }
+          }
+        },
+        {
+          "name": "COUNTRY_TOTAL_SALES_LABELS",
+          // return only a single row per country
+          "transform": [
+            {
+              "filter": "datum['__1__'] == 'Export'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "style": "_total_data_label_style"
+          },
+          "encoding": {
+            "x": {
+              "field": "_country_sales",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "_country_rank_and_label",
+              "type": "nominal",
+              "sort": {
+                "field": "_country_rank",
+                "order": "ascending"
+              }
+            },
+            "text": {
+              "field": "_country_sales",
+              "type": "quantitative",
+              "formatType": "pbiFormat",
+              // adjust Power BI format string as desired to suit dataset
+              "format": "0,,. M"
+            }
+          }
+        },
+        {
+          "name": "50_PERCENT_COUNTRY_SALES",
+          // return only a single row per country
+          "transform": [
+            {
+              "filter": "datum['__1__'] == 'Export'"
+            }
+          ],
+          "mark": {
+            "type": "tick",
+            "height": {
+              "band": 0.6
+            },
+            "style": "_50_percent_total_tick_style"
+          },
+          "encoding": {
+            "x": {
+              "field": "_50_percent_country_sales",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "name": "EXPORT_SALES",
+          // return only a single row per country
+          "transform": [
+            {
+              "filter": "datum['__1__'] == 'Export'"
+            }
+          ],
+          "mark": {
+            "type": "bar",
+            "tooltip": true,
+            "height": {
+              "band": 0.5
+            },
+            "style": "_category1_bar_style"
+          },
+          "encoding": {
+            "x": {
+              "field": "__2__",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "__0__"
+              },
+              {
+                "field": "_channel_sales_ratio",
+                "title": "Export Ratio",
+                "formatType": "pbiFormat",
+                // adjust Power BI format string as desired to suit dataset
+                "format": "#%"
+              },
+              {
+                "field": "__2__",
+                "title": "Export Sales",
+                "formatType": "pbiFormat",
+                // adjust Power BI format string as desired to suit dataset
+                "format": "#,##0."
+              },
+              {
+                "field": "_country_sales",
+                "title": "__2__",
+                "formatType": "pbiFormat",
+                // adjust Power BI format string as desired to suit dataset
+                "format": "#,##0."
+              }
+            ]
+          }
+        },
+        {
+          "name": "DISTRIBUTOR_SALES",
+          // return only a single row per country
+          "transform": [
+            {
+              "filter": "datum['__1__'] == 'Distributor'"
+            }
+          ],
+          "mark": {
+            "type": "bar",
+            "tooltip": true,
+            "height": {
+              "band": 0.35
+            },
+            "style": "_category2_bar_style"
+          },
+          "encoding": {
+            "x": {
+              "field": "__2__",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "__0__"
+              },
+              {
+                "field": "_channel_sales_ratio",
+                "title": "Distributor Ratio",
+                "formatType": "pbiFormat",
+                // adjust Power BI format string as desired to suit dataset
+                "format": "#%"
+              },
+              {
+                "field": "__2__",
+                "title": "Distributor Sales",
+                "formatType": "pbiFormat",
+                // adjust Power BI format string as desired to suit dataset
+                "format": "#,##0."
+              },
+              {
+                "field": "_country_sales",
+                "title": "__2__",
+                "formatType": "pbiFormat",
+                // adjust Power BI format string as desired to suit dataset
+                "format": "#,##0."
+              }
+            ]
+          }
+        },
+        {
+          "name": "WHOLESALE_SALES",
+          // return only a single row per country
+          "transform": [
+            {
+              "filter": "datum['__1__'] == 'Wholesale'"
+            }
+          ],
+          "mark": {
+            "type": "bar",
+            "tooltip": true,
+            "height": {
+              "band": 0.2
+            },
+            "style": "_category3_bar_style"
+          },
+          "encoding": {
+            "x": {
+              "field": "__2__",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "__0__"
+              },
+              {
+                "field": "_channel_sales_ratio",
+                "title": "Wholesale Ratio",
+                "formatType": "pbiFormat",
+                // adjust Power BI format string as desired to suit dataset
+                "format": "#%"
+              },
+              {
+                "field": "__2__",
+                "title": "Wholesale Sales",
+                "formatType": "pbiFormat",
+                // adjust Power BI format string as desired to suit dataset
+                "format": "#,##0."
+              },
+              {
+                "field": "_country_sales",
+                "title": "__2__",
+                "formatType": "pbiFormat",
+                // adjust Power BI format string as desired to suit dataset
+                "format": "#,##0."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

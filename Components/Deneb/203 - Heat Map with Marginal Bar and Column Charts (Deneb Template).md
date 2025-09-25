@@ -462,9 +462,12 @@ This template displays a number of Deneb/Vega-Lite features, including:
 
 Here's the template:
 
-[JSON - Deneb Template - Heat Map with Marginal Bar and Column Charts ](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Components/Deneb/903%20-%20BEFORE%20RELEASE%20-%20deneb_template.heat_map_with_marginal_bar_and_column_charts.v1.json) *** CONFIRM/FIX ***
+[903.1 - JSON - Deneb Template - Heat Map with Marginal Bar and Column Charts ](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/903.1%20-%20deneb_template.heat_map_with_marginal_bar_and_column_charts.v1.8.1.json)
 
 <br>
 
-[PBIX - Deneb Example - Heat Map with Marginal Bar and Column Charts](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Components/Deneb/903%20-%20BEFORE%20RELEASE%20-%20Deneb%20Reusable%20Components%20-%20Heat%20Map%20with%20Marginal%20Bar%20and%20Column%20Charts%20-%20V1.pbix) *** CONFIRM/FIX ***
+Here's an example Power BI file using the template:
 
+[903.2 - PBIX - Deneb Example - Heat Map with Marginal Bar and Column Charts ](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/903.2%20-%20Deneb%20Reusable%20Components%20-%20Heat%20Map%20with%20Marginal%20Bar%20and%20Column%20Charts%20-%20V1.8.1.pbix)
+
+*- eof*

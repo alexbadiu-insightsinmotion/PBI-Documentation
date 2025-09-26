@@ -11,7 +11,7 @@ Before starting, ensure all stakeholders can easily reference the design documen
 - Use a common format (e.g., Microsoft Word, etc.) to ensure the content can be easily read
 - Use a common location (e.g., SharePoint, etc.) to ensure the content can be easily found/accessed
 
-The design document is not just of use during development (i.e., a "one-and-done"), but it is a living, breathing document. Update the content as necesssary to reflect the reports’ state over time as it is used in production. (The design document can also be a valuable resource for those on future projects.)
+The design document is not just of use during development (i.e., a "one-and-done"), but it is a living, breathing document. Update the content as necessary to reflect the reports’ state over time as it is used in production. (The design document can also be a valuable resource for those on future projects.)
 
 **Summary**
 
@@ -125,3 +125,4 @@ A sample document fragment covering these sections is available at:
 [Design Document - Sample Fragment 01 - General and Scope -](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Design%20Document%20-%20Sample%20Fragment%2001%20-%20General%20and%20Scope%20-%20V0.1.docx)
 
 #PowerBI, #DocumentationMatters, #DataAnalytics
+

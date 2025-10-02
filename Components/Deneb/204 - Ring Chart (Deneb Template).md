@@ -331,13 +331,17 @@ This template displays a number of Deneb/Vega-Lite features, including:
 		- total label (alignment, font size, colour)
 		- total value (alignment, font size, colour)		
 
+
 ### Links:
 
 Here's the template:
 
-[JSON - Deneb Template - Ring Chart](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Components/Deneb/905%20-%20BEFORE%20RELEASE%20-%20deneb_template.ring_chart.v1.json) *** CONFIRM/FIX ***
+[904.1 - JSON - Deneb Template - Ring Chart ](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/904.1%20-%20deneb_template.ring_chart.v1.8.1.json)
 
 <br>
 
-[PBIX - Deneb Example - Ring Chart](https://github.com/alexbadiu-insightsinmotion/Documentation/blob/main/Components/Deneb/905%20-%20BEFORE%20RELEASE%20-%20Deneb%20Reusable%20Components%20-%20Ring%20Chart%20-%20V1.pbix) *** CONFIRM/FIX ***
+Here's an example Power BI file using the template:
 
+[904.2 - PBIX - Deneb Example - Ring Chart ](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/904.2%20-%20Deneb%20Reusable%20Components%20-%20Ring%20Chart%20-%20V1.8.1.pbix)
+
+*- eof*

@@ -322,7 +322,7 @@ This template displays a number of Deneb/Vega-Lite features, including:
 - configuration values set for:
 	- border (colour set to null)
  	- title style
-  - - legend style
+    - legend style
 	- named styles:
   		- divider (colour)
 		- ring background (starting radians = 0, ending radians = 2 * PI, colour, opacity)

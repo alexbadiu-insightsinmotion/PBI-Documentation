@@ -64,7 +64,7 @@ The LinkedIn posts covering specific areas of the Power BI theme file are listed
 [103 - How do you specify Circular Charts and Cards in a Power BI JSON Theme file?](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7373669687638859777-KZTg) <br>
 [104 - How do you specify Slicers, Tables and Matrices in a Power BI JSON Theme file?](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7376225981377957889-8ayy) <br>
 [105 - How do you specify Other Native Visuals and Custom Visuals in a Power BI JSON Theme file?](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7378735827834650624-WX5F) <br>
-[106 - How do you enable and use Organizational Themes in Power BI?](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7378735827834650624-WX5F) *** FIX *** <br>
+[106 - How do you enable and use Organizational Themes in Power BI?](https://www.linkedin.com/posts/gregphilps_powerbi-documentationmatters-dataanalytics-activity-7381300506129825793-qOkk) <br>
 
 *Samples*
 

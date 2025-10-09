@@ -1,5 +1,6 @@
 
-<img width="1950" height="1068" alt="Issue #300" src="https://github.com/user-attachments/assets/09516213-c1d3-425e-8aac-ee266d1710b6" />
+
+<img width="1950" height="1068" alt="Issue #300" src="https://github.com/user-attachments/assets/79411a6d-88e8-48d9-a14b-f4342333f0bb" />
 
 
 
@@ -139,7 +140,8 @@ If you are using a Power BI Desktop update older than September 2025
 
 TMDL View was announced GA **late September 2025**. As of the September 2025 release, TMDL View will appear by default in PBI Desktop because it's now a standard, permanent feature.
 
-<img width="493" height="335" alt="Pasted image 20251006145117" src="https://github.com/user-attachments/assets/8d6c2e95-8ec1-4e1c-829c-43a29ddf3898" />
+<img width="493" height="335" alt="Pasted image 20251006145117" src="https://github.com/user-attachments/assets/1051fb18-346e-4775-89f2-c97c4d953555" />
+
 
 
 **When to Use TMDL View:**
@@ -166,7 +168,8 @@ TMDL as a file format transforms how you save and manage Power BI projects, enab
 2. Preview features > Check "Store semantic model using TMDL format"
 3. When saving as PBIP, select "Upgrade" to TMDL
 
-<img width="584" height="465" alt="Pasted image 20251006145435" src="https://github.com/user-attachments/assets/f57f3464-e316-42d3-a3a4-2edef673e743" />
+<img width="584" height="465" alt="Pasted image 20251006145435" src="https://github.com/user-attachments/assets/13cb6388-bf03-4753-9ffe-032c8a1e528a" />
+
 
 
 **When to Use TMDL Format:**

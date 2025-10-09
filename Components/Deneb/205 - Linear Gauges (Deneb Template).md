@@ -711,14 +711,14 @@ The first option template displays a number of Deneb/Vega-Lite features, includi
 		- hard-coded values for the X axis labels (20, 40, 60, 80)
 		- *conditional* fill colour set by segment (performance zone) using Power Bi theme colours (7, 5, 1)
 
-2 - Segment Labels:
+3 - Segment Labels:
 - a ***transform*** block with:
 	- a ***filter*** transform to reduce the dataset by including only segment midpoints (i.e., 3 records)
 	- a ***bar*** mark with:
 		- a named style
-        -  a hard-coded Y value to position the segment labels above the columns
+        - a hard-coded Y value to position the segment labels above the columns
 
-3 - Config:
+4 - Config:
 - configuration values set for:
 	- border (colour [stroke] set to null)
 	- X axis (no domain, no ticks, no grid, label font family, label font size)

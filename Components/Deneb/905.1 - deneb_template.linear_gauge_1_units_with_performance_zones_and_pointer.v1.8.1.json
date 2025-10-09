@@ -1,0 +1,275 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "information": {
+      "uuid": "b850749f-94c8-49fb-923f-4d1d29b2796f",
+      "generated": "2025-10-06T17:33:00.775Z",
+      "previewImageBase64PNG": "data:image/png;base64,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",
+      "name": "Linear Gauge - Option 1 - Units (with performance zones and pointer)",
+      "description": "[No Description Provided]",
+      "author": "Greg Philps"
+    },
+    "deneb": {
+      "build": "1.8.1.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "6.1.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "selectionMode": "simple",
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "config": "{\n  \"autosize\": {\n    \"type\": \"fit\",\n    \"resize\": true,\n    \"contains\": \"padding\"\n  },\n  \"view\": {\n    \"stroke\": null\n  },\n  \"axisX\": {\n    \"ticks\": false,\n    \"grid\": false,\n    \"domain\": true,\n    \"labelFont\": \"Segoe UI\",\n    \"labelFontSize\": 16,\n    \"tickOffset\": -4\n  },\n  \"title\": {\n    \"font\": \"Segoe UI\",\n    \"fontSize\": 14,\n    \"fontWeight\": \"bold\",\n    \"fontStyle\": \"italic\",\n    \"color\": \"#4A4A4A\",\n    \"subtitleFont\": \"Segoe UI\",\n    \"subtitleFontSize\": 14,\n    \"subtitleFontWeight\": \"normal\",\n    \"subtitleFontStyle\": \"italic\",\n    \"subtitleColor\": \"#969696\"\n  },\n  \"style\": {\n    \"_divider_rule_style\": {\n      \"color\": \"#969696\"\n    },\n    \"_column_chart_style\": {\n      \"cornerRadius\": 10,\n      \"stroke\": \"white\"\n    },\n    \"_rule_style\": {\n      \"color\": \"#969696\"\n    },\n    \"_symbol_style\": {\n      \"color\": {\n        \"expr\": \"pbiColor(0)\"\n      },\n      \"filled\": true\n    },\n    \"_symbol_label_style\": {\n      \"fontSize\": 12,\n      \"color\": \"black\",\n      \"baseline\": \"top\"\n    },\n    \"_segment_label_style\": {\n      \"fontSize\": 16,\n      \"color\": \"#969696\"\n    }\n  }\n}",
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Percentage",
+        "description": "",
+        "kind": "column",
+        "type": "numeric"
+      }
+    ]
+  },
+  // text and position only; formatting done in "config\title"
+  "title": {
+    "anchor": "start",
+    "align": "left",
+    "offset": 10,
+    "text": "Option 1 - Units (with performance zones and pointer)"
+  },
+  // multiple datasets
+  "data": {
+    // dataset (for X-axis - hard-coded - 100 records)
+    "sequence": {
+      "start": 1,
+      "stop": 101,
+      "step": 1,
+      "as": "_x2"
+    },
+    // dataset (for Percentage - from Power BI - 1 record)
+    "name": "dataset"
+  },
+  "params": [
+    {
+      "name": "_segment_0",
+      "value": 0
+    },
+    {
+      "name": "_segment_1",
+      "value": 33
+    },
+    {
+      "name": "_segment_2",
+      "value": 66
+    },
+    {
+      "name": "_segment_3",
+      "value": 100
+    },
+    {
+      "name": "_segment_1_mid",
+      "expr": "_segment_0 + floor( ( _segment_1 - _segment_0 ) / 2 )"
+    },
+    {
+      "name": "_segment_2_mid",
+      "expr": "_segment_1 + floor( ( _segment_2 - _segment_1 ) / 2 )"
+    },
+    {
+      "name": "_segment_3_mid",
+      "expr": "_segment_2 + floor( ( _segment_3 - _segment_2 ) / 2 )"
+    }
+  ],
+  "transform": [
+    {
+      // compose composite dataset
+      "lookup": "_threshold",
+      "from": {
+        "data": {
+          "name": "dataset"
+        },
+        "key": "_x2",
+        "fields": [
+          "__0__"
+        ]
+      }
+    },
+    {
+      "calculate": "datum['_x2'] - 1",
+      "as": "_x1"
+    },
+    {
+      "calculate": "datum['_x1'] <= _segment_1 ? 'Low' : datum['_x1'] <= _segment_2 ? 'Medium' : datum['_x1'] <= _segment_3 ? 'High' : ''",
+      "as": "_segment_label"
+    }
+  ],
+  // set to zero to eliminate vertical whitespace between concatenated visuals
+  "spacing": 0,
+  "vconcat": [
+    {
+      "name": "DIVIDER",
+      "width": 540,
+      "height": 4,
+      // hard-code a single-record dataset
+      "data": {
+        "values": [
+          {
+            "id": 1
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "style": "_divider_rule_style"
+      },
+      "encoding": {
+        "y": {
+          "datum": 2,
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "axis": null
+        },
+        "x": {
+          "datum": -10,
+          "axis": null
+        },
+        "x2": {
+          "datum": 50
+        }
+      }
+    },
+    {
+      "name": "LINEAR_GAUGE",
+      "width": 540,
+      "height": 80,
+      "encoding": {
+        "y": {
+          "axis": null
+        }
+      },
+      "layer": [
+        {
+          "name": "GAUGE",
+          "mark": {
+            "type": "bar",
+            "style": "_column_chart_style"
+          },
+          "encoding": {
+            "x": {
+              "field": "_x1",
+              "type": "quantitative",
+              "axis": {
+                "title": null,
+                "domain": false,
+                "labels": false
+              }
+            },
+            "x2": {
+              "field": "_x2"
+            },
+            "y": {
+              "datum": 0
+            },
+            "y2": {
+              "datum": 10
+            },
+            "fill": {
+              "condition": [
+                {
+                  "test": "datum['_x2'] <= 33",
+                  "value": {
+                    "expr": "pbiColor(7)"
+                  }
+                },
+                {
+                  "test": "datum['_x2'] <= 66",
+                  "value": {
+                    "expr": "pbiColor(5)"
+                  }
+                },
+                {
+                  "test": "datum['_x2'] <= 100",
+                  "value": {
+                    "expr": "pbiColor(3)"
+                  }
+                }
+              ],
+              "value": "transparent"
+            }
+          }
+        },
+        // {
+        //   "name": "RULE",
+        //   "mark": {
+        //     "type": "rule",
+        //     "style": "_rule_style"
+        //   },
+        //   "encoding": {
+        //     "y": {
+        //       "datum": 11.5
+        //     }
+        //   }
+        // },
+        {
+          "name": "SEGMENT_LABELS",
+          "transform": [
+            {
+              "filter": "( datum['_x1'] == _segment_1_mid ) || ( datum['_x1'] == _segment_2_mid ) || ( datum['_x1'] == _segment_3_mid )"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "baseline": "bottom",
+            "style": "_segment_label_style"
+          },
+          "encoding": {
+            "text": {
+              "field": "_segment_label",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "_x1",
+              "type": "quantitative",
+              "axis": {
+                "title": null,
+                "domain": false,
+                "labels": false
+              }
+            },
+            "y": {
+              "datum": 10.5
+            }
+          }
+        },
+        {
+          "name": "PERCENT_SYMBOL",
+          "mark": {
+            "type": "point",
+            "shape": "triangle-down",
+            "size": 600,
+            "xOffset": -6,
+            "yOffset": -10,
+            "style": "_symbol_style"
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y": {
+              "datum": 8
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

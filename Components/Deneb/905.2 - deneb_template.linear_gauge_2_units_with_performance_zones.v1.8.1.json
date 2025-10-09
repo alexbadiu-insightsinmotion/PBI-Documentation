@@ -1,0 +1,208 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "information": {
+      "uuid": "5b98ac59-f131-493f-a5be-3daf0a44cfcf",
+      "generated": "2025-10-06T17:33:01.331Z",
+      "previewImageBase64PNG": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAAAjCAYAAACdMUgnAAAQAElEQVR4AeybeXyV1ZnHzznvcpeEbKwhC0kggtLOOBXtIloVKihOtZ2xWgd1UAc0CVKxs9S241arU7TjiLas6tiWKbVFIQFCSEJCgCwQIEDIntysNwGy3v1d7ju/8yb3Agqy+0c/uZ/3yfOc5zzP9yzvkzf3nguMjL5Gd+Aq74BZVA888EDMvffeuwryyX333ZfAx3jwwQdltOejPWfBggVp3HemfPe73x0D/0+5nOkfYS2H/zbk/4D3zZ07N3r+/PkPoz3/jjvuELmPC3w3w/cIt7nAngK5H7l3Qv/s7rvvTuL+8wny5yDuRT7X88VcTT/m9TDGsl1N5l8jyywqRVEewuI+pZTmBIPBTNyoP7vd7lfhu0/TtHnQGffcc8+HuIkZ6NsIWbZlyxa3YRiVkB700zlz5ozFhsuqqibCp8CXBp2M2I0Wi+XnYN8I3302m+1N+O6/6aabJPhuZ4z5wH4Hvj+i/1nIrbqu346+VEmSXkdRJ+BmrkT/B4h7Hnob9MuQPyDmAYgNc12DmJfR92fIOsifIH+GbwX0u5C1iF8PvQHyNphPQ3+A/jW84GEvg/CcdYh7DfZayAb0r4R8DPs9yP2Ym8Xn88VBj15fsANmUaG/FQWwFDILNi8ID242L5o23LQY+COg3ZCxkD1od2OTv4/YX6B9CMXEBLzQJijKIHwLEDMPml88nvv4b3gruB2IS0xISLDCVlBABoL4EykS/n7kC2j3QndAmiAiWFEQBX4ZMRWwfbBXwO5DfzdsD3y8SDfA7oI0oF0E8SBmHGJOQnOeA1rEmJ3QDP0fo8jjoO+C7Ibo8Huhu5DjgLaBlQ1pgaSiLxHxfdCj1xfsgFlU27Zty92+ffuCnp6eZ7GRFJv+3NatW1+F71eQxeh/BpIF+1X4V0JvRPsvkFloV3788cd6Xl7eCWgFfcfhvwfyCGQF+ldC/xtkGYS334R+b+RJ1xAZGbkD7e9B7oP8Ijc393kw3oW8yAVzkTCnI7CXoP91yEuIecPr9TZiXYfg/x/4MiEvYKxNkP+E/BT+d+F7CfIw4l9A+0Wu0ebryIZ+HLIzOzu7BX33Q/iYS6Bfg4Rin8rJyfkIvDdRZGUorBys0YdxR68v2AGzqEL9lZWVKt/QHTt2fBm/jQZuau6FbhLm0og5vRWaY0gXFRW54f8UbQNyzS+MVYYCq7rmA/0VDHBWUf0VrGd0CZe6A9cg3iyqlStXTh6V0T24GjXAa9QsKm7g/ULsqNDRPaBXtge8lsyiWrp0aVdWVlb1qIzuwZXWQLio8OnqKf/+fe/6K0v/yxgaWOOtrHgb7V9rJ7vXBY4e+pWvfM9vtO6uVYGaqtdgr1Uba34cqKl+MVCx9/3AscM/DzTU/YevfO/6wOGKV5XWlh9pB8t/EzhY/oY+NLBWqSx7WzlQ+pbqchX4qypX+Cv2/kY/2b1KrT70mr+sZDVnqWD5KkreV2uqXtCbRlhHDrzCWcrB8t9yljY0sEY9xOdV+lbQ7SoIcBbmrPf0rFKPHvqlNrBjlTp08PlAf9nLWv+29epA6Qv6UNVPlN7c9Wr/7ldUd81yrS9vVaCv4A1d6V2j9ResVPpz3zI01051oPhN7VTuu7q/dbU6tO91pW+YpbrKXxpmlYN16AWtf8c6fXDPy4a3ZjliVqsDu17XlZOrOUvtz3vTZPXvfgvjrNT97Wv0gT2vK71bVxneI8+pg2WvaL3b1+lDZT/RPZyFeQ0Wv6SDpfXtXL1vqO6XfYpr9Z7+mnf3DNWscGm+gvLBureK+6vf7vL3rdk/0PBG8UD1quPejh8ddjW/Utx7dP1hd8u/H3W1/bSov/r9/YMNL9W7nT/e3XdsjcnSPKv3Dta+x1lu1ZtfOlj365LB42D1rjkw1PTGrj6w3MOskv7qdUfAOu5q+5nJcjW9WO/t/NeSgZrVpUMNr/VprlUma6BmRb/iXlfWX/vffF492tCa/e4GPq/ftvl7V5X01yxHLUWZTypvfm6C1t6aqdYdX+bdUzTbaGteptYffy5QUfotraXxOa2p7hmlYt9craUpU3c0P6UcP5qltTVlqC1Ni5S6mgy9sTZTd3Y8oTbUZ6g1R5/1O5qfUWurl/n3Fd2qtjmWBWqOLddKCiYh9zm1oeYZf+meuaqjZanmaFmsHKvKUsHSW1oWBWqOZ/nra7N0Z/sTSn1tpnb8yDLF0fS0Wnv8Wf/eotsUB+ZVe2y5rzg/XnM0LQcr019eMlftaVyqDVUtMTxlWYa/NkN3Vz+hu/dnqt5DmYa/6QnDczAj6Cpdihu4hHgOZOm92bN17/Gs4NCB5crJjQlBT/VyDbF6f+5dhgd+9+ElQXdZlu6pyeSsoGd/RtB7BNxjTypD4A6WLTW8tYsN94EsrTd7DmfpQxXPK6f+NDnoPbpc4/6+rXdpvuNLg57qJYH+Pc8Sb+0zurf6Sc21P1NzVZlczXUwUx8qW6p7axYfc7UuLRw4Mqcp0J1Z5XYsz+09NKne51xe7Wtftnvg+G3wL631dC45NNi4rNHXk9GsnnwCcUvr/R0ZjT7nomPe9owjnpaslsDJfznmbssq7KuaA39GlcuxfFvvocmwnzvqal1WMlQ7u8HvfLbOB5a7+dl6jzOzKdDz5GGPI6vG12Gyqt2tGUe9bZmNfufiajAL+47ORX5GlbvlufzBI99s9Pf86KinbVlR39HZjZ7uZTWezqdLBqrvrvG1/xhPKptZVMxmk4nBP5mzAIuM5AeM6CNEiIBtGObXKtRuJ5SyAE43CZXkICWMH5ISJjGFWmSVqCohlChEthicZTAaYFZwycgrIsJKiCHwFgMLJ54BYgQJlW06ocxkUUFQmSSpnEXBpxarTjAvQ6B+wRYhkZEX5mgBa3juYFHK/IQEiUFtQUppgIdRZlEpxbyMAHqoQgW7TohBKBUCRLSH10jFGAvGoDyHsDEUNuaCOGbXhREWoYJmUFHlMYznM8wZLExNoWIUd5tChWis0TSREkUowX4hjol2PcgMcAkhDHMiWCM3qRgwqDXI58Uwlk0cSTcIixAtIw1C7KJFooz5sbHEJlr4OhTF0IhEJZURYWReVLEwSccuEAoWcjCCebFIwWoxLfywMYuMRQY4y8pEA2fWAc4SDUkT6AiLUUUyhKCBBRIiBGxsZLsoFc5kRYBFCFVCLEaYl+Bl3hjoc12YPCGUUX4qTa7wZbIIo+agV8SiRBvOp1fhEJKaN5rihg0zr+QnGy5mMlzUV0KihA2vjVKzYEj4dTnGMIsSOrJvl8MYzhFIuBaG7+ew+3M/zaLCE0KgViuhFjkKTyEBTwhCrTYBTx2RSHIEbEJkq0AEYQK3KWzEMoIXlS2MC0zkWxn8wyxJjgYnzKKyRQDbzvM5i4riOG5TC/wW+RwscHkfn5coxRKLPMyy2ESTZZFtPJ+zMK9xVIggVLAJjA0/fSnDXIRhmwh2RpgVv4h2PDekOLQFyvDkFewy4gVCLFaeTwSbYDA5joKFDRBImGVnTLAyvkbkMt5HBTshVAbLNsKyWRjGIMxqoTyfs6h0DpaN0REWE0xboGCJVBhroSJ6ZGJlos1KZcFKJcnG0BYkQSRCnJ1ZiIXJgoVKjOBlE2RmZSM247YIokwkwsYh12TZGFgMOUwSbUwmVrAkKsWcZomM4GUTZSaPsKywEIfVy0QkbDxsk4v+CHNeTBbsnMUkQaZClH1kXjYqCUAREzjgDyS0U0I6LRbN6XPHdjBK2gUW7Pa6YpySpLeJIulR/LEnrJaAA3m+lNR4X2LyhJ7ERBJIv36ie+KkyW0RduKU5WhXbNzENmqQTqtF7fZ5wCKkXRKCTg9YgqC3ShLpCnjiTsqWQCtnTUmd7EtInuCIjCD+66ZP9MRPjm+D7ZSl6MGY2Pg2bGen3aL2+LxhVrfXE+MURN3BGHH6PXE9gk1prJ1I3P6Zk1zKV8Y31CcTj3rzJLd3enxjfSLpdIyNGRhMjm+qG0taHRPVLocW62iMJi2NY4MdDiWmoy0Onw9iidNhxHZ1xKlNdWAFZsa7AjPHN9QlE692yySX7/r4poYk4lZuGTfgGmG1cpYe29IQRVrqxwW7HHp0uyM22IxxnGA5O8aqTbUTMK8b4k90Rcc01CcRr3pzvCdw/cRGsFzKN8YPDqVMaqqLI+nNPjWqpTc2ubaPTK0fCtodJ2KSm13BqccHyJimU7FTWj3qnZbpZJYtLf4rcmL0vfLfkDsiZsR/IyJ94jzLTDIn8ivjv4a+2dI08rdqvBqvj4m9RUwhs+V0PZHFxMySU4KzLekkhcTF/p2YrN0pTyc326dOmiklRN8D1rfB+mZE+oT51q+SOZFfHX+TNXXybWDdapmmJCPn62IauVWepicY0bEhVjKJjb1RnKLdLqWTv5OSJs3Qxo8jhIw3i+oU0Qa7e7qIo7VRHFJVj7Onk7R1ONiApnq6nO1CR3sLcfafCnZ2tktdHQ5SU1Hibagq1x3HDpEjewq0luNHVGdXO2ltbWQdjXX+HuQ7HE1Sv9+nOcFtbXewQR2snk6hs72ZnBzs1zqc7VLnCKvucLneA/vY3kKtufqg6uxsI23tTbSzudbb09VGHM2c5Q2zBrSAp6u7Q+jqaiUnhga1znbMq76V1O6t8NeX7g92N3aQ6qLdatPBKrW7uYu0VYNX3eDrge040ir1dWl6V3MPcRztYIOnqKe9wSl01HYRZ6tX76zvETvrWknNvgp/Q2llsLu5kxzdVaw2VoLV1EWqCgqD7WA5mzqIo6oNLEV3tpwgjup21n/K8HY2dLO2mg7S0+bVO+q7pA4+r9IDvo7abtbd1EmOgdV0oErrAetwfn6w9Vid39ncQbxHjouis1dXmtuI72gts55weQJ1TcxX00BYW7eut+HXW6FE8Oq+KE1m/F2Z6vKrQa+qyRoj6pAvSP26V1IRM6iKMapVj9AkMkaRhPEk0hOhiCxSkcjYoF0fo0mijDjRF/RGKqIgqYSoLh9n6dxWBr0G9QfBYmSMKoljjYigTRNIlCIL42mkx64KDFwyno7xROl4AqLPf8rtlQd1iRAyYBaVriqDaJhXUNeH/56jdaYtiGIf3riZ8YrXG61ruvnmTwv4bZoSsCOcBIO6ZDAa/t7QwADcz8XQNLyZ5hYhgiT1h1k+b7ShD7PUQMCmq6rJAl826EWwRIGzKCczQejFnGVuB/w+u64qJkvTNAveG/ZyvymU9psaP4xg8PS8wCKGYbJEUTyl65rJUsAKr1HVZcJomEXPZOmnWUwQw2OA1RsMBk0Wn5ca2i/OosxkYT+oQWg4B3tyel6CFPZjymEWcvD33DDXCD/nD+89QIyxM3PCrM/4eQwvBIL3BZxlA4dgA2TMN5rb8PN7Psw1HSRcH2iGbXMfDGKBDx8e8PNSL+uYMS2hHNlmb5Ms1nA75L9YbYuKag7FSlZ7myjL/J+nhFyXrS32iFZJtlwlVuRVY1kjIhySJLde9sLOMtz7TAAACSxJREFUSMSNdECuGgvoNoh5ofgu+57yKjQhF/NDkMQToThBkjpCdkiLsqU7ZF9I48l3KhQjiPIVsoQzWGJniBvSomRxhmyGJ27IPpdmohD+rRRE6fMs2dIVyrsQi7IzWLIczgvlixZLmM8kyXxihfo+qzGX8LxQSOH1hOJQBGGWIJzej1D/+fR5WOH7gf6T58v9rB+xTdx3VlExJgxxJxdKqPmx0aD0so4U8Kco/CeV0GEWmF7OvlQRRYE/pofTKNG4gT9n4Ucvb1+OYBOGjxQIDf95uBwOz0EBBUxNwkcKvHlZwigbWduVHylgjSYL2tw3PiHYA1xfqiAvVAtmbYzkh2tmpE3OKqqQc1SP7sCV7MBoUV3J7o3mnnMHRovqnNsy6rySHRgtqivZvdHcc+7AWUUVDOpRoSiDGAK3qWFEcH2pgvOi4XMOnmgMs8AMnalw70WLpumx4WCDiNw2goaN60uVoKbFhXJwziNzG/Oycs0lqOnhft7+IgmeyQrqFh4LlqlNO3gJLFUdy3O4BI3gyNqM4TMkOHVNveh5ITx8YY0mC9rcN94BO4brSxXkhWrBrI2R/HDNjLQv7Y26rmoTQom6qiaG7JDGAeGkkH0hrWsaP9I3w3RNuUKWfgZLM/8zrAke+aGpgfgR85KUrqmfZymByZcEGQnWFeVzeVog8Dn+SPgXKtzcz60Hh5Vhlq6f3o8vBKHzPKzw/UD/eIRd1IXYqTzwrCcVd1yM+F0u/n/gzFDF501WA/5w23Rewg/f0FD4fz+rfm+ypigpl5B+VqjPdZoV8Hqm4OT6ollngdDwDg2aGwSTBLzus1iq3x/u4/0XEs/gaZbf40lRVWVKKEcL+MPrD/kuVuMmpkDCLBTWFbEwbjLEvMC67HtqFpWqqLpJIkRTvB7Tx9uq14uzDWqYtt8nMsbc3JZs1k6cQ5mHdaLFekLAt1bcj68mBnUlYD6yGaOq4vWEH5MBv1/hMVxUn08QGDPPPHAaD5Y4zJItJ6gkmgeoOIQESzH/PFHGAgpyeC4X2Pi2ilv4zsrvEwgj5lmMbLF1UMbMQ0LYPThQNFmCJA3oqhpi+fG1S3he+MrprHkh32SJYGGSJku0WHuYKPH/iU3A7Mc+mIeDOCs7L0vxeQVi/jsvQpDfQQXBPBuSrLZuzGeYJUp9GM9kMUp9KDBheFWEYF7hNQZ8HgFjmudguNkW2CaLUtqNojIPpGH3QkwWtBdPqzALdpgFW0C/uWawJNhhFsY2WdCcZR6mop//p+Lwn07koyYQgUtVVT6G2QaLx5gHpQx9JHr6DYVjElJ2xE27Yeu02XP90UmpW8fCnjr7rmBkwpQtcek35NkTUnZFxCfviEudXmhPSMu3TUzcGZOSXhyRmFZggR2dnFYUnTo9zzopqTAqMS0/dtr1W6+b/R0fZ8Wlz8y57tY5RsRksKbNzEv95h3t9snJuZwVkTx1p21iEljTiiOTpu60TkjeGZ08tSgmdcYOC2clpRSMnTpj24zb5/rGJKZs46z02XN1Pq/Yqdfnpd7y7Y7IySnb49JmFNqT0vLtk5J3xkxJL7InpeZbx0/OjwUrOvW6PNuk5Pyo5Gn5sWkztk++8ZaOqKTUHXFTZ+ZMmz0nCG722PSZO1K+cXunPT4pNzZtemFEYmqBBTkxydOKIrEe28SEnVFJaUVRU9J3WuOTC6KT0wti0q7fBlb7mMmpeWOv+2o29ssYkzAlZ9y0r+SmfP329ohJSdtjwIoEKzI+OS8mOb1oDOYoY15RU9KKopOn7bRNACtxWiH2a3vijTdjXml5mEs21hhEXva4aTNzp397nk+KGbsNN7TA5/PlezyePNzEItg7Ye/EzS32+/3cn69pWqEoirkSvvGAfydysq1Wa1BRlBz0bbPZbN5AILAV+fler7cAeZy1C/ZO2Dy+GP35brfbZMG3g1Lajtw88LacyYqIiPCifyvGyAevEAWeg3pSGH6QP/xhY4UtMW3R1tKDj6xctXrWp7vLf5BTdugH765eO2tzcekjtoS0xzcXlmR+smvPY9mllX+/ZdeejE8KSp7MLj14b05J2VOf5O16Jmdf5YKcPRX/DDvDmpD2WM7eyn96Z4S1rezgQ9zesrvshxjn8dUffDT/k8I9j9mSpi40uQXFYB26N3t36eJP8gqf5qzskvJFn+TtAmvqo9n7Khe+/d6qWVtKKh4cYd28eXf5DzHf763+6HfzPt2199Ewq3D3EzllBxdkF5cu3rSzaMkWzCt7d/miv+woyLJOnvIY2Avf/92GeVt2V3x/W8Whh9757eqbtxSXP5y998D313z4+7s3F+1baE+atpCv8dOC3YtMFubFWdzOKSlftGlHYYYtIeXRrfsOPLr+dxvmZ++t+N7W0sqHV65aM2tzScVD2aUH/mHN//5+PvZuYSRYm7Ffm0xW5QLwl3yaX7w4Zx/muLfiiU35YCWmLsT4j6796P/mbS4pB+vgw++sXj1rSwnmBRa/D58WlS4cHBx89IMPPsh8//33F61Zs2YB7Kchi9etW3cv9BPwZyJm4caNGx9977335g0MDDyGvofffPPNWdAPrV+//sEVK1bcvHbt2oW8DzmZ8HPWfR9++OHT8C8G12ShL4OzoB9755135vX39z8O/g8/ywLzEcQ9tmHDhsxNmzZloQD7zaJ66aWXvDfccIOT63PJzJkzu8/lP5/vC1gWsG5CXjzka4ibC21AvOcTxJx3XmfmXCAuFrF3IsYC/Y8QPv4VjQnWheZ1Pca5HnEE+n7IDMg5x0TMhVhm3kXEpSDmOxhnEuR27PVsaB/EzD9TI+6CY54ZA9Z5a+DMOP6QMouKG1+S8O/w+Jeh/GhBxJjVkMv6eIu8i70kBH4NokJSIKWQaMi1vPgRxbcwwC2QqZADkM999Ibval98rfzoYQLA/P0R/6I9dAwA15dzfdlFNQPL4gtvh+Y3lssA7Gt5jQGcb2w6NC+sNGi+2VDX7OJvqhtA5/8ygX/Q4WPzXya4ruk1EXQ+Jj8rS4QdhJgfiKC/tOvLLqparKwcwgtpM/QuiPlpC/rir0uL5J/g/oiU9yB7ITsg4X83BPtaXLyQcgHma+RjboNdB7nWVx4G+BOkGLIFshvC5wL15V3/DwAA///V8k6ZAAAABklEQVQDAISN/Dc9AMlvAAAAAElFTkSuQmCC",
+      "name": "Linear Gauge - Option 2 - Units (with performance zones)",
+      "description": "[No Description Provided]",
+      "author": "Greg Philps"
+    },
+    "deneb": {
+      "build": "1.8.1.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "6.1.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "selectionMode": "simple",
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "config": "{\n  \"autosize\": {\n    \"type\": \"fit\",\n    \"resize\": true,\n    \"contains\": \"padding\"\n  },\n  \"view\": {\n    \"stroke\": null\n  },\n  \"axisX\": {\n    \"ticks\": false,\n    \"grid\": false,\n    \"domain\": true,\n    \"labelFont\": \"Segoe UI\",\n    \"labelFontSize\": 16,\n    \"tickOffset\": -4\n  },\n  \"title\": {\n    \"font\": \"Segoe UI\",\n    \"fontSize\": 14,\n    \"fontWeight\": \"bold\",\n    \"fontStyle\": \"italic\",\n    \"color\": \"#4A4A4A\",\n    \"subtitleFont\": \"Segoe UI\",\n    \"subtitleFontSize\": 14,\n    \"subtitleFontWeight\": \"normal\",\n    \"subtitleFontStyle\": \"italic\",\n    \"subtitleColor\": \"#969696\"\n  },\n  \"style\": {\n    \"_divider_rule_style\": {\n      \"color\": \"#969696\"\n    },\n    \"_column_chart_style\": {\n      \"cornerRadius\": 10,\n      \"stroke\": \"white\"\n    }\n  }\n}",
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Percentage",
+        "description": "",
+        "kind": "column",
+        "type": "numeric"
+      }
+    ]
+  },
+  // text and position only; formatting done in "config\title"
+  "title": {
+    "anchor": "start",
+    "align": "left",
+    "offset": 10,
+    "text": "Option 2 - Units (with performance zones)"
+  },
+  // multiple datasets
+  "data": {
+    // dataset (for X-axis - hard-coded - 100 records)
+    "sequence": {
+      "start": 1,
+      "stop": 101,
+      "step": 1,
+      "as": "_x2"
+    },
+    // dataset (for Percentage - from Power BI - 1 record)
+    "name": "dataset"
+  },
+  "transform": [
+    {
+      // compose composite dataset
+      "lookup": "_threshold",
+      "from": {
+        "data": {
+          "name": "dataset"
+        },
+        "key": "_x2",
+        "fields": [
+          "__0__"
+        ]
+      }
+    },
+    {
+      "calculate": "datum['_x2'] - 1",
+      "as": "_x1"
+    }
+  ],
+  // set to zero to eliminate vertical whitespace between concatenated visuals
+  "spacing": 0,
+  "vconcat": [
+    {
+      "name": "DIVIDER",
+      "width": 540,
+      "height": 4,
+      // hard-code a single-record dataset
+      "data": {
+        "values": [
+          {
+            "id": 1
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "style": "_divider_rule_style"
+      },
+      "encoding": {
+        "y": {
+          "datum": 2,
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "axis": null
+        },
+        "x": {
+          "datum": -10,
+          "axis": null
+        },
+        "x2": {
+          "datum": 50
+        }
+      }
+    },
+    {
+      "name": "BARS_AND_PERFORMANCE_ZONES",
+      "width": 540,
+      "height": 70,
+      "encoding": {
+        "x": {
+          "field": "_x1",
+          "type": "quantitative",
+          "axis": {
+            "title": null,
+            "values": [
+              20,
+              40,
+              60,
+              80
+            ]
+          }
+        },
+        "x2": {
+          "field": "_x2"
+        },
+        "y": {
+          "axis": null
+        }
+      },
+      "layer": [
+        {
+          "name": "PERFORMANCE_ZONES",
+          "mark": {
+            "type": "bar",
+            "style": "_column_chart_style"
+          },
+          "encoding": {
+            "y": {
+              "datum": 1.4
+            },
+            "y2": {
+              "datum": 2
+            },
+            "fill": {
+              "condition": [
+                {
+                  "test": "datum['_x2'] <= 33",
+                  "value": "#F1948A"
+                },
+                {
+                  "test": "datum['_x2'] <= 66",
+                  "value": "#F7DC6F"
+                },
+                {
+                  "test": "datum['_x2'] <= 100",
+                  "value": "#82E0AA"
+                }
+              ],
+              "value": "transparent"
+            }
+          }
+        },
+        {
+          "name": "GAUGE_BARS",
+          "mark": {
+            "type": "bar",
+            "style": "_column_chart_style"
+          },
+          "encoding": {
+            "y": {
+              "datum": 0
+            },
+            "y2": {
+              "datum": 1.5
+            },
+            "fill": {
+              "condition": [
+                // if <= Percentage --> Power BI theme colour 3
+                {
+                  "test": "datum['_x2'] <= datum['__0__']",
+                  "value": {
+                    "expr": "pbiColor(2)"
+                  }
+                },
+                // if evenly divisible by 20 --> dark grey
+                {
+                  "test": "datum['_x2'] % 20 == 0",
+                  "value": "#C9C9C9"
+                }
+              ],
+              // otherwise --> light grey
+              "value": "#E3E3E3"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

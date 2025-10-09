@@ -1,0 +1,160 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "information": {
+      "uuid": "c68ed757-1e9f-4be6-8c48-3ba7579d4768",
+      "generated": "2025-10-06T17:33:01.765Z",
+      "previewImageBase64PNG": "data:image/png;base64,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",
+      "name": "Linear Gauge - Option 3 - Units (basic)",
+      "description": "[No Description Provided]",
+      "author": "Greg Philps"
+    },
+    "deneb": {
+      "build": "1.8.1.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "6.1.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "selectionMode": "simple",
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "config": "{\n  \"autosize\": {\n    \"type\": \"fit\",\n    \"resize\": true,\n    \"contains\": \"padding\"\n  },\n  \"view\": {\n    \"stroke\": null\n  },\n  \"axisX\": {\n    \"ticks\": false,\n    \"grid\": false,\n    \"domain\": true,\n    \"labelFont\": \"Segoe UI\",\n    \"labelFontSize\": 16,\n    \"tickOffset\": -4\n  },\n  \"title\": {\n    \"font\": \"Segoe UI\",\n    \"fontSize\": 14,\n    \"fontWeight\": \"bold\",\n    \"fontStyle\": \"italic\",\n    \"color\": \"#4A4A4A\",\n    \"subtitleFont\": \"Segoe UI\",\n    \"subtitleFontSize\": 14,\n    \"subtitleFontWeight\": \"normal\",\n    \"subtitleFontStyle\": \"italic\",\n    \"subtitleColor\": \"#969696\"\n  },\n  \"style\": {\n    \"_divider_rule_style\": {\n      \"color\": \"#969696\"\n    },\n    \"_column_chart_style\": {\n      \"cornerRadius\": 10,\n      \"stroke\": \"white\"\n    }\n  }\n}",
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Percentage",
+        "description": "",
+        "kind": "column",
+        "type": "numeric"
+      }
+    ]
+  },
+  // text and position only; formatting done in "config\title"
+  "title": {
+    "anchor": "start",
+    "align": "left",
+    "offset": 10,
+    "text": "Option 3 - Units (basic)"
+  },
+  // multiple datasets
+  "data": {
+    // dataset (for X-axis - hard-coded - 100 records)
+    "sequence": {
+      "start": 1,
+      "stop": 101,
+      "step": 1,
+      "as": "_x2"
+    },
+    // dataset (for Percentage - from Power BI - 1 record)
+    "name": "dataset"
+  },
+  "transform": [
+    {
+      // compose composite dataset
+      "lookup": "_threshold",
+      "from": {
+        "data": {
+          "name": "dataset"
+        },
+        "key": "_x2",
+        "fields": [
+          "__0__"
+        ]
+      }
+    },
+    {
+      "calculate": "datum['_x2'] - 1",
+      "as": "_x1"
+    }
+  ],
+  // set to zero to eliminate vertical whitespace between concatenated visuals
+  "spacing": 0,
+  "vconcat": [
+    {
+      "name": "DIVIDER",
+      "width": 540,
+      "height": 4,
+      // hard-code a single-record dataset
+      "data": {
+        "values": [
+          {
+            "id": 1
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "style": "_divider_rule_style"
+      },
+      "encoding": {
+        "y": {
+          "datum": 2,
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "axis": null
+        },
+        "x": {
+          "datum": -10,
+          "axis": null
+        },
+        "x2": {
+          "datum": 50
+        }
+      }
+    },
+    {
+      "name": "LINEAR_GAUGE",
+      "width": 540,
+      "height": 70,
+      "mark": {
+        "type": "bar",
+        "style": "_column_chart_style"
+      },
+      "encoding": {
+        "x": {
+          "field": "_x1",
+          "type": "quantitative",
+          "axis": {
+            "title": null,
+            "values": [
+              20,
+              40,
+              60,
+              80
+            ]
+          }
+        },
+        "x2": {
+          "field": "_x2"
+        },
+        "fill": {
+          "condition": [
+            // if <= Percentage --> Power BI theme colour 3
+            {
+              "test": "datum['_x2'] <= datum['__0__']",
+              "value": {
+                "expr": "pbiColor(2)"
+              }
+            },
+            // if evenly divisible by 20 --> dark grey
+            {
+              "test": "datum['_x2'] % 20 == 0",
+              "value": "#C9C9C9"
+            }
+          ],
+          // otherwise --> light grey
+          "value": "#E3E3E3"
+        }
+      }
+    }
+  ]
+}

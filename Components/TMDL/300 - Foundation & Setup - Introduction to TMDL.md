@@ -304,4 +304,4 @@ The tools are here. The community is building amazing things. The question isn't
 ---
 
 💬 **Let's discuss:**  
-Drop your thoughts in the LinkedIn post discussion. Share your TMDL adoption challenges, success stories, or questions. We'd love to keep the conversation going and learn from the community's experiences.
+Drop your thoughts in the [LinkedIn](https://www.linkedin.com/posts/alexandru-badiu_excited-to-kick-off-a-new-%F0%9D%97%A7%F0%9D%97%A0%F0%9D%97%97%F0%9D%97%9F-%F0%9D%98%80%F0%9D%97%B2%F0%9D%97%BF-activity-7381975528590700544-nC4l?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAd2rAYBtqG-2bVNWh14j0hOzgmbFYqs3hE) post discussion. Share your TMDL adoption challenges, success stories, or questions. We'd love to keep the conversation going and learn from the community's experiences.

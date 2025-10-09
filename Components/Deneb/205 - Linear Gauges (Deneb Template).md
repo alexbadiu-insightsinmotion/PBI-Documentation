@@ -680,8 +680,6 @@ The native Power BI native gauge visual takes-up significant screen real estate 
 
 <br>
 
-# *** FIX ***
-
 The first option template displays a number of Deneb/Vega-Lite features, including:
 
 0 - General:
@@ -737,14 +735,14 @@ The first option template displays a number of Deneb/Vega-Lite features, includi
 
 Here's the templates:
 
-[905.1 - JSON - Deneb Template - Option 1 - Units (withperformance zones and pointer)](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/904.1%20-%20deneb_template.ring_chart.v1.8.1.json) *** FIX *** <br>
-[905.2 - JSON - Deneb Template - Option 2 - Units (with performance zones)](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/904.1%20-%20deneb_template.ring_chart.v1.8.1.json) *** FIX *** <br>
-[905.3 - JSON - Deneb Template - Option 3 - Units (basic) ](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/904.1%20-%20deneb_template.ring_chart.v1.8.1.json) *** FIX *** <br>
+[905.1 - JSON - Deneb Template - Option 1 - Units (withperformance zones and pointer)](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/905.1%20-%20deneb_template.linear_gauge_1_units_with_performance_zones_and_pointer.v1.8.1.json) <br>
+[905.2 - JSON - Deneb Template - Option 2 - Units (with performance zones)](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/905.2%20-%20deneb_template.linear_gauge_2_units_with_performance_zones.v1.8.1.json) <br>
+[905.3 - JSON - Deneb Template - Option 3 - Units (basic) ](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/905.3%20-%20deneb_template.linear_gauge_3_units_basic.v1.8.1.json) <br>
 
 <br>
 
 Here's an example Power BI file using the templates:
 
-[905.4 - PBIX - Deneb Example - Linear Gauges ](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/904.2%20-%20Deneb%20Reusable%20Components%20-%20Ring%20Chart%20-%20V1.8.1.pbix) *** FIX *** <br>
+[905.4 - PBIX - Deneb Example - Linear Gauges ](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/905.4%20-%20Deneb%20Reusable%20Components%20-%20Linear%20Gauges%20-%20V1.8.1.pbix) <br>
 
 *- eof*

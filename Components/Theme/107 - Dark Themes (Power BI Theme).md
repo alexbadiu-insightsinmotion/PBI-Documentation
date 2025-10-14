@@ -456,6 +456,6 @@ Sample theme fragments covering specific areas of the Power BI theme file are av
 [910 - Power BI Theme Fragment - Tables and Matrices](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Theme/910%20-%20Power%20BI%20Theme%20Fragment%20-%20Tables%20and%20Matrices.json) <br>
 [911 - Power BI Theme Fragment - Other Native Visuals](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Theme/911%20-%20Power%20BI%20Theme%20Fragment%20-%20Other.json) <br>
 [912 - Power BI Theme Fragment - Custom Visuals](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Theme/912%20-%20Power%20BI%20Theme%20Fragment%20-%20Custom%20Visuals.json) <br>
-[913 - Power BI Theme Fragment - Dark Themes](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Theme/912%20-%20Power%20BI%20Theme%20Fragment%20-%20Custom%20Visuals.json) *** FIX *** <br>
+[913 - Power BI Theme Fragment - Dark Themes](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Theme/913%20-%20Power%20BI%20Theme%20Fragment%20-%20Dark%20Themes.json) <br>
 
 *-- eof*

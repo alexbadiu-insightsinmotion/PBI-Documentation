@@ -1,0 +1,119 @@
+{
+  "name": "Custom Theme 913 - Dark Themes",
+  "dataColors": ["#70B0E0", "#FCB714", "#2878BD", "#0EB194", "#108372", "#AF916D", "#C4B07B", "#F15628"],
+  "background": "#080831",
+  "firstLevelElements": "#FFFFFF",
+  "secondLevelElements": "#F0F0F0",
+  "textClasses": {
+    "largeTitle": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 13,
+      "color": "#FFFFFF"
+    },
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 10,
+      "color": "#FFFFFF"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#FFFFFF"
+    },
+    "callout": {
+      "fontFace": "Segoe UI",
+      "fontSize": 18,
+      "color": "#FFFFFF"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#080831" } },
+            "transparency": 25
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": { "solid": { "color": "#080831" } },
+
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": { "solid": { "color": "#080831" } },
+            "transparency": 0
+          }
+        ],
+        "outspacePane": [
+          {
+            "backgroundColor": { "solid": { "color": "#090935" } },
+            "foregroundColor": { "solid": { "color": "#FFFFFF" } },
+            "fontFamily": "Segoe UI",
+            "titleSize": 18,
+            "headerSize": 8,
+            "transparency": 0,
+            "border": true
+          }
+        ]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "columnHeaders": [
+          {
+            "outlineColor": {
+              "solid": {
+                "color": "#F0F0F0"
+              }
+            },
+            "outlineStyle": 4
+          }
+        ],
+        "total": [
+          {
+            "outlineColor": {
+              "solid": {
+                "color": "#F0F0F0"
+              }
+            },
+            "outlineWeight": 1,
+            "outlineStyle": 1
+          }
+        ]
+      }
+    },
+    "pivotTable": {
+      "*": {
+        "columnHeaders": [
+          {
+            "outlineColor": {
+              "solid": {
+                "color": "#F0F0F0"
+              }
+            },
+            "outlineStyle": 4
+          }
+        ],
+        "rowHeaders": [
+          {
+            "outlineColor": {
+              "solid": {
+                "color": "#F0F0F0"
+              }
+            },
+            "outlineStyle": 2
+          }
+        ]
+      }
+    }
+  }
+}

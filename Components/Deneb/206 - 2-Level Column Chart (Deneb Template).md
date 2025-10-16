@@ -379,7 +379,7 @@ The template displays a number of Deneb/Vega-Lite features, including:
 
 1 - Category:
 - a nested ***transform*** block with:
-    - a ***filter*** transform to restict the dataset to one record per category
+    - a ***filter*** transform to restrict the dataset to one record per category
 - a ***shared encoding*** block to ensure the same X and Y values are used for all layered marks
 - a nested ***layer*** block with:
     - a ***bar*** mark with:
@@ -425,7 +425,7 @@ Here's the template:
 
 <br>
 
-Here's an example Power BI file using the templates:
+Here's an example Power BI file using the template:
 
 [906.2 - PBIX - Deneb Example - 2-Level Column Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/906.2%20-%20Deneb%20Reusable%20Components%20-%202-Level%20Column%20Chart%20-%20V1.8.1.pbix) <br>
 

@@ -419,14 +419,14 @@ The template displays a number of Deneb/Vega-Lite features, including:
 
 ### Links:
 
-Here's the templates:
+Here's the template:
 
-[906.1 - JSON - Deneb Template - 2-Level Column Chart)](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/905.1%20-%20deneb_template.linear_gauge_1_units_with_performance_zones_and_pointer.v1.8.1.json) *** FIX *** <br>
+[906.1 - JSON - Deneb Template - 2-Level Column Chart)](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/906.1%20-%20BEFORE%20RELEASE%20-%20deneb_template.2_level_column_chart.v1.8.1.json) <br>
 
 <br>
 
 Here's an example Power BI file using the templates:
 
-[906.2 - PBIX - Deneb Example - 2-Level Column Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/905.4%20-%20Deneb%20Reusable%20Components%20-%20Linear%20Gauges%20-%20V1.8.1.pbix) *** FIX *** <br>
+[906.2 - PBIX - Deneb Example - 2-Level Column Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/906.2%20-%20Deneb%20Reusable%20Components%20-%202-Level%20Column%20Chart%20-%20V1.8.1.pbix) <br>
 
 *- eof*

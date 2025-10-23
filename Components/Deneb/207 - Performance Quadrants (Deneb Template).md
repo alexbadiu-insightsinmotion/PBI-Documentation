@@ -664,12 +664,12 @@ The template displays a number of Deneb/Vega-Lite features, including:
 
 Here's the templates:
 
-[907.1 - JSON - Deneb Template - Performance Quadrants)](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/905.1%20-%20deneb_template.linear_gauge_1_units_with_performance_zones_and_pointer.v1.8.1.json) *** FIX *** <br>
+[907.1 - JSON - Deneb Template - Performance Quadrants](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/907.1%20-%20deneb_template.performance_quadrants.v1.8.1.json) <br>
 
 <br>
 
 Here's an example Power BI file using the templates:
 
-[907.2 - PBIX - Deneb Example - Performance Quadrants](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/905.4%20-%20Deneb%20Reusable%20Components%20-%20Linear%20Gauges%20-%20V1.8.1.pbix) *** FIX *** <br>
+[907.2 - PBIX - Deneb Example - Performance Quadrants](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/907.2%20-%20Deneb%20Reusable%20Components%20-%20Performance%20Quadrants%20-%20V1.8.1.pbix) <br>
 
 *- eof*

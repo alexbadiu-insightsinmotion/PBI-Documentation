@@ -421,7 +421,7 @@ The template displays a number of Deneb/Vega-Lite features, including:
 
 Here's the template:
 
-[906.1 - JSON - Deneb Template - 2-Level Column Chart)](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/906.1%20-%20BEFORE%20RELEASE%20-%20deneb_template.2_level_column_chart.v1.8.1.json) <br>
+[906.1 - JSON - Deneb Template - 2-Level Column Chart)](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/906.1%20-%20deneb_template.2_level_column_chart.v1.8.1.json) <br>
 
 <br>
 

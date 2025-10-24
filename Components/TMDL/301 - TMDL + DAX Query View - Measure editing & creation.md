@@ -1,5 +1,6 @@
 
-<img width="1950" height="1068" alt="Issue 301" src="https://github.com/user-attachments/assets/2eb6fe5b-9c54-4c30-8b8e-30ab8d134607" />
+
+<img width="1950" height="1068" alt="Issue 301" src="https://github.com/user-attachments/assets/113c32f0-bce1-4f80-9140-134a6c555e0d" />
 
 
 In our [previous article](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/TMDL/300%20-%20Foundation%20%26%20Setup%20-%20Introduction%20to%20TMDL.md), we explored how TMDL transforms Power BI from an isolated development experience into a professional, collaborative platform.
@@ -54,7 +55,8 @@ Think of it this way: **TMDL View is for changing things. DAX Query View is for 
 > TMDL View became generally available (GA) in September 2025. It now appears by default in Power BI Desktop (no preview feature toggle needed).
 
 <br>
-<img width="829" height="443" alt="Pasted image 20251020222733" src="https://github.com/user-attachments/assets/09e14e9b-9c5d-43de-8939-efc62c31e676" />
+<img width="829" height="443" alt="Pasted image 20251020222733" src="https://github.com/user-attachments/assets/e8c134bc-f87e-4c76-863d-a48a9eb7dd22" />
+
 
 
 
@@ -95,7 +97,8 @@ Don't worry about memorizing this table. After creating a few measures using bot
 > Most Power BI developers will use both tools multiple times in a single session. This isn't about choosing one over the other, it's about knowing which tool fits each step of your workflow.
 <br>
 
-<img width="500" height="400" alt="Pasted image 20251019144844" src="https://github.com/user-attachments/assets/b33b0716-9778-40a6-85aa-aecb6f89a6f8" />
+<img width="251" height="197" alt="Pasted image 20251019144844" src="https://github.com/user-attachments/assets/ab7ec096-5d2a-491d-9e89-d1fe94ac1866" />
+
 
 
 ### **Core techniques you need to know** 
@@ -146,7 +149,8 @@ This single technique will probably save you hours.
 - `Ctrl + D` - Select next occurrence of current word
 - `Ctrl + Shift + L` - Select ALL occurrences
 
-<img width="540" height="1000" alt="Pasted image 20251020223733" src="https://github.com/user-attachments/assets/41ea9c55-5e01-4019-aad8-641a327bd72c" />
+<img width="268" height="497" alt="Pasted image 20251020223733" src="https://github.com/user-attachments/assets/65feb3ce-5758-4cbf-8e30-90ee42181cc1" />
+
 <br>
 <br>
 
@@ -176,7 +180,9 @@ Not always needed, but useful to know we can go beyond basic find-replace. TMDL 
 
 Press `Ctrl + F` to open the find-replace panel or press directly `Ctrl + H`.
 
-<img width="440" height="120" alt="Pasted image 20251020224010" src="https://github.com/user-attachments/assets/f7ea567a-1f9b-48cf-a122-da48878baede" />
+<img width="218" height="61" alt="Pasted image 20251020224010" src="https://github.com/user-attachments/assets/0d166a5f-8562-4001-8100-762b481dcf76" />
+
+
 
 
 **Common use cases:**
@@ -222,7 +228,8 @@ regex
 measure 'KPI_$1$2'
 ```
 
-<img width="1067" height="1000" alt="Pasted image 20251020224930" src="https://github.com/user-attachments/assets/bc558f76-71d1-4b16-91a2-ba221904f13b" />
+<img width="1067" height="223" alt="Pasted image 20251020224930" src="https://github.com/user-attachments/assets/ee0ef770-7300-4f5d-aa35-ef94ce55679f" />
+
 
 
 **After:**
@@ -239,10 +246,12 @@ measure 'Customer Count' = DISTINCTCOUNT(Customer[ID])
 <br>
 
 
-<img width="500" height="120" alt="Pasted image 20251020225007" src="https://github.com/user-attachments/assets/5a2ba423-5db9-41b9-a39f-10eac6d93d44" />
+<img width="233" height="52" alt="Pasted image 20251020225007" src="https://github.com/user-attachments/assets/d34e0ff2-d764-4678-a9c0-6779e9a239b6" />
+
 <br>
 
-<img width="500" height="200" alt="Pasted image 20251020225106" src="https://github.com/user-attachments/assets/d6375ce0-099f-46f9-a2fd-9bb8a83906cc" />
+<img width="237" height="101" alt="Pasted image 20251020225106" src="https://github.com/user-attachments/assets/647744b1-0e2e-4740-98d0-2b160311a2ef" />
+
 
 
 
@@ -292,9 +301,11 @@ regex
 VAR _$1 =
 ```
 
-<img width="1045" height="400" alt="Pasted image 20251020225721" src="https://github.com/user-attachments/assets/b8bbaa71-808c-4191-90e8-c40d499ef97d" />
+<img width="1045" height="209" alt="Pasted image 20251020225721" src="https://github.com/user-attachments/assets/46d63941-ac1b-41ff-9d68-b8f6d09bb5a0" />
 
-<img width="250" height="320" alt="Pasted image 20251020225744" src="https://github.com/user-attachments/assets/cfedf6c2-f761-42a0-8316-8f4a50af7673" />
+
+<img width="250" height="167" alt="Pasted image 20251020225744" src="https://github.com/user-attachments/assets/d71809f9-6e4e-4f7c-9201-80af9a3085be" />
+
 
 
 
@@ -328,7 +339,8 @@ measure 'Total Sales' = ```
     RETURN _Result
 ``` 
 
-<img width="231" height="191" alt="Pasted image 20251020225856" src="https://github.com/user-attachments/assets/c899992d-ed21-4af1-ba8d-a6e2fd5ecc10" />
+<img width="231" height="191" alt="Pasted image 20251020225856" src="https://github.com/user-attachments/assets/c80f2fa2-c490-46e7-a372-84b12d21f92e" />
+
 
 
 
@@ -407,11 +419,13 @@ createOrReplace
 ```
 <br>
 
-<img width="1061" height="271" alt="Pasted image 20251020234336" src="https://github.com/user-attachments/assets/92c61d1d-8b2a-4fde-bb67-b4d2dbfa986e" />
+<img width="1061" height="271" alt="Pasted image 20251020234336" src="https://github.com/user-attachments/assets/d6e53f76-707e-4405-9690-23552d0666cc" />
+
 <br>
 <br>
 
-<img width="600" height="500" alt="Pasted image 20251020234552" src="https://github.com/user-attachments/assets/9286a30e-aeb6-4066-97f7-46b073fd2dea" />
+<img width="310" height="224" alt="Pasted image 20251020234552" src="https://github.com/user-attachments/assets/c7bcb7a2-e378-449f-8f72-5cb7a5cf2c5c" />
+
 <br>
 
 
@@ -419,7 +433,8 @@ You might observe that some measures in TMDL have backticks. This is important.
 <br>
 <br>
 
-<img width="402" height="488" alt="Pasted image 20251021110653" src="https://github.com/user-attachments/assets/02b66e42-d1e5-49bf-9081-264f829bfe6a" />
+<img width="402" height="488" alt="Pasted image 20251021110653" src="https://github.com/user-attachments/assets/330cac69-a254-4295-b915-635d75c8ad90" />
+
 
 
 
@@ -450,7 +465,8 @@ TMDL View shows you exactly what will change before you commit.
 
 This is a safety net.
 
-<img width="2262" height="1118" alt="Pasted image 20251021111549" src="https://github.com/user-attachments/assets/14c86c48-2d3d-4523-912e-6adf511ac2ba" />
+<img width="2262" height="1118" alt="Pasted image 20251021111549" src="https://github.com/user-attachments/assets/4db883b6-573f-4988-80da-7f9ae341e1cb" />
+
 
 
 
@@ -533,7 +549,8 @@ createOrReplace
         annotation PBI_ResultType = Table
 ```
 
-<img width="200" height="120" alt="Pasted image 20251021112055" src="https://github.com/user-attachments/assets/92ac40e5-564a-4e7d-9b2c-d4f0eaafd9ee" />
+<img width="101" height="61" alt="Pasted image 20251021112055" src="https://github.com/user-attachments/assets/d5516c3b-cf95-4e36-b76b-ab711980cbea" />
+
 
 
 **How to Use It:**
@@ -598,7 +615,8 @@ EVALUATE
 4. If the number looks correct, click "Add new measure" or "Overwrite measure"
 5. Done
 
-<img width="540" height="300" alt="Pasted image 20251021113747" src="https://github.com/user-attachments/assets/ff871866-c6fb-425a-90d4-0427cc96d05e" />
+
+<img width="271" height="158" alt="Pasted image 20251021113747" src="https://github.com/user-attachments/assets/be85fbf5-d4cf-40d5-ad64-1f1df53b0b68" />
 
 
 The measure is now in your model. No copying. No pasting. No typos.
@@ -620,7 +638,8 @@ Best for: Creating multiple variations of existing measures.
 
 Multiple measures created in one action.
 
-<img width="600" height="440" alt="Pasted image 20251021114450" src="https://github.com/user-attachments/assets/2bec7ca5-e27e-4d52-8c14-5deba0326bf9" />
+<img width="293" height="218" alt="Pasted image 20251021114450" src="https://github.com/user-attachments/assets/ebc5481d-24f2-4a97-b2f1-78986ec93b2b" />
+
 
 
 **Which approach should you use?**

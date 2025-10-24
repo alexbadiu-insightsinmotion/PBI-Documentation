@@ -97,7 +97,7 @@ Don't worry about memorizing this table. After creating a few measures using bot
 > Most Power BI developers will use both tools multiple times in a single session. This isn't about choosing one over the other, it's about knowing which tool fits each step of your workflow.
 <br>
 
-<img width="251" height="197" alt="Pasted image 20251019144844" src="https://github.com/user-attachments/assets/ab7ec096-5d2a-491d-9e89-d1fe94ac1866" />
+<img width="500" height="400" alt="Pasted image 20251019144844" src="https://github.com/user-attachments/assets/ab7ec096-5d2a-491d-9e89-d1fe94ac1866" />
 
 
 
@@ -149,7 +149,7 @@ This single technique will probably save you hours.
 - `Ctrl + D` - Select next occurrence of current word
 - `Ctrl + Shift + L` - Select ALL occurrences
 
-<img width="268" height="497" alt="Pasted image 20251020223733" src="https://github.com/user-attachments/assets/65feb3ce-5758-4cbf-8e30-90ee42181cc1" />
+<img width="540" height="1000" alt="Pasted image 20251020223733" src="https://github.com/user-attachments/assets/65feb3ce-5758-4cbf-8e30-90ee42181cc1" />
 
 <br>
 <br>
@@ -180,7 +180,7 @@ Not always needed, but useful to know we can go beyond basic find-replace. TMDL 
 
 Press `Ctrl + F` to open the find-replace panel or press directly `Ctrl + H`.
 
-<img width="218" height="61" alt="Pasted image 20251020224010" src="https://github.com/user-attachments/assets/0d166a5f-8562-4001-8100-762b481dcf76" />
+<img width="440" height="120" alt="Pasted image 20251020224010" src="https://github.com/user-attachments/assets/0d166a5f-8562-4001-8100-762b481dcf76" />
 
 
 
@@ -228,7 +228,7 @@ regex
 measure 'KPI_$1$2'
 ```
 
-<img width="1067" height="223" alt="Pasted image 20251020224930" src="https://github.com/user-attachments/assets/ee0ef770-7300-4f5d-aa35-ef94ce55679f" />
+<img width="1000" height="1000" alt="Pasted image 20251020224930" src="https://github.com/user-attachments/assets/ee0ef770-7300-4f5d-aa35-ef94ce55679f" />
 
 
 
@@ -246,11 +246,11 @@ measure 'Customer Count' = DISTINCTCOUNT(Customer[ID])
 <br>
 
 
-<img width="233" height="52" alt="Pasted image 20251020225007" src="https://github.com/user-attachments/assets/d34e0ff2-d764-4678-a9c0-6779e9a239b6" />
+<img width="500" height="120" alt="Pasted image 20251020225007" src="https://github.com/user-attachments/assets/d34e0ff2-d764-4678-a9c0-6779e9a239b6" />
 
 <br>
 
-<img width="237" height="101" alt="Pasted image 20251020225106" src="https://github.com/user-attachments/assets/647744b1-0e2e-4740-98d0-2b160311a2ef" />
+<img width="500" height="200" alt="Pasted image 20251020225106" src="https://github.com/user-attachments/assets/647744b1-0e2e-4740-98d0-2b160311a2ef" />
 
 
 
@@ -301,10 +301,10 @@ regex
 VAR _$1 =
 ```
 
-<img width="1045" height="209" alt="Pasted image 20251020225721" src="https://github.com/user-attachments/assets/46d63941-ac1b-41ff-9d68-b8f6d09bb5a0" />
+<img width="1045" height="400" alt="Pasted image 20251020225721" src="https://github.com/user-attachments/assets/46d63941-ac1b-41ff-9d68-b8f6d09bb5a0" />
 
 
-<img width="250" height="167" alt="Pasted image 20251020225744" src="https://github.com/user-attachments/assets/d71809f9-6e4e-4f7c-9201-80af9a3085be" />
+<img width="250" height="320" alt="Pasted image 20251020225744" src="https://github.com/user-attachments/assets/d71809f9-6e4e-4f7c-9201-80af9a3085be" />
 
 
 
@@ -339,7 +339,7 @@ measure 'Total Sales' = ```
     RETURN _Result
 ``` 
 
-<img width="231" height="191" alt="Pasted image 20251020225856" src="https://github.com/user-attachments/assets/c80f2fa2-c490-46e7-a372-84b12d21f92e" />
+<img width="460" height="400" alt="Pasted image 20251020225856" src="https://github.com/user-attachments/assets/c80f2fa2-c490-46e7-a372-84b12d21f92e" />
 
 
 
@@ -424,7 +424,7 @@ createOrReplace
 <br>
 <br>
 
-<img width="310" height="224" alt="Pasted image 20251020234552" src="https://github.com/user-attachments/assets/c7bcb7a2-e378-449f-8f72-5cb7a5cf2c5c" />
+<img width="600" height="500" alt="Pasted image 20251020234552" src="https://github.com/user-attachments/assets/c7bcb7a2-e378-449f-8f72-5cb7a5cf2c5c" />
 
 <br>
 
@@ -433,7 +433,7 @@ You might observe that some measures in TMDL have backticks. This is important.
 <br>
 <br>
 
-<img width="402" height="488" alt="Pasted image 20251021110653" src="https://github.com/user-attachments/assets/330cac69-a254-4295-b915-635d75c8ad90" />
+<img width="800" height="900" alt="Pasted image 20251021110653" src="https://github.com/user-attachments/assets/330cac69-a254-4295-b915-635d75c8ad90" />
 
 
 
@@ -465,7 +465,7 @@ TMDL View shows you exactly what will change before you commit.
 
 This is a safety net.
 
-<img width="2262" height="1118" alt="Pasted image 20251021111549" src="https://github.com/user-attachments/assets/4db883b6-573f-4988-80da-7f9ae341e1cb" />
+<img width="2262" height="1350" alt="Pasted image 20251021111549" src="https://github.com/user-attachments/assets/4db883b6-573f-4988-80da-7f9ae341e1cb" />
 
 
 
@@ -549,7 +549,7 @@ createOrReplace
         annotation PBI_ResultType = Table
 ```
 
-<img width="101" height="61" alt="Pasted image 20251021112055" src="https://github.com/user-attachments/assets/d5516c3b-cf95-4e36-b76b-ab711980cbea" />
+<img width="200" height="120" alt="Pasted image 20251021112055" src="https://github.com/user-attachments/assets/d5516c3b-cf95-4e36-b76b-ab711980cbea" />
 
 
 
@@ -616,7 +616,7 @@ EVALUATE
 5. Done
 
 
-<img width="271" height="158" alt="Pasted image 20251021113747" src="https://github.com/user-attachments/assets/be85fbf5-d4cf-40d5-ad64-1f1df53b0b68" />
+<img width="540" height="300" alt="Pasted image 20251021113747" src="https://github.com/user-attachments/assets/be85fbf5-d4cf-40d5-ad64-1f1df53b0b68" />
 
 
 The measure is now in your model. No copying. No pasting. No typos.
@@ -638,7 +638,7 @@ Best for: Creating multiple variations of existing measures.
 
 Multiple measures created in one action.
 
-<img width="293" height="218" alt="Pasted image 20251021114450" src="https://github.com/user-attachments/assets/ebc5481d-24f2-4a97-b2f1-78986ec93b2b" />
+<img width="600" height="440" alt="Pasted image 20251021114450" src="https://github.com/user-attachments/assets/ebc5481d-24f2-4a97-b2f1-78986ec93b2b" />
 
 
 

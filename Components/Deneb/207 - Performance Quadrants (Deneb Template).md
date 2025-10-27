@@ -8,8 +8,6 @@ The native Power BI scatter chart doesn't by default categorize the performance 
 
 I provide a Deneb template for just this scanario. 
 
-*** INSERT VIDEO ***
-
 <br>
 
 <details closed>

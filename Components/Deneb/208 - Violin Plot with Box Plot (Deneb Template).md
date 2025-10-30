@@ -358,12 +358,12 @@ The template displays a number of Deneb/Vega-Lite features, including:
 
 Here's the templates:
 
-[908.1 - JSON - Deneb Template - Violin Plot with Box Plot](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/907.1%20-%20deneb_template.performance_quadrants.v1.8.1.json) *** FIX *** <br>
+[908.1 - JSON - Deneb Template - Violin Plot with Box Plot](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/908.1%20-%20deneb_template.violin_plot_with_box_plot.v1.8.2.json) <br>
 
 <br>
 
 Here's an example Power BI file using the templates:
 
-[908.2 - PBIX - Deneb Example - Violin Plot with Box Plot](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/907.2%20-%20Deneb%20Reusable%20Components%20-%20Performance%20Quadrants%20-%20V1.8.1.pbix) *** FIX *** <br>
+[908.2 - PBIX - Deneb Example - Violin Plot with Box Plot](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/908.2%20-%20Deneb%20Reusable%20Components%20-%20Violin%20Plot%20with%20Box%20Plot%20-%20V1.8.2.pbix) <br>
 
 *- eof*

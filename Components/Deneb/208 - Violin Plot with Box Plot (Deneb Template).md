@@ -309,7 +309,7 @@ I provide a Deneb template for just this senario.
 The template displays a number of Deneb/Vega-Lite features, including:
 
 0 - General:
-- a ***title*** block with multi-line ***subtutle*** array
+- a ***title*** block with multi-line ***subtitle*** array
 - a standard Power BI dataset
 - a ***vconcat*** block for the divider and violin plot
 

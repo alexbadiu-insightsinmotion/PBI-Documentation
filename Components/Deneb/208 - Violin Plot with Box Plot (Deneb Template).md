@@ -10,7 +10,7 @@ Deneb/Vega-Lite can be used to display statistical analyses of Power BI datasets
 
 The example presented here is a statistical distribution of value by group (e.g., sales by country), with a *Violin Plot* overlaid by a *Box Plot*.
 
-I provide a Deneb template for just this scanario. 
+I provide a Deneb template for just this senario. 
 
 
 <br>

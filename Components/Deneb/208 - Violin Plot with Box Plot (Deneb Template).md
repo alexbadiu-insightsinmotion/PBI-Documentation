@@ -356,7 +356,7 @@ The template displays a number of Deneb/Vega-Lite features, including:
 
 ### Links:
 
-Here's the templates:
+Here's the template:
 
 [908.1 - JSON - Deneb Template - Violin Plot with Box Plot](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/908.1%20-%20deneb_template.violin_plot_with_box_plot.v1.8.2.json) <br>
 

@@ -660,7 +660,7 @@ The template displays a number of Deneb/Vega-Lite features, including:
 
 ### Links:
 
-Here's the templates:
+Here's the template:
 
 [907.1 - JSON - Deneb Template - Performance Quadrants](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/907.1%20-%20deneb_template.performance_quadrants.v1.8.1.json) <br>
 

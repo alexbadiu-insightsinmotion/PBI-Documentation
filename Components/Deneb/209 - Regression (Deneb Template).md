@@ -396,12 +396,12 @@ This example illustrates a number of Deneb/Vega-Lite features, including:
 
 Here's the templates:
 
-[909.1 - JSON - Deneb Template - Regression](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/907.1%20-%20deneb_template.performance_quadrants.v1.8.1.json) *** FIX *** <br>
+[909.1 - JSON - Deneb Template - Regression](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/909.1%20-%20deneb_template.regression.v1.8.2.json) <br>
 
 <br>
 
 Here's an example Power BI file using the templates:
 
-[909.2 - PBIX - Deneb Example - Regression](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/907.2%20-%20Deneb%20Reusable%20Components%20-%20Performance%20Quadrants%20-%20V1.8.1.pbix) *** FIX *** <br>
+[909.2 - PBIX - Deneb Example - Regression](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/909.2%20-%20Deneb%20Reusable%20Components%20-%20Regression%20-%20V1.8.2.pbix) <br>
 
 *- eof*

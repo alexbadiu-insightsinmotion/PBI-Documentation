@@ -140,7 +140,9 @@ Return to DAX Query View to verify everything works as expected in the actual mo
 
 
 
-<img width="1200" height="1063" alt="image" src="https://github.com/user-attachments/assets/5ac51036-8b1c-41ac-bceb-0e964863e97a" />
+<img width="1200" height="1063" alt="Workflow Pro" src="https://github.com/user-attachments/assets/f5d942b8-0556-4756-b26a-230f2ab7a96b" />
+
+
 
 
 
@@ -206,14 +208,16 @@ EVALUATE
 
 You can also start from an existing simple measure (Define and Evaluate)
 
-<img width="565" height="420" alt="Pasted image 20251106101303" src="https://github.com/user-attachments/assets/e3c3d709-bfbf-4c9e-bb8e-3878052e3592" />
+<img width="565" height="420" alt="Pasted image 20251106101303" src="https://github.com/user-attachments/assets/7781a9fc-ba4b-4088-bf95-0dec15729a7f" />
+
 <br> 
 
  
  and simply change the name
  <br>
  
-<img width="472" height="400" alt="Pasted image 20251106101649" src="https://github.com/user-attachments/assets/6182a21e-1b25-4e51-b49b-e8171729a515" />
+<img width="472" height="400" alt="Pasted image 20251106101649" src="https://github.com/user-attachments/assets/4ea9d805-5736-4152-950a-82d3b175a61c" />
+
 
 
 <br>
@@ -257,7 +261,8 @@ EVALUATE
 
 Run it again. Check the result. Does it differ from the simple SUM? It should as you are multiplying Quantity * Net Price.
 
-<img width="400" height="400" alt="Pasted image 20251106103405" src="https://github.com/user-attachments/assets/d2bc1b7b-bd9e-4abb-8819-87ee9b2ad242" />
+<img width="400" height="400" alt="Pasted image 20251106103405" src="https://github.com/user-attachments/assets/c22c1772-19a1-4528-9830-8b0a14831879" />
+
 <br> 
 
 
@@ -283,7 +288,8 @@ EVALUATE
 }
 ```
 
-<img width="400" height="580" alt="Pasted image 20251106103633" src="https://github.com/user-attachments/assets/e8a77e27-3f6d-4fa7-a6a1-f316ddad52b5" />
+<img width="400" height="580" alt="Pasted image 20251106103633" src="https://github.com/user-attachments/assets/39d749fa-3eae-4f27-9a73-4f4c16c526e5" />
+
 
 
 Now you can see if the issue is:
@@ -317,7 +323,8 @@ SUMMARIZECOLUMNS(
 ORDER BY [Total Sales] DESC
 ```
 
-<img width="400" height="600" alt="Pasted image 20251106103751" src="https://github.com/user-attachments/assets/04f94717-0e0e-4325-a131-85655b7c4055" />
+<img width="400" height="600" alt="Pasted image 20251106103751" src="https://github.com/user-attachments/assets/09014d17-a6b4-4623-af97-8d722a73f2f4" />
+
 <br> 
 
 
@@ -373,7 +380,9 @@ Each piece of the logic is visible. You can verify every step. Build confidence 
 
 >[!NOTE]
 >If you have an error in your code, DAX Query View will let you know
-> <img width="1396" height="923" alt="Pasted image 20251106104646" src="https://github.com/user-attachments/assets/a94c9851-7fbc-4fbb-b70c-0638c8d3c2bf" />
+
+<img width="1396" height="923" alt="Pasted image 20251106104646" src="https://github.com/user-attachments/assets/4e328dd3-3521-4615-b7b5-6bc6235b6d3c" />
+
 
 <br>
 <br>
@@ -384,7 +393,8 @@ Each piece of the logic is visible. You can verify every step. Build confidence 
 
 <br>
 
-<img width="520" height="800" alt="Pasted image 20251106104839" src="https://github.com/user-attachments/assets/81f800dc-6c6d-46df-aa95-9901d8f839b2" />
+<img width="520" height="800" alt="Pasted image 20251106104839" src="https://github.com/user-attachments/assets/60bb413f-31cd-4cdf-8edf-850e1680b589" />
+
 
 
 **Why this matters:**
@@ -406,7 +416,8 @@ Once you're satisfied with the logic, add the measure:
 2. Click **Add new measure** to add measures one-by-one, or **Update model with changes** to create measures in bulk.
 3. Done
 
-<img width="600" height="500" alt="Pasted image 20251106105926" src="https://github.com/user-attachments/assets/2c802ffb-0045-4457-81d3-be3ce5ae48b9" />
+<img width="600" height="500" alt="Pasted image 20251106105926" src="https://github.com/user-attachments/assets/cb4e3ba5-10d5-4f4c-89e6-a67d05363588" />
+
 <br> 
 
 
@@ -414,7 +425,8 @@ The measure(s) appears in your model. The formula is exactly what you tested. No
 
 Be aware that after creating a measure in the model, you can’t undo this action to modify it later.
 
-<img width="300" height="150" alt="Pasted image 20251106110202" src="https://github.com/user-attachments/assets/8ce4d9ac-cb06-4be4-977f-5599a6b05e14" />
+<img width="300" height="150" alt="Pasted image 20251106110202" src="https://github.com/user-attachments/assets/b2742f6b-556a-4c0f-b4d5-4517b6bf3c30" />
+
 <br> 
 
 
@@ -468,7 +480,9 @@ Use [multi-cursor editing](https://github.com/alexbadiu-insightsinmotion/PBI-Doc
 All measures get formatted simultaneously.
 <br> 
 
-<img width="800" height="670" alt="Pasted image 20251106111056" src="https://github.com/user-attachments/assets/275f6bd9-4446-404e-b771-f515886f5d03" />
+<img width="800" height="670" alt="Pasted image 20251106111056" src="https://github.com/user-attachments/assets/b4c30493-38a9-42ba-94e6-5b28ad1df665" />
+
+
 <br> 
 
 
@@ -485,7 +499,8 @@ Same technique. Same keyboard shortcuts:
 2. Press `Enter`, type: `displayFolder: Sales Metrics`
 <br> 
 
-<img width="1010" height="471" alt="Pasted image 20251106111623" src="https://github.com/user-attachments/assets/0bf8d204-9321-48b6-b3bf-19c4ab773e06" />
+<img width="1010" height="471" alt="Pasted image 20251106111623" src="https://github.com/user-attachments/assets/05ac3783-4d9f-4443-a0b8-f4aa13d787b6" />
+
 <br> 
 
 

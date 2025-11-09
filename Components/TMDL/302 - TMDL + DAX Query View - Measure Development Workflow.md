@@ -1,5 +1,7 @@
 
-<img width="1950" height="1068" alt="Issue #302" src="https://github.com/user-attachments/assets/c9804b65-6c40-477f-b9f8-e010ed0c2d4a" />
+<img width="1950" height="1068" alt="Issue #302" src="https://github.com/user-attachments/assets/4c1daa36-0292-419f-9b2e-e38292c10274" />
+
+
 
 
 In the [previous article](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/TMDL/301%20-%20TMDL%20%2B%20DAX%20Query%20View%20-%20Measure%20editing%20%26%20creation.md), we explored how TMDL and DAX Query View work together. We learned the core techniques: drag-and-drop code generation, multi-cursor editing, and the basic workflow pattern. <br> 

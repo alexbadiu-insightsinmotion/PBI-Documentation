@@ -656,7 +656,7 @@ This example illustrates a number of Deneb/Vega-Lite features, including:
 
 2a(2) - Variance Arrow:
 - a ***line*** mark with:
-    - ***ranged*** X and Y values
+    - ***ranged*** X values
     - conditional colour using the Power BI Theme sentiment colours
     - a *named style*
 

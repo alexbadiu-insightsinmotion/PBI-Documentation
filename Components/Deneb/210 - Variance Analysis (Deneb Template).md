@@ -764,12 +764,12 @@ This example illustrates a number of Deneb/Vega-Lite features, including:
 
 Here's the template:
 
-[910.1 - JSON - Deneb Template - Variance Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/909.1%20-%20deneb_template.regression.v1.8.2.json) *** FIX *** <br>
+[910.1 - JSON - Deneb Template - Variance Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/910.1%20-%20deneb_template.variance_analysis.v1.8.2.json) <br>
 
 <br>
 
 Here's an example Power BI file using the template:
 
-[910.2 - PBIX - Deneb Example - Variance Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/909.2%20-%20Deneb%20Reusable%20Components%20-%20Regression%20-%20V1.8.2.pbix) *** FIX *** <br>
+[910.2 - PBIX - Deneb Example - Variance Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/910.2%20-%20Deneb%20Reusable%20Components%20-%20Variance%20Analysis%20-%20V1.8.2.pbix) <br>
 
 *- eof*

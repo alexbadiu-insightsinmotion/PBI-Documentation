@@ -666,7 +666,7 @@ Here's the template:
 
 <br>
 
-Here's an example Power BI file using the templates:
+Here's an example Power BI file using the template:
 
 [907.2 - PBIX - Deneb Example - Performance Quadrants](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/907.2%20-%20Deneb%20Reusable%20Components%20-%20Performance%20Quadrants%20-%20V1.8.1.pbix) <br>
 

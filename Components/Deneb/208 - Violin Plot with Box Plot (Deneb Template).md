@@ -362,7 +362,7 @@ Here's the template:
 
 <br>
 
-Here's an example Power BI file using the templates:
+Here's an example Power BI file using the template:
 
 [908.2 - PBIX - Deneb Example - Violin Plot with Box Plot](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/908.2%20-%20Deneb%20Reusable%20Components%20-%20Violin%20Plot%20with%20Box%20Plot%20-%20V1.8.2.pbix) <br>
 

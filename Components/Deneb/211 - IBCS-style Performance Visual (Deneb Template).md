@@ -919,12 +919,12 @@ This example illustrates a number of Deneb/Vega-Lite features, including:
 
 Here's the template:
 
-[911.1 - JSON - Deneb Template - IBCS-style Performance Visual](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/910.1%20-%20deneb_template.variance_analysis.v1.8.2.json) *** FIX *** <br>
+[911.1 - JSON - Deneb Template - IBCS-style Performance Visual](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/911.1%20-%20deneb_template.ibcs-style_performance_visual.v1.8.2.json) <br>
 
 <br>
 
 Here's an example Power BI file using the template:
 
-[911.2 - PBIX - Deneb Example - IBCS-style Performance Visual](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/910.2%20-%20Deneb%20Reusable%20Components%20-%20Variance%20Analysis%20-%20V1.8.2.pbix) *** FIX *** <br>
+[911.2 - PBIX - Deneb Example - IBCS-style Performance Visual](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/911.2%20-%20Deneb%20Reusable%20Components%20-%20IBCS-style%20Performance%20Visual%20-%20V1.8.2.pbix) <br>
 
 *- eof*

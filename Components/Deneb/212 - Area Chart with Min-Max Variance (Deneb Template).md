@@ -1,4 +1,4 @@
-<img width="1280" height="659" alt="212 - Image - Title - Area Chart with Min-Max Variance" src="https://github.com/user-attachments/assets/8e040fda-3d37-4c3c-8da8-952dd68c32aa" />
+<img width="1280" height="659" alt="212 - Image - Title - Area Chart with Min-Max Variance" src="https://github.com/user-attachments/assets/9ea693f4-5e30-4b61-b492-db2d3f056c2f" />
 
 ## Area Chart with Min-Max Variance
 

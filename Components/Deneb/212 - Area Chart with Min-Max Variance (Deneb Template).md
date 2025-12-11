@@ -1,8 +1,4 @@
-*** FIX ***
-
 <img width="1280" height="659" alt="212 - Image - Title - Area Chart with Min-Max Variance" src="https://github.com/user-attachments/assets/8e040fda-3d37-4c3c-8da8-952dd68c32aa" />
-
-*** INSERT VIDEO, OR REPLACE IMAGE WITH VIDEO IF CAN USE TITLE SLIDE ***
 
 ## Area Chart with Min-Max Variance
 
@@ -900,12 +896,12 @@ Selected Previous Months = SELECTEDVALUE( Periods[Period Months] )
 
 Here's the template:
 
-[912.1 - JSON - Deneb Template - Area Chart with Min-Max Variance](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/911.1%20-%20deneb_template.ibcs-style_performance_visual.v1.8.2.json) *** FIX *** <br>
+[912.1 - JSON - Deneb Template - Area Chart with Min-Max Variance](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/912.1%20-%20deneb_template.area_chart_with_min_max_variance.v1.8.2.json) <br>
 
 <br>
 
 Here's an example Power BI file using the template:
 
-[912.2 - PBIX - Deneb Example - Area Chart with Min-Max Variance](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/911.2%20-%20Deneb%20Reusable%20Components%20-%20IBCS-style%20Performance%20Visual%20-%20V1.8.2.pbix) *** FIX *** <br>
+[912.2 - PBIX - Deneb Example - Area Chart with Min-Max Variance](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/912.2%20-%20Deneb%20Reusable%20Components%20-%20Area%20Chart%20with%20Min-Max%20Variance%20-%20V1.8.2.pbix) <br>
 
 *- eof*

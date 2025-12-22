@@ -4,7 +4,7 @@
 
 *December 10, 2025*
 
-Deneb/Vega-Lite can be used to create an area chart enhanced with period min and max markers and variance calculations. In this example, 
+Deneb/Vega-Lite can be used to create an area chart enhanced with period min and max markers and variance calculations.
 
 This example has a smoothed gradient area chart, min and max markers and labels, a min-max variance note with leader lines, and uses Power BI theme colours. All calculations are done in Deneb/Vega-Lite; no Power BI calculations (i.e., no DAX) is used. A Power BI date picker and period slicer are used as Vega-Lite does not currently provide appearance customization options.
 

@@ -62,7 +62,7 @@
     "offset": 10,
     "text": "Area Chart with Min-Max Variance",
     "subtitle": {
-      "expr": "'Toronto Stock Exchange (TSX) Composite Index Close' + '[::]' + 'For period = ' + timeFormat( data('data_0')[0]['_min_date'], '%d-%b-%Y' ) + ' to ' + timeFormat( data('data_0')[0]['_max_date'], '%d-%b-%Y' )"
+      "expr": "'Toronto Stock Exchange (TSX) Composite Index Close' + '[::]' + 'For period = ' + timeFormat( data('data_0')[0]['_start_date'], '%d-%b-%Y' ) + ' to ' + timeFormat( data('data_0')[0]['_end_date'], '%d-%b-%Y' )"
     },
     "subtitlePadding": 2
   },

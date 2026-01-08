@@ -785,7 +785,7 @@ This example illustrates a number of Deneb/Vega-Lite features, including:
     - 2x ***calculate*** transforms to assign internal names to the Power BI dataset fields
     - 2x ***calculate*** transforms to extract the year and month from the Power BI date field
     - an ***aggregate*** transform to aggregate the dataset values into months
-    - a ***window/lag*** transform to get the previous month's value
+    - a ***window/lag*** transform to get the previous months' value
     - a ***calculate*** transform that uses the extracted year and month to create a composite year-month
     - a ***window/rank*** transform to rank the composite year-month
     - 2x ***calculate*** transforms and 2x ***joinaggregate*** transforms to determine the min and max ranks in the selected period

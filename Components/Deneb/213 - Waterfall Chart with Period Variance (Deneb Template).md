@@ -951,12 +951,12 @@ This example illustrates a number of Deneb/Vega-Lite features, including:
 
 Here's the template:
 
-[913.1 - JSON - Deneb Template - Waterfall Chart with Period Variance](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/912.1%20-%20deneb_template.area_chart_with_min_max_variance.v1.8.2.json) *** FIX *** <br>
+[913.1 - JSON - Deneb Template - Waterfall Chart with Period Variance](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/913.1%20-%20deneb_waterfall_chart_with_period_variance.v1.8.2.json) <br>
 
 <br>
 
 Here's an example Power BI file using the template:
 
-[913.2 - PBIX - Deneb Example - Waterfall Chart with Period Variance](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/912.2%20-%20Deneb%20Reusable%20Components%20-%20Area%20Chart%20with%20Min-Max%20Variance%20-%20V1.8.2.pbix) *** FIX *** <br>
+[913.2 - PBIX - Deneb Example - Waterfall Chart with Period Variance](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/913.2%20-%20Deneb%20Reusable%20Components%20-%20Waterfall%20Chart%20with%20Period%20Variance%20-%20V1.8.2.pbix) <br>
 
 *- eof*

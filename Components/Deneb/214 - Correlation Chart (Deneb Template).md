@@ -781,7 +781,7 @@ This example illustrates a number of Deneb/Vega-Lite features, including:
 - a ***spec*** block with a ***vconcat*** block for the facet title section and facet correlation matrix
 
 >[!NOTE]
->*facets set to 3 columns by adding a ***columns: 3*** key:value pair and NOT using ***row*** or ***column*** in the facet definition*
+>*facets are configured to use 3 columns by adding a ***columns: 3*** key:value pair and NOT using ***row*** or ***column*** in the facet definition*
 
 2a - Header:
 - a nested ***transform*** block with:

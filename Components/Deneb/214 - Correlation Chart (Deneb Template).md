@@ -788,7 +788,7 @@ This example illustrates a number of Deneb/Vega-Lite features, including:
     - an ***aggregate*** transform to restrict the dataset to 1 record per person
         - *additional fields (name, initials, role) added to the aggregation to have them "pass-through" the aggregation and thus be available afterwards*
 - a ***shared encoding*** block to ensure all layered marks use the same axis configurations
- 	- the ***X-axis*** uses a ***scale/domain*** array to set a 0-100 scale for ease of positioning the subsequent elements
+ 	- the ***X-axis*** uses a ***scale/domain*** array to set a 0-100 scale for ease of positioning the component elements
 - a ***layer*** block for the background bar, the circle, the initials, the name, the role, and a vertical spacer
 
 2a (1) - Background Bar:
@@ -855,8 +855,8 @@ This example illustrates a number of Deneb/Vega-Lite features, including:
 3 - Legend:
 - a 4-record ***hard-coded dataset*** (labels include a linebreak character to enable multi-line display)
 - a ***shared encoding*** block to ensure all layered marks use the same axis configurations
- 	- the ***X-axis*** uses a ***scale/domain*** array to set a 0-100 scale for ease of positioning the subsequent elements
-   	- the ***Y-axis*** uses a ***scale/domain*** array to set a 0-1 scale for ease of positioning the subsequent elements
+ 	- the ***X-axis*** uses a ***scale/domain*** array to set a 0-100 scale for ease of positioning the component elements
+   	- the ***Y-axis*** uses a ***scale/domain*** array to set a 0-1 scale for ease of positioning the component elements
 - a ***layer*** block for the squares and the labels
 
 3a - Legend Squares:

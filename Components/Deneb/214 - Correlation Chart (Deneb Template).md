@@ -898,12 +898,12 @@ This example illustrates a number of Deneb/Vega-Lite features, including:
 
 Here's the template:
 
-[914.1 - JSON - Deneb Template - Correlation Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/913.1%20-%20deneb_waterfall_chart_with_period_variance.v1.8.2.json) *** FIX *** <br>
+[914.1 - JSON - Deneb Template - Correlation Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/914.1%20-%20BEFORE%20RELEASE%20-%20deneb_correlation_chart.v1.8.2.json) <br>
 
 <br>
 
 Here's an example Power BI file using the template:
 
-[914.2 - PBIX - Deneb Example - Correlation Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/913.2%20-%20Deneb%20Reusable%20Components%20-%20Waterfall%20Chart%20with%20Period%20Variance%20-%20V1.8.2.pbix) *** FIX *** <br>
+[914.2 - PBIX - Deneb Example - Correlation Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/914.2%20-%20BEFORE%20RELEASE%20-%20Deneb%20Reusable%20Components%20-%20Correlation%20Chart%20-%20V1.8.2.pbix) <br>
 
 *- eof*

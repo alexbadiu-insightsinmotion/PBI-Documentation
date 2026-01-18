@@ -1,5 +1,6 @@
 
-<img width="2553" height="1272" alt="Pasted image 20260113113538" src="https://github.com/user-attachments/assets/601f0c65-0a0c-40d3-971a-3586a00bd35d" />
+<img width="2553" height="1272" alt="Pasted image 20260113113538" src="https://github.com/user-attachments/assets/ab6cf365-ac39-4d05-aac1-01b14907da67" />
+
 
 <br>
 <br>
@@ -118,7 +119,8 @@ My solution in Article 21 was:
 After recommending in Issue 21 that teams "create separate documentation for the 'why' outside Power BI," I tried to teach other developers implement this technique and asked for feedback. I learned that while the idea is interesting, it could be difficult to standardize and scale beyond my own work.
 
 
-<img width="1213" height="1035" alt="Pasted image 20260114073122" src="https://github.com/user-attachments/assets/cf56cc2c-547c-4114-aa45-e892e0d914a5" />
+<img width="1213" height="1035" alt="Pasted image 20260114073122" src="https://github.com/user-attachments/assets/08708d57-aee3-4118-b2f6-c5353f104d74" />
+
 
 
 ### **Problem 1: Scalability - Too Much to Remember**

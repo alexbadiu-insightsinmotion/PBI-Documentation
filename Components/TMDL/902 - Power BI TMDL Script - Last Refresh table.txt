@@ -1,0 +1,64 @@
+createOrReplace
+
+	table 'Last Refresh'
+		isHidden: true
+
+		column 'Last Refresh'
+			dataType: dateTime
+			isHidden: true
+			formatString: yyyy-mm-dd h:nn:ss AM/PM
+			summarizeBy: none
+			sourceColumn: Last Refresh
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+		column Date
+			dataType: dateTime
+			isHidden: true
+			formatString: yyyy-mm-dd
+			summarizeBy: none
+			sourceColumn: Date
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+			annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+		column Time
+			dataType: dateTime
+			isHidden
+			formatString: hh:nn:ss AM/PM
+			summarizeBy: none
+			sourceColumn: Time
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Time
+
+			annotation PBI_FormatHint = {"isCustom":true}
+
+		partition 'Last Refresh' = m
+			mode: import
+			source =
+					let
+					  Source = DateTime.FixedLocalNow(),
+					  ConvertToTable = #table( 1, {{Source}} ),
+					  RenameColumn = Table.RenameColumns( ConvertToTable, {{"Column1", "Last Refresh"}} ),
+					  ChangeType = Table.TransformColumnTypes( RenameColumn, {{"Last Refresh", type datetime}} ),
+					
+					  AddDate = Table.AddColumn( ChangeType, "Date", each DateTime.Date( [Last Refresh] ), type date ),
+					  AddTime = Table.AddColumn( AddDate, "Time", each DateTime.Time( [Last Refresh] ), type time ),
+					
+					  FINAL_QUERY = AddTime
+					in
+					  FINAL_QUERY
+
+		changedProperty = IsHidden
+
+		annotation PBI_NavigationStepName = Navigation
+
+		annotation PBI_ResultType = Table
+

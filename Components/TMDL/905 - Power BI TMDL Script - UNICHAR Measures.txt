@@ -1,0 +1,2785 @@
+createOrReplace
+	
+	/// This table contains all Unicode Library from https://www.nudgebi.com/unicode-library
+	table 'Unicode Measures'
+
+		measure '↑ Upwards Arrow' = UNICHAR(8593)
+			displayFolder: Arrows
+
+		measure '↓ Downwards Arrow' = UNICHAR(8595)
+			displayFolder: Arrows
+
+		measure '→ Rightwards Arrow' = UNICHAR(8594)
+			displayFolder: Arrows
+
+		measure '← Leftwards Arrow' = UNICHAR(8592)
+			displayFolder: Arrows
+
+		measure '↔ Left Right Arrow' = UNICHAR(8596)
+			displayFolder: Arrows
+
+		measure '↕ Up Down Arrow' = UNICHAR(8597)
+			displayFolder: Arrows
+
+		measure '↗ North East Arrow' = UNICHAR(8599)
+			displayFolder: Arrows
+
+		measure '↘ South East Arrow' = UNICHAR(8600)
+			displayFolder: Arrows
+
+		measure '↙ South West Arrow' = UNICHAR(8601)
+			displayFolder: Arrows
+
+		measure '↖ North West Arrow' = UNICHAR(8598)
+			displayFolder: Arrows
+
+		measure '⇑ Upwards Double Arrow' = UNICHAR(8657)
+			displayFolder: Arrows
+
+		measure '⇓ Downwards Double Arrow' = UNICHAR(8659)
+			displayFolder: Arrows
+
+		measure '⇒ Rightwards Double Arrow' = UNICHAR(8658)
+			displayFolder: Arrows
+
+		measure '⇐ Leftwards Double Arrow' = UNICHAR(8656)
+			displayFolder: Arrows
+
+		measure '⇔ Left Right Double Arrow' = UNICHAR(8660)
+			displayFolder: Arrows
+
+		measure '⇕ Up Down Double Arrow' = UNICHAR(8661)
+			displayFolder: Arrows
+
+		measure '⇗ North East Double Arrow' = UNICHAR(8663)
+			displayFolder: Arrows
+
+		measure '⇘ South East Double Arrow' = UNICHAR(8664)
+			displayFolder: Arrows
+
+		measure '⇙ South West Double Arrow' = UNICHAR(8665)
+			displayFolder: Arrows
+
+		measure '⇖ North West Double Arrow' = UNICHAR(8662)
+			displayFolder: Arrows
+
+		measure '↺ Anticlockwise Open Circle Arrow' = UNICHAR(8634)
+			displayFolder: Arrows
+
+		measure '↻ Clockwise Open Circle Arrow' = UNICHAR(8635)
+			displayFolder: Arrows
+
+		measure '⇄ Rightwards Arrow Over Leftwards Arrow' = UNICHAR(8644)
+			displayFolder: Arrows
+
+		measure '⇆ Leftwards Arrow Over Rightwards Arrow' = UNICHAR(8646)
+			displayFolder: Arrows
+
+		measure '⇿ Left Right Arrow With Vertical Stroke' = UNICHAR(8703)
+			displayFolder: Arrows
+
+		measure '➔ Heavy Rightwards Arrow' = UNICHAR(10132)
+			displayFolder: Arrows
+
+		measure '➘ Heavy South East Arrow' = UNICHAR(10136)
+			displayFolder: Arrows
+
+		measure '➙ Heavy Rightwards Arrow' = UNICHAR(10137)
+			displayFolder: Arrows
+
+		measure '➚ Heavy North East Arrow' = UNICHAR(10138)
+			displayFolder: Arrows
+
+		measure '➛ Drafting Point Rightwards Arrow' = UNICHAR(10139)
+			displayFolder: Arrows
+
+		measure '➜ Heavy Round-Tipped Rightwards Arrow' = UNICHAR(10140)
+			displayFolder: Arrows
+
+		measure '➝ Triangle-Headed Rightwards Arrow' = UNICHAR(10141)
+			displayFolder: Arrows
+
+		measure '➞ Heavy Triangle-Headed Rightwards Arrow' = UNICHAR(10142)
+			displayFolder: Arrows
+
+		measure '➟ Dashed Triangle-Headed Rightwards Arrow' = UNICHAR(10143)
+			displayFolder: Arrows
+
+		measure '➠ Heavy Dashed Triangle-Headed Rightwards Arrow' = UNICHAR(10144)
+			displayFolder: Arrows
+
+		measure '➡ Black Rightwards Arrow' = UNICHAR(10145)
+			displayFolder: Arrows
+
+		measure '➢ Three-D Top-Lighted Rightwards Arrowhead' = UNICHAR(10146)
+			displayFolder: Arrows
+
+		measure '➣ Three-D Bottom-Lighted Rightwards Arrowhead' = UNICHAR(10147)
+			displayFolder: Arrows
+
+		measure '➤ Black Rightwards Arrowhead' = UNICHAR(10148)
+			displayFolder: Arrows
+
+		measure '➥ Heavy Black Curved Downwards And Rightwards Arrow' = UNICHAR(10149)
+			displayFolder: Arrows
+
+		measure '➦ Heavy Black Curved Upwards And Rightwards Arrow' = UNICHAR(10150)
+			displayFolder: Arrows
+
+		measure '➧ Squat Black Rightwards Arrow' = UNICHAR(10151)
+			displayFolder: Arrows
+
+		measure '➨ Heavy Concave-Pointed Black Rightwards Arrow' = UNICHAR(10152)
+			displayFolder: Arrows
+
+		measure '➩ Right-Shaded White Rightwards Arrow' = UNICHAR(10153)
+			displayFolder: Arrows
+
+		measure '➪ Left-Shaded White Rightwards Arrow' = UNICHAR(10154)
+			displayFolder: Arrows
+
+		measure '➫ Back-Tilted Shadowed White Rightwards Arrow' = UNICHAR(10155)
+			displayFolder: Arrows
+
+		measure '➬ Front-Tilted Shadowed White Rightwards Arrow' = UNICHAR(10156)
+			displayFolder: Arrows
+
+		measure '➭ Heavy Lower Right-Shadowed White Rightwards Arrow' = UNICHAR(10157)
+			displayFolder: Arrows
+
+		measure '➮ Heavy Upper Right-Shadowed White Rightwards Arrow' = UNICHAR(10158)
+			displayFolder: Arrows
+
+		measure '➯ Notched Lower Right-Shadowed White Rightwards Arrow' = UNICHAR(10159)
+			displayFolder: Arrows
+
+		measure '➱ Notched Upper Right-Shadowed White Rightwards Arrow' = UNICHAR(10161)
+			displayFolder: Arrows
+
+		measure '➲ Circled Heavy White Rightwards Arrow' = UNICHAR(10162)
+			displayFolder: Arrows
+
+		measure '➳ White-Feathered Rightwards Arrow' = UNICHAR(10163)
+			displayFolder: Arrows
+
+		measure '➴ Heavy White-Feathered South East Arrow' = UNICHAR(10164)
+			displayFolder: Arrows
+
+		measure '➵ Heavy White-Feathered Rightwards Arrow' = UNICHAR(10165)
+			displayFolder: Arrows
+
+		measure '➶ Heavy White-Feathered North East Arrow' = UNICHAR(10166)
+			displayFolder: Arrows
+
+		measure '➷ Heavy Stemmed Feathered South East Arrow' = UNICHAR(10167)
+			displayFolder: Arrows
+
+		measure '➸ Heavy Stemmed Feathered Rightwards Arrow' = UNICHAR(10168)
+			displayFolder: Arrows
+
+		measure '➹ Heavy Stemmed Feathered North East Arrow' = UNICHAR(10169)
+			displayFolder: Arrows
+
+		measure '➺ Heavy Sharp-Feathered South East Arrow' = UNICHAR(10170)
+			displayFolder: Arrows
+
+		measure '➻ Heavy Sharp-Feathered Rightwards Arrow' = UNICHAR(10171)
+			displayFolder: Arrows
+
+		measure '➼ Heavy Sharp-Feathered North East Arrow' = UNICHAR(10172)
+			displayFolder: Arrows
+
+		measure '➽ Heavy Arrow Shaft Rightwards Arrow' = UNICHAR(10173)
+			displayFolder: Arrows
+
+		measure '⤴ Arrow Pointing Rightwards Then Curving Upwards' = UNICHAR(10548)
+			displayFolder: Arrows
+
+		measure '⤵ Arrow Pointing Rightwards Then Curving Downwards' = UNICHAR(10549)
+			displayFolder: Arrows
+
+		measure '↵ Downwards Arrow With Corner Leftwards' = UNICHAR(8629)
+			displayFolder: Arrows
+
+		measure '↴ Downwards Arrow With Tip Leftwards' = UNICHAR(8628)
+			displayFolder: Arrows
+
+		measure '↳ Upwards Arrow With Tip Leftwards' = UNICHAR(8624)
+			displayFolder: Arrows
+
+		measure '↶ Anticlockwise Top Semicircle Arrow' = UNICHAR(8630)
+			displayFolder: Arrows
+
+		measure '↷ Clockwise Top Semicircle Arrow' = UNICHAR(8631)
+			displayFolder: Arrows
+
+		measure '￩ Leftwards Arrow With Stroke' = UNICHAR(8678)
+			displayFolder: Arrows
+
+		measure '￫ Rightwards Arrow With Stroke' = UNICHAR(8680)
+			displayFolder: Arrows
+
+		measure '↚ Leftwards Arrow With Stroke' = UNICHAR(8602)
+			displayFolder: Arrows
+
+		measure '↛ Rightwards Arrow With Stroke' = UNICHAR(8603)
+			displayFolder: Arrows
+
+		measure '↜ Leftwards Wave Arrow' = UNICHAR(8604)
+			displayFolder: Arrows
+
+		measure '↝ Rightwards Wave Arrow' = UNICHAR(8605)
+			displayFolder: Arrows
+
+		measure '↞ Leftwards Two Headed Arrow' = UNICHAR(8606)
+			displayFolder: Arrows
+
+		measure '↠ Rightwards Two Headed Arrow' = UNICHAR(8607)
+			displayFolder: Arrows
+
+		measure '↢ Leftwards Arrow With Tail' = UNICHAR(8610)
+			displayFolder: Arrows
+
+		measure '↣ Rightwards Arrow With Tail' = UNICHAR(8611)
+			displayFolder: Arrows
+
+		measure '↤ Leftwards Arrow From Bar' = UNICHAR(8612)
+			displayFolder: Arrows
+
+		measure '↥ Upwards Arrow From Bar' = UNICHAR(8613)
+			displayFolder: Arrows
+
+		measure '↦ Rightwards Arrow From Bar' = UNICHAR(8614)
+			displayFolder: Arrows
+
+		measure '↧ Downwards Arrow From Bar' = UNICHAR(8615)
+			displayFolder: Arrows
+
+		measure '↨ Up Down Arrow With Base' = UNICHAR(8616)
+			displayFolder: Arrows
+
+		measure '↩ Leftwards Arrow With Hook' = UNICHAR(8617)
+			displayFolder: Arrows
+
+		measure '↪ Rightwards Arrow With Hook' = UNICHAR(8618)
+			displayFolder: Arrows
+
+		measure '↫ Leftwards Arrow With Loop' = UNICHAR(8619)
+			displayFolder: Arrows
+
+		measure '↬ Rightwards Arrow With Loop' = UNICHAR(8620)
+			displayFolder: Arrows
+
+		measure '↭ Left Right Wave Arrow' = UNICHAR(8621)
+			displayFolder: Arrows
+
+		measure '↮ Left Right Arrow With Stroke' = UNICHAR(8622)
+			displayFolder: Arrows
+
+		measure '↯ Downwards Zigzag Arrow' = UNICHAR(8623)
+			displayFolder: Arrows
+
+		measure '↱ Upwards Arrow With Tip Rightwards' = UNICHAR(8625)
+			displayFolder: Arrows
+
+		measure '↲ Downwards Arrow With Tip Rightwards' = UNICHAR(8626)
+			displayFolder: Arrows
+
+		measure '↼ Leftwards Harpoon With Barb Upwards' = UNICHAR(8636)
+			displayFolder: Arrows
+
+		measure '↽ Leftwards Harpoon With Barb Downwards' = UNICHAR(8637)
+			displayFolder: Arrows
+
+		measure '↾ Upwards Harpoon With Barb Rightwards' = UNICHAR(8638)
+			displayFolder: Arrows
+
+		measure '↿ Upwards Harpoon With Barb Leftwards' = UNICHAR(8639)
+			displayFolder: Arrows
+
+		measure '⇀ Rightwards Harpoon With Barb Upwards' = UNICHAR(8640)
+			displayFolder: Arrows
+
+		measure '⇁ Rightwards Harpoon With Barb Downwards' = UNICHAR(8641)
+			displayFolder: Arrows
+
+		measure '⇂ Downwards Harpoon With Barb Rightwards' = UNICHAR(8642)
+			displayFolder: Arrows
+
+		measure '⇃ Downwards Harpoon With Barb Leftwards' = UNICHAR(8643)
+			displayFolder: Arrows
+
+		measure '⇋ Leftwards Harpoon Over Rightwards Harpoon' = UNICHAR(8651)
+			displayFolder: Arrows
+
+		measure '⇌ Rightwards Harpoon Over Leftwards Harpoon' = UNICHAR(8652)
+			displayFolder: Arrows
+
+		measure '⇍ Leftwards Double Arrow With Stroke' = UNICHAR(8653)
+			displayFolder: Arrows
+
+		measure '⇎ Left Right Double Arrow With Stroke' = UNICHAR(8654)
+			displayFolder: Arrows
+
+		measure '⇏ Rightwards Double Arrow With Stroke' = UNICHAR(8655)
+			displayFolder: Arrows
+
+		measure '⇜ Leftwards Squiggle Arrow' = UNICHAR(8668)
+			displayFolder: Arrows
+
+		measure '⇝ Rightwards Squiggle Arrow' = UNICHAR(8669)
+			displayFolder: Arrows
+
+		measure '⇞ Upwards Arrow With Double Stroke' = UNICHAR(8670)
+			displayFolder: Arrows
+
+		measure '⇟ Downwards Arrow With Double Stroke' = UNICHAR(8671)
+			displayFolder: Arrows
+
+		measure '⇠ Leftwards Dashed Arrow' = UNICHAR(8672)
+			displayFolder: Arrows
+
+		measure '⇡ Upwards Dashed Arrow' = UNICHAR(8673)
+			displayFolder: Arrows
+
+		measure '⇢ Rightwards Dashed Arrow' = UNICHAR(8674)
+			displayFolder: Arrows
+
+		measure '⇣ Downwards Dashed Arrow' = UNICHAR(8675)
+			displayFolder: Arrows
+
+		measure '⇤ Leftwards Arrow To Bar' = UNICHAR(8676)
+			displayFolder: Arrows
+
+		measure '⇥ Rightwards Arrow To Bar' = UNICHAR(8677)
+			displayFolder: Arrows
+
+		measure '⇩ Downwards White Arrow' = UNICHAR(8681)
+			displayFolder: Arrows
+
+		measure '⇪ Upwards White Arrow From Bar' = UNICHAR(8682)
+			displayFolder: Arrows
+
+		measure '⇫ Downwards White Arrow From Bar' = UNICHAR(8683)
+			displayFolder: Arrows
+
+		measure '⇬ Upwards White Arrow On Pedestal' = UNICHAR(8684)
+			displayFolder: Arrows
+
+		measure '⇭ Upwards White Arrow On Pedestal With Horizontal Bar' = UNICHAR(8685)
+			displayFolder: Arrows
+
+		measure '⇮ Upwards White Arrow On Pedestal With Vertical Bar' = UNICHAR(8686)
+			displayFolder: Arrows
+
+		measure '⇯ Upwards White Double Arrow' = UNICHAR(8687)
+			displayFolder: Arrows
+
+		measure '⇰ Rightwards White Arrow From Wall' = UNICHAR(8688)
+			displayFolder: Arrows
+
+		measure '⇱ North West Arrow To Corner' = UNICHAR(8689)
+			displayFolder: Arrows
+
+		measure '⇲ South East Arrow To Corner' = UNICHAR(8690)
+			displayFolder: Arrows
+
+		measure '⇳ Up Down White Arrow' = UNICHAR(8691)
+			displayFolder: Arrows
+
+		measure '⇴ Right Arrow With Small Circle' = UNICHAR(8692)
+			displayFolder: Arrows
+
+		measure '⇵ Upwards Arrow Leftwards Of Downwards Arrow' = UNICHAR(8693)
+			displayFolder: Arrows
+
+		measure '⇶ Three Rightwards Arrows' = UNICHAR(8694)
+			displayFolder: Arrows
+
+		measure '⇷ Leftwards Arrow With Vertical Stroke' = UNICHAR(8695)
+			displayFolder: Arrows
+
+		measure '⇸ Rightwards Arrow With Vertical Stroke' = UNICHAR(8696)
+			displayFolder: Arrows
+
+		measure '⇺ Leftwards Arrow With Double Vertical Stroke' = UNICHAR(8698)
+			displayFolder: Arrows
+
+		measure '⇻ Rightwards Arrow With Double Vertical Stroke' = UNICHAR(8699)
+			displayFolder: Arrows
+
+		measure '⇼ Left Right Arrow With Double Vertical Stroke' = UNICHAR(8700)
+			displayFolder: Arrows
+
+		measure '⇽ Leftwards Open-Headed Arrow' = UNICHAR(8701)
+			displayFolder: Arrows
+
+		measure '⇾ Rightwards Open-Headed Arrow' = UNICHAR(8702)
+			displayFolder: Arrows
+
+		measure '⟰ Upwards Quadruple Arrow' = UNICHAR(10224)
+			displayFolder: Arrows
+
+		measure '⟱ Downwards Quadruple Arrow' = UNICHAR(10225)
+			displayFolder: Arrows
+
+		measure '⟲ Anticlockwise Gapped Circle Arrow' = UNICHAR(10226)
+			displayFolder: Arrows
+
+		measure '⟳ Clockwise Gapped Circle Arrow' = UNICHAR(10227)
+			displayFolder: Arrows
+
+		measure '⟴ Right Arrow With Circled Plus' = UNICHAR(10228)
+			displayFolder: Arrows
+
+		measure '⟵ Long Leftwards Arrow' = UNICHAR(10229)
+			displayFolder: Arrows
+
+		measure '⟶ Long Rightwards Arrow' = UNICHAR(10230)
+			displayFolder: Arrows
+
+		measure '⟷ Long Left Right Arrow' = UNICHAR(10231)
+			displayFolder: Arrows
+
+		measure '⟸ Long Leftwards Double Arrow' = UNICHAR(10232)
+			displayFolder: Arrows
+
+		measure '⟹ Long Rightwards Double Arrow' = UNICHAR(10233)
+			displayFolder: Arrows
+
+		measure '⟺ Long Left Right Double Arrow' = UNICHAR(10234)
+			displayFolder: Arrows
+
+		measure '⟻ Long Leftwards Arrow From Bar' = UNICHAR(10235)
+			displayFolder: Arrows
+
+		measure '⟼ Long Rightwards Arrow From Bar' = UNICHAR(10236)
+			displayFolder: Arrows
+
+		measure '⟽ Long Leftwards Double Arrow From Bar' = UNICHAR(10237)
+			displayFolder: Arrows
+
+		measure '⟾ Long Rightwards Double Arrow From Bar' = UNICHAR(10238)
+			displayFolder: Arrows
+
+		measure '⟿ Long Rightwards Squiggle Arrow' = UNICHAR(10239)
+			displayFolder: Arrows
+
+		measure '⤀ Rightwards Two-Headed Arrow With Vertical Stroke' = UNICHAR(10496)
+			displayFolder: Arrows
+
+		measure '⤁ Rightwards Two-Headed Arrow With Double Vertical Stroke' = UNICHAR(10497)
+			displayFolder: Arrows
+
+		measure '⤂ Leftwards Double Arrow With Vertical Stroke' = UNICHAR(10498)
+			displayFolder: Arrows
+
+		measure '⤄ Left Right Double Arrow With Vertical Stroke' = UNICHAR(10500)
+			displayFolder: Arrows
+
+		measure '⤅ Rightwards Two-Headed Arrow From Bar' = UNICHAR(10501)
+			displayFolder: Arrows
+
+		measure '⤆ Leftwards Double Arrow From Bar' = UNICHAR(10502)
+			displayFolder: Arrows
+
+		measure '⤇ Rightwards Double Arrow From Bar' = UNICHAR(10503)
+			displayFolder: Arrows
+
+		measure '⤈ Downwards Arrow With Horizontal Stroke' = UNICHAR(10504)
+			displayFolder: Arrows
+
+		measure '⤉ Upwards Arrow With Horizontal Stroke' = UNICHAR(10505)
+			displayFolder: Arrows
+
+		measure '⤊ Upwards Triple Arrow' = UNICHAR(10506)
+			displayFolder: Arrows
+
+		measure '⤋ Downwards Triple Arrow' = UNICHAR(10507)
+			displayFolder: Arrows
+
+		measure '⤌ Leftwards Double Dash Arrow' = UNICHAR(10508)
+			displayFolder: Arrows
+
+		measure '⤍ Rightwards Double Dash Arrow' = UNICHAR(10509)
+			displayFolder: Arrows
+
+		measure '⤎ Leftwards Triple Dash Arrow' = UNICHAR(10510)
+			displayFolder: Arrows
+
+		measure '⤏ Rightwards Triple Dash Arrow' = UNICHAR(10511)
+			displayFolder: Arrows
+
+		measure '⤐ Rightwards Two-Headed Triple Dash Arrow' = UNICHAR(10512)
+			displayFolder: Arrows
+
+		measure '⤑ Rightwards Arrow With Dotted Stem' = UNICHAR(10513)
+			displayFolder: Arrows
+
+		measure '⤒ Upwards Arrow To Bar' = UNICHAR(10514)
+			displayFolder: Arrows
+
+		measure '⤓ Downwards Arrow To Bar' = UNICHAR(10515)
+			displayFolder: Arrows
+
+		measure '⤔ Rightwards Arrow With Tail With Vertical Stroke' = UNICHAR(10516)
+			displayFolder: Arrows
+
+		measure '⤕ Rightwards Arrow With Tail With Double Vertical Stroke' = UNICHAR(10517)
+			displayFolder: Arrows
+
+		measure '⤖ Rightwards Two-Headed Arrow With Tail' = UNICHAR(10518)
+			displayFolder: Arrows
+
+		measure '⤗ Rightwards Two-Headed Arrow With Tail With Vertical Stroke' = UNICHAR(10519)
+			displayFolder: Arrows
+
+		measure '⤘ Rightwards Two-Headed Arrow With Tail With Double Vertical Stroke' = UNICHAR(10520)
+			displayFolder: Arrows
+
+		measure '⤙ Leftwards Arrow-Tail' = UNICHAR(10521)
+			displayFolder: Arrows
+
+		measure '⤚ Rightwards Arrow-Tail' = UNICHAR(10522)
+			displayFolder: Arrows
+
+		measure '⤛ Leftwards Double Arrow-Tail' = UNICHAR(10523)
+			displayFolder: Arrows
+
+		measure '⤜ Rightwards Double Arrow-Tail' = UNICHAR(10524)
+			displayFolder: Arrows
+
+		measure '⤝ Leftwards Arrow To Black Diamond' = UNICHAR(10525)
+			displayFolder: Arrows
+
+		measure '⤞ Rightwards Arrow To Black Diamond' = UNICHAR(10526)
+			displayFolder: Arrows
+
+		measure '⤟ Leftwards Arrow From Bar To Black Diamond' = UNICHAR(10527)
+			displayFolder: Arrows
+
+		measure '⤠ Rightwards Arrow From Bar To Black Diamond' = UNICHAR(10528)
+			displayFolder: Arrows
+
+		measure '⤡ North West And South East Arrow' = UNICHAR(10529)
+			displayFolder: Arrows
+
+		measure '⤢ North East And South West Arrow' = UNICHAR(10530)
+			displayFolder: Arrows
+
+		measure '⤣ North West Arrow With Hook' = UNICHAR(10531)
+			displayFolder: Arrows
+
+		measure '⤤ North East Arrow With Hook' = UNICHAR(10532)
+			displayFolder: Arrows
+
+		measure '⤥ South East Arrow With Hook' = UNICHAR(10533)
+			displayFolder: Arrows
+
+		measure '⤦ South West Arrow With Hook' = UNICHAR(10534)
+			displayFolder: Arrows
+
+		measure '⤧ North West Arrow And North East Arrow' = UNICHAR(10535)
+			displayFolder: Arrows
+
+		measure '⤨ North East Arrow And South East Arrow' = UNICHAR(10536)
+			displayFolder: Arrows
+
+		measure '⤩ South East Arrow And South West Arrow' = UNICHAR(10537)
+			displayFolder: Arrows
+
+		measure '⤪ South West Arrow And North West Arrow' = UNICHAR(10538)
+			displayFolder: Arrows
+
+		measure '⤫ Rising Diagonal Crossing Falling Diagonal' = UNICHAR(10539)
+			displayFolder: Arrows
+
+		measure '⤬ Falling Diagonal Crossing Rising Diagonal' = UNICHAR(10540)
+			displayFolder: Arrows
+
+		measure '⤭ South East Arrow Crossing North East Arrow' = UNICHAR(10541)
+			displayFolder: Arrows
+
+		measure '⤮ North East Arrow Crossing South East Arrow' = UNICHAR(10542)
+			displayFolder: Arrows
+
+		measure '⤯ Falling Diagonal Crossing North East Arrow' = UNICHAR(10543)
+			displayFolder: Arrows
+
+		measure '⤰ Rising Diagonal Crossing South East Arrow' = UNICHAR(10544)
+			displayFolder: Arrows
+
+		measure '⤱ North East Arrow Crossing North West Arrow' = UNICHAR(10545)
+			displayFolder: Arrows
+
+		measure '⤲ North West Arrow Crossing North East Arrow' = UNICHAR(10546)
+			displayFolder: Arrows
+
+		measure '⤳ Wave Arrow Pointing Directly Right' = UNICHAR(10547)
+			displayFolder: Arrows
+
+		measure '⤶ Arrow Pointing Downwards Then Curving Leftwards' = UNICHAR(10550)
+			displayFolder: Arrows
+
+		measure '⤷ Arrow Pointing Downwards Then Curving Rightwards' = UNICHAR(10551)
+			displayFolder: Arrows
+
+		measure '⤸ Right-Side Arc Clockwise Arrow' = UNICHAR(10552)
+			displayFolder: Arrows
+
+		measure '⤹ Left-Side Arc Anticlockwise Arrow' = UNICHAR(10553)
+			displayFolder: Arrows
+
+		measure '⤺ Top Arc Anticlockwise Arrow' = UNICHAR(10554)
+			displayFolder: Arrows
+
+		measure '⤻ Bottom Arc Anticlockwise Arrow' = UNICHAR(10555)
+			displayFolder: Arrows
+
+		measure '⤼ Top Arc Clockwise Arrow With Minus' = UNICHAR(10556)
+			displayFolder: Arrows
+
+		measure '⤽ Top Arc Clockwise Arrow With Plus' = UNICHAR(10557)
+			displayFolder: Arrows
+
+		measure '⤾ Lower Right Semicircular Clockwise Arrow' = UNICHAR(10558)
+			displayFolder: Arrows
+
+		measure '⤿ Lower Left Semicircular Anticlockwise Arrow' = UNICHAR(10559)
+			displayFolder: Arrows
+
+		measure '⥀ Anticlockwise Closed Circle Arrow' = UNICHAR(10560)
+			displayFolder: Arrows
+
+		measure '⥁ Clockwise Closed Circle Arrow' = UNICHAR(10561)
+			displayFolder: Arrows
+
+		measure '⥂ Rightwards Arrow Above Short Leftwards Arrow' = UNICHAR(10562)
+			displayFolder: Arrows
+
+		measure '⥃ Leftwards Arrow Above Short Rightwards Arrow' = UNICHAR(10563)
+			displayFolder: Arrows
+
+		measure '⥄ Short Rightwards Arrow Above Leftwards Arrow' = UNICHAR(10564)
+			displayFolder: Arrows
+
+		measure '⥅ Rightwards Arrow With Plus Below' = UNICHAR(10565)
+			displayFolder: Arrows
+
+		measure '⥆ Leftwards Arrow With Plus Below' = UNICHAR(10566)
+			displayFolder: Arrows
+
+		measure '⥇ Rightwards Arrow Through X' = UNICHAR(10567)
+			displayFolder: Arrows
+
+		measure '⥈ Left Right Arrow Through Small Circle' = UNICHAR(10568)
+			displayFolder: Arrows
+
+		measure '⥉ Upwards Two-Headed Arrow From Small Circle' = UNICHAR(10569)
+			displayFolder: Arrows
+
+		measure '⥊ Left Barb Up Right Barb Down Harpoon' = UNICHAR(10570)
+			displayFolder: Arrows
+
+		measure '⥋ Left Barb Down Right Barb Up Harpoon' = UNICHAR(10571)
+			displayFolder: Arrows
+
+		measure '⥌ Up Barb Right Down Barb Left Harpoon' = UNICHAR(10572)
+			displayFolder: Arrows
+
+		measure '⥍ Up Barb Left Down Barb Right Harpoon' = UNICHAR(10573)
+			displayFolder: Arrows
+
+		measure '⥎ Left Barb Up Right Barb Up Harpoon' = UNICHAR(10574)
+			displayFolder: Arrows
+
+		measure '⥏ Up Barb Right Down Barb Right Harpoon' = UNICHAR(10575)
+			displayFolder: Arrows
+
+		measure '⥐ Left Barb Down Right Barb Down Harpoon' = UNICHAR(10576)
+			displayFolder: Arrows
+
+		measure '⥑ Up Barb Left Down Barb Left Harpoon' = UNICHAR(10577)
+			displayFolder: Arrows
+
+		measure '⥒ Leftwards Harpoon With Barb Up To Bar' = UNICHAR(10578)
+			displayFolder: Arrows
+
+		measure '⥓ Rightwards Harpoon With Barb Up To Bar' = UNICHAR(10579)
+			displayFolder: Arrows
+
+		measure '⥔ Upwards Harpoon With Barb Right To Bar' = UNICHAR(10580)
+			displayFolder: Arrows
+
+		measure '⥕ Downwards Harpoon With Barb Right To Bar' = UNICHAR(10581)
+			displayFolder: Arrows
+
+		measure '⥖ Leftwards Harpoon With Barb Down To Bar' = UNICHAR(10582)
+			displayFolder: Arrows
+
+		measure '⥗ Rightwards Harpoon With Barb Down To Bar' = UNICHAR(10583)
+			displayFolder: Arrows
+
+		measure '⥘ Upwards Harpoon With Barb Left To Bar' = UNICHAR(10584)
+			displayFolder: Arrows
+
+		measure '⥙ Downwards Harpoon With Barb Left To Bar' = UNICHAR(10585)
+			displayFolder: Arrows
+
+		measure '⥚ Leftwards Harpoon With Barb Up From Bar' = UNICHAR(10586)
+			displayFolder: Arrows
+
+		measure '⥛ Rightwards Harpoon With Barb Up From Bar' = UNICHAR(10587)
+			displayFolder: Arrows
+
+		measure '⥜ Upwards Harpoon With Barb Right From Bar' = UNICHAR(10588)
+			displayFolder: Arrows
+
+		measure '⥝ Downwards Harpoon With Barb Right From Bar' = UNICHAR(10589)
+			displayFolder: Arrows
+
+		measure '⥞ Leftwards Harpoon With Barb Down From Bar' = UNICHAR(10590)
+			displayFolder: Arrows
+
+		measure '⥟ Rightwards Harpoon With Barb Down From Bar' = UNICHAR(10591)
+			displayFolder: Arrows
+
+		measure '⥠ Upwards Harpoon With Barb Left From Bar' = UNICHAR(10592)
+			displayFolder: Arrows
+
+		measure '⥡ Downwards Harpoon With Barb Left From Bar' = UNICHAR(10593)
+			displayFolder: Arrows
+
+		measure '⥢ Leftwards Harpoon With Barb Up Above Leftwards Harpoon With Barb Down' = UNICHAR(10594)
+			displayFolder: Arrows
+
+		measure '⥤ Upwards Harpoon With Barb Left Beside Upwards Harpoon With Barb Right' = UNICHAR(10595)
+			displayFolder: Arrows
+
+		measure '⥥ Rightwards Harpoon With Barb Up Above Rightwards Harpoon With Barb Down' = UNICHAR(10596)
+			displayFolder: Arrows
+
+		measure '⥦ Downwards Harpoon With Barb Left Beside Downwards Harpoon With Barb Right' = UNICHAR(10597)
+			displayFolder: Arrows
+
+		measure '⥧ Leftwards Harpoon With Barb Down Above Rightwards Harpoon With Barb Down' = UNICHAR(10599)
+			displayFolder: Arrows
+
+		measure '⥨ Rightwards Harpoon With Barb Up Above Leftwards Harpoon With Barb Up' = UNICHAR(10600)
+			displayFolder: Arrows
+
+		measure '⥩ Rightwards Harpoon With Barb Down Above Leftwards Harpoon With Barb Down' = UNICHAR(10601)
+			displayFolder: Arrows
+
+		measure '⥪ Leftwards Harpoon With Barb Up Above Long Dash' = UNICHAR(10602)
+			displayFolder: Arrows
+
+		measure '⥫ Leftwards Harpoon With Barb Down Below Long Dash' = UNICHAR(10603)
+			displayFolder: Arrows
+
+		measure '⥬ Rightwards Harpoon With Barb Up Above Long Dash' = UNICHAR(10604)
+			displayFolder: Arrows
+
+		measure '⥭ Rightwards Harpoon With Barb Down Below Long Dash' = UNICHAR(10605)
+			displayFolder: Arrows
+
+		measure '⥮ Upwards Harpoon With Barb Left Beside Downwards Harpoon With Barb Right' = UNICHAR(10606)
+			displayFolder: Arrows
+
+		measure '⥯ Downwards Harpoon With Barb Left Beside Upwards Harpoon With Barb Right' = UNICHAR(10607)
+			displayFolder: Arrows
+
+		measure '⥰ Right Double Arrow With Rounded Head' = UNICHAR(10608)
+			displayFolder: Arrows
+
+		measure '⥱ Equals Sign Above Rightwards Arrow' = UNICHAR(10609)
+			displayFolder: Arrows
+
+		measure '⥲ Tilde Operator Above Rightwards Arrow' = UNICHAR(10610)
+			displayFolder: Arrows
+
+		measure '⥳ Leftwards Arrow Above Tilde Operator' = UNICHAR(10611)
+			displayFolder: Arrows
+
+		measure '⥴ Rightwards Arrow Above Tilde Operator' = UNICHAR(10612)
+			displayFolder: Arrows
+
+		measure '⥵ Rightwards Arrow Above Almost Equal To' = UNICHAR(10613)
+			displayFolder: Arrows
+
+		measure '⥶ Less-Than Above Leftwards Arrow' = UNICHAR(10614)
+			displayFolder: Arrows
+
+		measure '⥷ Leftwards Arrow Through Less-Than' = UNICHAR(10615)
+			displayFolder: Arrows
+
+		measure '⥸ Greater-Than Above Rightwards Arrow' = UNICHAR(10616)
+			displayFolder: Arrows
+
+		measure '⥹ Rightwards Arrow Through Greater-Than' = UNICHAR(10617)
+			displayFolder: Arrows
+
+		measure '⥺ Subset Above Rightwards Arrow' = UNICHAR(10618)
+			displayFolder: Arrows
+
+		measure '⥻ Leftwards Arrow Through Subset' = UNICHAR(10619)
+			displayFolder: Arrows
+
+		measure '⥼ Superset Above Leftwards Arrow' = UNICHAR(10620)
+			displayFolder: Arrows
+
+		measure '⥽ Rightwards Arrow Through Superset' = UNICHAR(10621)
+			displayFolder: Arrows
+
+		measure '⥾ Left Fishtail' = UNICHAR(10622)
+			displayFolder: Arrows
+
+		measure '⥿ Right Fishtail' = UNICHAR(10623)
+			displayFolder: Arrows
+
+		measure '❯ Rightwards Arrow In Black Circle' = UNICHAR(129150)
+			displayFolder: Arrows
+
+		measure 'V Downwards Arrow In Black Circle' = UNICHAR(129151)
+			displayFolder: Arrows
+
+		measure '⬀ North East White Arrow' = UNICHAR(11008)
+			displayFolder: Arrows
+
+		measure '⬁ North West White Arrow' = UNICHAR(11009)
+			displayFolder: Arrows
+
+		measure '⬂ South East White Arrow' = UNICHAR(11010)
+			displayFolder: Arrows
+
+		measure '⬃ South West White Arrow' = UNICHAR(11011)
+			displayFolder: Arrows
+
+		measure '⬄ Left Right White Arrow' = UNICHAR(11012)
+			displayFolder: Arrows
+
+		measure '⬅ Leftwards Black Arrow' = UNICHAR(11013)
+			displayFolder: Arrows
+
+		measure '⬆ Upwards Black Arrow' = UNICHAR(11014)
+			displayFolder: Arrows
+
+		measure '⬇ Downwards Black Arrow' = UNICHAR(11015)
+			displayFolder: Arrows
+
+		measure '⬍ North East Black Arrow' = UNICHAR(11021)
+			displayFolder: Arrows
+
+		measure '⬎ North West Black Arrow' = UNICHAR(11022)
+			displayFolder: Arrows
+
+		measure '⬏ South East Black Arrow' = UNICHAR(11023)
+			displayFolder: Arrows
+
+		measure '⬐ South West Black Arrow' = UNICHAR(11024)
+			displayFolder: Arrows
+
+		measure '⬑ Left Right Black Arrow' = UNICHAR(11025)
+			displayFolder: Arrows
+
+		measure '⬒ Up Down Black Arrow' = UNICHAR(11026)
+			displayFolder: Arrows
+
+		measure '⬓ Rightwards Arrow With Tip Downwards' = UNICHAR(11027)
+			displayFolder: Arrows
+
+		measure '⬔ Rightwards Arrow With Tip Upwards' = UNICHAR(11028)
+			displayFolder: Arrows
+
+		measure '⬕ Leftwards Arrow With Tip Downwards' = UNICHAR(11029)
+			displayFolder: Arrows
+
+		measure '⬖ Leftwards Arrow With Tip Upwards' = UNICHAR(11030)
+			displayFolder: Arrows
+
+		measure '⬰ Left Arrow With Small Circle' = UNICHAR(11056)
+			displayFolder: Arrows
+
+		measure '⬱ Three Leftwards Arrows' = UNICHAR(11057)
+			displayFolder: Arrows
+
+		measure '⬲ Left Arrow With Circled Plus' = UNICHAR(11058)
+			displayFolder: Arrows
+
+		measure '⬳ Long Leftwards Squiggle Arrow' = UNICHAR(11059)
+			displayFolder: Arrows
+
+		measure '⬴ Leftwards Two-Headed Arrow With Vertical Stroke' = UNICHAR(11060)
+			displayFolder: Arrows
+
+		measure '⬵ Leftwards Two-Headed Arrow With Double Vertical Stroke' = UNICHAR(11061)
+			displayFolder: Arrows
+
+		measure '⬶ Leftwards Two-Headed Arrow From Bar' = UNICHAR(11062)
+			displayFolder: Arrows
+
+		measure '⬷ Leftwards Two-Headed Triple Dash Arrow' = UNICHAR(11063)
+			displayFolder: Arrows
+
+		measure '⬸ Leftwards Arrow With Dotted Stem' = UNICHAR(11064)
+			displayFolder: Arrows
+
+		measure '⬹ Leftwards Arrow With Tail With Vertical Stroke' = UNICHAR(11065)
+			displayFolder: Arrows
+
+		measure '⬺ Leftwards Arrow With Tail With Double Vertical Stroke' = UNICHAR(11066)
+			displayFolder: Arrows
+
+		measure '⬻ Leftwards Two-Headed Arrow With Tail' = UNICHAR(11067)
+			displayFolder: Arrows
+
+		measure '⬼ Leftwards Two-Headed Arrow With Tail With Vertical Stroke' = UNICHAR(11068)
+			displayFolder: Arrows
+
+		measure '⬽ Leftwards Two-Headed Arrow With Tail With Double Vertical Stroke' = UNICHAR(11069)
+			displayFolder: Arrows
+
+		measure '⬾ Leftwards Arrow Through X' = UNICHAR(11070)
+			displayFolder: Arrows
+
+		measure '⬿ Wave Arrow Pointing Directly Left' = UNICHAR(11071)
+			displayFolder: Arrows
+
+		measure '⭀ Equals Sign Above Leftwards Arrow' = UNICHAR(11072)
+			displayFolder: Arrows
+
+		measure '⭁ Reverse Tilde Operator Above Leftwards Arrow' = UNICHAR(11073)
+			displayFolder: Arrows
+
+		measure '⭂ Leftwards Arrow Above Reverse Almost Equal To' = UNICHAR(11074)
+			displayFolder: Arrows
+
+		measure '⭃ Rightwards Arrow Through Greater-Than Or Equal To' = UNICHAR(11075)
+			displayFolder: Arrows
+
+		measure '⭅ Leftwards Quadruple Arrow' = UNICHAR(11077)
+			displayFolder: Arrows
+
+		measure '⭆ Rightwards Quadruple Arrow' = UNICHAR(11078)
+			displayFolder: Arrows
+
+		measure '⭇ Reverse Tilde Operator Above Rightwards Arrow' = UNICHAR(11079)
+			displayFolder: Arrows
+
+		measure '⭈ Rightwards Arrow Above Reverse Almost Equal To' = UNICHAR(11080)
+			displayFolder: Arrows
+
+		measure '⭉ Tilde Operator Above Leftwards Arrow' = UNICHAR(11081)
+			displayFolder: Arrows
+
+		measure '⭊ Leftwards Arrow Above Almost Equal To' = UNICHAR(11082)
+			displayFolder: Arrows
+
+		measure '⭋ Leftwards Arrow Above Reverse Tilde Operator' = UNICHAR(11083)
+			displayFolder: Arrows
+
+		measure '⭌ Rightwards Arrow Above Reverse Tilde Operator' = UNICHAR(11084)
+			displayFolder: Arrows
+
+		measure '⇧ Upwards White Arrow' = UNICHAR(8679)
+			displayFolder: Arrows
+
+		measure '± Plus-Minus Sign' = UNICHAR(177)
+			displayFolder: Math Symbols
+
+		measure '∓ Minus-Plus Sign' = UNICHAR(8723)
+			displayFolder: Math Symbols
+
+		measure '× Multiplication Sign' = UNICHAR(215)
+			displayFolder: Math Symbols
+
+		measure '÷ Division Sign' = UNICHAR(247)
+			displayFolder: Math Symbols
+
+		measure '∕ Division Slash' = UNICHAR(8725)
+			displayFolder: Math Symbols
+
+		measure '⁄ Fraction Slash' = UNICHAR(8260)
+			displayFolder: Math Symbols
+
+		measure '∑ N-Ary Summation' = UNICHAR(8721)
+			displayFolder: Math Symbols
+
+		measure '∏ N-Ary Product' = UNICHAR(8719)
+			displayFolder: Math Symbols
+
+		measure '√ Square Root' = UNICHAR(8730)
+			displayFolder: Math Symbols
+
+		measure '∛ Cube Root' = UNICHAR(8731)
+			displayFolder: Math Symbols
+
+		measure '∜ Fourth Root' = UNICHAR(8732)
+			displayFolder: Math Symbols
+
+		measure '∞ Infinity' = UNICHAR(8734)
+			displayFolder: Math Symbols
+
+		measure '∫ Integral' = UNICHAR(8747)
+			displayFolder: Math Symbols
+
+		measure '∬ Double Integral' = UNICHAR(8748)
+			displayFolder: Math Symbols
+
+		measure '∮ Contour Integral' = UNICHAR(8750)
+			displayFolder: Math Symbols
+
+		measure '≈ Almost Equal To' = UNICHAR(8776)
+			displayFolder: Math Symbols
+
+		measure '≠ Not Equal To' = UNICHAR(8800)
+			displayFolder: Math Symbols
+
+		measure '≤ Less-Than Or Equal To' = UNICHAR(8804)
+			displayFolder: Math Symbols
+
+		measure '≥ Greater-Than Or Equal To' = UNICHAR(8805)
+			displayFolder: Math Symbols
+
+		measure '≪ Much Less-Than' = UNICHAR(8810)
+			displayFolder: Math Symbols
+
+		measure '≫ Much Greater-Than' = UNICHAR(8811)
+			displayFolder: Math Symbols
+
+		measure '≡ Identical To' = UNICHAR(8801)
+			displayFolder: Math Symbols
+
+		measure '∼ Tilde Operator' = UNICHAR(8764)
+			displayFolder: Math Symbols
+
+		measure '∝ Proportional To' = UNICHAR(8733)
+			displayFolder: Math Symbols
+
+		measure '∂ Partial Differential' = UNICHAR(8706)
+			displayFolder: Math Symbols
+
+		measure '∇ Nabla' = UNICHAR(8711)
+			displayFolder: Math Symbols
+
+		measure '∈ Element Of' = UNICHAR(8712)
+			displayFolder: Math Symbols
+
+		measure '∉ Not An Element Of' = UNICHAR(8713)
+			displayFolder: Math Symbols
+
+		measure '∋ Contains As Member' = UNICHAR(8715)
+			displayFolder: Math Symbols
+
+		measure '⊆ Subset Of Or Equal To' = UNICHAR(8838)
+			displayFolder: Math Symbols
+
+		measure '⊇ Superset Of Or Equal To' = UNICHAR(8839)
+			displayFolder: Math Symbols
+
+		measure '⊂ Subset Of' = UNICHAR(8834)
+			displayFolder: Math Symbols
+
+		measure '⊃ Superset Of' = UNICHAR(8835)
+			displayFolder: Math Symbols
+
+		measure '∪ Union' = UNICHAR(8746)
+			displayFolder: Math Symbols
+
+		measure '∩ Intersection' = UNICHAR(8745)
+			displayFolder: Math Symbols
+
+		measure '∧ Logical And' = UNICHAR(8743)
+			displayFolder: Math Symbols
+
+		measure '∨ Logical Or' = UNICHAR(8744)
+			displayFolder: Math Symbols
+
+		measure '¬ Not Sign' = UNICHAR(172)
+			displayFolder: Math Symbols
+
+		measure '∀ For All' = UNICHAR(8704)
+			displayFolder: Math Symbols
+
+		measure '∃ There Exists' = UNICHAR(8707)
+			displayFolder: Math Symbols
+
+		measure '∴ Therefore' = UNICHAR(8756)
+			displayFolder: Math Symbols
+
+		measure '∵ Because' = UNICHAR(8757)
+			displayFolder: Math Symbols
+
+		measure '∠ Angle' = UNICHAR(8736)
+			displayFolder: Math Symbols
+
+		measure '⊥ Up Tack' = UNICHAR(8869)
+			displayFolder: Math Symbols
+
+		measure '∥ Parallel To' = UNICHAR(8741)
+			displayFolder: Math Symbols
+
+		measure '° Degree Sign' = UNICHAR(176)
+			displayFolder: Math Symbols
+
+		measure '′ Prime' = UNICHAR(8242)
+			displayFolder: Math Symbols
+
+		measure '″ Double Prime' = UNICHAR(8243)
+			displayFolder: Math Symbols
+
+		measure 'µ Micro Sign' = UNICHAR(181)
+			displayFolder: Math Symbols
+
+		measure 'π Greek Small Letter Pi' = UNICHAR(960)
+			displayFolder: Math Symbols
+
+		measure '∅ Empty Set' = UNICHAR(8709)
+			displayFolder: Math Symbols
+
+		measure '∆ Increment' = UNICHAR(8710)
+			displayFolder: Math Symbols
+
+		measure '∎ End Of Proof' = UNICHAR(8718)
+			displayFolder: Math Symbols
+
+		measure '∶ Ratio' = UNICHAR(8758)
+			displayFolder: Math Symbols
+
+		measure '∷ Proportion' = UNICHAR(8759)
+			displayFolder: Math Symbols
+
+		measure '∽ Reversed Tilde' = UNICHAR(8765)
+			displayFolder: Math Symbols
+
+		measure '⊕ Circled Plus' = UNICHAR(8853)
+			displayFolder: Math Symbols
+
+		measure '⊖ Circled Minus' = UNICHAR(8854)
+			displayFolder: Math Symbols
+
+		measure '⊗ Circled Times' = UNICHAR(8855)
+			displayFolder: Math Symbols
+
+		measure '⊘ Circled Division Slash' = UNICHAR(8856)
+			displayFolder: Math Symbols
+
+		measure '⊙ Circled Dot Operator' = UNICHAR(8857)
+			displayFolder: Math Symbols
+
+		measure '∘ Ring Operator' = UNICHAR(8728)
+			displayFolder: Math Symbols
+
+		measure '∙ Bullet Operator' = UNICHAR(8729)
+			displayFolder: Math Symbols
+
+		measure '∟ Right Angle' = UNICHAR(8735)
+			displayFolder: Math Symbols
+
+		measure '∭ Triple Integral' = UNICHAR(8749)
+			displayFolder: Math Symbols
+
+		measure '∯ Surface Integral' = UNICHAR(8751)
+			displayFolder: Math Symbols
+
+		measure '∰ Volume Integral' = UNICHAR(8752)
+			displayFolder: Math Symbols
+
+		measure '∱ Clockwise Integral' = UNICHAR(8753)
+			displayFolder: Math Symbols
+
+		measure '∲ Clockwise Contour Integral' = UNICHAR(8754)
+			displayFolder: Math Symbols
+
+		measure '∳ Anticlockwise Contour Integral' = UNICHAR(8755)
+			displayFolder: Math Symbols
+
+		measure '≌ All Equal To' = UNICHAR(8780)
+			displayFolder: Math Symbols
+
+		measure '≅ Approximately Equal To' = UNICHAR(8773)
+			displayFolder: Math Symbols
+
+		measure '≦ Less-Than Over Equal To' = UNICHAR(8806)
+			displayFolder: Math Symbols
+
+		measure '≧ Greater-Than Over Equal To' = UNICHAR(8807)
+			displayFolder: Math Symbols
+
+		measure '⊄ Not A Subset Of' = UNICHAR(8836)
+			displayFolder: Math Symbols
+
+		measure '⊅ Not A Superset Of' = UNICHAR(8837)
+			displayFolder: Math Symbols
+
+		measure '⊈ Neither A Subset Of Nor Equal To' = UNICHAR(8840)
+			displayFolder: Math Symbols
+
+		measure '⊉ Neither A Superset Of Nor Equal To' = UNICHAR(8841)
+			displayFolder: Math Symbols
+
+		measure '⊊ Subset Of With Not Equal To' = UNICHAR(8842)
+			displayFolder: Math Symbols
+
+		measure '⊋ Superset Of With Not Equal To' = UNICHAR(8843)
+			displayFolder: Math Symbols
+
+		measure '⊤ Down Tack' = UNICHAR(8868)
+			displayFolder: Math Symbols
+
+		measure '⊢ Right Tack' = UNICHAR(8866)
+			displayFolder: Math Symbols
+
+		measure '⊣ Left Tack' = UNICHAR(8867)
+			displayFolder: Math Symbols
+
+		measure '∣ Divides' = UNICHAR(8739)
+			displayFolder: Math Symbols
+
+		measure '∤ Does Not Divide' = UNICHAR(8740)
+			displayFolder: Math Symbols
+
+		measure '∦ Not Parallel To' = UNICHAR(8742)
+			displayFolder: Math Symbols
+
+		measure '⌈ Left Ceiling' = UNICHAR(8968)
+			displayFolder: Math Symbols
+
+		measure '⌉ Right Ceiling' = UNICHAR(8969)
+			displayFolder: Math Symbols
+
+		measure '⌊ Left Floor' = UNICHAR(8970)
+			displayFolder: Math Symbols
+
+		measure '⌋ Right Floor' = UNICHAR(8971)
+			displayFolder: Math Symbols
+
+		measure 'ℏ Planck Constant Over Two Pi' = UNICHAR(8463)
+			displayFolder: Math Symbols
+
+		measure 'ℵ Alef Symbol' = UNICHAR(8501)
+			displayFolder: Math Symbols
+
+		measure 'ℶ Bet Symbol' = UNICHAR(8502)
+			displayFolder: Math Symbols
+
+		measure 'ℷ Gimel Symbol' = UNICHAR(8503)
+			displayFolder: Math Symbols
+
+		measure 'ℸ Dalet Symbol' = UNICHAR(8504)
+			displayFolder: Math Symbols
+
+		measure '¹ Superscript One' = UNICHAR(185)
+			displayFolder: Math Symbols
+
+		measure '² Superscript Two' = UNICHAR(178)
+			displayFolder: Math Symbols
+
+		measure '³ Superscript Three' = UNICHAR(179)
+			displayFolder: Math Symbols
+
+		measure '⁴ Superscript Four' = UNICHAR(8308)
+			displayFolder: Math Symbols
+
+		measure '⁵ Superscript Five' = UNICHAR(8309)
+			displayFolder: Math Symbols
+
+		measure '⁶ Superscript Six' = UNICHAR(8310)
+			displayFolder: Math Symbols
+
+		measure '⁷ Superscript Seven' = UNICHAR(8311)
+			displayFolder: Math Symbols
+
+		measure '⁸ Superscript Eight' = UNICHAR(8312)
+			displayFolder: Math Symbols
+
+		measure '⁹ Superscript Nine' = UNICHAR(8313)
+			displayFolder: Math Symbols
+
+		measure '⁰ Superscript Zero' = UNICHAR(8304)
+			displayFolder: Math Symbols
+
+		measure '⁺ Superscript Plus Sign' = UNICHAR(8314)
+			displayFolder: Math Symbols
+
+		measure '⁻ Superscript Minus' = UNICHAR(8315)
+			displayFolder: Math Symbols
+
+		measure '⁼ Superscript Equals Sign' = UNICHAR(8316)
+			displayFolder: Math Symbols
+
+		measure '⁽ Superscript Left Parenthesis' = UNICHAR(8317)
+			displayFolder: Math Symbols
+
+		measure '⁾ Superscript Right Parenthesis' = UNICHAR(8318)
+			displayFolder: Math Symbols
+
+		measure 'ⁿ Superscript Latin Small Letter N' = UNICHAR(8319)
+			displayFolder: Math Symbols
+
+		measure '₀ Subscript Zero' = UNICHAR(8320)
+			displayFolder: Math Symbols
+
+		measure '₁ Subscript One' = UNICHAR(8321)
+			displayFolder: Math Symbols
+
+		measure '₂ Subscript Two' = UNICHAR(8322)
+			displayFolder: Math Symbols
+
+		measure '₃ Subscript Three' = UNICHAR(8323)
+			displayFolder: Math Symbols
+
+		measure '₄ Subscript Four' = UNICHAR(8324)
+			displayFolder: Math Symbols
+
+		measure '₅ Subscript Five' = UNICHAR(8325)
+			displayFolder: Math Symbols
+
+		measure '₆ Subscript Six' = UNICHAR(8326)
+			displayFolder: Math Symbols
+
+		measure '₇ Subscript Seven' = UNICHAR(8327)
+			displayFolder: Math Symbols
+
+		measure '₈ Subscript Eight' = UNICHAR(8328)
+			displayFolder: Math Symbols
+
+		measure '₉ Subscript Nine' = UNICHAR(8329)
+			displayFolder: Math Symbols
+
+		measure '₊ Subscript Plus Sign' = UNICHAR(8330)
+			displayFolder: Math Symbols
+
+		measure '₋ Subscript Minus' = UNICHAR(8331)
+			displayFolder: Math Symbols
+
+		measure '₌ Subscript Equals Sign' = UNICHAR(8332)
+			displayFolder: Math Symbols
+
+		measure '₍ Subscript Left Parenthesis' = UNICHAR(8333)
+			displayFolder: Math Symbols
+
+		measure '₎ Subscript Right Parenthesis' = UNICHAR(8334)
+			displayFolder: Math Symbols
+
+		measure '⅟ Fraction Numerator One' = UNICHAR(8543)
+			displayFolder: Math Symbols
+
+		measure '½ Vulgar Fraction One Half' = UNICHAR(189)
+			displayFolder: Math Symbols
+
+		measure '⅓ Vulgar Fraction One Third' = UNICHAR(8531)
+			displayFolder: Math Symbols
+
+		measure '⅔ Vulgar Fraction Two Thirds' = UNICHAR(8532)
+			displayFolder: Math Symbols
+
+		measure '¼ Vulgar Fraction One Quarter' = UNICHAR(188)
+			displayFolder: Math Symbols
+
+		measure '¾ Vulgar Fraction Three Quarters' = UNICHAR(190)
+			displayFolder: Math Symbols
+
+		measure '⅕ Vulgar Fraction One Fifth' = UNICHAR(8533)
+			displayFolder: Math Symbols
+
+		measure '⅖ Vulgar Fraction Two Fifths' = UNICHAR(8534)
+			displayFolder: Math Symbols
+
+		measure '⅗ Vulgar Fraction Three Fifths' = UNICHAR(8535)
+			displayFolder: Math Symbols
+
+		measure '⅘ Vulgar Fraction Four Fifths' = UNICHAR(8536)
+			displayFolder: Math Symbols
+
+		measure '⅙ Vulgar Fraction One Sixth' = UNICHAR(8537)
+			displayFolder: Math Symbols
+
+		measure '⅚ Vulgar Fraction Five Sixths' = UNICHAR(8538)
+			displayFolder: Math Symbols
+
+		measure '⅛ Vulgar Fraction One Eighth' = UNICHAR(8539)
+			displayFolder: Math Symbols
+
+		measure '⅜ Vulgar Fraction Three Eighths' = UNICHAR(8540)
+			displayFolder: Math Symbols
+
+		measure '⅝ Vulgar Fraction Five Eighths' = UNICHAR(8541)
+			displayFolder: Math Symbols
+
+		measure '⅞ Vulgar Fraction Seven Eighths' = UNICHAR(8542)
+			displayFolder: Math Symbols
+
+		measure '↉ Vulgar Fraction Zero Thirds' = UNICHAR(8585)
+			displayFolder: Math Symbols
+
+		measure 'Ⅰ Roman Numeral One' = UNICHAR(8544)
+			displayFolder: Math Symbols
+
+		measure 'Ⅱ Roman Numeral Two' = UNICHAR(8545)
+			displayFolder: Math Symbols
+
+		measure 'Ⅲ Roman Numeral Three' = UNICHAR(8546)
+			displayFolder: Math Symbols
+
+		measure 'Ⅳ Roman Numeral Four' = UNICHAR(8547)
+			displayFolder: Math Symbols
+
+		measure 'Ⅴ Roman Numeral Five' = UNICHAR(8548)
+			displayFolder: Math Symbols
+
+		measure 'Ⅵ Roman Numeral Six' = UNICHAR(8549)
+			displayFolder: Math Symbols
+
+		measure 'Ⅶ Roman Numeral Seven' = UNICHAR(8550)
+			displayFolder: Math Symbols
+
+		measure 'Ⅷ Roman Numeral Eight' = UNICHAR(8551)
+			displayFolder: Math Symbols
+
+		measure 'Ⅸ Roman Numeral Nine' = UNICHAR(8552)
+			displayFolder: Math Symbols
+
+		measure 'Ⅹ Roman Numeral Ten' = UNICHAR(8553)
+			displayFolder: Math Symbols
+
+		measure 'Ⅺ Roman Numeral Eleven' = UNICHAR(8554)
+			displayFolder: Math Symbols
+
+		measure 'Ⅻ Roman Numeral Twelve' = UNICHAR(8555)
+			displayFolder: Math Symbols
+
+		measure 'Ⅼ Roman Numeral Fifty' = UNICHAR(8556)
+			displayFolder: Math Symbols
+
+		measure 'Ⅽ Roman Numeral One Hundred' = UNICHAR(8557)
+			displayFolder: Math Symbols
+
+		measure 'Ⅾ Roman Numeral Five Hundred' = UNICHAR(8558)
+			displayFolder: Math Symbols
+
+		measure 'Ⅿ Roman Numeral One Thousand' = UNICHAR(8559)
+			displayFolder: Math Symbols
+
+		measure 'ⅰ Small Roman Numeral One' = UNICHAR(8560)
+			displayFolder: Math Symbols
+
+		measure 'ⅱ Small Roman Numeral Two' = UNICHAR(8561)
+			displayFolder: Math Symbols
+
+		measure 'ⅲ Small Roman Numeral Three' = UNICHAR(8562)
+			displayFolder: Math Symbols
+
+		measure 'ⅳ Small Roman Numeral Four' = UNICHAR(8563)
+			displayFolder: Math Symbols
+
+		measure 'ⅴ Small Roman Numeral Five' = UNICHAR(8564)
+			displayFolder: Math Symbols
+
+		measure 'ⅵ Small Roman Numeral Six' = UNICHAR(8565)
+			displayFolder: Math Symbols
+
+		measure 'ⅶ Small Roman Numeral Seven' = UNICHAR(8566)
+			displayFolder: Math Symbols
+
+		measure 'ⅷ Small Roman Numeral Eight' = UNICHAR(8567)
+			displayFolder: Math Symbols
+
+		measure 'ⅸ Small Roman Numeral Nine' = UNICHAR(8568)
+			displayFolder: Math Symbols
+
+		measure 'ⅹ Small Roman Numeral Ten' = UNICHAR(8569)
+			displayFolder: Math Symbols
+
+		measure 'ⅺ Small Roman Numeral Eleven' = UNICHAR(8570)
+			displayFolder: Math Symbols
+
+		measure 'ⅻ Small Roman Numeral Twelve' = UNICHAR(8571)
+			displayFolder: Math Symbols
+
+		measure 'ⅼ Small Roman Numeral Fifty' = UNICHAR(8572)
+			displayFolder: Math Symbols
+
+		measure 'ⅽ Small Roman Numeral One Hundred' = UNICHAR(8573)
+			displayFolder: Math Symbols
+
+		measure 'ⅾ Small Roman Numeral Five Hundred' = UNICHAR(8574)
+			displayFolder: Math Symbols
+
+		measure 'ⅿ Small Roman Numeral One Thousand' = UNICHAR(8575)
+			displayFolder: Math Symbols
+
+		measure '% Percent Sign' = UNICHAR(37)
+			displayFolder: Math Symbols
+
+		measure '‰ Per Mille Sign' = UNICHAR(8240)
+			displayFolder: Math Symbols
+
+		measure '‱ Per Ten Thousand Sign' = UNICHAR(8241)
+			displayFolder: Math Symbols
+
+		measure '€ Euro Sign' = UNICHAR(8364)
+			displayFolder: Currency
+
+		measure '£ Pound Sign' = UNICHAR(163)
+			displayFolder: Currency
+
+		measure '$$ Dollar Sign' = UNICHAR(36)
+			displayFolder: Currency
+
+		measure '¢ Cent Sign' = UNICHAR(162)
+			displayFolder: Currency
+
+		measure '¥ Yen Sign' = UNICHAR(165)
+			displayFolder: Currency
+
+		measure '₹ Indian Rupee Sign' = UNICHAR(8377)
+			displayFolder: Currency
+
+		measure '₽ Ruble Sign' = UNICHAR(8381)
+			displayFolder: Currency
+
+		measure '₩ Won Sign' = UNICHAR(8361)
+			displayFolder: Currency
+
+		measure '₪ New Sheqel Sign' = UNICHAR(8362)
+			displayFolder: Currency
+
+		measure '₫ Dong Sign' = UNICHAR(8363)
+			displayFolder: Currency
+
+		measure '₭ Kip Sign' = UNICHAR(8365)
+			displayFolder: Currency
+
+		measure '₮ Tugrik Sign' = UNICHAR(8366)
+			displayFolder: Currency
+
+		measure '₯ Drachma Sign' = UNICHAR(8367)
+			displayFolder: Currency
+
+		measure '₲ Guarani Sign' = UNICHAR(8370)
+			displayFolder: Currency
+
+		measure '₴ Hryvnia Sign' = UNICHAR(8372)
+			displayFolder: Currency
+
+		measure '₵ Cedi Sign' = UNICHAR(8373)
+			displayFolder: Currency
+
+		measure '₸ Tenge Sign' = UNICHAR(8376)
+			displayFolder: Currency
+
+		measure '₺ Turkish Lira Sign' = UNICHAR(8378)
+			displayFolder: Currency
+
+		measure '₼ Manat Sign' = UNICHAR(8380)
+			displayFolder: Currency
+
+		measure '₿ Bitcoin Sign' = UNICHAR(8383)
+			displayFolder: Currency
+
+		measure '₾ Lari Sign' = UNICHAR(8382)
+			displayFolder: Currency
+
+		measure '₠ Euro-Currency Sign' = UNICHAR(8352)
+			displayFolder: Currency
+
+		measure '₡ Colon Sign' = UNICHAR(8353)
+			displayFolder: Currency
+
+		measure '₢ Cruzeiro Sign' = UNICHAR(8354)
+			displayFolder: Currency
+
+		measure '₣ French Franc Sign' = UNICHAR(8355)
+			displayFolder: Currency
+
+		measure '₤ Lira Sign' = UNICHAR(8356)
+			displayFolder: Currency
+
+		measure '₥ Mill Sign' = UNICHAR(8357)
+			displayFolder: Currency
+
+		measure '₦ Naira Sign' = UNICHAR(8358)
+			displayFolder: Currency
+
+		measure '₧ Peseta Sign' = UNICHAR(8359)
+			displayFolder: Currency
+
+		measure '₨ Rupee Sign' = UNICHAR(8360)
+			displayFolder: Currency
+
+		measure '₰ German Penny Sign' = UNICHAR(8368)
+			displayFolder: Currency
+
+		measure '₱ Peso Sign' = UNICHAR(8369)
+			displayFolder: Currency
+
+		measure '₳ Austral Sign' = UNICHAR(8371)
+			displayFolder: Currency
+
+		measure '₶ Livre Tournois Sign' = UNICHAR(8374)
+			displayFolder: Currency
+
+		measure '₷ Spesmilo Sign' = UNICHAR(8375)
+			displayFolder: Currency
+
+		measure '৳ Bengali Rupee Mark' = UNICHAR(2547)
+			displayFolder: Currency
+
+		measure '฿ Baht Sign' = UNICHAR(3647)
+			displayFolder: Currency
+
+		measure '៛ Khmer Riel Sign' = UNICHAR(6107)
+			displayFolder: Currency
+
+		measure '₻ Nordic Mark Sign' = UNICHAR(8379)
+			displayFolder: Currency
+
+		measure 'ƒ Latin Small Letter F With Hook' = UNICHAR(402)
+			displayFolder: Currency
+
+		measure '؋ Afghan Afghani Sign' = UNICHAR(1547)
+			displayFolder: Currency
+
+		measure '৲ Bengali Rupee Mark' = UNICHAR(2546)
+			displayFolder: Currency
+
+		measure '௹ Tamil Rupee Sign' = UNICHAR(3065)
+			displayFolder: Currency
+
+		measure 'rial Rial Sign' = UNICHAR(65020)
+			displayFolder: Currency
+
+		measure '▲ Black Up-Pointing Triangle' = UNICHAR(9650)
+			displayFolder: Shapes
+
+		measure '▼ Black Down-Pointing Triangle' = UNICHAR(9660)
+			displayFolder: Shapes
+
+		measure '▶ Black Right-Pointing Triangle' = UNICHAR(9654)
+			displayFolder: Shapes
+
+		measure '◀ Black Left-Pointing Triangle' = UNICHAR(9664)
+			displayFolder: Shapes
+
+		measure '△ White Up-Pointing Triangle' = UNICHAR(9651)
+			displayFolder: Shapes
+
+		measure '▽ White Down-Pointing Triangle' = UNICHAR(9661)
+			displayFolder: Shapes
+
+		measure '▷ White Right-Pointing Triangle' = UNICHAR(9655)
+			displayFolder: Shapes
+
+		measure '◁ White Left-Pointing Triangle' = UNICHAR(9665)
+			displayFolder: Shapes
+
+		measure '■ Black Square' = UNICHAR(9632)
+			displayFolder: Shapes
+
+		measure '□ White Square' = UNICHAR(9633)
+			displayFolder: Shapes
+
+		measure '▪ Black Small Square' = UNICHAR(9642)
+			displayFolder: Shapes
+
+		measure '▫ White Small Square' = UNICHAR(9643)
+			displayFolder: Shapes
+
+		measure '▬ Black Rectangle' = UNICHAR(9644)
+			displayFolder: Shapes
+
+		measure '▭ White Rectangle' = UNICHAR(9645)
+			displayFolder: Shapes
+
+		measure '▮ Black Vertical Rectangle' = UNICHAR(9646)
+			displayFolder: Shapes
+
+		measure '▯ White Vertical Rectangle' = UNICHAR(9647)
+			displayFolder: Shapes
+
+		measure '● Black Circle' = UNICHAR(9679)
+			displayFolder: Shapes
+
+		measure '○ White Circle' = UNICHAR(9675)
+			displayFolder: Shapes
+
+		measure '★ Black Star' = UNICHAR(9733)
+			displayFolder: Shapes
+
+		measure '☆ White Star' = UNICHAR(9734)
+			displayFolder: Shapes
+
+		measure '♦ Black Diamond Suit' = UNICHAR(9830)
+			displayFolder: Shapes
+
+		measure '♢ White Diamond Suit' = UNICHAR(9826)
+			displayFolder: Shapes
+
+		measure '♠ Black Spade Suit' = UNICHAR(9824)
+			displayFolder: Shapes
+
+		measure '♤ White Spade Suit' = UNICHAR(9828)
+			displayFolder: Shapes
+
+		measure '♥ Black Heart Suit' = UNICHAR(9829)
+			displayFolder: Shapes
+
+		measure '♡ White Heart Suit' = UNICHAR(9825)
+			displayFolder: Shapes
+
+		measure '♣ Black Club Suit' = UNICHAR(9827)
+			displayFolder: Shapes
+
+		measure '♧ White Club Suit' = UNICHAR(9831)
+			displayFolder: Shapes
+
+		measure '◊ Lozenge' = UNICHAR(9674)
+			displayFolder: Shapes
+
+		measure '◆ Black Diamond' = UNICHAR(9670)
+			displayFolder: Shapes
+
+		measure '◇ White Diamond' = UNICHAR(9671)
+			displayFolder: Shapes
+
+		measure '◼ Black Medium Square' = UNICHAR(9724)
+			displayFolder: Shapes
+
+		measure '◻ White Medium Square' = UNICHAR(9723)
+			displayFolder: Shapes
+
+		measure '⬛ Black Large Square' = UNICHAR(11035)
+			displayFolder: Shapes
+
+		measure '⬜ White Large Square' = UNICHAR(11036)
+			displayFolder: Shapes
+
+		measure '⚫ Medium Black Circle' = UNICHAR(9899)
+			displayFolder: Shapes
+
+		measure '⚪ Medium White Circle' = UNICHAR(9898)
+			displayFolder: Shapes
+
+		measure '✅ White Heavy Check Mark' = UNICHAR(9989)
+			displayFolder: Shapes
+
+		measure '➕ Heavy Plus Sign' = UNICHAR(10133)
+			displayFolder: Shapes
+
+		measure '➖ Heavy Minus Sign' = UNICHAR(10134)
+			displayFolder: Shapes
+
+		measure '➗ Heavy Division Sign' = UNICHAR(10135)
+			displayFolder: Shapes
+
+		measure '❌ Cross Mark' = UNICHAR(10060)
+			displayFolder: Shapes
+
+		measure '⭕ Heavy Large Circle' = UNICHAR(11093)
+			displayFolder: Shapes
+
+		measure '❏ Lower Right Drop-Shadowed White Square' = UNICHAR(10063)
+			displayFolder: Shapes
+
+		measure '❐ Upper Right Drop-Shadowed White Square' = UNICHAR(10064)
+			displayFolder: Shapes
+
+		measure '❑ Lower Right Shadowed White Square' = UNICHAR(10065)
+			displayFolder: Shapes
+
+		measure '❒ Upper Right Shadowed White Square' = UNICHAR(10066)
+			displayFolder: Shapes
+
+		measure '❘ Light Vertical Bar' = UNICHAR(10072)
+			displayFolder: Shapes
+
+		measure '❙ Medium Vertical Bar' = UNICHAR(10073)
+			displayFolder: Shapes
+
+		measure '❚ Heavy Vertical Bar' = UNICHAR(10074)
+			displayFolder: Shapes
+
+		measure '◈ White Diamond Containing Black Small Diamond' = UNICHAR(9672)
+			displayFolder: Shapes
+
+		measure '◉ Fisheye' = UNICHAR(9673)
+			displayFolder: Shapes
+
+		measure '◌ Dotted Circle' = UNICHAR(9676)
+			displayFolder: Shapes
+
+		measure '◍ Circle With Vertical Fill' = UNICHAR(9677)
+			displayFolder: Shapes
+
+		measure '◎ Bullseye' = UNICHAR(9678)
+			displayFolder: Shapes
+
+		measure '◐ Circle With Left Half Black' = UNICHAR(9680)
+			displayFolder: Shapes
+
+		measure '◑ Circle With Right Half Black' = UNICHAR(9681)
+			displayFolder: Shapes
+
+		measure '◒ Circle With Lower Half Black' = UNICHAR(9682)
+			displayFolder: Shapes
+
+		measure '◓ Circle With Upper Half Black' = UNICHAR(9683)
+			displayFolder: Shapes
+
+		measure '◔ Circle With Upper Right Quadrant Black' = UNICHAR(9684)
+			displayFolder: Shapes
+
+		measure '◕ Circle With All But Upper Left Quadrant Black' = UNICHAR(9685)
+			displayFolder: Shapes
+
+		measure '◖ Left Half Black Circle' = UNICHAR(9686)
+			displayFolder: Shapes
+
+		measure '◗ Right Half Black Circle' = UNICHAR(9687)
+			displayFolder: Shapes
+
+		measure '◘ Inverse Bullet' = UNICHAR(9688)
+			displayFolder: Shapes
+
+		measure '◙ Inverse White Circle' = UNICHAR(9689)
+			displayFolder: Shapes
+
+		measure '◚ Upper Half Inverse White Circle' = UNICHAR(9690)
+			displayFolder: Shapes
+
+		measure '◛ Lower Half Inverse White Circle' = UNICHAR(9691)
+			displayFolder: Shapes
+
+		measure '◜ Upper Left Quadrant Circular Arc' = UNICHAR(9692)
+			displayFolder: Shapes
+
+		measure '◝ Upper Right Quadrant Circular Arc' = UNICHAR(9693)
+			displayFolder: Shapes
+
+		measure '◞ Lower Right Quadrant Circular Arc' = UNICHAR(9694)
+			displayFolder: Shapes
+
+		measure '◟ Lower Left Quadrant Circular Arc' = UNICHAR(9695)
+			displayFolder: Shapes
+
+		measure '◠ Upper Half Circle' = UNICHAR(9696)
+			displayFolder: Shapes
+
+		measure '◡ Lower Half Circle' = UNICHAR(9697)
+			displayFolder: Shapes
+
+		measure '◢ Black Lower Right Triangle' = UNICHAR(9698)
+			displayFolder: Shapes
+
+		measure '◣ Black Lower Left Triangle' = UNICHAR(9699)
+			displayFolder: Shapes
+
+		measure '◤ Black Upper Left Triangle' = UNICHAR(9700)
+			displayFolder: Shapes
+
+		measure '◥ Black Upper Right Triangle' = UNICHAR(9701)
+			displayFolder: Shapes
+
+		measure '◦ White Bullet' = UNICHAR(9702)
+			displayFolder: Shapes
+
+		measure '◧ Square With Left Half Black' = UNICHAR(9703)
+			displayFolder: Shapes
+
+		measure '◨ Square With Right Half Black' = UNICHAR(9704)
+			displayFolder: Shapes
+
+		measure '◩ Square With Upper Left Diagonal Half Black' = UNICHAR(9705)
+			displayFolder: Shapes
+
+		measure '◪ Square With Lower Right Diagonal Half Black' = UNICHAR(9706)
+			displayFolder: Shapes
+
+		measure '◫ White Square With Vertical Bisecting Line' = UNICHAR(9707)
+			displayFolder: Shapes
+
+		measure '◬ White Up-Pointing Triangle With Dot' = UNICHAR(9708)
+			displayFolder: Shapes
+
+		measure '◭ Up-Pointing Triangle With Left Half Black' = UNICHAR(9709)
+			displayFolder: Shapes
+
+		measure '◮ Up-Pointing Triangle With Right Half Black' = UNICHAR(9710)
+			displayFolder: Shapes
+
+		measure '◯ Large Circle' = UNICHAR(9711)
+			displayFolder: Shapes
+
+		measure '◰ White Square With Upper Left Quadrant' = UNICHAR(9712)
+			displayFolder: Shapes
+
+		measure '◱ White Square With Lower Left Quadrant' = UNICHAR(9713)
+			displayFolder: Shapes
+
+		measure '◲ White Square With Lower Right Quadrant' = UNICHAR(9714)
+			displayFolder: Shapes
+
+		measure '◳ White Square With Upper Right Quadrant' = UNICHAR(9715)
+			displayFolder: Shapes
+
+		measure '◴ White Circle With Upper Left Quadrant' = UNICHAR(9716)
+			displayFolder: Shapes
+
+		measure '◵ White Circle With Lower Left Quadrant' = UNICHAR(9717)
+			displayFolder: Shapes
+
+		measure '◶ White Circle With Lower Right Quadrant' = UNICHAR(9718)
+			displayFolder: Shapes
+
+		measure '◷ White Circle With Upper Right Quadrant' = UNICHAR(9719)
+			displayFolder: Shapes
+
+		measure '◸ Upper Left Triangle' = UNICHAR(9720)
+			displayFolder: Shapes
+
+		measure '◹ Upper Right Triangle' = UNICHAR(9721)
+			displayFolder: Shapes
+
+		measure '◺ Lower Left Triangle' = UNICHAR(9722)
+			displayFolder: Shapes
+
+		measure '◽ White Medium Small Square' = UNICHAR(9725)
+			displayFolder: Shapes
+
+		measure '◾ Black Medium Small Square' = UNICHAR(9726)
+			displayFolder: Shapes
+
+		measure '⚀ Die Face-1' = UNICHAR(9856)
+			displayFolder: Shapes
+
+		measure '⚁ Die Face-2' = UNICHAR(9857)
+			displayFolder: Shapes
+
+		measure '⚂ Die Face-3' = UNICHAR(9858)
+			displayFolder: Shapes
+
+		measure '⚃ Die Face-4' = UNICHAR(9859)
+			displayFolder: Shapes
+
+		measure '⚄ Die Face-5' = UNICHAR(9860)
+			displayFolder: Shapes
+
+		measure '⚅ Die Face-6' = UNICHAR(9861)
+			displayFolder: Shapes
+
+		measure '♩ Quarter Note' = UNICHAR(9833)
+			displayFolder: Shapes
+
+		measure '♪ Eighth Note' = UNICHAR(9834)
+			displayFolder: Shapes
+
+		measure '♫ Beamed Eighth Notes' = UNICHAR(9835)
+			displayFolder: Shapes
+
+		measure '♬ Beamed Sixteenth Notes' = UNICHAR(9836)
+			displayFolder: Shapes
+
+		measure '♭ Music Flat Sign' = UNICHAR(9837)
+			displayFolder: Shapes
+
+		measure '♮ Music Natural Sign' = UNICHAR(9838)
+			displayFolder: Shapes
+
+		measure '♯ Music Sharp Sign' = UNICHAR(9839)
+			displayFolder: Shapes
+
+		measure '⬠ White Pentagon' = UNICHAR(11040)
+			displayFolder: Shapes
+
+		measure '⬡ White Hexagon' = UNICHAR(11041)
+			displayFolder: Shapes
+
+		measure '⬢ Black Hexagon' = UNICHAR(11042)
+			displayFolder: Shapes
+
+		measure '⬣ Horizontal Black Hexagon' = UNICHAR(11043)
+			displayFolder: Shapes
+
+		measure '⬤ Black Large Circle' = UNICHAR(11044)
+			displayFolder: Shapes
+
+		measure '⬥ Black Medium Diamond' = UNICHAR(11045)
+			displayFolder: Shapes
+
+		measure '⬦ White Medium Diamond' = UNICHAR(11046)
+			displayFolder: Shapes
+
+		measure '⬧ Black Medium Lozenge' = UNICHAR(11047)
+			displayFolder: Shapes
+
+		measure '⬨ White Medium Lozenge' = UNICHAR(11048)
+			displayFolder: Shapes
+
+		measure '⬩ Black Small Diamond' = UNICHAR(11049)
+			displayFolder: Shapes
+
+		measure '⬪ Black Small Lozenge' = UNICHAR(11050)
+			displayFolder: Shapes
+
+		measure '⬫ White Small Lozenge' = UNICHAR(11051)
+			displayFolder: Shapes
+
+		measure '⭐ White Medium Star' = UNICHAR(11088)
+			displayFolder: Shapes
+
+		measure '⭑ Black Small Star' = UNICHAR(11089)
+			displayFolder: Shapes
+
+		measure '⭒ White Small Star' = UNICHAR(11090)
+			displayFolder: Shapes
+
+		measure '🔶 Large Orange Diamond' = UNICHAR(128310)
+			displayFolder: Shapes
+
+		measure '🔷 Large Blue Diamond' = UNICHAR(128311)
+			displayFolder: Shapes
+
+		measure '🔸 Small Orange Diamond' = UNICHAR(128312)
+			displayFolder: Shapes
+
+		measure '🔹 Small Blue Diamond' = UNICHAR(128313)
+			displayFolder: Shapes
+
+		measure '🔺 Up-Pointing Red Triangle' = UNICHAR(128314)
+			displayFolder: Shapes
+
+		measure '🔻 Down-Pointing Red Triangle' = UNICHAR(128315)
+			displayFolder: Shapes
+
+		measure '🟥 Large Red Square' = UNICHAR(128997)
+			displayFolder: Shapes
+
+		measure '🟦 Large Blue Square' = UNICHAR(128998)
+			displayFolder: Shapes
+
+		measure '🟧 Large Orange Square' = UNICHAR(128999)
+			displayFolder: Shapes
+
+		measure '🟨 Large Yellow Square' = UNICHAR(129000)
+			displayFolder: Shapes
+
+		measure '🟩 Large Green Square' = UNICHAR(129001)
+			displayFolder: Shapes
+
+		measure '🟪 Large Purple Square' = UNICHAR(129002)
+			displayFolder: Shapes
+
+		measure '🟫 Large Brown Square' = UNICHAR(129003)
+			displayFolder: Shapes
+
+		measure '🔴 Large Red Circle' = UNICHAR(128308)
+			displayFolder: Shapes
+
+		measure '🔵 Large Blue Circle' = UNICHAR(128309)
+			displayFolder: Shapes
+
+		measure '🟠 Large Orange Circle' = UNICHAR(128992)
+			displayFolder: Shapes
+
+		measure '🟡 Large Yellow Circle' = UNICHAR(128993)
+			displayFolder: Shapes
+
+		measure '🟢 Large Green Circle' = UNICHAR(128994)
+			displayFolder: Shapes
+
+		measure '🟣 Large Purple Circle' = UNICHAR(128995)
+			displayFolder: Shapes
+
+		measure '🟤 Large Brown Circle' = UNICHAR(128996)
+			displayFolder: Shapes
+
+		measure '▀ Upper Half Block' = UNICHAR(9600)
+			displayFolder: Shapes
+
+		measure '▂ Lower One Quarter Block' = UNICHAR(9602)
+			displayFolder: Shapes
+
+		measure '▃ Lower Three Eighths Block' = UNICHAR(9603)
+			displayFolder: Shapes
+
+		measure '▄ Lower Half Block' = UNICHAR(9604)
+			displayFolder: Shapes
+
+		measure '▅ Lower Five Eighths Block' = UNICHAR(9605)
+			displayFolder: Shapes
+
+		measure '▆ Lower Three Quarters Block' = UNICHAR(9606)
+			displayFolder: Shapes
+
+		measure '▇ Lower Seven Eighths Block' = UNICHAR(9607)
+			displayFolder: Shapes
+
+		measure '█ Full Block' = UNICHAR(9608)
+			displayFolder: Shapes
+
+		measure '▉ Left Seven Eighths Block' = UNICHAR(9609)
+			displayFolder: Shapes
+
+		measure '▊ Left Three Quarters Block' = UNICHAR(9610)
+			displayFolder: Shapes
+
+		measure '▋ Left Five Eighths Block' = UNICHAR(9611)
+			displayFolder: Shapes
+
+		measure '▌ Left Half Block' = UNICHAR(9612)
+			displayFolder: Shapes
+
+		measure '▍ Left Three Eighths Block' = UNICHAR(9613)
+			displayFolder: Shapes
+
+		measure '▎ Left One Quarter Block' = UNICHAR(9614)
+			displayFolder: Shapes
+
+		measure '▏ Left One Eighth Block' = UNICHAR(9615)
+			displayFolder: Shapes
+
+		measure '▐ Right Half Block' = UNICHAR(9616)
+			displayFolder: Shapes
+
+		measure '░ Light Shade' = UNICHAR(9617)
+			displayFolder: Shapes
+
+		measure '▒ Medium Shade' = UNICHAR(9618)
+			displayFolder: Shapes
+
+		measure '▓ Dark Shade' = UNICHAR(9619)
+			displayFolder: Shapes
+
+		measure '▔ Upper One Eighth Block' = UNICHAR(9620)
+			displayFolder: Shapes
+
+		measure '▕ Right One Eighth Block' = UNICHAR(9621)
+			displayFolder: Shapes
+
+		measure '• Bullet' = UNICHAR(8226)
+			displayFolder: Shapes
+
+		measure '‣ Triangular Bullet' = UNICHAR(8227)
+			displayFolder: Shapes
+
+		measure '⁃ Hyphen Bullet' = UNICHAR(8259)
+			displayFolder: Shapes
+
+		measure '♔ White Chess King' = UNICHAR(9812)
+			displayFolder: Shapes
+
+		measure '♕ White Chess Queen' = UNICHAR(9813)
+			displayFolder: Shapes
+
+		measure '♖ White Chess Rook' = UNICHAR(9814)
+			displayFolder: Shapes
+
+		measure '♗ White Chess Bishop' = UNICHAR(9815)
+			displayFolder: Shapes
+
+		measure '♘ White Chess Knight' = UNICHAR(9816)
+			displayFolder: Shapes
+
+		measure '♙ White Chess Pawn' = UNICHAR(9817)
+			displayFolder: Shapes
+
+		measure '♚ Black Chess King' = UNICHAR(9818)
+			displayFolder: Shapes
+
+		measure '♛ Black Chess Queen' = UNICHAR(9819)
+			displayFolder: Shapes
+
+		measure '♜ Black Chess Rook' = UNICHAR(9820)
+			displayFolder: Shapes
+
+		measure '♝ Black Chess Bishop' = UNICHAR(9821)
+			displayFolder: Shapes
+
+		measure '♞ Black Chess Knight' = UNICHAR(9822)
+			displayFolder: Shapes
+
+		measure '♟ Black Chess Pawn' = UNICHAR(9823)
+			displayFolder: Shapes
+
+		measure '─ Box Drawings Light Horizontal' = UNICHAR(9472)
+			displayFolder: Shapes
+
+		measure '│ Box Drawings Light Vertical' = UNICHAR(9474)
+			displayFolder: Shapes
+
+		measure '┌ Box Drawings Light Down and Right' = UNICHAR(9484)
+			displayFolder: Shapes
+
+		measure '┐ Box Drawings Light Down and Left' = UNICHAR(9488)
+			displayFolder: Shapes
+
+		measure '└ Box Drawings Light Up and Right' = UNICHAR(9492)
+			displayFolder: Shapes
+
+		measure '┘ Box Drawings Light Up and Left' = UNICHAR(9496)
+			displayFolder: Shapes
+
+		measure '┼ Box Drawings Light Vertical and Horizontal' = UNICHAR(9532)
+			displayFolder: Shapes
+
+		measure '⚙ Gear' = UNICHAR(9881)
+			displayFolder: Other
+
+		measure '✓ Check Mark' = UNICHAR(10003)
+			displayFolder: Other
+
+		measure '✗ Ballot X' = UNICHAR(10007)
+			displayFolder: Other
+
+		measure '⚠ Warning Sign' = UNICHAR(9888)
+			displayFolder: Other
+
+		measure 'ℹ Information Source' = UNICHAR(8505)
+			displayFolder: Other
+
+		measure '🔗 Link Symbol' = UNICHAR(128279)
+			displayFolder: Other
+
+		measure '🔒 Lock' = UNICHAR(128274)
+			displayFolder: Other
+
+		measure '🔓 Open Lock' = UNICHAR(128275)
+			displayFolder: Other
+
+		measure '💡 Light Bulb' = UNICHAR(128161)
+			displayFolder: Other
+
+		measure '🔧 Wrench' = UNICHAR(128295)
+			displayFolder: Other
+
+		measure '🔩 Nut And Bolt' = UNICHAR(128297)
+			displayFolder: Other
+
+		measure '🔨 Hammer' = UNICHAR(128296)
+			displayFolder: Other
+
+		measure '⚡ High Voltage Sign' = UNICHAR(9889)
+			displayFolder: Other
+
+		measure '⛭ Shouldered Open Centre Hexagram' = UNICHAR(9965)
+			displayFolder: Other
+
+		measure '⌘ Place Of Interest Sign' = UNICHAR(8984)
+			displayFolder: Other
+
+		measure '⌥ Option Key' = UNICHAR(8997)
+			displayFolder: Other
+
+		measure '⌃ Up Arrowhead' = UNICHAR(8963)
+			displayFolder: Other
+
+		measure '⌫ Erase To The Left' = UNICHAR(9003)
+			displayFolder: Other
+
+		measure '⌨ Keyboard' = UNICHAR(9000)
+			displayFolder: Other
+
+		measure '🖱 Three Button Mouse' = UNICHAR(128433)
+			displayFolder: Other
+
+		measure '💾 Floppy Disk' = UNICHAR(128190)
+			displayFolder: Other
+
+		measure '📁 File Folder' = UNICHAR(128193)
+			displayFolder: Other
+
+		measure '📂 Open File Folder' = UNICHAR(128194)
+			displayFolder: Other
+
+		measure '📄 Page Facing Up' = UNICHAR(128196)
+			displayFolder: Other
+
+		measure '📈 Chart With Upwards Trend' = UNICHAR(128200)
+			displayFolder: Other
+
+		measure '📉 Chart With Downwards Trend' = UNICHAR(128201)
+			displayFolder: Other
+
+		measure '📊 Bar Chart' = UNICHAR(128202)
+			displayFolder: Other
+
+		measure '📡 Satellite Antenna' = UNICHAR(128225)
+			displayFolder: Other
+
+		measure '📶 Antenna Bars' = UNICHAR(128246)
+			displayFolder: Other
+
+		measure '🔬 Microscope' = UNICHAR(128300)
+			displayFolder: Other
+
+		measure '🔭 Telescope' = UNICHAR(128301)
+			displayFolder: Other
+
+		measure '💻 Laptop Computer' = UNICHAR(128187)
+			displayFolder: Other
+
+		measure '📱 Mobile Phone' = UNICHAR(128241)
+			displayFolder: Other
+
+		measure '☎ Black Telephone' = UNICHAR(9742)
+			displayFolder: Other
+
+		measure '📞 Telephone Receiver' = UNICHAR(128222)
+			displayFolder: Other
+
+		measure '🔌 Electric Plug' = UNICHAR(128268)
+			displayFolder: Other
+
+		measure '🔋 Battery' = UNICHAR(128267)
+			displayFolder: Other
+
+		measure '🔍 Left-Pointing Magnifying Glass' = UNICHAR(128269)
+			displayFolder: Other
+
+		measure '🔎 Right-Pointing Magnifying Glass' = UNICHAR(128270)
+			displayFolder: Other
+
+		measure '🔔 Bell' = UNICHAR(128276)
+			displayFolder: Other
+
+		measure '🔕 Bell With Slash' = UNICHAR(128277)
+			displayFolder: Other
+
+		measure '🔊 Speaker High Volume' = UNICHAR(128266)
+			displayFolder: Other
+
+		measure '🔇 Muted Speaker' = UNICHAR(128263)
+			displayFolder: Other
+
+		measure '⚛ Atom Symbol' = UNICHAR(9883)
+			displayFolder: Other
+
+		measure '⚖ Scales' = UNICHAR(9878)
+			displayFolder: Other
+
+		measure '⚕ Staff Of Asclepius' = UNICHAR(9877)
+			displayFolder: Other
+
+		measure '⚗ Alembic' = UNICHAR(9879)
+			displayFolder: Other
+
+		measure '☢ Radioactive Sign' = UNICHAR(9762)
+			displayFolder: Other
+
+		measure '☣ Biohazard Sign' = UNICHAR(9763)
+			displayFolder: Other
+
+		measure '☑ Ballot Box With Check' = UNICHAR(9745)
+			displayFolder: Other
+
+		measure '☒ Ballot Box With X' = UNICHAR(9746)
+			displayFolder: Other
+
+		measure '☐ Ballot Box' = UNICHAR(9744)
+			displayFolder: Other
+
+		measure '✈ Airplane' = UNICHAR(9992)
+			displayFolder: Other
+
+		measure '✉ Envelope' = UNICHAR(9993)
+			displayFolder: Other
+
+		measure '✒ Black Nib' = UNICHAR(10002)
+			displayFolder: Other
+
+		measure '✏ Pencil' = UNICHAR(9999)
+			displayFolder: Other
+
+		measure '✐ Upper Right Pencil' = UNICHAR(10000)
+			displayFolder: Other
+
+		measure '✑ White Nib' = UNICHAR(10001)
+			displayFolder: Other
+
+		measure '✔ Heavy Check Mark' = UNICHAR(10004)
+			displayFolder: Other
+
+		measure '✕ Multiplication X' = UNICHAR(10005)
+			displayFolder: Other
+
+		measure '✖ Heavy Multiplication X' = UNICHAR(10006)
+			displayFolder: Other
+
+		measure '✘ Heavy Ballot X' = UNICHAR(10008)
+			displayFolder: Other
+
+		measure '✇ Wheelchair Symbol' = UNICHAR(9855)
+			displayFolder: Other
+
+		measure '⚓ Anchor' = UNICHAR(9875)
+			displayFolder: Other
+
+		measure '⚿ Squared Key' = UNICHAR(9919)
+			displayFolder: Other
+
+		measure '⛑ Rescue Workers Helmet' = UNICHAR(9937)
+			displayFolder: Other
+
+		measure '⛓ Chains' = UNICHAR(9939)
+			displayFolder: Other
+
+		measure '⛏ Pick' = UNICHAR(9935)
+			displayFolder: Other
+
+		measure '⛽ Fuel Pump' = UNICHAR(9981)
+			displayFolder: Other
+
+		measure '✂ Black Scissors' = UNICHAR(9986)
+			displayFolder: Other
+
+		measure '➿ Double Curly Loop' = UNICHAR(10175)
+			displayFolder: Other
+
+		measure '♿ Wheelchair Symbol Emoji' = UNICHAR(9855)
+			displayFolder: Other
+
+		measure '⚐ White Flag' = UNICHAR(9872)
+			displayFolder: Other
+
+		measure '⚑ Black Flag' = UNICHAR(9873)
+			displayFolder: Other
+
+		measure '☔ Umbrella With Rain Drops' = UNICHAR(9748)
+			displayFolder: Other
+
+		measure '☕ Hot Beverage' = UNICHAR(9749)
+			displayFolder: Other
+
+		measure '☺ White Smiling Face' = UNICHAR(9786)
+			displayFolder: Other
+
+		measure '⚽ Soccer Ball' = UNICHAR(9917)
+			displayFolder: Other
+
+		measure '⚾ Baseball' = UNICHAR(9918)
+			displayFolder: Other
+
+		measure '⛄ Snowman Without Snow' = UNICHAR(9924)
+			displayFolder: Other
+
+		measure '# Number Sign' = UNICHAR(35)
+			displayFolder: Other
+
+		measure '@ At Sign' = UNICHAR(64)
+			displayFolder: Other
+
+		measure '& Ampersand' = UNICHAR(38)
+			displayFolder: Other
+
+		measure '… Horizontal Ellipsis' = UNICHAR(8230)
+			displayFolder: Other
+
+		measure '– En Dash' = UNICHAR(8211)
+			displayFolder: Other
+
+		measure '— Em Dash' = UNICHAR(8212)
+			displayFolder: Other
+
+		measure '¡ Inverted Exclamation Mark' = UNICHAR(161)
+			displayFolder: Other
+
+		measure '¿ Inverted Question Mark' = UNICHAR(191)
+			displayFolder: Other
+
+		measure '§ Section Sign' = UNICHAR(167)
+			displayFolder: Other
+
+		measure '¶ Pilcrow Sign' = UNICHAR(182)
+			displayFolder: Other
+
+		measure '© Copyright Sign' = UNICHAR(169)
+			displayFolder: Other
+
+		measure '® Registered Sign' = UNICHAR(174)
+			displayFolder: Other
+
+		measure '™ Trade Mark Sign' = UNICHAR(8482)
+			displayFolder: Other
+
+		measure '℠ Service Mark' = UNICHAR(8480)
+			displayFolder: Other
+
+		measure '† Dagger' = UNICHAR(8224)
+			displayFolder: Other
+
+		measure '‡ Double Dagger' = UNICHAR(8225)
+			displayFolder: Other
+
+		measure '‴ Triple Prime' = UNICHAR(8244)
+			displayFolder: Other
+
+		measure '※ Reference Mark' = UNICHAR(8251)
+			displayFolder: Other
+
+		measure '⁂ Asterism' = UNICHAR(8258)
+			displayFolder: Other
+
+		measure '‽ Interrobang' = UNICHAR(8253)
+			displayFolder: Other
+
+		measure '‾ Overline' = UNICHAR(8254)
+			displayFolder: Other
+
+		measure '¦ Broken Bar' = UNICHAR(166)
+			displayFolder: Other
+
+		measure '· Middle Dot' = UNICHAR(183)
+			displayFolder: Other
+
+		measure '­ Soft Hyphen' = UNICHAR(173)
+			displayFolder: Other
+
+		measure '‐ Hyphen' = UNICHAR(8208)
+			displayFolder: Other
+
+		measure '‑ Non-Breaking Hyphen' = UNICHAR(8209)
+			displayFolder: Other
+
+		measure '‒ Figure Dash' = UNICHAR(8210)
+			displayFolder: Other
+
+		measure '‘ Left Single Quotation Mark' = UNICHAR(8216)
+			displayFolder: Other
+
+		measure '’ Right Single Quotation Mark' = UNICHAR(8217)
+			displayFolder: Other
+
+		measure '‚ Single Low-9 Quotation Mark' = UNICHAR(8218)
+			displayFolder: Other
+
+		measure '“ Left Double Quotation Mark' = UNICHAR(8220)
+			displayFolder: Other
+
+		measure '” Right Double Quotation Mark' = UNICHAR(8221)
+			displayFolder: Other
+
+		measure '„ Double Low-9 Quotation Mark' = UNICHAR(8222)
+			displayFolder: Other
+
+		measure '‹ Single Left-Pointing Angle Quotation Mark' = UNICHAR(8249)
+			displayFolder: Other
+
+		measure '› Single Right-Pointing Angle Quotation Mark' = UNICHAR(8250)
+			displayFolder: Other
+
+		measure '« Left-Pointing Double Angle Quotation Mark' = UNICHAR(171)
+			displayFolder: Other
+
+		measure '» Right-Pointing Double Angle Quotation Mark' = UNICHAR(187)
+			displayFolder: Other
+
+		measure '☜ White Left Pointing Index' = UNICHAR(9756)
+			displayFolder: Other
+
+		measure '☝ White Up Pointing Index' = UNICHAR(9757)
+			displayFolder: Other
+
+		measure '☞ White Right Pointing Index' = UNICHAR(9758)
+			displayFolder: Other
+
+		measure '☟ White Down Pointing Index' = UNICHAR(9759)
+			displayFolder: Other
+
+		measure '♀ Female Sign' = UNICHAR(9792)
+			displayFolder: Other
+
+		measure '♂ Male Sign' = UNICHAR(9794)
+			displayFolder: Other
+
+		measure '☿ Mercury' = UNICHAR(9791)
+			displayFolder: Other
+
+		measure '♁ Earth' = UNICHAR(9793)
+			displayFolder: Other
+
+		measure '♃ Jupiter' = UNICHAR(9795)
+			displayFolder: Other
+
+		measure '♄ Saturn' = UNICHAR(9796)
+			displayFolder: Other
+
+		measure '♅ Uranus' = UNICHAR(9797)
+			displayFolder: Other
+
+		measure '♆ Neptune' = UNICHAR(9798)
+			displayFolder: Other
+
+		measure '♇ Pluto' = UNICHAR(9799)
+			displayFolder: Other
+
+		measure '♈ Aries' = UNICHAR(9800)
+			displayFolder: Other
+
+		measure '♉ Taurus' = UNICHAR(9801)
+			displayFolder: Other
+
+		measure '♊ Gemini' = UNICHAR(9802)
+			displayFolder: Other
+
+		measure '♋ Cancer' = UNICHAR(9803)
+			displayFolder: Other
+
+		measure '♌ Leo' = UNICHAR(9804)
+			displayFolder: Other
+
+		measure '♍ Virgo' = UNICHAR(9805)
+			displayFolder: Other
+
+		measure '♎ Libra' = UNICHAR(9806)
+			displayFolder: Other
+
+		measure '♏ Scorpius' = UNICHAR(9807)
+			displayFolder: Other
+
+		measure '♐ Sagittarius' = UNICHAR(9808)
+			displayFolder: Other
+
+		measure '♑ Capricorn' = UNICHAR(9809)
+			displayFolder: Other
+
+		measure '♒ Aquarius' = UNICHAR(9810)
+			displayFolder: Other
+
+		measure '♓ Pisces' = UNICHAR(9811)
+			displayFolder: Other
+
+		measure '⟨ Left-Pointing Angle Bracket' = UNICHAR(10216)
+			displayFolder: Other
+
+		measure '⟩ Right-Pointing Angle Bracket' = UNICHAR(10217)
+			displayFolder: Other
+
+		measure '⦅ Left White Square Bracket' = UNICHAR(10629)
+			displayFolder: Other
+
+		measure '⦆ Right White Square Bracket' = UNICHAR(10630)
+			displayFolder: Other
+
+		measure '〚 Left White Tortoise Shell Bracket' = UNICHAR(12314)
+			displayFolder: Other
+
+		measure '〛 Right White Tortoise Shell Bracket' = UNICHAR(12315)
+			displayFolder: Other
+
+		measure '【 Left Black Lenticular Bracket' = UNICHAR(12304)
+			displayFolder: Other
+
+		measure '】 Right Black Lenticular Bracket' = UNICHAR(12305)
+			displayFolder: Other
+
+		measure '〔 Left Tortoise Shell Bracket' = UNICHAR(12308)
+			displayFolder: Other
+
+		measure '〕 Right Tortoise Shell Bracket' = UNICHAR(12309)
+			displayFolder: Other
+
+		measure '〖 Left White Lenticular Bracket' = UNICHAR(12310)
+			displayFolder: Other
+
+		measure '〗 Right White Lenticular Bracket' = UNICHAR(12311)
+			displayFolder: Other
+
+		measure '⦃ Left White Curly Bracket' = UNICHAR(10627)
+			displayFolder: Other
+
+		measure '⦄ Right White Curly Bracket' = UNICHAR(10628)
+			displayFolder: Other
+
+		measure '` Grave Accent' = UNICHAR(96)
+			displayFolder: Other
+
+		measure '´ Acute Accent' = UNICHAR(180)
+			displayFolder: Other
+
+		measure 'ˆ Modifier Letter Circumflex Accent' = UNICHAR(710)
+			displayFolder: Other
+
+		measure '˜ Small Tilde' = UNICHAR(732)
+			displayFolder: Other
+
+		measure '¨ Diaeresis' = UNICHAR(168)
+			displayFolder: Other
+
+		measure '¯ Macron' = UNICHAR(175)
+			displayFolder: Other
+
+		measure '˘ Breve' = UNICHAR(728)
+			displayFolder: Other
+
+		measure '˙ Dot Above' = UNICHAR(729)
+			displayFolder: Other
+
+		measure '˚ Ring Above' = UNICHAR(730)
+			displayFolder: Other
+
+		measure '˛ Ogonek' = UNICHAR(731)
+			displayFolder: Other
+
+		measure '˝ Double Acute Accent' = UNICHAR(733)
+			displayFolder: Other
+
+		measure 'ˇ Caron' = UNICHAR(711)
+			displayFolder: Other
+
+		measure '¸ Cedilla' = UNICHAR(184)
+			displayFolder: Other
+
+		measure '☰ Trigram for Heaven / Menu' = UNICHAR(9776)
+			displayFolder: Other
+
+		measure '👤 Bust in Silhouette / User' = UNICHAR(128100)
+			displayFolder: Other
+
+		measure '🏠 House Building / Home' = UNICHAR(127968)
+			displayFolder: Other
+
+		measure '📥 Inbox Tray / Download' = UNICHAR(128229)
+			displayFolder: Other
+
+		measure '📤 Outbox Tray / Upload/Share' = UNICHAR(128228)
+			displayFolder: Other
+
+		measure '⏳ Hourglass / Pending' = UNICHAR(8987)
+			displayFolder: Other
+
+		measure '⌛ Hourglass Done' = UNICHAR(9203)
+			displayFolder: Other
+
+		measure '🙂 Slightly Smiling Face' = UNICHAR(128578)
+			displayFolder: Other
+
+		measure '😐 Neutral Face' = UNICHAR(128528)
+			displayFolder: Other
+
+		measure '🙁 Slightly Frowning Face' = UNICHAR(128577)
+			displayFolder: Other
+
+		measure '👍 Thumbs Up' = UNICHAR(128077)
+			displayFolder: Other
+
+		measure '👎 Thumbs Down' = UNICHAR(128078)
+			displayFolder: Other
+
+		measure '⠿ Braille Pattern Dots-123456' = UNICHAR(10303)
+			displayFolder: Other
+
+		column Value
+			isHidden
+			formatString: 0
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Value]
+
+			annotation SummarizationSetBy = User
+
+		partition UnicodeMeasures = calculated
+			mode: import
+			source = { BLANK() }
+
+

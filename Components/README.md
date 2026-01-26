@@ -31,7 +31,7 @@ Here's a listing of the assets contained herein:
 
 - [201 - Space-Saving Bar Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/201%20-%20Space-Saving%20Bar%20Chart%20with%20Top%20N%20and%20Others%20(Deneb%20Template).md)
 
-
+<img width="610" height="610" alt="201 - Space-Saving Bar Chart" src="https://github.com/user-attachments/assets/14019835-4775-452a-b868-c931b6a28bcc" />
 <br><br>
 
 - [202 - Bullet Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/202%20-%20Bullet%20Chart%20(Deneb%20Template).md)

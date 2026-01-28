@@ -1,5 +1,12 @@
 createOrReplace
 
+	expression 'Number of Years' = 2 meta [IsParameterQuery=true, Type="Number", IsParameterQueryRequired=true]
+
+		annotation PBI_NavigationStepName = Navigation
+
+		annotation PBI_ResultType = Number
+
+
 	expression fxDatesQuery = ```
 			let
 				fnDateTable = (
@@ -563,7 +570,7 @@ createOrReplace
 								[
 									Description = " See: https://forum.enterprisedna.co/t/extended-date-table-power-query-m-function/6390",
 									Code = " Optional paramters: #(lf)(FYStartMonthNum) Month number the fiscal year starts, Januari if omitted #(lf)(Holidays) Select a query (column) that contains a list of holiday dates #(lf)(WDStartNum) Switch default weekday numbering from 0-6 to 1-7 by entering a 1 #(lf)(AddRelativeNetWorkdays) if true adds a Relative Networkdays column to the date table #(lf)
-						                #(lf)Important notes: #(lf)[Fiscal Week] starts on a Monday and can contain less than 7 days in a First- and/or Last Week of a FY #(lf)[IsWeekDay] does not take holiday dates into account #(lf)[IsBusinessDay] does take optional holiday dates into account  #(lf)[IsPYTD] and [IsPFYTD] compare Previous [Day of Year] with the Current [Day of Year] number, so dates don't align in leap years #(lf)> No Fiscal columns will be added if (FYStartMonthNum) is omitted!",
+												                #(lf)Important notes: #(lf)[Fiscal Week] starts on a Monday and can contain less than 7 days in a First- and/or Last Week of a FY #(lf)[IsWeekDay] does not take holiday dates into account #(lf)[IsBusinessDay] does take optional holiday dates into account  #(lf)[IsPYTD] and [IsPFYTD] compare Previous [Day of Year] with the Current [Day of Year] number, so dates don't align in leap years #(lf)> No Fiscal columns will be added if (FYStartMonthNum) is omitted!",
 									Result = " "
 								]
 							}
@@ -597,7 +604,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 01. Main
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: Year
 
 			changedProperty = IsHidden
@@ -608,7 +615,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 02. Offsets
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: CurrYearOffset
 
 			changedProperty = IsHidden
@@ -630,7 +637,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 06. Quarter-related
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: Quarter Number
 
 			changedProperty = IsHidden
@@ -687,7 +694,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 06. Quarter-related
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: QuarternYear
 
 			changedProperty = IsHidden
@@ -698,7 +705,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 02. Offsets
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: CurrQuarterOffset
 
 			changedProperty = IsHidden
@@ -720,7 +727,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 01. Main
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: Month
 
 			changedProperty = IsHidden
@@ -767,7 +774,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 05. Month-related
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: MonthnYear
 
 			changedProperty = IsHidden
@@ -778,7 +785,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 02. Offsets
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: CurrMonthOffset
 
 			changedProperty = IsHidden
@@ -830,7 +837,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 03. Day-related
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: Day of Month
 
 			changedProperty = IsHidden
@@ -841,7 +848,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 04. Week-related
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: Week Number
 
 			changedProperty = IsHidden
@@ -888,7 +895,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 04. Week-related
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: WeeknYear
 
 			changedProperty = IsHidden
@@ -899,7 +906,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 02. Offsets
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: CurrWeekOffset
 
 			changedProperty = IsHidden
@@ -921,7 +928,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 03. Day-related
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: Day of Week Number
 
 			changedProperty = IsHidden
@@ -952,7 +959,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 01. Main
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: DateInt
 
 			changedProperty = IsHidden
@@ -963,7 +970,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 02. Offsets
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: CurrDayOffset
 
 			changedProperty = IsHidden
@@ -1027,7 +1034,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 10. ISO
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: ISO Year
 
 			changedProperty = IsHidden
@@ -1038,7 +1045,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 10. ISO
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: ISO CurrYearOffset
 
 			changedProperty = IsHidden
@@ -1069,7 +1076,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 10. ISO
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: ISO QuarternYear
 
 			changedProperty = IsHidden
@@ -1080,7 +1087,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 10. ISO
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: ISO CurrQuarterOffset
 
 			changedProperty = IsHidden
@@ -1110,7 +1117,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 09. Fiscal
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: Fiscal CurrYearOffset
 
 			annotation SummarizationSetBy = Automatic
@@ -1127,7 +1134,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 09. Fiscal
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: FQuarternYear
 
 			annotation SummarizationSetBy = Automatic
@@ -1144,7 +1151,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 09. Fiscal
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: FPeriodnYear
 
 			annotation SummarizationSetBy = Automatic
@@ -1161,7 +1168,7 @@ createOrReplace
 			dataType: int64
 			formatString: 0
 			displayFolder: 09. Fiscal
-			summarizeBy: sum
+			summarizeBy: none
 			sourceColumn: FWeeknYear
 
 			annotation SummarizationSetBy = Automatic
@@ -1241,8 +1248,15 @@ createOrReplace
 
 		partition Dates = m
 			mode: import
+			queryGroup: 'Data Model'
 			source = 
-					let Source = fxDatesQuery(#date(2021, 1, 1), #date(2025, 12, 31), 4, null, null, null) in Source
+					let 
+						CurrentYear = Date.Year(DateTime.LocalNow()),
+						StartDate = #date(CurrentYear - #"Number of Years", 1, 1),
+						EndDate = #date(CurrentYear, 12, 31),
+						Source = fxDatesQuery(StartDate, EndDate, 4, null, null, null) 
+					in 
+						Source
 
 		changedProperty = IsHidden
 

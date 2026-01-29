@@ -11,16 +11,16 @@ Just about every Power BI report has a ***Dates*** (or Calendar) table, and the 
     - *the **CurrentYear** is calculated as the year of the current date (current system time)*
     - *the **StartDate** value is calculated as January 1st of the year **Number of Years** before the **CurrentYear** value calculated above*
     - *the **EndDate** value is calculated as December 31st of the current year*
-- marks the *Dates* table as a **date** table
-- sets the [Date] column as the **primary key**
-- sets a *description* for all columns
-- sets the summarization of all columns to **none**
-- sets the *format* for all date columns to **dd-mmm-yyyy** (e.g., 28-Jan-2026, etc.)
-- sets the *sort by* column for **select** columns
-- marks *select* columns as **hidden**
-- sets the *display folder* for all columns using a common structure (e.g., 01. Main, 02. Offsets, 03. Day-related, etc.)
-- creates a year/quarter/month/day **Calendar Hierarchy**
-- creates a fiscal year/fiscal quarter/fiscal period/day **Fiscal Hierarchy**
+- marks the *Dates* table as a ***date*** table
+- sets the [Date] column as the ***primary key***
+- sets a ***description*** for all columns
+- sets the ***summarization*** of all columns to *none*
+- sets the ***format*** for all date columns to *dd-mmm-yyyy* (e.g., 28-Jan-2026, etc.)
+- sets the ***sort by*** column for *select* columns
+- marks *select* columns as ***hidden***
+- sets the ***display folder*** for all columns using a common structure (e.g., 01. Main, 02. Offsets, 03. Day-related, etc.)
+- creates a year/quarter/month/day ***Calendar Hierarchy***
+- creates a fiscal year/fiscal quarter/fiscal period/day ***Fiscal Hierarchy***
 
 > [!NOTE]
 > *Adjust the **Number of Years** parameter value to be used in the creation of the **StartDate** and **EndDate** values that are used in the creation of the **Dates** table to suit the dataset (the values included in the script are examples only)*

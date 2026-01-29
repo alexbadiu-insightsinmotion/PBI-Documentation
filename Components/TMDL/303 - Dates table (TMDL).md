@@ -17,7 +17,7 @@ Just about every Power BI report has a ***Dates*** (or Calendar) table, and the 
 - sets the summarization of all columns to **none**
 - sets the *format* for all date columns to **dd-mmm-yyyy** (e.g., 28-Jan-2026, etc.)
 - sets the *sort by* column for **select** columns
-- marks **select** columns as *hidden*
+- marks *select* columns as **hidden**
 - sets the *display folder* for all columns using a common structure (e.g., 01. Main, 02. Offsets, 03. Day-related, etc.)
 - creates a year/quarter/month/day **Calendar Hierarchy**
 - creates a fiscal year/fiscal quarter/fiscal period/day **Fiscal Hierarchy**

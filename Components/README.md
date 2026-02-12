@@ -99,7 +99,7 @@ Here's a listing of the assets contained herein:
 <img width="1040" height="900" alt="214 - Correlation Chart" src="https://github.com/user-attachments/assets/362e943a-36d8-486c-aaed-2e6064a8126f" />
 <br><br>
 
-- [215 - Financial Waterfall Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/214%20-%20Correlation%20Chart%20(Deneb%20Template).md) *** FIX ***
+- [215 - Financial Waterfall Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/215%20-%20Financial%20Waterfall%20Chart%20(Deneb%20Template).md)
 
 <img width="635" height="335" alt="215 - Financial Waterfall - V4" src="https://github.com/user-attachments/assets/e9f23cc0-17a1-4b43-90e8-8230f10dbbde" />
 <br><br>

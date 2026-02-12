@@ -2,7 +2,7 @@
 
 ## Financial Waterfall Chart
 
-*February 10, 2026*
+*February 11, 2026*
 
 Deneb/Vega-Lite can be used to generate a Financial Waterfall Chart, which graphically depicts the major elements of a profit and loss statement.
 
@@ -539,12 +539,12 @@ This example illustrates a number of Deneb/Vega-Lite features, including:
 
 Here's the template:
 
-[915.1 - JSON - Deneb Template - Financial Waterfall Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/914.1%20-%20deneb_correlation_chart.v1.8.2.json) <br> *** FIX ***
+[915.1 - JSON - Deneb Template - Financial Waterfall Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/915.1%20-%20deneb_template.financial_waterfall_chart.v1.8.2.json) <br>
 
 <br>
 
 Here's an example Power BI file using the template:
 
-[915.2 - PBIX - Deneb Example - Financial Waterfall Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/914.2%20-%20Deneb%20Reusable%20Components%20-%20Correlation%20Chart%20-%20V1.8.2.pbix) <br> *** FIX ***
+[915.2 - PBIX - Deneb Example - Financial Waterfall Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/915.2%20-%20Deneb%20Reusable%20Components%20-%20Financial%20Waterfall%20Chart%20-%20V1.8.2.pbix) <br>
 
 *- eof*

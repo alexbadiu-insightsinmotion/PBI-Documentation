@@ -42,6 +42,7 @@ createOrReplace
 </details>
 
 <hr>
+<hr>
 
 ## Base Measures
 
@@ -80,8 +81,6 @@ Three example *Report Administration* measures are added to the existing *Key Me
 All measures are set to display in the *z_Admin* folder.
 
 It is incumbent upon the developer to update the [Report ID] measure once upon report create and to update the [Version] and [Version Date] measures before each deployment.
-
-<hr>
 
 Here's the code to create Base, Last Refresh, and Report Administration measures in the ***Key Measures*** table:
 
@@ -145,6 +144,9 @@ createOrReplace
 
 ```
 </details>
+
+<hr>
+<hr>
 
 <br>
 

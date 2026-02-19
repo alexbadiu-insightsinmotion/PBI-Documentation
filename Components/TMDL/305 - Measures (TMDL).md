@@ -1,4 +1,4 @@
-<img width="1280" height="720" alt="306 - Image - Title - Measures - GP Mockup" src="https://github.com/user-attachments/assets/c287b419-f97a-4d2e-904b-2482fa2a75f3" />
+<img width="1280" height="700" alt="305 - Image - Title - TMDL Measures" src="https://github.com/user-attachments/assets/e42ab347-d1dd-41a8-8f26-78e00ad78d1a" />
 
 ## Key Measures table
 

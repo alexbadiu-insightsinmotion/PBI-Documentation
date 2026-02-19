@@ -46,7 +46,7 @@ createOrReplace
 
 ## Base Measures
 
-TMDL scripts can be used to update an existing object. Many standard measures (or ***base measures***) are often created in a Power BI model. Four example base measures are added to the existing *Key Measures* table, and several tasks are performed, including:
+TMDL scripts can be used to update an existing object. Many standard measures (or ***base measures***) are often created in a Power BI model. Four example ***Base*** measures are added to the existing *Key Measures* table, and several tasks are performed, including:
 
 - reference the existing *Key Measures* table
 - creates a [Total Sales] measure (= sum of revenue) (format set to #,##0)
@@ -62,8 +62,8 @@ As noted above, TMDL scripts can be used to update an existing object. Three exa
 
 - reference the existing *Key Measures* table
 - creates a [Last Refresh Date] measure (= max 'Last Refresh'[Date]) (format set to dd-mmm-yyyy)
-- creates a [last Refresh DateTime Costs] measure (= max 'Last Refresh'[Last Refresh]) (format set to dd-mmm-yyyy h:nn:ss AM/PM)
-- creates a [Total Profit] measure (= difference in dates between today and the [Last Refresh Date]) (format set to #,0)
+- creates a [Last Refresh DateTime] measure (= max 'Last Refresh'[Last Refresh]) (format set to dd-mmm-yyyy h:nn:ss AM/PM)
+- creates a [Last Refresh Days Old] measure (= difference in dates between today and the [Last Refresh Date]) (format set to #,0)
 
 All measures are set to display in the *x_Last_Refresh* folder.
 

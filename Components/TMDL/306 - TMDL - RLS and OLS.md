@@ -1,6 +1,6 @@
 
 
-<img width="1950" height="1068" alt="Issue 306" src="https://github.com/user-attachments/assets/9f913d98-b126-442b-94d5-8a984e88bc4d" />
+<img width="1950" height="1068" alt="Issue 306" src="https://github.com/user-attachments/assets/abbe6a58-8c76-43eb-8b49-80ce04d84d3c" />
 
 
 
@@ -407,8 +407,7 @@ The DAX expression `USERPRINCIPALNAME()` automatically filters to show each mana
 
 
 **HR_Global_Admin view**
-<img width="2467" height="1131" alt="Pasted image 20260215090756" src="https://github.com/user-attachments/assets/7ec28f00-262a-47b5-b61e-f8cc74d2ba6e" />
-
+<img width="2467" height="1131" alt="Pasted image 20260215090756" src="https://github.com/user-attachments/assets/b11074d6-9455-49e3-a03f-2f058a922cca" />
 
 
 **Testing Manager_Restricted role**
@@ -420,17 +419,20 @@ Expectations:
 
 Do you see how easy it is to read and audit this role?
 
-<img width="800" height="300" alt="Pasted image 20260215100504" src="https://github.com/user-attachments/assets/48f00ec1-6979-4332-a8fa-2e599c6d4a38" />
+<img width="526" height="199" alt="Pasted image 20260215100504" src="https://github.com/user-attachments/assets/f75f2046-e9dc-4616-b614-a9abb6daed86" />
+
 
 <br>
 
+<img width="369" height="372" alt="Pasted image 20260215090451" src="https://github.com/user-attachments/assets/4dc790bb-7512-4a64-b047-8358fabbbbdc" />
 
-<img width="369" height="372" alt="Pasted image 20260215090451" src="https://github.com/user-attachments/assets/689027cd-136b-4129-bd47-484e961f5d20" />
+
 
 <br>
 
 Let’s verify the behavior works as expected.
-<img width="2509" height="1150" alt="Pasted image 20260215090522" src="https://github.com/user-attachments/assets/fa322ffc-8b0e-44de-bdcf-ef4c645809c6" />
+<img width="2509" height="1150" alt="Pasted image 20260215090522" src="https://github.com/user-attachments/assets/40dc32eb-7f60-41c4-afd1-d3fa71bac537" />
+
 
 
 

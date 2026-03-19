@@ -1,0 +1,35 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Tabular Editor 2 — Disable IsAvailableInMDX on hidden columns
+// Compatible C# (Author — Alexandru Badiu)
+// ─────────────────────────────────────────────────────────────────────────────
+
+var changed = 0;
+var skipped = 0;
+var log     = new System.Text.StringBuilder();
+
+log.AppendLine("=== IsAvailableInMDX → false (hidden columns) ===");
+log.AppendLine();
+
+foreach (var table in Model.Tables)
+{
+    foreach (var col in table.Columns)
+    {
+        // Skip RowNumber system columns
+        if (col.Type == ColumnType.RowNumber) { skipped++; continue; }
+
+        // Only process hidden columns
+        if (!col.IsHidden) { skipped++; continue; }
+
+        // Skip if already false (idempotent — safe to re-run)
+        if (!col.IsAvailableInMDX) { skipped++; continue; }
+
+        col.IsAvailableInMDX = false;
+        changed++;
+        log.AppendLine("  ✓  [" + table.Name + "][" + col.Name + "]");
+    }
+}
+
+log.AppendLine();
+log.AppendLine("─── Done : " + changed + " column(s) updated · " + skipped + " skipped ───");
+
+Info(log.ToString());

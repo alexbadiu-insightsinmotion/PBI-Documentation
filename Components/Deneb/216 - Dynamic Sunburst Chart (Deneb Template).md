@@ -1384,12 +1384,12 @@ This example illustrates a number of Deneb/Vega-Lite features, including:
 
 Here's the template:
 
-[916.1 - JSON - Deneb Template - Dynamic Sunburst Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/915.1%20-%20deneb_template.financial_waterfall_chart.v1.8.2.json) *** FIX *** <br>
+[916.1 - JSON - Deneb Template - Dynamic Sunburst Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/916.1%20-%20deneb_template.dynamic_sunburst_chart.v1.8.2.json) <br>
 
 <br>
 
 Here's an example Power BI file using the template:
 
-[916.2 - PBIX - Deneb Example - Dynamic Sunburst Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/915.2%20-%20Deneb%20Reusable%20Components%20-%20Financial%20Waterfall%20Chart%20-%20V1.8.2.pbix) *** FIX *** <br>
+[916.2 - PBIX - Deneb Example - Dynamic Sunburst Chart](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/916.2%20-%20Deneb%20Reusable%20Components%20-%20Dynamic%20Sunburst%20Chart%20-%20V1.8.2.pbix) <br>
 
 *- eof*

@@ -1,0 +1,64 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Tabular Editor 2 — Disable IsAvailableInMDX on visible columns that are:
+//   (A) named with "code" or "key" (case-insensitive)
+//   (B) used as the many-side (From) column of any relationship
+//
+// Relationships are safe: VertiPaq resolves FK joins at storage level,
+// completely independent of MDX attribute hierarchies.
+// ─────────────────────────────────────────────────────────────────────────────
+
+var changed  = 0;
+var skipped  = 0;
+var logMatch = new System.Text.StringBuilder();
+var logSkip  = new System.Text.StringBuilder();
+
+// ── Step 1 : collect all many-side (From) column references ──────────────────
+var manySideCols = new System.Collections.Generic.HashSet<string>();
+
+foreach (var rel in Model.Relationships)
+{
+    // SingleColumnRelationship exposes FromTable / FromColumn
+    var scr = rel as TabularEditor.TOMWrapper.SingleColumnRelationship;
+    if (scr == null) continue;
+
+    // Key = "TableName||ColumnName" for fast lookup
+    manySideCols.Add(scr.FromTable.Name + "||" + scr.FromColumn.Name);
+}
+
+// ── Step 2 : walk all visible columns and apply criteria ──────────────────────
+foreach (var table in Model.Tables)
+{
+    foreach (var col in table.Columns)
+    {
+        if (col.Type == ColumnType.RowNumber) { skipped++; continue; }
+        if (col.IsHidden)                      { skipped++; continue; }
+        if (!col.IsAvailableInMDX)             { skipped++; continue; }
+
+        var  nameLower  = col.Name.ToLower();
+        bool nameMatch  = nameLower.Contains("code") || nameLower.Contains("key");
+        bool fkMatch    = manySideCols.Contains(table.Name + "||" + col.Name);
+        var  reason     = "";
+
+        if      (nameMatch && fkMatch) reason = "name + FK many-side";
+        else if (nameMatch)            reason = "name pattern";
+        else if (fkMatch)              reason = "FK many-side";
+        else                           { skipped++; continue; }
+
+        col.IsAvailableInMDX = false;
+        changed++;
+        logMatch.AppendLine(
+            "  ✓  [" + table.Name + "][" + col.Name + "]"
+            + "  (" + reason + ")"
+        );
+    }
+}
+
+// ── Step 3 : report ───────────────────────────────────────────────────────────
+var report = new System.Text.StringBuilder();
+report.AppendLine("=== IsAvailableInMDX → false (visible FK / code / key columns) ===");
+report.AppendLine();
+report.Append(logMatch);
+report.AppendLine();
+report.AppendLine("─── Done : " + changed + " column(s) updated · " + skipped + " skipped ───");
+
+Info(report.ToString());

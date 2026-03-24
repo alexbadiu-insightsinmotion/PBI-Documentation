@@ -9,7 +9,7 @@ A single TMDL script can also be used to create a large number of measures and a
 
 Both scripts perform several tasks, including:
 - creates a *Measures* table (eDNA script = "UNICHAR Measures"; NudgeBI=""Unicode Measures")
-- creates the *UNICHAR measures*
+- creates the *UNICHAR measures* measures
 - sets the *displayFolder* property for each measure
 
 <details closed>

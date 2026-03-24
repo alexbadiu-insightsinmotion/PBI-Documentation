@@ -24,12 +24,8 @@ Here's a listing of the assets contained herein:
 - [904 - Last Refresh table](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/TMDL/902%20-%20Power%20BI%20TMDL%20Script%20-%20Last%20Refresh%20table.txt)
 - [905.1 - Key Measures table](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/TMDL/905.1%20-%20Power%20BI%20TMDL%20Script%20-%20Key%20Measures%20table.txt)
 - [905.2 - Base, Last Refresh, and Report Admin Measures](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/TMDL/905.2%20-%20Power%20BI%20TMDL%20Script%20-%20Base%2C%20Last%20Refresh%2C%20and%20Report%20Admin%20Measures.txt)
-
-
-
-- [907 - UNICHAR measures](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/TMDL/905%20-%20Power%20BI%20TMDL%20Script%20-%20UNICHAR%20Measures.txt)
-
-
+- [907.1 - UNICHAR Measures - Enterprise DNA Forum](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/TMDL/907.1%20-%20Power%20BI%20TMDL%20Script%20-%20UNICHAR%20Measures%20-%20Enterprise%20DNA%20Forum.txt)
+- [907.2 - UNICHAR Measures - FabSnippets_NudgeBI](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/TMDL/907.2%20-%20Power%20BI%20TMDL%20Script%20-%20UNICHAR%20Measures%20-%20FabSnippets_NudgeBI.txt)
 - [908 - DAX INFO view tables](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/TMDL/906%20-%20Power%20BI%20TMDL%20Script%20-%20DAX%20INFO%20View.txt)
 
 ### Deneb templates:

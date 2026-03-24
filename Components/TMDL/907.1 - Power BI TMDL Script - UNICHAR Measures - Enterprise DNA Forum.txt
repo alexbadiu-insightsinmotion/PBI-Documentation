@@ -1,0 +1,554 @@
+createOrReplace
+
+	/// This table contains select Unicode measures from https://forum.enterprisedna.co/t/tip-unichar-code-finder-pbix/9829
+	table 'UNICHAR Measures'
+
+		measure 'arrow down' = UNICHAR(11015)
+			displayFolder: Arrows
+
+		measure 'arrow down left' = UNICHAR(11019)
+			displayFolder: Arrows
+
+		measure 'arrow down rght' = UNICHAR(11018)
+			displayFolder: Arrows
+
+		measure 'arrow left' = UNICHAR(11013)
+			displayFolder: Arrows
+
+		measure 'arrow left-right' = UNICHAR(11020)
+			displayFolder: Arrows
+
+		measure 'arrow up' = UNICHAR(11014)
+			displayFolder: Arrows
+
+		measure 'arrow up left' = UNICHAR(11017)
+			displayFolder: Arrows
+
+		measure 'arrow up right' = UNICHAR(11016)
+			displayFolder: Arrows
+
+		measure 'arrow up-down' = UNICHAR(11021)
+			displayFolder: Arrows
+
+		measure 'down arrow' = UNICHAR(11163)
+			displayFolder: Arrows
+
+		measure 'down arrow with bar' = UNICHAR(67630)
+			displayFolder: Arrows
+
+		measure 'down left arrow' = UNICHAR(129159)
+			displayFolder: Arrows
+
+		measure 'down right arrow' = UNICHAR(129150)
+			displayFolder: Arrows
+
+		measure 'left arrow' = UNICHAR(11160)
+			displayFolder: Arrows
+
+		measure 'right arrow' = UNICHAR(11162)
+			displayFolder: Arrows
+
+		measure 'up arrow' = UNICHAR(11161)
+			displayFolder: Arrows
+
+		measure 'up left arrow' = UNICHAR(129156)
+			displayFolder: Arrows
+
+		measure 'up right arrow' = UNICHAR(129157)
+			displayFolder: Arrows
+
+		measure checkmark = UNICHAR(10003)
+			displayFolder: Check
+
+		measure 'checkmark (bold)' = UNICHAR(10004)
+			displayFolder: Check
+
+		measure 'checkmark in a box (green)' = UNICHAR(9989)
+			displayFolder: Check
+
+		measure 'checkmark in box' = UNICHAR(9745)
+			displayFolder: Check
+
+		measure 'black circle' = UNICHAR(11203)
+			displayFolder: Circles
+
+		measure 'blue circle' = UNICHAR(128309)
+			displayFolder: Circles
+
+		measure 'circle - black' = UNICHAR(9899)
+			displayFolder: Circles
+
+		measure 'circle - outline' = UNICHAR(9898)
+			displayFolder: Circles
+
+		measure 'circle cross' = UNICHAR(67848)
+			displayFolder: Circles
+
+		measure 'circle outline' = UNICHAR(66194)
+			displayFolder: Circles
+
+		measure 'circle with diagonal slash' = UNICHAR(128683)
+			displayFolder: Circles
+
+		measure 'empty circle' = UNICHAR(68178)
+			displayFolder: Circles
+
+		measure 'green circle' = UNICHAR(128994)
+			displayFolder: Circles
+
+		measure 'red circle' = UNICHAR(128308)
+			displayFolder: Circles
+
+		measure 'traffic light' = UNICHAR(11044)
+			displayFolder: Circles
+
+		measure 'white circle' = UNICHAR(11604)
+			displayFolder: Circles
+
+		measure 'white circle (larger)' = UNICHAR(9711)
+			displayFolder: Circles
+
+		measure 'yellow circle' = UNICHAR(128993)
+			displayFolder: Circles
+
+		measure 'british pound' = UNICHAR(65505)
+			displayFolder: Currency
+
+		measure cents = UNICHAR(162)
+			displayFolder: Currency
+
+		measure 'dollar sign' = UNICHAR(36)
+			displayFolder: Currency
+
+		measure euro = UNICHAR(128)
+			displayFolder: Currency
+
+		measure pounds = UNICHAR(163)
+			displayFolder: Currency
+
+		measure 'delete mark' = UNICHAR(10007)
+			displayFolder: Delete
+
+		measure 'delete mark (bold)' = UNICHAR(10008)
+			displayFolder: Delete
+
+		measure 'delete mark in box' = UNICHAR(9746)
+			displayFolder: Delete
+
+		measure 'x mark' = UNICHAR(128502)
+			displayFolder: Delete
+
+		measure 'black diamond' = UNICHAR(9670)
+			displayFolder: Diamonds
+
+		measure 'blue diamond' = UNICHAR(128311)
+			displayFolder: Diamonds
+
+		measure 'blue diamond (smaller)' = UNICHAR(128313)
+			displayFolder: Diamonds
+
+		measure 'diamond in a diamond' = UNICHAR(9672)
+			displayFolder: Diamonds
+
+		measure 'orange diamond' = UNICHAR(128310)
+			displayFolder: Diamonds
+
+		measure 'orange diamond (smaller)' = UNICHAR(128312)
+			displayFolder: Diamonds
+
+		measure 'white diamond' = UNICHAR(9671)
+			displayFolder: Diamonds
+
+		measure 'face - happy' = UNICHAR(9786)
+			displayFolder: Face
+
+		measure 'face - sad' = UNICHAR(9785)
+			displayFolder: Face
+
+		measure 'black flag' = UNICHAR(9873)
+			displayFolder: Flags
+
+		measure 'checkered flag' = UNICHAR(127937)
+			displayFolder: Flags
+
+		measure 'red flag' = UNICHAR(128681)
+			displayFolder: Flags
+
+		measure 'white flag' = UNICHAR(9872)
+			displayFolder: Flags
+
+		measure hand = UNICHAR(9995)
+			displayFolder: Hands
+
+		measure 'hand - pointing' = UNICHAR(9757)
+			displayFolder: Hands
+
+		measure 'hand (fist)' = UNICHAR(9994)
+			displayFolder: Hands
+
+		measure 'hand (peace sign)' = UNICHAR(9996)
+			displayFolder: Hands
+
+		measure thumbs-down = UNICHAR(128078)
+			displayFolder: Hands
+
+		measure thumbs-up = UNICHAR(128077)
+			displayFolder: Hands
+
+		measure 'black heart' = UNICHAR(9829)
+			displayFolder: Hearts
+
+		measure 'blue heart' = UNICHAR(128153)
+			displayFolder: Hearts
+
+		measure 'green heart' = UNICHAR(128154)
+			displayFolder: Hearts
+
+		measure 'heart (outline)' = UNICHAR(9825)
+			displayFolder: Hearts
+
+		measure 'purple heart' = UNICHAR(128156)
+			displayFolder: Hearts
+
+		measure 'yellow heart' = UNICHAR(128155)
+			displayFolder: Hearts
+
+		measure 'black circle with 1' = UNICHAR(10102)
+			displayFolder: Info
+
+		measure 'black circle with 10' = UNICHAR(10111)
+			displayFolder: Info
+
+		measure 'black circle with 2' = UNICHAR(10103)
+			displayFolder: Info
+
+		measure 'black circle with 3' = UNICHAR(10104)
+			displayFolder: Info
+
+		measure 'black circle with 4' = UNICHAR(10105)
+			displayFolder: Info
+
+		measure 'black circle with 5' = UNICHAR(10106)
+			displayFolder: Info
+
+		measure 'black circle with 6' = UNICHAR(10107)
+			displayFolder: Info
+
+		measure 'black circle with 7' = UNICHAR(10108)
+			displayFolder: Info
+
+		measure 'black circle with 8' = UNICHAR(10109)
+			displayFolder: Info
+
+		measure 'black circle with 9' = UNICHAR(10110)
+			displayFolder: Info
+
+		measure 'information circle' = UNICHAR(128712)
+			displayFolder: Info
+
+		measure 'white circle with 1' = UNICHAR(9461)
+			displayFolder: Info
+
+		measure 'white circle with 10' = UNICHAR(9470)
+			displayFolder: Info
+
+		measure 'white circle with 2' = UNICHAR(9462)
+			displayFolder: Info
+
+		measure 'white circle with 3' = UNICHAR(9463)
+			displayFolder: Info
+
+		measure 'white circle with 4' = UNICHAR(9464)
+			displayFolder: Info
+
+		measure 'white circle with 5' = UNICHAR(9465)
+			displayFolder: Info
+
+		measure 'white circle with 6' = UNICHAR(9466)
+			displayFolder: Info
+
+		measure 'white circle with 7' = UNICHAR(9467)
+			displayFolder: Info
+
+		measure 'white circle with 8' = UNICHAR(9468)
+			displayFolder: Info
+
+		measure 'white circle with 9' = UNICHAR(9469)
+			displayFolder: Info
+
+		measure cubed = UNICHAR(179)
+			displayFolder: Math
+
+		measure 'equal sign (bold)' = UNICHAR(12307)
+			displayFolder: Math
+
+		measure 'large black x' = UNICHAR(128473)
+			displayFolder: Math
+
+		measure 'multiplication sign' = UNICHAR(10005)
+			displayFolder: Math
+
+		measure 'multiplication sign (bold)' = UNICHAR(10006)
+			displayFolder: Math
+
+		measure 'plus sign' = UNICHAR(10010)
+			displayFolder: Math
+
+		measure squared = UNICHAR(178)
+			displayFolder: Math
+
+		measure X = UNICHAR(66338)
+			displayFolder: Math
+
+		measure calendar = UNICHAR(128198)
+			displayFolder: Other
+
+		measure 'chart decreasing' = UNICHAR(128201)
+			displayFolder: Other
+
+		measure 'chart increasing' = UNICHAR(128200)
+			displayFolder: Other
+
+		measure envelope = UNICHAR(9993)
+			displayFolder: Other
+
+		measure fire = UNICHAR(128293)
+			displayFolder: Other
+
+		measure globe = UNICHAR(127760)
+			displayFolder: Other
+
+		measure 'lightning bolt' = UNICHAR(9889)
+			displayFolder: Other
+
+		measure 'no entry' = UNICHAR(9940)
+			displayFolder: Other
+
+		measure phone = UNICHAR(128222)
+			displayFolder: Other
+
+		measure 'question mark black diamond' = UNICHAR(65533)
+			displayFolder: Other
+
+		measure recycle = UNICHAR(9851)
+			displayFolder: Other
+
+		measure 'red doughnut' = UNICHAR(11093)
+			displayFolder: Other
+
+		measure 'red x' = UNICHAR(10060)
+			displayFolder: Other
+
+		measure redo = UNICHAR(11118)
+			displayFolder: Other
+
+		measure undo = UNICHAR(11119)
+			displayFolder: Other
+
+		measure 'warning sign' = UNICHAR(9888)
+			displayFolder: Other
+
+		measure 'x in green box' = UNICHAR(10062)
+			displayFolder: Other
+
+		measure 'exclamation point' = UNICHAR(33)
+			displayFolder: Punctuation
+
+		measure 'outline exclamation point' = UNICHAR(10069)
+			displayFolder: Punctuation
+
+		measure 'outline question mark' = UNICHAR(10068)
+			displayFolder: Punctuation
+
+		measure 'question mark' = UNICHAR(63)
+			displayFolder: Punctuation
+
+		measure 'red exclamation point' = UNICHAR(10071)
+			displayFolder: Punctuation
+
+		measure 'red question mark' = UNICHAR(10067)
+			displayFolder: Punctuation
+
+		measure 'emoji rating - dislike it' = UNICHAR(128577)
+			displayFolder: Rating
+
+		measure 'emoji rating - hate it' = UNICHAR(128544)
+			displayFolder: Rating
+
+		measure 'emoji rating - like it' = UNICHAR(128515)
+			displayFolder: Rating
+
+		measure 'emoji rating - love it' = UNICHAR(128525)
+			displayFolder: Rating
+
+		measure 'emoji rating - neutral' = UNICHAR(128528)
+			displayFolder: Rating
+
+		measure 'emoji rating - somewhat dislike it' = UNICHAR(128533)
+			displayFolder: Rating
+
+		measure 'emoji rating - somewhat like it' = UNICHAR(128578)
+			displayFolder: Rating
+
+		measure 'black hexagon' = UNICHAR(11043)
+			displayFolder: Shapes
+
+		measure 'black pentagon' = UNICHAR(11039)
+			displayFolder: Shapes
+
+		measure ampersand = UNICHAR(38)
+			displayFolder: Special
+
+		measure 'at symbol' = UNICHAR(64)
+			displayFolder: Special
+
+		measure 'number sign' = UNICHAR(35)
+			displayFolder: Special
+
+		measure 'percent sign' = UNICHAR(37)
+			displayFolder: Special
+
+		measure 'black square' = UNICHAR(11200)
+			displayFolder: Squares
+
+		measure 'black square (large)' = UNICHAR(11035)
+			displayFolder: Squares
+
+		measure box = UNICHAR(9744)
+			displayFolder: Squares
+
+		measure square = UNICHAR(8718)
+			displayFolder: Squares
+
+		measure 'square - outline' = UNICHAR(9723)
+			displayFolder: Squares
+
+		measure 'square outline (large)' = UNICHAR(11036)
+			displayFolder: Squares
+
+		measure star = UNICHAR(9733)
+			displayFolder: Stars
+
+		measure 'star (outline)' = UNICHAR(9734)
+			displayFolder: Stars
+
+		measure 'yellow star' = UNICHAR(11088)
+			displayFolder: Stars
+
+		measure 'stop sign' = UNICHAR(128721)
+			displayFolder: Traffic
+
+		measure 'down empty triangle' = UNICHAR(66236)
+			displayFolder: Triangles
+
+		measure 'down triangle' = UNICHAR(11206)
+			displayFolder: Triangles
+
+		measure 'empty triangle' = UNICHAR(128710)
+			displayFolder: Triangles
+
+		measure 'left triangle' = UNICHAR(11207)
+			displayFolder: Triangles
+
+		measure 'red down triangle' = UNICHAR(128315)
+			displayFolder: Triangles
+
+		measure 'red up triangle' = UNICHAR(128314)
+			displayFolder: Triangles
+
+		measure 'right triangle' = UNICHAR(11208)
+			displayFolder: Triangles
+
+		measure 'triangle  down' = UNICHAR(9207)
+			displayFolder: Triangles
+
+		measure 'triangle - down (outline)' = UNICHAR(9661)
+			displayFolder: Triangles
+
+		measure 'triangle - left' = UNICHAR(9204)
+			displayFolder: Triangles
+
+		measure 'triangle - left (black)' = UNICHAR(9664)
+			displayFolder: Triangles
+
+		measure 'triangle - left (outline)' = UNICHAR(9665)
+			displayFolder: Triangles
+
+		measure 'triangle - right' = UNICHAR(9205)
+			displayFolder: Triangles
+
+		measure 'triangle - right (black)' = UNICHAR(9654)
+			displayFolder: Triangles
+
+		measure 'triangle - right (outline)' = UNICHAR(9655)
+			displayFolder: Triangles
+
+		measure 'triangle - up' = UNICHAR(9206)
+			displayFolder: Triangles
+
+		measure 'triangle - up (outline)' = UNICHAR(9651)
+			displayFolder: Triangles
+
+		measure 'triangle down' = UNICHAR(9660)
+			displayFolder: Triangles
+
+		measure 'triangle left' = UNICHAR(9668)
+			displayFolder: Triangles
+
+		measure 'triangle right' = UNICHAR(9658)
+			displayFolder: Triangles
+
+		measure 'triangle up' = UNICHAR(9650)
+			displayFolder: Triangles
+
+		measure 'up empty triangle' = UNICHAR(66211)
+			displayFolder: Triangles
+
+		measure 'up triangle' = UNICHAR(11205)
+			displayFolder: Triangles
+
+		measure centimetres = UNICHAR(13213)
+			displayFolder: Units
+
+		measure degrees = UNICHAR(68177)
+			displayFolder: Units
+
+		measure 'degrees - celcius' = UNICHAR(8451)
+			displayFolder: Units
+
+		measure 'degrees - fahrenheit' = UNICHAR(8457)
+			displayFolder: Units
+
+		measure gallon = UNICHAR(13311)
+			displayFolder: Units
+
+		measure kilograms = UNICHAR(13199)
+			displayFolder: Units
+
+		measure kilometres = UNICHAR(13214)
+			displayFolder: Units
+
+		measure millimetres = UNICHAR(13212)
+			displayFolder: Units
+
+		measure millisecond = UNICHAR(13235)
+			displayFolder: Units
+
+		partition 'UNICHAR Measures' = m
+			mode: import
+			source = 
+					let
+						Source = Table.FromRows(
+							Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)),
+							let
+								_t = ((type nullable text) meta [Serialized.Text = true])
+							in
+								type table [Column1 = _t]
+						),
+						#"Changed Type" = Table.TransformColumnTypes(Source, {{"Column1", type text}}),
+						#"Removed Columns" = Table.RemoveColumns(#"Changed Type", {"Column1"})
+					in
+						#"Removed Columns"
+
+		annotation PBI_ResultType = Table
+

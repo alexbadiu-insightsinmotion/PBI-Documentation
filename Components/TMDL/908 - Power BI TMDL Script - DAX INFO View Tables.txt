@@ -1,0 +1,540 @@
+createOrReplace
+
+	/// Use Data/Model to select the desired tables and relationships (use CTRL to individually select them in the order you want them to appear in the TMDL script, then drag all to the TMDL view)
+	table Doc_Tables
+
+		measure Measure
+
+			annotation 43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c = True
+
+		column ID
+			formatString: 0
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [ID]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Name
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Name]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Model
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Model]
+
+			annotation SummarizationSetBy = Automatic
+
+		column DataCategory
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [DataCategory]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Description
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Description]
+
+			annotation SummarizationSetBy = Automatic
+
+		column IsHidden
+			formatString: """TRUE"";""TRUE"";""FALSE"""
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [IsHidden]
+
+			annotation SummarizationSetBy = Automatic
+
+		column StorageMode
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [StorageMode]
+
+			annotation SummarizationSetBy = Automatic
+
+		column TableStorage
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [TableStorage]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Expression
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Expression]
+
+			annotation SummarizationSetBy = Automatic
+
+		column ShowAsVariationOnly
+			formatString: """TRUE"";""TRUE"";""FALSE"""
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [ShowAsVariationOnly]
+
+			annotation SummarizationSetBy = Automatic
+
+		column IsPrivate
+			formatString: """TRUE"";""TRUE"";""FALSE"""
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [IsPrivate]
+
+			annotation SummarizationSetBy = Automatic
+
+		column CalculationGroupPrecedence
+			formatString: 0
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [CalculationGroupPrecedence]
+
+			annotation SummarizationSetBy = Automatic
+
+		column LineageTag
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [LineageTag]
+
+			annotation SummarizationSetBy = Automatic
+
+		partition Doc_Tables = calculated
+			mode: import
+			source = ```
+					INFO.VIEW.TABLES()
+				```
+
+		annotation PBI_Id = 6938528295a54753a36acf18da149dee
+
+	table Doc_Columns
+
+		column ID
+			formatString: 0
+			summarizeBy: count
+			isNameInferred
+			sourceColumn: [ID]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Name
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Name]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Table
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Table]
+
+			annotation SummarizationSetBy = Automatic
+
+		column DataType
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [DataType]
+
+			annotation SummarizationSetBy = Automatic
+
+		column DataCategory
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [DataCategory]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Description
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Description]
+
+			annotation SummarizationSetBy = Automatic
+
+		column IsHidden
+			formatString: """TRUE"";""TRUE"";""FALSE"""
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [IsHidden]
+
+			annotation SummarizationSetBy = Automatic
+
+		column IsUnique
+			formatString: """TRUE"";""TRUE"";""FALSE"""
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [IsUnique]
+
+			annotation SummarizationSetBy = Automatic
+
+		column IsKey
+			formatString: """TRUE"";""TRUE"";""FALSE"""
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [IsKey]
+
+			annotation SummarizationSetBy = Automatic
+
+		column IsNullable
+			formatString: """TRUE"";""TRUE"";""FALSE"""
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [IsNullable]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Alignment
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Alignment]
+
+			annotation SummarizationSetBy = Automatic
+
+		column SummarizeBy
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [SummarizeBy]
+
+			annotation SummarizationSetBy = Automatic
+
+		column ColumnStorage
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [ColumnStorage]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Type
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Type]
+
+			annotation SummarizationSetBy = Automatic
+
+		column SourceColumn
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [SourceColumn]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Expression
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Expression]
+
+			annotation SummarizationSetBy = Automatic
+
+		column FormatString
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [FormatString]
+
+			annotation SummarizationSetBy = Automatic
+
+		column IsAvailableInMDX
+			formatString: """TRUE"";""TRUE"";""FALSE"""
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [IsAvailableInMDX]
+
+			annotation SummarizationSetBy = Automatic
+
+		column SortByColumn
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [SortByColumn]
+
+			annotation SummarizationSetBy = Automatic
+
+		column GroupingBehavior
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [GroupingBehavior]
+
+			annotation SummarizationSetBy = Automatic
+
+		column SourceProviderType
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [SourceProviderType]
+
+			annotation SummarizationSetBy = Automatic
+
+		column DisplayFolder
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [DisplayFolder]
+
+			annotation SummarizationSetBy = Automatic
+
+		column AlternateOf
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [AlternateOf]
+
+			annotation SummarizationSetBy = Automatic
+
+		column LineageTag
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [LineageTag]
+
+			annotation SummarizationSetBy = Automatic
+
+		partition Doc_Columns = calculated
+			mode: import
+			source = INFO.VIEW.COLUMNS()
+
+		annotation PBI_Id = 99d4a07d33eb4e8fb7930de66b118c12
+
+	table Doc_Relationships
+
+		column ID
+			formatString: 0
+			summarizeBy: count
+			isNameInferred
+			sourceColumn: [ID]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Name
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Name]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Relationship
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Relationship]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Model
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Model]
+
+			annotation SummarizationSetBy = Automatic
+
+		column IsActive
+			formatString: """TRUE"";""TRUE"";""FALSE"""
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [IsActive]
+
+			annotation SummarizationSetBy = Automatic
+
+		column CrossFilteringBehavior
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [CrossFilteringBehavior]
+
+			annotation SummarizationSetBy = Automatic
+
+		column RelyOnReferentialIntegrity
+			formatString: """TRUE"";""TRUE"";""FALSE"""
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [RelyOnReferentialIntegrity]
+
+			annotation SummarizationSetBy = Automatic
+
+		column FromTable
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [FromTable]
+
+			annotation SummarizationSetBy = Automatic
+
+		column FromColumn
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [FromColumn]
+
+			annotation SummarizationSetBy = Automatic
+
+		column FromCardinality
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [FromCardinality]
+
+			annotation SummarizationSetBy = Automatic
+
+		column ToTable
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [ToTable]
+
+			annotation SummarizationSetBy = Automatic
+
+		column ToColumn
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [ToColumn]
+
+			annotation SummarizationSetBy = Automatic
+
+		column ToCardinality
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [ToCardinality]
+
+			annotation SummarizationSetBy = Automatic
+
+		column State
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [State]
+
+			annotation SummarizationSetBy = Automatic
+
+		column SecurityFilteringBehavior
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [SecurityFilteringBehavior]
+
+			annotation SummarizationSetBy = Automatic
+
+		partition Doc_Relationships = calculated
+			mode: import
+			source = INFO.VIEW.RELATIONSHIPS()
+
+		annotation PBI_Id = 278678e5cd514630bc95de80124491ea
+
+	table Doc_Measures
+
+		column ID
+			formatString: 0
+			summarizeBy: count
+			isNameInferred
+			sourceColumn: [ID]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Name
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Name]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Table
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Table]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Description
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Description]
+
+			annotation SummarizationSetBy = Automatic
+
+		column DataType
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [DataType]
+
+			annotation SummarizationSetBy = Automatic
+
+		column Expression
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Expression]
+
+			annotation SummarizationSetBy = Automatic
+
+		column FormatString
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [FormatString]
+
+			annotation SummarizationSetBy = Automatic
+
+		column IsHidden
+			formatString: """TRUE"";""TRUE"";""FALSE"""
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [IsHidden]
+
+			annotation SummarizationSetBy = Automatic
+
+		column State
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [State]
+
+			annotation SummarizationSetBy = Automatic
+
+		column KPIID
+			formatString: 0
+			summarizeBy: count
+			isNameInferred
+			sourceColumn: [KPIID]
+
+			annotation SummarizationSetBy = Automatic
+
+		column IsSimpleMeasure
+			formatString: """TRUE"";""TRUE"";""FALSE"""
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [IsSimpleMeasure]
+
+			annotation SummarizationSetBy = Automatic
+
+		column DisplayFolder
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [DisplayFolder]
+
+			annotation SummarizationSetBy = Automatic
+
+		column DetailRowsDefinition
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [DetailRowsDefinition]
+
+			annotation SummarizationSetBy = Automatic
+
+		column DataCategory
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [DataCategory]
+
+			annotation SummarizationSetBy = Automatic
+
+		column FormatStringDefinition
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [FormatStringDefinition]
+
+			annotation SummarizationSetBy = Automatic
+
+		column LineageTag
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [LineageTag]
+
+			annotation SummarizationSetBy = Automatic
+
+		partition Doc_Measures = calculated
+			mode: import
+			source = ```
+					INFO.VIEW.MEASURES()
+				```
+
+		annotation PBI_Id = bde1d28a16514c4fa86c35a946c0298c
+
+	relationship 8356ae8c-adbe-a4b9-4c87-93196143e3eb
+		fromColumn: Doc_Columns.Table
+		toColumn: Doc_Tables.Name

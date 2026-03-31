@@ -7,21 +7,25 @@ Here is a realistic scenario. You inherit one of these reports, created by anoth
 
 The binding map is not lost. It is distributed across the PBIR report definition and the semantic model TMDL files. This article shows you how to reconstruct it in full, and six practices that make every future report self-documenting. Let's dive in.
 
----
+
 
 ### Why the UI won't help you
 
-![[Pasted image 20260330170920.png]]
+<img width="1623" height="1161" alt="Pasted image 20260330170920" src="https://github.com/user-attachments/assets/056ee44f-4e2a-4105-960e-b2238008721f" />
+
 
 The report looks clean. Action buttons on the page. A Format pane on the right. You navigate to the Action section and find the Data Function **fx** button.
 
-![[Pasted image 20260330171207.png]]
+<img width="176" height="595" alt="Pasted image 20260330171207" src="https://github.com/user-attachments/assets/9ec06b11-cb95-435f-a3ac-3a141b0bc00f" />
+
 
 You can click it and select the User Data Function, assuming you already know which one to choose.
 
-![[Pasted image 20260330171257.png]]
+<img width="1088" height="426" alt="Pasted image 20260330171257" src="https://github.com/user-attachments/assets/3318b108-ab32-4080-b0fe-d1b6fbe86a02" />
 
-![[Pasted image 20260330171937.png]]
+
+<img width="164" height="937" alt="Pasted image 20260330171937" src="https://github.com/user-attachments/assets/ba9cbb27-4795-4a78-adc6-f495b3883134" />
+
 
 **The risk is immediate.** Clicking that button resets the binding. Every parameter configuration you did not document is gone. You are starting from scratch.
 
@@ -30,13 +34,14 @@ You can click it and select the User Data Function, assuming you already know wh
 
 The natural instinct is to look inside the PBIR JSON. The bindings must be stored somewhere in `visual.json`.
 
-![[Pasted image 20260330174246.png]]
+<img width="551" height="669" alt="Pasted image 20260330174246" src="https://github.com/user-attachments/assets/9e09781c-dae4-4612-89c3-e0a3cb3bed75" />
+
 
 They are not directly there.
 
 Searching `visual.json` for the button GUID (`59f8b15373dbadd47ff9`, the `actionButton` named `btn_ReviewNextSegment`) confirms it: `"parameters": []` is always empty. **PBIR does not persist UDF parameter bindings.** This is not a misconfiguration, nor a bug. The binding data is not stored in that field.
 
----
+
 
 ### The Resolution: Reconstruct the full binding map
 
@@ -88,7 +93,7 @@ STEP 6: PBIR limitation note
 Confirm that "parameters": [] is present in the button's visual.json and note that this is a known PBIR serialization limitation (not a misconfiguration).
 ```
 
----
+
 
 ### 6 Practices to make UDF bindings Self-Documenting
 
@@ -192,7 +197,6 @@ Use this to confirm or reconfigure bindings after running the prompt above:
 > [!TIP]
 > Run this verification after every UDF logic change. The bindings reset silently if you click the wrong button. Your registry measure is the source of truth.
 
----
 
 ### Conclusion
 
@@ -206,7 +210,7 @@ Use this to confirm or reconfigure bindings after running the prompt above:
 
 **What's next:** How to automate UDF parameter validation as part of a PBIP CI pipeline, catching broken bindings before they reach production.
 
----
+
 
 💬 Drop your thoughts in the LinkedIn post.  
 ✅ Scripts available in the GitHub repo.

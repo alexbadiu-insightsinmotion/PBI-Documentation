@@ -1,4 +1,6 @@
 
+![Issue #24](https://github.com/user-attachments/assets/aa90b868-7b7d-4849-b745-69a30eaa0c23)
+
 **Translytical Task Flows are GA, but documenting how they're wired is not that simple.**
 
 Fabcon Atlanta 2026 made it official. Translytical Task Flows, action buttons that invoke Fabric User-Defined Functions from Power BI,are now generally available. That means we need to anticipate real use, in production reports, and maintenance operations.

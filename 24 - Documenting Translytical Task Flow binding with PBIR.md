@@ -3,9 +3,9 @@
 
 **Translytical Task Flows are GA, but documenting how they're wired is not that simple.**
 
-Fabcon Atlanta 2026 made it official. Translytical Task Flows, action buttons that invoke Fabric User-Defined Functions from Power BI,are now generally available. That means we need to anticipate real use, in production reports, and maintenance operations.
+Fabcon Atlanta 2026 made it official: Translytical Task Flows (action buttons that invoke Fabric User-Defined Functions from Power BI) are now generally available. That means we need to anticipate real use, both in production reports and in maintenance operations.
 
-Here is a realistic scenario. You inherit one of these reports, created by another colleague. The UDF logic has changed. You need to add a new DAX-based dynamic parameter. You open the report, find the action button, and realize: there is no clear view of what is bound to what. The UI does not expose it. One wrong click on the **fx** button and every binding is gone.
+Here is a realistic scenario: you inherit one of these reports, created by another colleague, and the UDF logic has changed. You need to add a new DAX-based dynamic parameter. You open the report, find the action button, and realize: there is no clear view of what is bound to what. The UI does not expose it. One wrong click on the **fx** button and every binding is gone.
 
 The binding map is not lost. It is distributed across the PBIR report definition and the semantic model TMDL files. This article shows you how to reconstruct it in full, and six practices that make every future report self-documenting. Let's dive in.
 
@@ -16,7 +16,7 @@ The binding map is not lost. It is distributed across the PBIR report definition
 <img width="1623" height="1161" alt="Pasted image 20260330170920" src="https://github.com/user-attachments/assets/056ee44f-4e2a-4105-960e-b2238008721f" />
 
 
-The report looks clean. Action buttons on the page. A Format pane on the right. You navigate to the Action section and find the Data Function **fx** button.
+The report looks clean. We have action buttons on the page. In the image below this, I’d highlight the fx button
 
 <img width="176" height="595" alt="Pasted image 20260330171207" src="https://github.com/user-attachments/assets/9ec06b11-cb95-435f-a3ac-3a141b0bc00f" />
 
@@ -145,7 +145,7 @@ measure 'Selected Country Key' = SELECTEDVALUE(DimCountry[CountryKey])
     displayFolder: "UDF Parameters"
 ```
 
-Grep for `description: "UDF parameter:` and the full map is reconstructed.
+Search for `description: "UDF parameter:` and the full map is reconstructed.
 
 #### 4. Create a single registry measure as a comment block
 

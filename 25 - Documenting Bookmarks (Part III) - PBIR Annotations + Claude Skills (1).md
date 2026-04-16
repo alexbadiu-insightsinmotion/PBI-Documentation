@@ -1,4 +1,5 @@
-![Issue #25](https://github.com/user-attachments/assets/58a352f4-2529-44b8-bf56-bc43f48c2b09)
+<img width="3840" height="1920" alt="Issue #25" src="https://github.com/user-attachments/assets/76e0af41-68dd-47a5-b09c-2c8d73fdd5b1" />
+
 
 
 
@@ -90,7 +91,8 @@ The five interview questions are:
 5. Related Bookmarks: Does this interact with other bookmarks? If so, how?
 ```
 
-<img width="2000" height="1200" alt="VSC_BookmarkQuestions" src="https://github.com/user-attachments/assets/191d11b7-e2a4-4aa0-8b9a-5549950f0c5e" />
+<img width="2000" height="1200" alt="VSC_BookmarkQuestions" src="https://github.com/user-attachments/assets/da439369-acbe-44a6-8643-a30576850625" />
+
 
 
 For legacy reports where the context is unknown, "Unknown - legacy report" is a valid answer. The skill does not block on missing business context.
@@ -174,13 +176,16 @@ The `documentation/` folder lives inside the PBIP git repository. Developers usi
 
 
 Here’s an example of Bookmark Documentation on Mintlify - white background
-<img width="1944" height="1328" alt="Mintlyfy White" src="https://github.com/user-attachments/assets/25e24ce5-bbee-4160-a36b-95244957f212" />
+<img width="1944" height="1328" alt="Mintlyfy White" src="https://github.com/user-attachments/assets/63481a29-37d7-4295-89f0-a4bfdb6c4db2" />
+
 
 Here’s an example of Bookmark Documentation on Mintlify - dark background
-<img width="1986" height="1339" alt="Mintlyfy Dark" src="https://github.com/user-attachments/assets/24a31bd4-fac6-4ffc-aca5-b9904f3eb2ea" />
+<img width="1986" height="1339" alt="Mintlyfy Dark" src="https://github.com/user-attachments/assets/4f531bf0-f068-4c4c-87be-d2dceee9b991" />
+
 
 Here’s an example of Bookmark Documentation on Mintlify - built-in AI 
-<img width="2054" height="1289" alt="Mintlyfy AI" src="https://github.com/user-attachments/assets/4d7b8b3e-df1f-44a8-ad09-7cc64fefbbd7" />
+<img width="2054" height="1289" alt="Mintlyfy AI" src="https://github.com/user-attachments/assets/39292778-b50c-4086-af55-7fb1c36b7bfb" />
+
 
 
 Have a look at the user-friendly and dynamic documentation here: https://decilia.mintlify.app/documentation/bookmarks/RibonChart

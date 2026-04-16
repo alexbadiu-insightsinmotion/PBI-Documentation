@@ -60,7 +60,7 @@ The three problems from Part II map are now solved:
 | Invisible to AI | Annotations live in the PBIR file the AI already reads |
 
 None of this requires discipline. You invoke the skill; it handles the structure.
--->>> **The skill is accessible HERE**
+-->>> **The skill is accessible [HERE](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Skills/pbir-documentation.md)**
 
 ---
 

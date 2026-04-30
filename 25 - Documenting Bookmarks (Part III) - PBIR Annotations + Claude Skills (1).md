@@ -1,6 +1,5 @@
-<img width="3840" height="1920" alt="Issue #25" src="https://github.com/user-attachments/assets/76e0af41-68dd-47a5-b09c-2c8d73fdd5b1" />
 
-
+<img width="1464" height="971" alt="Group 48095444" src="https://github.com/user-attachments/assets/e860d4d2-16bf-4b62-b3ed-dd63a69b0f27" />
 
 
 

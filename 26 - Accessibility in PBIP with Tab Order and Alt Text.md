@@ -202,7 +202,7 @@ Accessibility applied through the interface at the end of a project is fragile. 
 
 <br>
 
-💬 Drop your thoughts in the **[LinkedIn post](#)**.
+💬 Drop your thoughts in the **[LinkedIn post](https://www.linkedin.com/posts/alexandru-badiu_powerbi-accessibility-inclusivedesign-share-7456938364324372480-LQKG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAd2rAYBtqG-2bVNWh14j0hOzgmbFYqs3hE)**.
 ✅ Scripts available in the **[GitHub repo]((https://github.com/alexbadiu-insightsinmotion/PBI-Documentation))**.
 
 ### I'll be back! ⌛

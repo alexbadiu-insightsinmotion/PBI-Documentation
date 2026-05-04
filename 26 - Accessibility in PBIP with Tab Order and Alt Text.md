@@ -1,4 +1,5 @@
-<img width="1429" height="952" alt="Group 48095443" src="https://github.com/user-attachments/assets/7981e7ad-ee9b-4a86-868b-fb9d2e3e7fe2" />
+<img width="1429" height="952" alt="Group 48095443" src="https://github.com/user-attachments/assets/f20597d1-90e8-41d7-84f1-135623d19bed" />
+
 <br>
 <br>
 
@@ -24,7 +25,9 @@ Let's dive in.
 **Tab order** is the sequence in which keyboard focus moves through the visuals on a report page when a user presses the Tab key. For someone navigating without a mouse, a screen reader user, or anyone relying on keyboard-only interaction, tab order is the only navigation mechanism available. Without it set explicitly, Power BI assigns focus in an arbitrary sequence based on the order visuals were added to the canvas. That sequence rarely matches the intended reading flow.
 <br>
 
-<img width="180" height="241" alt="image" src="https://github.com/user-attachments/assets/fa5f0fde-b544-46f8-aa10-94651a9af61d" />
+<img width="180" height="250" alt="image" src="https://github.com/user-attachments/assets/3e3de585-c3c7-4c66-9200-d8cea885eef2" />
+
+
 
 <br>
 
@@ -36,7 +39,7 @@ Let's dive in.
 **Alt text** is the description a screen reader reads aloud when it lands on a visual. With it set correctly, the user hears "Bar chart showing monthly sales by region for FY2024. North America leads at $4.2M." That is the difference between a report that works for everyone and one that works only for sighted users with a mouse.
 <br>
 
-<img width="172" height="447" alt="image" src="https://github.com/user-attachments/assets/7b399fc6-5065-4f57-aadd-daf123359568" />
+<img width="178" height="406" alt="image" src="https://github.com/user-attachments/assets/5da65056-6c52-4f3d-8db8-92e4cd23c117" />
 
 <br>
 Both properties serve the same purpose: they make a report navigable and interpretable for users who experience it differently. 
@@ -53,7 +56,8 @@ The real experience.
 
 **Alt text is easy.** You edit the visual JSON, add the `altText` property under `visualContainerObjects`, and Power BI Desktop picks it up immediately. No issues. Commit, push, done. The structure is clean and predictable.
 
-<img width="1375" height="582" alt="image" src="https://github.com/user-attachments/assets/d2530434-91b9-4866-a574-ec4e990bb01b" />
+<img width="1380" height="582" alt="image" src="https://github.com/user-attachments/assets/753a57df-9c6d-4497-ba11-455c63a6b539" />
+
 
 
 **Tab order broke the first time.** The first attempt to add `tabOrder` properties to visual JSON triggered schema validation errors in Power BI Desktop. The property exists in the file but Power BI ignored it, without warning, without error, without any indication that something is wrong. I discover the problem only when I opened the report and keyboard navigation still did not work. I removed the properties and started again.
@@ -180,10 +184,12 @@ grouped by page, with the visual name as the key.
 > [!TIP]
 > The prompt works because PBIR is structured data, not a compiled binary. The AI is parsing visual type, chart fields, and coordinates, then applying rules the format makes explicit. The reliability comes from the structure, not from the model's general knowledge.
 
-<img width="946" height="670" alt="image" src="https://github.com/user-attachments/assets/af3e54d9-fcd2-43a0-ad10-fbd9e10b1ee9" />
+<img width="946" height="670" alt="Prompt AltText and TabOrder" src="https://github.com/user-attachments/assets/d817a1d5-2bb2-45ac-a853-85b4da534096" />
+
 
 <br>
-<img width="957" height="785" alt="image" src="https://github.com/user-attachments/assets/ea0ae4d2-90d0-41f7-a2d1-4706b0a6e633" />
+<img width="957" height="785" alt="Prompt AltText and TabOrder 2" src="https://github.com/user-attachments/assets/040fc4ed-8f11-4cde-bd3f-f5ec380871e0" />
+
 
 <br>
 
@@ -197,6 +203,6 @@ Accessibility applied through the interface at the end of a project is fragile. 
 <br>
 
 💬 Drop your thoughts in the **[LinkedIn post](#)**.
-✅ Scripts available in the **[GitHub repo](#)**.
+✅ Scripts available in the **[GitHub repo]((https://github.com/alexbadiu-insightsinmotion/PBI-Documentation))**.
 
 ### I'll be back! ⌛

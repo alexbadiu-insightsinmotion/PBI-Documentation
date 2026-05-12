@@ -110,8 +110,10 @@ Here's a listing of the assets contained herein:
 <img width="450" height="500" alt="216 - Dynamic Sunburst Chart - V12" src="https://github.com/user-attachments/assets/abba4695-7df2-422c-b328-153cac7e10e4" />
 <br><br>
 
-- [217 - Performance Analysys](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/216%20-%20Dynamic%20Sunburst%20Chart%20(Deneb%20Template).md)
+- [217 - Performance Analysys](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/217%20-%20Performance%20Analysis%20(Deneb%20Template).md)
 
-<img width="450" height="500" alt="216 - Dynamic Sunburst Chart - V12" src="https://github.com/user-attachments/assets/abba4695-7df2-422c-b328-153cac7e10e4" />
+<img width="1262" height="836" alt="217 - Image - Performance Analyzer - V16" src="https://github.com/user-attachments/assets/9496d8b4-3759-49ff-92f6-92cb0e87d1d0" />
+
 <br><br>
+
 *-- eof*

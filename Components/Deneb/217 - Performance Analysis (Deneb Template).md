@@ -2102,25 +2102,25 @@ I provide 2 Deneb templates for this scenario. The legend and timeline code is c
 
 Here's the template:
 
-[917.1 - JSON - Deneb Template - Performance Analysis - Multiple Visuals](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/916.1%20-%20deneb_template.dynamic_sunburst_chart.v1.8.2.json) *** FIX *** <br>
-[917.2 - JSON - Deneb Template - Performance Analysis - Single Visual](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/916.1%20-%20deneb_template.dynamic_sunburst_chart.v1.8.2.json) *** FIX *** <br>
+[917.1 - JSON - Deneb Template - Performance Analysis - Multiple Visuals](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/917.1%20-%20deneb_template.performance_analysis_multiple_visuals.v1.9.1.json) <br>
+[917.2 - JSON - Deneb Template - Performance Analysis - Single Visual](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/917.2%20-%20deneb_template.performance_analysis_single_visual.v1.9.1.json) <br>
 
 <br>
 
 Here's an example Power BI file using the template:
 
-[917.3 - PBIX - Deneb Example - Performance Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/916.2%20-%20Deneb%20Reusable%20Components%20-%20Dynamic%20Sunburst%20Chart%20-%20V1.8.2.pbix) *** FIX *** <br>
+[917.3 - PBIX - Deneb Example - Performance Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/917.3%20-%20Deneb%20Reusable%20Components%20-%20Performance%20Analysis%20-%20V1.9.1.pbix) <br>
 
 <br>
 
 Here's the TMDL code:
 
-[917.4 - TMDL - Performance Analysis - All](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/916.1%20-%20deneb_template.dynamic_sunburst_chart.v1.8.2.json) *** FIX *** <br>
+[917.4 - TMDL - Performance Analysis - All](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/917.4%20-%20TMDL%20-%20Performance%20Analysis%20-%20All.txt) <br>
 
 <br>
 
 Here's the support data file for Power BI visual types:
 
-[917.5 - Data - Power BI Visual Internal and Display Names - Performance Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/916.1%20-%20deneb_template.dynamic_sunburst_chart.v1.8.2.json) *** FIX *** <br>
+[917.5 - Data - Power BI Visual Internal and Display Names - Performance Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/917.5%20-%20Data%20-%20Power%20BI%20Visual%20Internal%20and%20Display%20Names%20-%20Performance%20Analysis.json) <br>
 
 *- eof*

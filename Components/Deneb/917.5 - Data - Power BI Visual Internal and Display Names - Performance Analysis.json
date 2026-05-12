@@ -1,0 +1,180 @@
+{
+  "visuals": [
+    {
+      "visualType": "barChart",
+      "displayName": "Bar Chart"
+    },
+    {		
+      "visualType": "clusteredBarChart",
+      "displayName": "Clustered Bar Chart"
+    },
+    {		
+      "visualType": "hundredPercentStackedBarChart",
+      "displayName": "100% Stacked Bar Chart"
+    },
+    {
+      "visualType": "columnChart",
+      "displayName": "Column Chart"
+    },
+    {		
+      "visualType": "clusteredColumnChart",
+      "displayName": "Clustered Column Chart"
+    },
+    {		
+      "visualType": "hundredPercentStackedColumnChart",
+      "displayName": "100% Stacked Column Chart"
+    },
+    {
+      "visualType": "lineChart",
+      "displayName": "Line Chart"
+    },
+    {
+      "visualType": "areaChart",
+      "displayName": "Area Chart"
+    },
+    {
+      "visualType": "stackedAreaChart",
+      "displayName": "Stacked Area Chart"
+    },
+    {
+      "visualType": "hundredPercentStackedAreaChart",
+      "displayName": "100% Stacked Area Chart"
+    },
+    {
+      "visualType": "lineStackedColumnComboChart",
+      "displayName": "Line and Stacked Column Chart"
+    },
+    {
+      "visualType": "lineClusteredColumnComboChart",
+      "displayName": "Line and Clustered Column Chart"
+    },
+    {
+      "visualType": "ribbonChart",
+      "displayName": "Ribbon Chart"
+    },
+    {
+      "visualType": "waterfallChart",
+      "displayName": "Waterfall Chart"
+    },
+    {
+      "visualType": "funnel",
+      "displayName": "Funnel"
+    },
+    {
+      "visualType": "scatterChart",
+      "displayName": "Scatter Chart"
+    },
+    {			
+      "visualType": "pieChart",
+      "displayName": "Pie Chart"
+    },
+    {		
+      "visualType": "donutChart",
+      "displayName": "Donut Chart"
+    },
+    {
+      "visualType": "treemap",
+      "displayName": "Treemap"
+    },
+    {
+      "visualType": "map",
+      "displayName": "Map"
+    },
+    {
+      "visualType": "filledMap",
+      "displayName": "Filled Map"
+    },
+    {
+      "visualType": "azureMap",
+      "displayName": "Azure Map"
+    },
+    {
+      "visualType": "esriVisual",
+      "displayName": "ArcGIS"
+    },
+    {
+      "visualType": "shapeMap",
+      "displayName": "Shape Map"
+    },
+    {
+      "visualType": "gauge",
+      "displayName": "Gauge"
+    },
+    {
+      "visualType": "card",
+      "displayName": "Card"
+    },	
+    {
+      "visualType": "cardVisual",
+      "displayName": "Card (New)"
+    },
+    {
+      "visualType": "kpi",
+      "displayName": "KPI"
+    },
+    {
+      "visualType": "advancedSlicerVisual",
+      "displayName": "Button Slicer"
+    },
+    {
+      "visualType": "listSlicer",
+      "displayName": "List Slicer"
+    },
+    {
+      "visualType": "slicer",
+      "displayName": "Slicer"
+    },
+    {
+      "visualType": "textSlicer",
+      "displayName": "Text Slicer"
+    },
+    {
+      "visualType": "tableEx",
+      "displayName": "Table"
+    },
+    {
+      "visualType": "pivotTable",
+      "displayName": "Matrix"
+    },
+    {
+      "visualType": "keyDriversVisual",
+      "displayName": "Key Influencers"
+    },
+    {
+      "visualType": "decompositionTreeVisual",
+      "displayName": "Decomposition Tree"
+    },
+    {
+      "visualType": "qnaVisual",
+      "displayName": "Q&A"
+    },
+    {
+      "visualType": "textbox",
+      "displayName": "Smart Narrative"
+    },
+    {
+      "visualType": "scriptVisual",
+      "displayName": "R Script Visual"
+    },
+    {
+      "visualType": "pythonVisual",
+      "displayName": "Python Visual"
+    },
+    {
+      "visualType": "rdlVisual",
+      "displayName": "Paginated Report"
+    },
+    {
+      "visualType": "scorecard",
+      "displayName": "Goals"
+    },
+    {
+      "visualType": "image",
+      "displayName": "Image"
+    },
+    {
+      "visualType": "deneb7E15AEF80B9E4D4F8E12924291ECE89A",
+      "displayName": "Deneb"
+    }
+  ]
+}

@@ -1,0 +1,1101 @@
+createOrReplace
+
+	model Model
+		culture: en-US
+		defaultPowerBIDataSourceVersion: powerBI_V3
+		sourceQueryCulture: en-CA
+		dataAccessOptions
+			legacyRedirects
+			returnErrorValuesAsNull
+
+		table Pages
+			lineageTag: 6a951771-c147-4c09-ab48-518dfa4c42ac
+
+			column pageId
+				dataType: string
+				lineageTag: 711a0d29-8640-4f2f-8c6c-d7230cee2cf7
+				summarizeBy: none
+				sourceColumn: pageId
+
+				annotation SummarizationSetBy = Automatic
+
+			column pageName
+				dataType: string
+				lineageTag: ac1b0bef-e91b-4661-a453-1323114d51be
+				summarizeBy: none
+				sourceColumn: pageName
+				sortByColumn: pageOrder
+
+				changedProperty = SortByColumn
+
+				annotation SummarizationSetBy = Automatic
+
+			column pageOrder
+				dataType: int64
+				formatString: 0
+				lineageTag: 3fe0d4d5-273c-44ad-be96-fe088906af0a
+				summarizeBy: none
+				sourceColumn: pageOrder
+
+				annotation SummarizationSetBy = User
+
+			partition Pages = m
+				mode: import
+				queryGroup: 'Data Model'
+				source =
+						let
+						    Source = Table.NestedJoin(STG_PBIR_Page, {"pageId"}, STG_PBIR_Pages, {"pageId"}, "PBIR_Pages", JoinKind.LeftOuter),
+						    ExpandTable = Table.ExpandTableColumn(Source, "PBIR_Pages", {"pageOrder"}, {"pageOrder"})
+						in
+						    ExpandTable
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		table Visuals
+			lineageTag: 877e309a-90b6-4827-a010-7faa5fb825e9
+
+			column visualId
+				dataType: string
+				lineageTag: eabb9e7a-ac31-4572-b53e-47acd92c6d3c
+				summarizeBy: none
+				sourceColumn: visualId
+
+				annotation SummarizationSetBy = Automatic
+
+			column visualType
+				dataType: string
+				lineageTag: 7e626ddd-6276-4832-a477-bb078f24e44b
+				summarizeBy: none
+				sourceColumn: visualType
+
+				annotation SummarizationSetBy = Automatic
+
+			column visualName
+				dataType: string
+				lineageTag: 9493feb5-7e87-42e6-a49b-be887ab2cc7a
+				summarizeBy: none
+				sourceColumn: visualName
+
+				annotation SummarizationSetBy = Automatic
+
+			column pageId
+				dataType: string
+				lineageTag: 4f2e9358-d8c2-459e-b360-7945fe21fc89
+				summarizeBy: none
+				sourceColumn: pageId
+
+				annotation SummarizationSetBy = Automatic
+
+			column displayName
+				dataType: string
+				lineageTag: 80f8b7b2-5bf2-4876-ac60-0e6a3d2c9325
+				summarizeBy: none
+				sourceColumn: displayName
+
+				annotation SummarizationSetBy = Automatic
+
+			partition Visuals = m
+				mode: import
+				queryGroup: 'Data Model'
+				source =
+						let
+						    Source = STG_PBIR_Visual,
+						    ExtractEndingBackslash = Table.SplitColumn(
+						        Source,
+						        "Folder Path",
+						        Splitter.SplitTextByEachDelimiter({"\"}, QuoteStyle.Csv, true),
+						        {"Folder Path.1", "Folder Path.2"}
+						    ),
+						    ExtractVisualId = Table.SplitColumn(
+						        ExtractEndingBackslash,
+						        "Folder Path.1",
+						        Splitter.SplitTextByEachDelimiter({"\"}, QuoteStyle.Csv, true),
+						        {"Folder Path.1.1", "Folder Path.1.2"}
+						    ),
+						    ExtractVisuals = Table.SplitColumn(
+						        ExtractVisualId,
+						        "Folder Path.1.1",
+						        Splitter.SplitTextByEachDelimiter({"\"}, QuoteStyle.Csv, true),
+						        {"Folder Path.1.1.1", "Folder Path.1.1.2"}
+						    ),
+						    ExtractPageId = Table.SplitColumn(
+						        ExtractVisuals,
+						        "Folder Path.1.1.1",
+						        Splitter.SplitTextByEachDelimiter({"\"}, QuoteStyle.Csv, true),
+						        {"Folder Path.1.1.1.1", "Folder Path.1.1.1.2"}
+						    ),
+						    ChangeType = Table.TransformColumnTypes(
+						        ExtractPageId, {{"Folder Path.1.1.1.1", type text}, {"Folder Path.1.1.1.2", type text}}
+						    ),
+						    RenameColumns = Table.RenameColumns(ChangeType, {{"Folder Path.1.1.1.2", "pageId"}}),
+						    SelectColumns = Table.SelectColumns(RenameColumns, {"visualId", "visualType", "visualName", "pageId"}),
+						    #"Merged Queries" = Table.NestedJoin(SelectColumns, {"visualType"}, RAW_Visual_Types, {"visualType"}, "RAW_Visual_Types", JoinKind.LeftOuter),
+						    #"Expanded RAW_Visual_Types" = Table.ExpandTableColumn(#"Merged Queries", "RAW_Visual_Types", {"displayName"}, {"displayName"})
+						in
+						    #"Expanded RAW_Visual_Types"
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		table Performance
+			lineageTag: 533796a3-a571-442e-b4c1-0347268f32bf
+
+			column 'Source.Name'
+				dataType: string
+				lineageTag: efeabebf-0a50-4edc-801b-25768515bdf1
+				summarizeBy: none
+				sourceColumn: Source.Name
+
+				annotation SummarizationSetBy = User
+
+			column 'events.name'
+				dataType: string
+				lineageTag: fdf5f893-2163-4a9a-804c-07313d7ad05b
+				summarizeBy: none
+				sourceColumn: events.name
+
+				annotation SummarizationSetBy = User
+
+			column 'events.component'
+				dataType: string
+				lineageTag: 2bcb2c2a-3f6e-4d8b-91d2-4ff5b9f52b59
+				summarizeBy: none
+				sourceColumn: events.component
+
+				annotation SummarizationSetBy = User
+
+			column 'events.start'
+				dataType: dateTime
+				formatString: General Date
+				lineageTag: 9b28a852-b3ce-449f-b3cb-51b467d9f65a
+				summarizeBy: none
+				sourceColumn: events.start
+
+				annotation SummarizationSetBy = User
+
+			column 'events.end'
+				dataType: dateTime
+				formatString: General Date
+				lineageTag: 6fdef5b9-204e-4b35-97d7-19e3d7972b78
+				summarizeBy: none
+				sourceColumn: events.end
+
+				annotation SummarizationSetBy = User
+
+			column 'events.id'
+				dataType: string
+				lineageTag: 8d8eed27-27ff-4ab5-b6c9-2b3f01891102
+				summarizeBy: none
+				sourceColumn: events.id
+
+				annotation SummarizationSetBy = User
+
+			column 'metrics.sourceLabel'
+				dataType: string
+				lineageTag: 6d7e60aa-c008-41c5-9d61-9941927fa1eb
+				summarizeBy: none
+				sourceColumn: metrics.sourceLabel
+
+				annotation SummarizationSetBy = User
+
+			column 'metrics.status'
+				dataType: int64
+				formatString: 0
+				lineageTag: 48f5c02c-04e2-4461-855b-4d14e6168f05
+				summarizeBy: none
+				sourceColumn: metrics.status
+
+				annotation SummarizationSetBy = User
+
+			column 'metrics.visualTitle'
+				dataType: string
+				lineageTag: a3c7174c-9431-43dd-a15d-e26479807ae5
+				summarizeBy: none
+				sourceColumn: metrics.visualTitle
+
+				annotation SummarizationSetBy = User
+
+			column 'metrics.visualId'
+				dataType: string
+				lineageTag: 95723039-cfbe-48eb-a6e3-f7a6934d12ca
+				summarizeBy: none
+				sourceColumn: metrics.visualId
+
+				annotation SummarizationSetBy = User
+
+			column 'metrics.visualType'
+				dataType: string
+				lineageTag: 320157ae-cedc-4b47-ac4a-522bc539648b
+				summarizeBy: none
+				sourceColumn: metrics.visualType
+
+				annotation SummarizationSetBy = User
+
+			column 'metrics.initialLoad'
+				dataType: boolean
+				formatString: """TRUE"";""TRUE"";""FALSE"""
+				lineageTag: 09eb8545-59ba-48d2-b44e-5ddd5ec125cc
+				summarizeBy: none
+				sourceColumn: metrics.initialLoad
+
+				annotation SummarizationSetBy = User
+
+			column 'metrics.QueryText'
+				dataType: string
+				lineageTag: 704d39b7-5e4e-4496-9917-19985179a6da
+				summarizeBy: none
+				sourceColumn: metrics.QueryText
+
+				annotation SummarizationSetBy = User
+
+			column 'metrics.RowCount'
+				dataType: int64
+				formatString: 0
+				lineageTag: 15144460-6ed0-4a15-b0f4-f5f78afca761
+				summarizeBy: none
+				sourceColumn: metrics.RowCount
+
+				annotation SummarizationSetBy = User
+
+			column 'events.parentId'
+				dataType: string
+				lineageTag: 4c222933-8ae9-48c1-8be7-803a6ec5bb74
+				summarizeBy: none
+				sourceColumn: events.parentId
+
+				annotation SummarizationSetBy = User
+
+			column Duration
+				dataType: double
+				lineageTag: 999e3e35-39b2-47f2-bac5-39a87773a982
+				summarizeBy: none
+				sourceColumn: Duration
+
+				annotation SummarizationSetBy = User
+
+				annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+			partition Performance = m
+				mode: import
+				queryGroup: 'Data Model'
+				source =
+						let
+						    Source = STG_PA_Data,
+						    SelectColumns = Table.SelectColumns(
+						        Source,
+						        {
+						            "Source.Name",
+						            "events.name",
+						            "events.component",
+						            "events.start",
+						            "events.end",
+						            "events.id",
+						            "metrics.sourceLabel",
+						            "metrics.status",
+						            "metrics.visualTitle",
+						            "metrics.visualId",
+						            "metrics.visualType",
+						            "metrics.initialLoad",
+						            "metrics.QueryText",
+						            "metrics.RowCount",
+						            "events.parentId"
+						        }
+						    ),
+						    FillDown = Table.FillDown(SelectColumns, {"metrics.visualTitle", "metrics.visualId"}),
+						
+						    GetEventDuration = Table.AddColumn(FillDown, "Duration", each [events.end] - [events.start],type duration),
+						    ConvertEventDurationToSeconds = Table.TransformColumns(GetEventDuration,{{"Duration", Duration.TotalSeconds, type number}}),
+						    ConvertEventDurationToMilliseconds = Table.TransformColumns(ConvertEventDurationToSeconds, {{"Duration", each _ * 1000, type number}})
+						in
+						    ConvertEventDurationToMilliseconds
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		table 'Key Measures'
+			lineageTag: 99ffdd33-43fb-4529-9341-c0345c0ee074
+
+			measure Duration =
+					
+					SUM( Performance[Duration] )
+					//SUMX( Performance, Performance[events.end] - Performance[events.start] )
+				formatString: #,0
+				lineageTag: cc9018ae-f8da-4a6e-a7d2-e550adb83b70
+
+			measure '% Contribution to Visual Lifecycle' =
+					
+					VAR _CurrentVisualId =
+					    MAX ( Performance[metrics.visualId] )
+					
+					VAR _LifecycleDuration =
+					    CALCULATE (
+					        [Duration],
+					        FILTER (
+					            ALL ( Performance ),
+					            Performance[metrics.visualId] = _CurrentVisualId
+					                && Performance[events.name] = "Visual Container Lifecycle"
+					        )
+					    )
+					
+					RETURN
+					    DIVIDE ( [Duration], _LifecycleDuration )
+				formatString: #,0.00%;-#,0.00%;#,0.00%
+				lineageTag: dab30ae6-4529-4bc4-ba44-d3b52054d288
+
+			measure 'Visual Lifecycle Duration' =
+					
+					VAR _CurrentVisualId =
+					    MAX ( Performance[metrics.visualId] )
+					RETURN
+					    CALCULATE (
+					        [Duration],
+					        FILTER (
+					            ALL ( Performance ),
+					            Performance[metrics.visualId] = _CurrentVisualId
+					                && Performance[events.name] = "Visual Container Lifecycle"
+					        )
+					    )
+				formatString: 0
+				lineageTag: 89d4a6dc-6913-416d-996e-49f4cd2855bf
+
+			measure 'Event Interpretation Icon' =
+					
+					VAR _Event = SELECTEDVALUE ( Performance[events.name] )
+					RETURN
+					    SWITCH (
+					        _Event,
+					        "Visual Container Lifecycle", "🧱",
+					        "Resolve Parameters", "🎛️",
+					        "Query Pending", "⏳",
+					        "Query Generation", "🧠",
+					        "Query", "🔴",
+					        "Execute Query", "⚙️",
+					        "Execute Semantic Query", "🧮",
+					        "Execute DAX Query", "📐",
+					        "Serialize Rowset", "📦",
+					        "Parse Query Result", "🔄",
+					        "Data View Transform", "🪄",
+					        "Render", "🎨",
+					        "Visual Update", "🔵",
+					        "Visual Update Async", "🟣",
+					        "User Action", "👆",
+					        "❔"
+					    )
+				lineageTag: 5e0d837f-90b4-4bd7-9b3d-64b2165e811a
+
+			measure 'Query Duration' =
+					
+					VAR _CurrentVisualId =
+					    MAX ( Performance[metrics.visualId] )
+					RETURN
+					    CALCULATE (
+					        [Duration],
+					        FILTER (
+					            ALL ( Performance ),
+					            Performance[metrics.visualId] = _CurrentVisualId
+					                && Performance[events.name] = "Query"
+					        )
+					    )
+				formatString: General Date
+				lineageTag: 9f010001-1111-4444-aaaa-000000000001
+
+			measure 'Execute Query Duration' =
+					
+					VAR _CurrentVisualId =
+					    MAX ( Performance[metrics.visualId] )
+					RETURN
+					    CALCULATE (
+					        [Duration],
+					        FILTER (
+					            ALL ( Performance ),
+					            Performance[metrics.visualId] = _CurrentVisualId
+					                && Performance[events.name] = "Execute Query"
+					        )
+					    )
+				formatString: General Date
+				lineageTag: 9f010002-1111-4444-aaaa-000000000002
+
+			measure 'Render Duration' =
+					
+					VAR _CurrentVisualId =
+					    MAX ( Performance[metrics.visualId] )
+					RETURN
+					    CALCULATE (
+					        [Duration],
+					        FILTER (
+					            ALL ( Performance ),
+					            Performance[metrics.visualId] = _CurrentVisualId
+					                && Performance[events.name] = "Render"
+					        )
+					    )
+				formatString: General Date
+				lineageTag: 9f010003-1111-4444-aaaa-000000000003
+
+			measure 'Query Pending Duration' =
+					
+					VAR _CurrentVisualId =
+					    MAX ( Performance[metrics.visualId] )
+					RETURN
+					    CALCULATE (
+					        [Duration],
+					        FILTER (
+					            ALL ( Performance ),
+					            Performance[metrics.visualId] = _CurrentVisualId
+					                && Performance[events.name] = "Query Pending"
+					        )
+					    )
+				formatString: General Date
+				lineageTag: 9f010004-1111-4444-aaaa-000000000004
+
+			measure 'Resolve Parameters Duration' =
+					
+					VAR _CurrentVisualId =
+					    MAX ( Performance[metrics.visualId] )
+					RETURN
+					    CALCULATE (
+					        [Duration],
+					        FILTER (
+					            ALL ( Performance ),
+					            Performance[metrics.visualId] = _CurrentVisualId
+					                && Performance[events.name] = "Resolve Parameters"
+					        )
+					    )
+				formatString: General Date
+				lineageTag: 9f010005-1111-4444-aaaa-000000000005
+
+			measure 'Query %' =
+					
+					DIVIDE ( [Query Duration], [Visual Lifecycle Duration] )
+				formatString: #,0.00%;-#,0.00%;#,0.00%
+				lineageTag: 9f010006-1111-4444-aaaa-000000000006
+
+			measure 'Execute Query %' =
+					
+					DIVIDE ( [Execute Query Duration], [Visual Lifecycle Duration] )
+				formatString: #,0.00%;-#,0.00%;#,0.00%
+				lineageTag: 9f010007-1111-4444-aaaa-000000000007
+
+			measure 'Render %' =
+					
+					DIVIDE ( [Render Duration], [Visual Lifecycle Duration] )
+				formatString: #,0.00%;-#,0.00%;#,0.00%
+				lineageTag: 9f010008-1111-4444-aaaa-000000000008
+
+			measure 'Query Pending %' =
+					
+					DIVIDE ( [Query Pending Duration], [Visual Lifecycle Duration] )
+				formatString: #,0.00%;-#,0.00%;#,0.00%
+				lineageTag: 9f010009-1111-4444-aaaa-000000000009
+
+			measure 'Resolve Parameters %' =
+					
+					DIVIDE ( [Resolve Parameters Duration], [Visual Lifecycle Duration] )
+				formatString: #,0.00%;-#,0.00%;#,0.00%
+				lineageTag: 9f010010-1111-4444-aaaa-000000000010
+
+			measure 'Visual Performance Status' =
+					
+					VAR _Lifecycle = [Visual Lifecycle Duration]
+					VAR _QueryPct = [Query %]
+					VAR _ExecQueryPct = [Execute Query %]
+					VAR _RenderPct = [Render %]
+					VAR _PendingPct = [Query Pending %]
+					VAR _ResolvePct = [Resolve Parameters %]
+					RETURN
+					    SWITCH (
+					        TRUE (),
+					        ISBLANK ( _Lifecycle ), BLANK (),
+					
+					        -- Fast enough: no issue
+					        _Lifecycle < 2000, "Green",
+					
+					        -- Severe issues
+					        _Lifecycle >= 5000, "Red",
+					        _PendingPct >= 0.30 && _Lifecycle >= 2000, "Red",
+					        _QueryPct >= 0.60 && _Lifecycle >= 2000, "Red",
+					        _ExecQueryPct >= 0.60 && _Lifecycle >= 2000, "Red",
+					        _RenderPct >= 0.60 && _Lifecycle >= 2000, "Red",
+					
+					        -- Needs improvement
+					        _Lifecycle >= 3500, "Orange",
+					        _QueryPct >= 0.40 && _Lifecycle >= 2000, "Orange",
+					        _ExecQueryPct >= 0.40 && _Lifecycle >= 2000, "Orange",
+					        _RenderPct >= 0.40 && _Lifecycle >= 2000, "Orange",
+					        _PendingPct >= 0.15 && _Lifecycle >= 2500, "Orange",
+					        _ResolvePct >= 0.25 && _Lifecycle >= 2500, "Orange",
+					
+					        "Green"
+					    )
+				lineageTag: 9f010011-1111-4444-aaaa-000000000011
+
+			measure 'Visual Performance Icon' =
+					
+					SWITCH (
+					    [Visual Performance Status],
+					    "Red", "🔴",
+					    "Orange", "🟠",
+					    "Green", "🟢",
+					    BLANK ()
+					)
+				lineageTag: 9f010012-1111-4444-aaaa-000000000012
+
+			measure 'Visual Performance Explanation' =
+					
+					VAR _Lifecycle = [Visual Lifecycle Duration]
+					VAR _QueryPct = [Query %]
+					VAR _ExecQueryPct = [Execute Query %]
+					VAR _RenderPct = [Render %]
+					VAR _PendingPct = [Query Pending %]
+					VAR _ResolvePct = [Resolve Parameters %]
+					
+					VAR _MainReason =
+					    SWITCH (
+					        TRUE (),
+					        ISBLANK ( _Lifecycle ),
+					            BLANK (),
+					
+					        _Lifecycle < 2000,
+					            "No issue detected. The total visual loading time is under 2 seconds, which is already very fast for end users.",
+					
+					        _Lifecycle >= 5000,
+					            "High total lifecycle duration. This visual is slow enough to justify priority investigation.",
+					
+					        _PendingPct >= 0.30 && _Lifecycle >= 2000,
+					            "A large share of the lifecycle is spent in Query Pending. This suggests waiting time, contention, or concurrency pressure rather than purely inefficient DAX.",
+					
+					        _QueryPct >= 0.60 && _Lifecycle >= 2000,
+					            "The visual is strongly query-dominated. This points to a likely model, relationship, or DAX performance issue.",
+					
+					        _ExecQueryPct >= 0.60 && _Lifecycle >= 2000,
+					            "The visual is strongly dominated by Execute Query time. This suggests expensive engine execution.",
+					
+					        _RenderPct >= 0.60 && _Lifecycle >= 2000,
+					            "The visual is strongly render-dominated. This suggests the visual itself is too heavy, too dense, or contains too many datapoints.",
+					
+					        _Lifecycle >= 3500,
+					            "The total lifecycle is noticeable and should likely be improved, even if no single phase is overwhelmingly dominant.",
+					
+					        _QueryPct >= 0.40 && _Lifecycle >= 2000,
+					            "A significant share of the lifecycle is spent in Query. Review DAX logic, model design, relationships, and cardinality.",
+					
+					        _ExecQueryPct >= 0.40 && _Lifecycle >= 2000,
+					            "A significant share of the lifecycle is spent in Execute Query. This indicates non-trivial engine cost.",
+					
+					        _RenderPct >= 0.40 && _Lifecycle >= 2000,
+					            "A significant share of the lifecycle is spent in Render. Review visual complexity, formatting density, and datapoint volume.",
+					
+					        _PendingPct >= 0.15 && _Lifecycle >= 2500,
+					            "Part of the lifecycle is being lost before query execution. This may indicate queueing or resource pressure.",
+					
+					        _ResolvePct >= 0.25 && _Lifecycle >= 2500,
+					            "A noticeable share of the lifecycle is spent resolving parameters. This may reflect complex filters, interactions, or dependency resolution.",
+					
+					        "No major issue detected."
+					    )
+					
+					VAR _Detail =
+					    " Lifecycle="
+					        & FORMAT ( _Lifecycle, "#,##0" )
+					        & " ms, Query="
+					        & FORMAT ( _QueryPct, "0%" )
+					        & ", Execute Query="
+					        & FORMAT ( _ExecQueryPct, "0%" )
+					        & ", Render="
+					        & FORMAT ( _RenderPct, "0%" )
+					        & ", Query Pending="
+					        & FORMAT ( _PendingPct, "0%" )
+					        & ", Resolve Parameters="
+					        & FORMAT ( _ResolvePct, "0%" )
+					        & "."
+					
+					RETURN
+					    IF ( ISBLANK ( _MainReason ), BLANK (), _MainReason & _Detail )
+				lineageTag: 9f010013-1111-4444-aaaa-000000000013
+
+			measure 'Event Interpretation Text' =
+					
+					VAR _Event = SELECTEDVALUE ( Performance[events.name] )
+					RETURN
+					    SWITCH (
+					        _Event,
+					        "Visual Container Lifecycle",
+					            "Total end-to-end time of the visual container lifecycle. Use this as the reference total for decomposition.",
+					        "Resolve Parameters",
+					            "The engine resolves filters, slicers, context, and parameters before query execution. High duration can indicate complex filter context, many interactions, or expensive dependency resolution.",
+					        "Query Pending",
+					            "The query is waiting before execution. High duration may indicate queuing, contention, concurrency pressure, or resource saturation rather than a pure DAX issue.",
+					        "Query Generation",
+					            "The engine is generating the query plan or request. High duration can suggest complex visual logic, many fields or measures, calculation groups, or complicated filter propagation.",
+					        "Query",
+					            "General query phase. High duration usually points toward model, DAX, relationship, cardinality, or storage engine pressure.",
+					        "Execute Query",
+					            "The query is being executed by the engine. High duration usually means the main performance issue is in data retrieval or execution rather than rendering.",
+					        "Execute Semantic Query",
+					            "The semantic model is executing the request. High duration often suggests expensive measures, model complexity, relationship traversal, or poor aggregation paths.",
+					        "Execute DAX Query",
+					            "A DAX query is being executed. High duration typically indicates expensive DAX logic, iterator-heavy measures, context transitions, or inefficient filter patterns.",
+					        "Serialize Rowset",
+					            "The query result is being serialized for transfer or consumption. High duration may indicate large result sets, too many returned rows, or wide datasets.",
+					        "Parse Query Result",
+					            "The returned data is being parsed by the client layer. High duration can mean large payloads or expensive post-query handling.",
+					        "Data View Transform",
+					            "The data is being reshaped and prepared for the visual. High duration may indicate complex data shaping, many categories or series, or heavy intermediate structures.",
+					        "Render",
+					            "The visual is being drawn on screen. High duration usually points to visual complexity, too many datapoints, dense formatting, custom visuals, or browser rendering cost.",
+					        "Visual Update",
+					            "The visual is updating after receiving new state or data. High duration may reflect expensive redraws, re-evaluation of formatting, or repeated refresh behavior.",
+					        "Visual Update Async",
+					            "An asynchronous visual update is occurring. High duration may indicate delayed UI work, background refresh activity, or asynchronous rendering overhead.",
+					        "User Action",
+					            "A user-triggered interaction initiated part of the lifecycle. Usually informational, but useful for correlating slowdowns with clicks, slicers, or navigation.",
+					        "No interpretation available."
+					    )
+				lineageTag: 9f010014-1111-4444-aaaa-000000000014
+
+			measure 'Event Interpretation Short' =
+					
+					VAR _Event = SELECTEDVALUE ( Performance[events.name] )
+					RETURN
+					    SWITCH (
+					        _Event,
+					        "Visual Container Lifecycle", "Total lifecycle time",
+					        "Resolve Parameters", "Filter and context resolution",
+					        "Query Pending", "Waiting or queueing",
+					        "Query Generation", "Query preparation",
+					        "Query", "General query cost",
+					        "Execute Query", "Engine execution",
+					        "Execute Semantic Query", "Semantic model execution",
+					        "Execute DAX Query", "DAX execution",
+					        "Serialize Rowset", "Result serialization",
+					        "Parse Query Result", "Result parsing",
+					        "Data View Transform", "Data shaping for visual",
+					        "Render", "Visual rendering cost",
+					        "Visual Update", "Visual refresh or update",
+					        "Visual Update Async", "Async visual refresh",
+					        "User Action", "Triggered by interaction",
+					        BLANK ()
+					    )
+				lineageTag: 9f010015-1111-4444-aaaa-000000000015
+
+			measure 'Event Order' = SELECTEDVALUE( Performance[Duration] ) + 77
+				formatString: 0
+				lineageTag: 8f7827fd-368a-4a3d-9d17-2af517a7d536
+
+			measure 'Hierarchy Path' = PATH( Performance[events.id], Performance[events.parentId] )
+				lineageTag: f2413316-9c3e-4354-9a9a-23c59db3cffd
+
+			measure 'Hierarchy Level' = PATHLENGTH( [Hierarchy Path] )
+				formatString: 0
+				lineageTag: 365f8565-149d-4440-8245-614e7059e04c
+
+			partition 'Key Measures' = m
+				mode: import
+				queryGroup: Measures
+				source =
+						let
+						    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+						    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+						    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+						in
+						    #"Removed Columns"
+
+			annotation PBI_ResultType = Table
+
+		relationship AutoDetected_d9c7a083-e5a7-4bfc-9ef5-4e750e2dee5e
+			fromColumn: Visuals.pageId
+			toColumn: Pages.pageId
+
+		relationship AutoDetected_8598a720-acfc-413d-a182-9860b7bce9ee
+			fromColumn: Performance.'metrics.visualId'
+			toColumn: Visuals.visualId
+
+		cultureInfo en-US
+
+			linguisticMetadata = {"Version":"4.1.0","Language":"en-US","Entities":{"page":{"Definition":{"Binding":{"ConceptualEntity":"Pages"}},"State":"Generated","Terms":[{"page":{"State":"Generated"}},{"sheet":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"side":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"leaf":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"folio":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}}]},"page.page_id":{"Definition":{"Binding":{"ConceptualEntity":"Pages","ConceptualProperty":"pageId"}},"State":"Generated","Terms":[{"page id":{"State":"Generated"}},{"id":{"State":"Generated","Weight":0.97}},{"pageId":{"Type":"Noun","State":"Generated","Weight":0.99}},{"page identification":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"page identity":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"page identifier":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"page credential":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}}],"NameType":"Identifier"},"page.page_name":{"Definition":{"Binding":{"ConceptualEntity":"Pages","ConceptualProperty":"pageName"}},"State":"Generated","Terms":[{"page name":{"State":"Generated"}},{"name":{"State":"Generated","Weight":0.97}},{"pageName":{"Type":"Noun","State":"Generated","Weight":0.99}},{"page nickname":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"page title":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"page label":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"page tag":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}}],"NameType":"Name"},"page.page_order":{"Definition":{"Binding":{"ConceptualEntity":"Pages","ConceptualProperty":"pageOrder"}},"State":"Generated","Terms":[{"page order":{"State":"Generated"}},{"pageOrder":{"Type":"Noun","State":"Generated","Weight":0.99}},{"order":{"State":"Generated","Weight":0.97}},{"page instruction":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"page direction":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"page edict":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"instruction":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"direction":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"edict":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"page command":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"page directive":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"page demand":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"page mandate":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}}]},"visual":{"Definition":{"Binding":{"ConceptualEntity":"Visuals"}},"State":"Generated","Terms":[{"visual":{"State":"Generated"}},{"graphic":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"pictorial":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"ocular":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.452}}]},"visual.visual_id":{"Definition":{"Binding":{"ConceptualEntity":"Visuals","ConceptualProperty":"visualId"}},"State":"Generated","Terms":[{"visual id":{"State":"Generated"}},{"id":{"State":"Generated","Weight":0.97}},{"visualId":{"Type":"Noun","State":"Generated","Weight":0.99}},{"visual identification":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"visual identity":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"visual identifier":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"visual credential":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}}],"NameType":"Identifier"},"visual.visual_type":{"Definition":{"Binding":{"ConceptualEntity":"Visuals","ConceptualProperty":"visualType"}},"State":"Generated","Terms":[{"visual type":{"State":"Generated"}},{"visualType":{"Type":"Noun","State":"Generated","Weight":0.99}},{"visual category":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"visual genre":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"visual manner":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"visual variety":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"visual brand":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"visual class":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"visual kind":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"visual style":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"visual form":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"visual grouping":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}}]},"visual.visual_name":{"Definition":{"Binding":{"ConceptualEntity":"Visuals","ConceptualProperty":"visualName"}},"State":"Generated","Terms":[{"visual name":{"State":"Generated"}},{"name":{"State":"Generated","Weight":0.97}},{"visualName":{"Type":"Noun","State":"Generated","Weight":0.99}},{"visual nickname":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"visual title":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"visual label":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"visual tag":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}}],"NameType":"Name"},"visual.page_id":{"Definition":{"Binding":{"ConceptualEntity":"Visuals","ConceptualProperty":"pageId"}},"State":"Generated","Visibility":{"Value":"Hidden"},"Terms":[{"page id":{"State":"Generated"}},{"pageId":{"Type":"Noun","State":"Generated","Weight":0.99}},{"page identification":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"page identity":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"page identifier":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"page credential":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}}]},"performance":{"Definition":{"Binding":{"ConceptualEntity":"Performance"}},"State":"Generated","Terms":[{"performance":{"State":"Generated"}},{"presentation":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"recital":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"enactment":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"act":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"routine":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"concert":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"piece":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"implementation":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.466}},{"execution":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.466}},{"operation":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.466}}]},"performance.source_name":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"Source.Name"}},"State":"Generated","Terms":[{"source.name":{"State":"Generated"}}]},"performance.events_name":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"events.name"}},"State":"Generated","Terms":[{"events name":{"State":"Generated"}},{"event name":{"Type":"Noun","State":"Generated","Weight":0.78}},{"events.name":{"Type":"Noun","State":"Generated","Weight":0.99}},{"events":{"State":"Generated","Weight":0.97}},{"event":{"Type":"Noun","State":"Generated","Weight":0.7566}},{"event nickname":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"event title":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"event label":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"event tag":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"procedure":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"proceeding":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"action":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"trial":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"dealing":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"occurrence":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.466}}]},"performance.events_component":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"events.component"}},"State":"Generated","Terms":[{"events.component":{"State":"Generated"}},{"event.component":{"Type":"Noun","State":"Generated","Weight":0.78}},{"event. module":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"event. element":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"event. constituent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"event. section":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"event. factor":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"event. piece":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"event. part":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"event. cog":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}}]},"performance.events_start":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"events.start"}},"State":"Generated","Terms":[{"events.start":{"State":"Generated"}},{"event.start":{"Type":"Noun","State":"Generated","Weight":0.78}},{"date":{"State":"Generated","Weight":0.7}},{"event. twitch":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"event. jump":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"event. jerk":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"event. flinch":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"event. jolt":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"event. shock":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.468}},{"event. fright":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.468}},{"event. surprise":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.468}},{"event. turn":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.468}}],"SemanticType":"Time"},"performance.events_end":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"events.end"}},"State":"Generated","Terms":[{"events end":{"State":"Generated"}},{"event end":{"Type":"Noun","State":"Generated","Weight":0.78}},{"events.end":{"Type":"Noun","State":"Generated","Weight":0.99}},{"date":{"State":"Generated","Weight":0.7}},{"end":{"State":"Generated","Weight":0.97}},{"event completion":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"event conclusion":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"event expiration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"completion":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.736}},{"conclusion":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.736}},{"expiration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.736}},{"event close":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"event finish":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"event last":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"event stop":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}}],"SemanticType":"Time"},"performance.events_id":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"events.id"}},"State":"Generated","Terms":[{"events id":{"State":"Generated"}},{"event id":{"Type":"Noun","State":"Generated","Weight":0.78}},{"events.id":{"Type":"Noun","State":"Generated","Weight":0.99}},{"events":{"State":"Generated","Weight":0.97}},{"event":{"Type":"Noun","State":"Generated","Weight":0.7566}},{"event identification":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"event identity":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"event identifier":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"event credential":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"procedure":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"proceeding":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"action":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"trial":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"dealing":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}}]},"performance.metrics_sourceLabel":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"metrics.sourceLabel"}},"State":"Generated","Terms":[{"metrics.sourceLabel":{"State":"Generated"}}]},"performance.metrics_status":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"metrics.status"}},"State":"Generated","Terms":[{"metrics.status":{"State":"Generated"}},{"metrics. category":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.762}},{"metrics. importance":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.762}},{"metrics. prestige":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.762}},{"metrics. prominence":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.762}},{"metrics. condition":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.739}},{"metrics. class":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.739}},{"metrics. grade":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.739}},{"metrics. level":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.739}},{"metrics. position":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.739}},{"metrics. rank":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.739}}]},"performance.metrics_visualTitle":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"metrics.visualTitle"}},"State":"Generated","Terms":[{"metrics.visualTitle":{"State":"Generated"}}]},"performance.metrics_visualId":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"metrics.visualId"}},"State":"Generated","Visibility":{"Value":"Hidden"},"Terms":[{"metrics.visualId":{"State":"Generated"}}]},"performance.metrics_visualType":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"metrics.visualType"}},"State":"Generated","Terms":[{"metrics.visualType":{"State":"Generated"}}]},"performance.metrics_initialLoad":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"metrics.initialLoad"}},"State":"Generated","Terms":[{"metrics.initialLoad":{"State":"Generated"}}]},"performance.metrics_QueryText":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"metrics.QueryText"}},"State":"Generated","Terms":[{"metrics.QueryText":{"State":"Generated"}}]},"performance.metrics_RowCount":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"metrics.RowCount"}},"State":"Generated","Terms":[{"metrics.RowCount":{"State":"Generated"}}]},"performance.events_parentId":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"events.parentId"}},"State":"Generated","Terms":[{"events.parentId":{"State":"Generated"}},{"event.parentId":{"Type":"Noun","State":"Generated","Weight":0.78}}]},"performance.duration":{"Definition":{"Binding":{"ConceptualEntity":"Performance","ConceptualProperty":"Duration"}},"State":"Generated","Terms":[{"duration":{"State":"Generated"}},{"length":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"extent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"interval":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"period":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"spell":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}}]},"key_measure":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures"}},"State":"Generated","Terms":[{"key measure":{"State":"Generated"}},{"measure":{"State":"Generated","Weight":0.97}},{"key degree":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"key quantity":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"key quota":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"key extent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"degree":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"quota":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"extent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"key amount":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"key portion":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"key ration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}}]},"key_measure.duration":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Duration"}},"State":"Generated","Terms":[{"duration":{"State":"Generated"}},{"length":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"extent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"interval":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"period":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"spell":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}}]},"key_measure.contribution_to_visual_lifecycle":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"% Contribution to Visual Lifecycle"}},"State":"Generated","Terms":[{"% contribution to visual lifecycle":{"State":"Generated"}},{"percentage contribution to visual lifecycle":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.624}},{"pct contribution to visual lifecycle":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.605}},{"% role to visual lifecycle":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.52}},{"% involvement to visual lifecycle":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.52}},{"% influence to visual lifecycle":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.504}},{"% input to visual lifecycle":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.504}},{"% say to visual lifecycle":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.504}},{"% impact to visual lifecycle":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.504}},{"% aid to visual lifecycle":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.504}},{"% support to visual lifecycle":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.504}}]},"key_measure.visual_lifecycle_duration":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Visual Lifecycle Duration"}},"State":"Generated","Terms":[{"visual lifecycle duration":{"State":"Generated"}},{"lifecycle duration":{"State":"Generated","Weight":0.97}},{"visual lifecycle length":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"visual lifecycle extent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"visual lifecycle interval":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"lifecycle length":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"lifecycle extent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"lifecycle interval":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"visual lifecycle period":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"visual lifecycle spell":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"lifecycle period":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"lifecycle spell":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"Duration":{"State":"Suggested","Source":{"Type":"External","Agent":"PowerBI.VisualColumnRename"},"Weight":0.9}}]},"key_measure.event_interpretation_icon":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Event Interpretation Icon"}},"State":"Generated","Terms":[{"event interpretation icon":{"State":"Generated"}},{"icon":{"State":"Generated","Weight":0.97}},{"interpretation icon":{"State":"Generated","Weight":0.97}},{"event interpretation likeness":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"event interpretation representation":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"event interpretation portrait":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"event interpretation emblem":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"event interpretation logo":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"interpretation likeness":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"interpretation representation":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"interpretation portrait":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"interpretation emblem":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"interpretation logo":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}}]},"key_measure.query_duration":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Query Duration"}},"State":"Generated","Terms":[{"query duration":{"State":"Generated"}},{"query length":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"query extent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"query interval":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"query period":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"query spell":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}}]},"key_measure.execute_query_duration":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Execute Query Duration"}},"State":"Generated","Terms":[{"execute query duration":{"State":"Generated"}},{"execute enquiry duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"execute inquiry duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"execute query length":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"execute query extent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"execute interrogation duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"execute query interval":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"execute query period":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"execute question duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"execute request duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"execute demand duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}}]},"key_measure.render_duration":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Render Duration"}},"State":"Generated","Terms":[{"render duration":{"State":"Generated"}},{"render length":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"render extent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"render interval":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"render period":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"render spell":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}}]},"key_measure.query_pending_duration":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Query Pending Duration"}},"State":"Generated","Terms":[{"query pending duration":{"State":"Generated"}},{"pending duration":{"State":"Generated","Weight":0.97}},{"query":{"State":"Generated","Weight":0.97}},{"enquiry pending duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"inquiry pending duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"interrogation pending duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"pending length":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"pending extent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"pending interval":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"question pending duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"request pending duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"demand pending duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"probe pending duration":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}}]},"key_measure.resolve_parameters_duration":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Resolve Parameters Duration"}},"State":"Generated","Terms":[{"resolve parameters duration":{"State":"Generated"}},{"parameters duration":{"State":"Generated","Weight":0.97}},{"resolve parameter length":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"resolve parameter extent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"resolve parameter interval":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"parameter length":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"parameter extent":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"parameter interval":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"resolve parameter period":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"resolve parameter spell":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"parameter period":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"parameter spell":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}}]},"key_measure.query_":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Query %"}},"State":"Generated","Terms":[{"query %":{"State":"Generated"}},{"query percentage":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"query pct":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}}]},"key_measure.execute_query_":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Execute Query %"}},"State":"Generated","Terms":[{"execute query %":{"State":"Generated"}},{"execute query percentage":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.762}},{"execute query pct":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.739}},{"execute enquiry %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"execute inquiry %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"execute interrogation %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"execute question %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"execute request %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"execute demand %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"execute probe %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"execute uncertainty %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.482}}]},"key_measure.render_":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Render %"}},"State":"Generated","Terms":[{"render %":{"State":"Generated"}},{"render percentage":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"render pct":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}}]},"key_measure.query_pending_":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Query Pending %"}},"State":"Generated","Terms":[{"query pending %":{"State":"Generated"}},{"query pending percentage":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.609}},{"query pending pct":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.591}},{"enquiry pending %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"inquiry pending %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"interrogation pending %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"question pending %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"request pending %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"demand pending %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"probe pending %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"uncertainty pending %":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.482}}]},"key_measure.resolve_parameters_":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Resolve Parameters %"}},"State":"Generated","Terms":[{"resolve parameters %":{"State":"Generated"}},{"resolve parameter percentage":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.762}},{"resolve parameter pct":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.739}}]},"key_measure.visual_performance_status":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Visual Performance Status"}},"State":"Generated","Terms":[{"visual performance status":{"State":"Generated"}},{"status":{"State":"Generated","Weight":0.97}},{"performance status":{"State":"Generated","Weight":0.97}},{"visual performance category":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.762}},{"visual performance importance":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.762}},{"visual performance prestige":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.762}},{"visual performance prominence":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.762}},{"performance category":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"performance importance":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"performance prestige":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"performance prominence":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"visual performance condition":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.739}},{"visual performance class":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.739}}]},"key_measure.visual_performance_icon":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Visual Performance Icon"}},"State":"Generated","Terms":[{"visual performance icon":{"State":"Generated"}},{"icon":{"State":"Generated","Weight":0.97}},{"performance icon":{"State":"Generated","Weight":0.97}},{"visual performance likeness":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"visual performance representation":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"visual performance portrait":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"visual performance emblem":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"visual performance logo":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"performance likeness":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"performance representation":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"performance portrait":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"performance emblem":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"performance logo":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}}]},"key_measure.visual_performance_explanation":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Visual Performance Explanation"}},"State":"Generated","Terms":[{"visual performance explanation":{"State":"Generated"}},{"explanation":{"State":"Generated","Weight":0.97}},{"performance explanation":{"State":"Generated","Weight":0.97}},{"visual performance clarification":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"visual performance description":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"visual performance elucidation":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"visual performance enlightenment":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"performance clarification":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"performance description":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"performance elucidation":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"performance enlightenment":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"visual performance account":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.492}},{"clarification":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}}]},"key_measure.event_interpretation_text":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Event Interpretation Text"}},"State":"Generated","Terms":[{"event interpretation text":{"State":"Generated"}},{"text":{"State":"Generated","Weight":0.97}},{"interpretation text":{"State":"Generated","Weight":0.97}},{"event interpretation manuscript":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"event interpretation transcript":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"event interpretation typescript":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"event interpretation edition":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"event interpretation version":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.508}},{"interpretation manuscript":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"interpretation transcript":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"interpretation typescript":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"interpretation edition":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"interpretation version":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}}]},"key_measure.event_interpretation_short":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Event Interpretation Short"}},"State":"Generated","Terms":[{"event interpretation short":{"State":"Generated"}},{"short":{"State":"Generated","Weight":0.97}},{"interpretation short":{"State":"Generated","Weight":0.97}},{"small":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"little":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"petite":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"squat":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"diminutive":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"brief":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.452}},{"quick":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.452}},{"rapid":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.452}},{"fleeting":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.452}},{"passing":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.452}}]},"visual.display_name":{"Definition":{"Binding":{"ConceptualEntity":"Visuals","ConceptualProperty":"displayName"}},"State":"Generated","Terms":[{"display name":{"State":"Generated"}},{"displayName":{"Type":"Noun","State":"Generated","Weight":0.99}},{"display nickname":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"display title":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"display label":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"display tag":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"Type":{"State":"Suggested","Source":{"Type":"External","Agent":"PowerBI.VisualColumnRename"},"Weight":0.9}}]},"key_measure.event_order":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Event Order"}},"State":"Generated","Terms":[{"event order":{"State":"Generated"}},{"order":{"State":"Generated","Weight":0.97}},{"event instruction":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"event direction":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"event edict":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"instruction":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"direction":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"edict":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"event command":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"event directive":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"event demand":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"event mandate":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}}]},"key_measure.hierarchy_path":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Hierarchy Path"}},"State":"Generated","Terms":[{"hierarchy path":{"State":"Generated"}},{"path":{"State":"Generated","Weight":0.97}},{"hierarchy pathway":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"hierarchy footpath":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.5}},{"pathway":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"footpath":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.491}},{"hierarchy trail":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"hierarchy track":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"hierarchy route":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.485}},{"trail":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"track":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}},{"route":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.476}}]},"key_measure.hierarchy_level":{"Definition":{"Binding":{"ConceptualEntity":"Key Measures","ConceptualProperty":"Hierarchy Level"}},"State":"Generated","Terms":[{"hierarchy level":{"State":"Generated"}},{"level":{"State":"Generated","Weight":0.97}},{"hierarchy quantity":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"hierarchy threshold":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.75}},{"threshold":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.736}},{"hierarchy amount":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"hierarchy grade":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"hierarchy point":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"hierarchy rank":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"hierarchy tier":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.727}},{"grade":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.714}},{"point":{"Type":"Noun","State":"Suggested","Source":{"Agent":"Thesaurus"},"Weight":0.714}}]}},"Relationships":{"performance_has_key_measure_event_order":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.event_order":{"Target":{"Entity":"key_measure.event_order"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.event_order"}},"State":"Generated","Weight":0.99,"ID":"performances_have_event_order"}]},"performance_has_end_number":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.end_number":{"Target":{"Entity":"performance.end_number"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.end_number"}},"State":"Generated","Weight":0.99,"ID":"performances_have_end_numbers"}]},"performance_has_start_number":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.start_number":{"Target":{"Entity":"performance.start_number"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.start_number"}},"State":"Generated","Weight":0.99,"ID":"performances_have_start_numbers"}]},"visual_has_display_name":{"Binding":{"ConceptualEntity":"Visuals"},"State":"Generated","Roles":{"visual":{"Target":{"Entity":"visual"}},"visual.display_name":{"Target":{"Entity":"visual.display_name"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"visual"},"Object":{"Role":"visual.display_name"}},"State":"Generated","Weight":0.99,"ID":"visuals_have_display_names"}]},"performance_has_key_measure_event_interpretation_short":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.event_interpretation_short":{"Target":{"Entity":"key_measure.event_interpretation_short"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.event_interpretation_short"}},"State":"Generated","Weight":0.99,"ID":"performances_have_event_interpretation_short"}]},"performance_has_key_measure_event_interpretation_text":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.event_interpretation_text":{"Target":{"Entity":"key_measure.event_interpretation_text"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.event_interpretation_text"}},"State":"Generated","Weight":0.99,"ID":"performances_have_event_interpretation_text"}]},"performance_has_key_measure_visual_performance_explanation":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.visual_performance_explanation":{"Target":{"Entity":"key_measure.visual_performance_explanation"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.visual_performance_explanation"}},"State":"Generated","Weight":0.99,"ID":"performances_have_visual_performance_explanation"}]},"performance_has_key_measure_visual_performance_icon":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.visual_performance_icon":{"Target":{"Entity":"key_measure.visual_performance_icon"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.visual_performance_icon"}},"State":"Generated","Weight":0.99,"ID":"performances_have_visual_performance_icon"}]},"performance_has_key_measure_visual_performance_status":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.visual_performance_status":{"Target":{"Entity":"key_measure.visual_performance_status"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.visual_performance_status"}},"State":"Generated","Weight":0.99,"ID":"performances_have_visual_performance_status"}]},"performance_has_key_measure_resolve_parameters_":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.resolve_parameters_":{"Target":{"Entity":"key_measure.resolve_parameters_"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.resolve_parameters_"}},"State":"Generated","Weight":0.99,"ID":"performances_have_resolve_parameters_"}]},"performance_has_key_measure_query_pending_":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.query_pending_":{"Target":{"Entity":"key_measure.query_pending_"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.query_pending_"}},"State":"Generated","Weight":0.99,"ID":"performances_have_query_pending_"}]},"performance_has_key_measure_render_":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.render_":{"Target":{"Entity":"key_measure.render_"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.render_"}},"State":"Generated","Weight":0.99,"ID":"performances_have_render_"}]},"performance_has_key_measure_execute_query_":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.execute_query_":{"Target":{"Entity":"key_measure.execute_query_"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.execute_query_"}},"State":"Generated","Weight":0.99,"ID":"performances_have_execute_query_"}]},"performance_has_key_measure_query_":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.query_":{"Target":{"Entity":"key_measure.query_"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.query_"}},"State":"Generated","Weight":0.99,"ID":"performances_have_query_"}]},"performance_has_key_measure_resolve_parameters_duration":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.resolve_parameters_duration":{"Target":{"Entity":"key_measure.resolve_parameters_duration"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.resolve_parameters_duration"}},"State":"Generated","Weight":0.99,"ID":"performances_have_resolve_parameters_duration"}]},"performance_has_key_measure_query_pending_duration":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.query_pending_duration":{"Target":{"Entity":"key_measure.query_pending_duration"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.query_pending_duration"}},"State":"Generated","Weight":0.99,"ID":"performances_have_query_pending_duration"}]},"performance_has_key_measure_render_duration":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.render_duration":{"Target":{"Entity":"key_measure.render_duration"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.render_duration"}},"State":"Generated","Weight":0.99,"ID":"performances_have_render_duration"}]},"performance_has_key_measure_execute_query_duration":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.execute_query_duration":{"Target":{"Entity":"key_measure.execute_query_duration"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.execute_query_duration"}},"State":"Generated","Weight":0.99,"ID":"performances_have_execute_query_duration"}]},"performance_has_key_measure_query_duration":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.query_duration":{"Target":{"Entity":"key_measure.query_duration"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.query_duration"}},"State":"Generated","Weight":0.99,"ID":"performances_have_query_duration"}]},"performance_has_key_measure_event_interpretation_icon":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.event_interpretation_icon":{"Target":{"Entity":"key_measure.event_interpretation_icon"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.event_interpretation_icon"}},"State":"Generated","Weight":0.99,"ID":"performances_have_event_interpretation_icon"}]},"performance_has_key_measure_visual_lifecycle_duration":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.visual_lifecycle_duration":{"Target":{"Entity":"key_measure.visual_lifecycle_duration"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.visual_lifecycle_duration"}},"State":"Generated","Weight":0.99,"ID":"performances_have_visual_lifecycle_duration"}]},"performance_has_key_measure_contribution_to_visual_lifecycle":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.contribution_to_visual_lifecycle":{"Target":{"Entity":"key_measure.contribution_to_visual_lifecycle"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.contribution_to_visual_lifecycle"}},"State":"Generated","Weight":0.99,"ID":"performances_have__contribution_to_visual_lifecycle"}]},"performance_has_key_measure_duration":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.duration":{"Target":{"Entity":"key_measure.duration"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.duration"}},"State":"Generated","Weight":0.99,"ID":"performances_have_duration"}]},"performance_has_duration":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.duration":{"Target":{"Entity":"performance.duration"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.duration"}},"State":"Generated","Weight":0.99,"ID":"performances_have_durations"}]},"performance_has_events_parentId":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.events_parentId":{"Target":{"Entity":"performance.events_parentId"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.events_parentId"}},"State":"Generated","Weight":0.99,"ID":"performances_have_events_parentIds"}]},"performance_has_metrics_RowCount":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.metrics_RowCount":{"Target":{"Entity":"performance.metrics_RowCount"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.metrics_RowCount"}},"State":"Generated","Weight":0.99,"ID":"performances_have_metrics_RowCounts"}]},"performance_has_metrics_QueryText":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.metrics_QueryText":{"Target":{"Entity":"performance.metrics_QueryText"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.metrics_QueryText"}},"State":"Generated","Weight":0.99,"ID":"performances_have_metrics_QueryTexts"}]},"performance_has_metrics_initialLoad":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.metrics_initialLoad":{"Target":{"Entity":"performance.metrics_initialLoad"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.metrics_initialLoad"}},"State":"Generated","Weight":0.99,"ID":"performances_have_metrics_initialLoads"}]},"performance_has_metrics_visualType":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.metrics_visualType":{"Target":{"Entity":"performance.metrics_visualType"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.metrics_visualType"}},"State":"Generated","Weight":0.99,"ID":"performances_have_metrics_visualTypes"}]},"performance_has_metrics_visualTitle":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.metrics_visualTitle":{"Target":{"Entity":"performance.metrics_visualTitle"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.metrics_visualTitle"}},"State":"Generated","Weight":0.99,"ID":"performances_have_metrics_visualTitles"}]},"performance_has_metrics_status":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.metrics_status":{"Target":{"Entity":"performance.metrics_status"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.metrics_status"}},"State":"Generated","Weight":0.99,"ID":"performances_have_metrics_statuses"}]},"performance_has_metrics_sourceLabel":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.metrics_sourceLabel":{"Target":{"Entity":"performance.metrics_sourceLabel"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.metrics_sourceLabel"}},"State":"Generated","Weight":0.99,"ID":"performances_have_metrics_sourceLabels"}]},"performance_has_events_id":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.events_id":{"Target":{"Entity":"performance.events_id"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.events_id"}},"State":"Generated","Weight":0.99,"ID":"performances_have_events_ids"}]},"performance_has_events_end":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.events_end":{"Target":{"Entity":"performance.events_end"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.events_end"}},"State":"Generated","Weight":0.99,"ID":"performances_have_events_ends"}]},"performance_has_events_start":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.events_start":{"Target":{"Entity":"performance.events_start"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.events_start"}},"State":"Generated","Weight":0.99,"ID":"performances_have_events_starts"}]},"performance_has_events_component":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.events_component":{"Target":{"Entity":"performance.events_component"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.events_component"}},"State":"Generated","Weight":0.99,"ID":"performances_have_events_components"}]},"performance_has_events_name":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.events_name":{"Target":{"Entity":"performance.events_name"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.events_name"}},"State":"Generated","Weight":0.99,"ID":"performances_have_events_names"}]},"performance_has_source_name":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"performance.source_name":{"Target":{"Entity":"performance.source_name"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"performance.source_name"}},"State":"Generated","Weight":0.99,"ID":"performances_have_source_names"}]},"visual_has_visual_name":{"Binding":{"ConceptualEntity":"Visuals"},"State":"Generated","Roles":{"visual":{"Target":{"Entity":"visual"}},"visual.visual_name":{"Target":{"Entity":"visual.visual_name"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"visual"},"Object":{"Role":"visual.visual_name"}},"State":"Generated","Weight":0.99,"ID":"visuals_have_visual_names"},{"Name":{"Subject":{"Role":"visual"},"Name":{"Role":"visual.visual_name"}},"State":"Generated","Weight":0.99,"ID":"visual_names_are_names_IDs_of_visuals"}]},"visual_has_visual_type":{"Binding":{"ConceptualEntity":"Visuals"},"State":"Generated","Roles":{"visual":{"Target":{"Entity":"visual"}},"visual.visual_type":{"Target":{"Entity":"visual.visual_type"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"visual"},"Object":{"Role":"visual.visual_type"}},"State":"Generated","Weight":0.99,"ID":"visuals_have_visual_types"}]},"visual_has_visual_id":{"Binding":{"ConceptualEntity":"Visuals"},"State":"Generated","Roles":{"visual":{"Target":{"Entity":"visual"}},"visual.visual_id":{"Target":{"Entity":"visual.visual_id"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"visual"},"Object":{"Role":"visual.visual_id"}},"State":"Generated","Weight":0.99,"ID":"visuals_have_visual_ids"},{"Name":{"Subject":{"Role":"visual"},"Name":{"Role":"visual.visual_id"}},"State":"Generated","Weight":0.99,"ID":"visual_ids_are_names_IDs_of_visuals"}]},"page_has_page_order":{"Binding":{"ConceptualEntity":"Pages"},"State":"Generated","Roles":{"page":{"Target":{"Entity":"page"}},"page.page_order":{"Target":{"Entity":"page.page_order"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"page"},"Object":{"Role":"page.page_order"}},"State":"Generated","Weight":0.99,"ID":"pages_have_page_orders"}]},"page_has_page_name":{"Binding":{"ConceptualEntity":"Pages"},"State":"Generated","Roles":{"page":{"Target":{"Entity":"page"}},"page.page_name":{"Target":{"Entity":"page.page_name"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"page"},"Object":{"Role":"page.page_name"}},"State":"Generated","Weight":0.99,"ID":"pages_have_page_names"},{"Name":{"Subject":{"Role":"page"},"Name":{"Role":"page.page_name"}},"State":"Generated","Weight":0.99,"ID":"page_names_are_names_IDs_of_pages"}]},"page_has_page_id":{"Binding":{"ConceptualEntity":"Pages"},"State":"Generated","Roles":{"page":{"Target":{"Entity":"page"}},"page.page_id":{"Target":{"Entity":"page.page_id"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"page"},"Object":{"Role":"page.page_id"}},"State":"Generated","Weight":0.99,"ID":"pages_have_page_ids"},{"Name":{"Subject":{"Role":"page"},"Name":{"Role":"page.page_id"}},"State":"Generated","Weight":0.99,"ID":"page_ids_are_names_IDs_of_pages"}]},"performance_has_key_measure_hierarchy_path":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.hierarchy_path":{"Target":{"Entity":"key_measure.hierarchy_path"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.hierarchy_path"}},"State":"Generated","Weight":0.99,"ID":"performances_have_hierarchy_path"}]},"performance_has_key_measure_hierarchy_level":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"key_measure.hierarchy_level":{"Target":{"Entity":"key_measure.hierarchy_level"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"key_measure.hierarchy_level"}},"State":"Generated","Weight":0.99,"ID":"performances_have_hierarchy_level"}]},"visual_has_page":{"Binding":{"ConceptualEntity":"Visuals"},"State":"Generated","Roles":{"visual":{"Target":{"Entity":"visual"}},"page":{"Target":{"Entity":"page"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"visual"},"Object":{"Role":"page"}},"State":"Generated","Weight":0.99,"ID":"visuals_have_pages"},{"Attribute":{"Subject":{"Role":"page"},"Object":{"Role":"visual"}},"State":"Generated","Weight":0.99,"ID":"pages_have_visuals"}]},"performance_has_visual":{"Binding":{"ConceptualEntity":"Performance"},"State":"Generated","Roles":{"performance":{"Target":{"Entity":"performance"}},"visual":{"Target":{"Entity":"visual"}}},"Phrasings":[{"Attribute":{"Subject":{"Role":"performance"},"Object":{"Role":"visual"}},"State":"Generated","Weight":0.99,"ID":"performances_have_visuals"},{"Attribute":{"Subject":{"Role":"visual"},"Object":{"Role":"performance"}},"State":"Generated","Weight":0.99,"ID":"visuals_have_performances"}]}},"Agents":{"Internal":{"Version":"1.1.0"}}}
+				contentType: json
+
+		expression folder_PBIR_Data = "C:\Temp\Performance\Sales.Report\definition\" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+			lineageTag: 772f03ba-6476-4e0e-a67f-03d7991665b2
+			queryGroup: Parameters
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Text
+
+		expression BinaryFile_PBIR_Page = BinarySample_PBIR_Page meta [IsParameterQuery=true, BinaryIdentifier=BinarySample_PBIR_Page, Type="Binary", IsParameterQueryRequired=true]
+			lineageTag: b773a987-f6d0-4799-94bd-f4acd2721559
+			queryGroup: Staging
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Binary
+
+		expression fx_Get_PBIR_Page = ```
+				(pageBinary) as record => 
+				    Json.Document( pageBinary, 1252 )[ [name], [displayName] ]?
+				// use array of column names that should be returned
+				// use "?" to ignore if a column name is not present
+				```
+			lineageTag: 573e2e99-d66d-4671-8855-2682536cec51
+			queryGroup: Functions
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Function
+
+		expression fx_Get_PBIR_Visual =
+				(pageBinary, optional Occurrence as number) as table =>
+				let
+				    getOccurrence = if List.Contains({0, 1}, Occurrence) then Occurrence else 1,
+				    f = {List.First, List.Last}{getOccurrence},
+				    JSON = Json.Document(pageBinary,1252)[[name], [visual]]?,
+				    RAW = Table.FromRecords({JSON}),
+				    Expand = Table.ExpandRecordColumn(RAW, "visual", {"visualType", "visualContainerObjects"}, {"visualType", "visualName"}),
+				    getName = Table.TransformColumns(Expand, {{"visualName", each f(_[title]? ?? {})[properties]?[text]?[expr]?[Literal]?[Value]? }})
+				in
+				    getName
+			lineageTag: 32a441ba-4f6e-4241-8b40-441b5bfe7498
+			queryGroup: Functions
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Function
+
+		expression BinarySample_PBIR_Page =
+				let
+				    SourceFolder = Folder.Files(folder_PBIR_Data),
+				    SelectFiles = Table.SelectRows(SourceFolder, each ([Name] = "page.json")),
+				    PageFolder = Text.AfterDelimiter(folder_PBIR_Sample_Page, "\", {0, RelativePosition.FromEnd}),
+				    BinaryContent = SelectFiles{
+				        [#"Folder Path" = folder_PBIR_Data & "pages\" & PageFolder & "\", Name = "page.json"]
+				    }[Content]
+				in
+				    BinaryContent
+			lineageTag: c47fd74a-034b-4f54-b3d6-3323b7043516
+			queryGroup: Staging
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Binary
+
+		expression RAW_PBIR_Page =
+				let
+				    Source = Folder.Files(folder_PBIR_Data),
+				    SelectFiles = Table.SelectRows(Source, each ([Name] = "page.json"))
+				in
+				    SelectFiles
+			lineageTag: 4e9e39fa-7339-45d9-b9f9-9f37c69cfac6
+			queryGroup: 'RAW Queries'
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		expression RAW_PBIR_Visual =
+				let
+				    Source = Folder.Files(folder_PBIR_Data),
+				    SelectFiles = Table.SelectRows(Source, each ([Name] = "visual.json"))
+				in
+				    SelectFiles
+			lineageTag: 22d51cd6-fba5-4986-bf0a-a3ca9fa91edd
+			queryGroup: 'RAW Queries'
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		expression RAW_PBIR_Pages =
+				let
+				    Source = Folder.Files(folder_PBIR_Data),
+				    SelectFiles = Table.SelectRows(Source, each ([Name] = "pages.json"))
+				in
+				    SelectFiles
+			lineageTag: 43c12e0b-99e4-4312-a50f-9f4ad5016bde
+			queryGroup: 'RAW Queries'
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		expression RAW_PA_Data =
+				let
+				    Source = Folder.Files(folder_Performance_Data),
+				    SelectFiles = Table.SelectRows(Source, each  ( Text.EndsWith( [Name], "PowerBIPerformanceData.json" ) ) )
+				in
+				    SelectFiles
+			lineageTag: fdb6191f-0e0f-476f-9a06-f7261d396799
+			queryGroup: 'RAW Queries'
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		expression TransformData_PBIR_Page =
+				let
+				    Source = Json.Document(BinaryFile_PBIR_Page),
+				    ConvertToTable = Record.ToTable(Source),
+				    TransposeTable = Table.Transpose(ConvertToTable),
+				    PromoteHeaders = Table.PromoteHeaders(TransposeTable, [PromoteAllScalars=true]),
+				    ChangeType = Table.TransformColumnTypes(PromoteHeaders,{{"$schema", type text}, {"name", type text}, {"displayName", type text}, {"displayOption", type text}, {"height", Int64.Type}, {"width", Int64.Type}}),
+				    SelectColumns = Table.SelectColumns(ChangeType,{"name", "displayName"}),
+				    RenameColumns = Table.RenameColumns(SelectColumns,{{"name", "pageId"}, {"displayName", "pageName"}})
+				in
+				    RenameColumns
+			lineageTag: 0be9d0fd-bcb7-4b0f-ad11-6400844fb38e
+			queryGroup: Staging
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		expression fx_Get_PBIR_Pages = ```
+				(pagesBinary) as record => 
+				    Json.Document( pagesBinary, 1252 )[ [pageOrder] ]?
+				```
+			lineageTag: c7c10ffa-fa2f-4807-abff-9e436b50675a
+			queryGroup: Functions
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Function
+
+		expression STG_PBIR_Pages =
+				let
+				    Source = RAW_PBIR_Pages,
+				    Transform = Table.TransformColumns(Source, {{"Content", fx_Get_PBIR_Pages, type [pageOrder = text]}}),
+				    Expand = Table.ExpandRecordColumn(Transform, "Content", {"pageOrder"}),
+				    JSON = Expand{
+				        [#"Folder Path" = folder_PBIR_Data & "pages\", Name = "pages.json"]
+				    }[pageOrder],
+				    ConvertToTable = Table.FromList(JSON, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+				    RenameColumns = Table.RenameColumns(ConvertToTable, {{"Column1", "pageId"}}),
+				    ChangeType = Table.TransformColumnTypes(RenameColumns, {{"pageId", type text}}),
+				    AddIndex = Table.AddIndexColumn(ChangeType, "Index", 1, 1, Int64.Type),
+				    RenameColumns1 = Table.RenameColumns(AddIndex, {{"Index", "pageOrder"}})
+				in
+				    RenameColumns1
+			lineageTag: 43629c1e-4ae0-4567-bfef-69185f57300f
+			queryGroup: 'Staging Queries'
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		expression STG_PBIR_Page =
+				let
+				    Source = #"RAW_PBIR_Page",
+				    Transform = Table.TransformColumns(
+				        Source, {{"Content", fx_Get_PBIR_Page, type [name = text, displayName = text]}}
+				    ),
+				    Expand = Table.ExpandRecordColumn(Transform, "Content", {"name", "displayName"}),
+				    SelectColumns = Table.SelectColumns(Expand, {"name", "displayName"}),
+				    RenameColumns = Table.RenameColumns(SelectColumns, {{"name", "pageId"}, {"displayName", "pageName"}})
+				in
+				    RenameColumns
+			lineageTag: 7781fb10-5337-4c95-8d36-d6356bd53e39
+			queryGroup: 'Staging Queries'
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		expression STG_PBIR_Visual =
+				let
+				    Source = #"RAW_PBIR_Visual",
+				    Transform = Table.TransformColumns(Source, {{"Content", fx_Get_PBIR_Visual}}),
+				    ExpandContent = Table.ExpandTableColumn(
+				        Transform,
+				        "Content",
+				        {"name", "visualType", "visualName"},
+				        {"Content.name", "Content.visualType", "Content.visualName"}
+				    ),
+				    ChangeType = Table.TransformColumnTypes(
+				        ExpandContent,
+				        {{"Content.name", type text}, {"Content.visualType", type text}, {"Content.visualName", type text}}
+				    ),
+				    SelectColumns = Table.SelectColumns(
+				        ChangeType, {"Content.name", "Content.visualType", "Content.visualName", "Folder Path"}
+				    ),
+				    RenameColumns = Table.RenameColumns(
+				        SelectColumns,
+				        {{"Content.name", "visualId"}, {"Content.visualType", "visualType"}, {"Content.visualName", "visualName"}}
+				    ),
+				    RemoveApostrophes = Table.TransformColumns(RenameColumns, {{"visualName", each Text.Trim(_, "'"), type text}}),
+				    #"Sorted Rows" = Table.Sort(RemoveApostrophes,{{"visualId", Order.Ascending}})
+				in
+				    #"Sorted Rows"
+			lineageTag: 21297ae0-e999-4747-a003-ebbf005c363e
+			queryGroup: 'Staging Queries'
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		expression folder_Performance_Data = "C:\Temp\Performance\Sales.Performance\" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+			lineageTag: 3db10c4a-7c64-4bb4-9c2d-957ca1275bfd
+			queryGroup: Parameters
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Text
+
+		expression STG_PA_Data =
+				let
+				    Source = Folder.Files(folder_Performance_Data),
+				    Performance_Data = Table.RenameColumns(
+				        Table.SelectRows(
+				            Source,
+				            each
+				                Text.EndsWith([Name], "PerformanceData.json", Comparer.OrdinalIgnoreCase)
+				                and[Attributes]?[Hidden]? <> true
+				        )[[Name], [Content]]?,
+				        {{"Name", "Source.Name"}}
+				    ),
+				    Transform = Table.TransformColumns(Performance_Data, {{"Content", fx_Get_PA_Data}}),
+				    Expand = Table.ExpandTableColumn(
+				        Transform, "Content", List.Distinct(List.Combine(List.Transform(Transform[Content], Table.ColumnNames)))
+				    ),
+				    #"Changed Type" = Table.TransformColumnTypes(
+				        Expand,
+				        {
+				            {"version", type text},
+				            {"events.name", type text},
+				            {"events.component", type text},
+				            {"events.start", type datetime},
+				            {"events.end", type datetime},
+				            {"events.id", type text},
+				            {"metrics.sourceLabel", type text},
+				            {"metrics.status", Int64.Type},
+				            {"metrics.visualTitle", type text},
+				            {"metrics.visualId", type text},
+				            {"metrics.visualType", type text},
+				            {"metrics.initialLoad", type logical},
+				            {"metrics.QueryText", type text},
+				            {"metrics.RowCount", Int64.Type},
+				            {"events.parentId", type text},
+				            {"sessionId", type text}
+				        }
+				    )
+				in
+				    #"Changed Type"
+			lineageTag: d1b8af66-a3d1-4292-9523-b98815815c4f
+			queryGroup: 'Staging Queries'
+
+			annotation PBI_ResultType = Table
+
+			annotation PBI_NavigationStepName = Navigation
+
+		expression fx_Get_PA_Data = ```
+				let
+				    Source = (myBinary) as table =>
+				let
+				    JSON = Json.Document(myBinary,1252),
+				    RAW = Table.FromRecords({JSON}),
+				    allEvents = Table.ExpandListColumn(RAW, "events"),
+				    expandEvents = Table.ExpandRecordColumn(allEvents, "events", 
+				        {"name", "component", "start", "end", "id", "metrics", "parentId"}, 
+				        {"events.name", "events.component", "events.start", "events.end", "events.id", "metrics", "events.parentId"}
+				    ),
+				    expandMetrics = Table.ExpandRecordColumn(expandEvents, "metrics", 
+				        {"sourceLabel", "status", "visualTitle", "visualId", "visualType", "initialLoad", "QueryText", "RowCount"}, 
+				        {"metrics.sourceLabel", "metrics.status", "metrics.visualTitle", "metrics.visualId", "metrics.visualType", "metrics.initialLoad", "metrics.QueryText", "metrics.RowCount"}
+				    )
+				in
+				    expandMetrics
+				in
+				    Source
+				```
+			lineageTag: 72298a86-b839-49c3-8049-d9b5ebf72c28
+			queryGroup: Functions
+
+			annotation PBI_ResultType = Function
+
+			annotation PBI_NavigationStepName = Navigation
+
+		expression STG_PBIR_VisualTypes =
+				let
+				    Source = STG_PBIR_Visual,
+				    #"Removed Other Columns" = Table.SelectColumns(Source,{"visualType"})
+				in
+				    #"Removed Other Columns"
+			lineageTag: 02f9f174-d6f3-41a7-9596-25dbc32f4c7b
+			queryGroup: 'Staging Queries'
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		expression file_Visual_Types = "C:\Temp\Performance\Power BI Visual Internal and Display Names.json" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+			lineageTag: 9cf2fcd3-4105-4c58-8461-b8a07e2e5a9d
+			queryGroup: Parameters
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Text
+
+		expression RAW_Visual_Types =
+				let
+				    Source = Json.Document(File.Contents(file_Visual_Types)),
+				    ConvertToTable = Table.FromRecords({Source}),
+				    ExpandVisuals1 = Table.ExpandListColumn(ConvertToTable, "visuals"),
+				    ExpandVisuals2 = Table.ExpandRecordColumn(
+				        ExpandVisuals1, "visuals", {"visualType", "displayName"}, {"visualType", "displayName"}
+				    ),
+				    ChangeType = Table.TransformColumnTypes(
+				        ExpandVisuals2, {{"visualType", type text}, {"displayName", type text}}
+				    )
+				in
+				    ChangeType
+			lineageTag: 306612e3-988a-45a9-b38d-6edf86db0103
+			queryGroup: 'RAW Queries'
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Table
+
+		expression folder_PBIR_Sample_Page = "C:\Temp\Performance\Sales.Report\definition\pages\1fdd4311559dac8e97a3" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+			lineageTag: 68062955-c619-46e5-b4a2-9e384bd7f400
+			queryGroup: Parameters
+
+			annotation PBI_NavigationStepName = Navigation
+
+			annotation PBI_ResultType = Text
+
+		queryGroup Parameters
+
+			annotation PBI_QueryGroupOrder = 4
+
+		queryGroup Functions
+
+			annotation PBI_QueryGroupOrder = 3
+
+		queryGroup 'Staging Queries'
+
+			annotation PBI_QueryGroupOrder = 1
+
+		queryGroup 'Data Model'
+
+			annotation PBI_QueryGroupOrder = 0
+
+		queryGroup 'RAW Queries'
+
+			annotation PBI_QueryGroupOrder = 2
+
+		queryGroup Staging
+
+			annotation PBI_QueryGroupOrder = 5
+
+		queryGroup Measures
+
+			annotation PBI_QueryGroupOrder = 6
+
+		annotation __PBI_TimeIntelligenceEnabled = 0
+
+		annotation PBI_QueryOrder = ["folder_PBIR_Data","folder_PBIR_Sample_Page","folder_Performance_Data","file_Visual_Types","RAW_PBIR_Pages","RAW_PBIR_Page","RAW_PBIR_Visual","RAW_PA_Data","RAW_Visual_Types","fx_Get_PBIR_Pages","fx_Get_PBIR_Page","fx_Get_PBIR_Visual","BinarySample_PBIR_Page","BinaryFile_PBIR_Page","TransformData_PBIR_Page","STG_PBIR_Pages","STG_PBIR_Page","STG_PBIR_Visual","Pages","Visuals","Performance","fx_Get_PA_Data","STG_PA_Data","STG_PBIR_VisualTypes","Key Measures"]
+
+		annotation PBI_ProTooling = ["TMDLView_Desktop"]
+

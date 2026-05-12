@@ -1,0 +1,559 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "usermeta": {
+    "information": {
+      "uuid": "77c2cbe4-2d73-49ee-b8e5-e3d31ee27e0f",
+      "generated": "2026-05-08T18:30:21.173Z",
+      "previewImageBase64PNG": "data:image/png;base64,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",
+      "name": "Performance Analyzer Export Analysis - Multiple Visuals",
+      "description": "Analyzing multiple Power BI visuals at-a-time, this visual presents Performance Analyzer data exported from Power BI report pages linked to Power BI Project data (PBIR format)",
+      "author": "Greg Philps"
+    },
+    "deneb": {
+      "build": "1.9.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "6.4.1"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "selectionMode": "simple",
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "config": "{\r\n  \"view\": {\r\n    \"stroke\": null\r\n  },\r\n  // visual title\r\n  \"title\": {\r\n    \"font\": \"Segoe UI\",\r\n    \"fontSize\": 24,\r\n    \"fontWeight\": \"bold\",\r\n    \"fontStyle\": \"italic\",\r\n    \"color\": \"#4A4A4A\",\r\n    \"subtitleFont\": \"Segoe UI\",\r\n    \"subtitleFontSize\": 16,\r\n    \"subtitleFontWeight\": \"normal\",\r\n    \"subtitleFontStyle\": \"italic\",\r\n    \"subtitleColor\": \"#969696\"\r\n  },\r\n  // legend\r\n  \"legend\": {\r\n    \"title\": null,\r\n    \"font\": \"Segoe UI\",\r\n    \"labelFontSize\": 12,\r\n    \"labelFontWeight\": \"normal\",\r\n    \"labelFontStyle\": \"italic\",\r\n    \"labelColor\": \"#4A4A4A\"\r\n  },\r\n  // facet header\r\n  \"header\": {\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelFontSize\": 18,\r\n    \"labelFontWeight\": \"bold\",\r\n    \"labelFontStyle\": \"italic\",\r\n    \"labelColor\": \"#4A4A4A\"\r\n  },\r\n  \"axisX\": {\r\n    \"title\": false,\r\n    \"ticks\": true,\r\n    \"tickCount\": 10,\r\n    \"domain\": true,\r\n    \"domainWidth\": 2,\r\n    \"domainColor\": \"#A3A3A3\",\r\n    \"offset\": 4,\r\n    \"grid\": true,\r\n    \"gridColor\": \"#EEEEEE\",\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelFontSize\": 10,\r\n    \"labelColor\": \"#4A4A4A\"\r\n  },\r\n  \"axisY\": {\r\n    \"title\": false,\r\n    \"ticks\": false,\r\n    \"domain\": true,\r\n    \"domainWidth\": 2,\r\n    \"domainColor\": \"#A3A3A3\",\r\n    \"offset\": 4,\r\n    // \"grid\": false,\r\n    // \"labels\": false,\r\n    \"labelPadding\": 4,\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelFontSize\": 12,\r\n    \"labelColor\": \"#4A4A4A\"\r\n  },\r\n  \"style\": {\r\n    \"_non_zero_duration_bar_style\": {\r\n      \"cornerRadiusEnd\": 4\r\n    },\r\n    \"_zero_duration_point_style\": {\r\n      \"filled\": true,\r\n      \"size\": 200\r\n    },\r\n    \"_max_duration_rule_style\": {\r\n      \"strokeDash\": [\r\n        3,\r\n        3\r\n      ],\r\n      \"color\": \"#7D7D7D\"\r\n    },\r\n    \"_card_bar_style\": {\r\n      \"cornerRadius\": 8,\r\n      \"color\": \"#DDDDDD\",\r\n      \"stroke\": \"#EEEEEE\"\r\n    },\r\n    \"_card_title_text_style\": {\r\n      \"font\": \"Segoe UI\",\r\n      \"fontSize\": 14,\r\n      \"fontWeight\": \"normal\",\r\n      \"fontStyle\": \"normal\",\r\n      \"color\": \"#4A4A4A\"\r\n    },\r\n    \"_card_value_text_style\": {\r\n      \"font\": \"Segoe UI\",\r\n      \"fontSize\": 24,\r\n      \"fontWeight\": \"bold\",\r\n      \"fontStyle\": \"normal\",\r\n      \"color\": \"#707070\"\r\n    },\r\n    \"_info_bar_style\": {\r\n      \"cornerRadius\": 10,\r\n      \"color\": \"transparent\"\r\n    },\r\n    \"_info_text_style\": {\r\n      \"font\": \"Segoe UI\",\r\n      \"fontSize\": 16,\r\n      \"color\": \"#AAAAAA\"\r\n    }\r\n  }\r\n}",
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "pageId",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__1__",
+        "name": "visualId",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__2__",
+        "name": "visualName",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__3__",
+        "name": "visualType",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__4__",
+        "name": "events_id",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__5__",
+        "name": "events_name",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__6__",
+        "name": "events_start",
+        "description": "",
+        "kind": "column",
+        "type": "dateTime"
+      },
+      {
+        "key": "__7__",
+        "name": "events_end",
+        "description": "",
+        "kind": "column",
+        "type": "dateTime"
+      },
+      {
+        "key": "__8__",
+        "name": "events_parentId",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__9__",
+        "name": "Duration",
+        "description": "",
+        "kind": "measure",
+        "type": "numeric"
+      },
+      {
+        "key": "__10__",
+        "name": "Hierarchy Level",
+        "description": "",
+        "kind": "measure",
+        "type": "numeric"
+      }
+    ]
+  },
+  // text and position only; formatting done in "config\title"
+  "title": {
+    "anchor": "start",
+    "align": "left",
+    "offset": 20,
+    "text": "Performance Analyzer Export Analysis",
+    "subtitle": "Analysis of event duration and decomposition | Multiple Visuals"
+  },
+  // Power BI dataset
+  "data": {
+    "name": "dataset"
+  },
+  "transform": [
+    // remove [User Action] events
+    {
+      "filter": "datum['__5__'] != 'User Action'"
+    },
+    // use an internal development ID for easy dataset identification
+    {
+      "calculate": "1",
+      "as": "_DEV_ID"
+    },
+    // assign internal names to dataset fields
+    {
+      "calculate": "datum['__0__']",
+      "as": "_page_id"
+    },
+    {
+      "calculate": "datum['__1__']",
+      "as": "_visual_id"
+    },
+    {
+      "calculate": "datum['__2__']",
+      "as": "_visual_title"
+    },
+    {
+      "calculate": "datum['__3__']",
+      "as": "_visual_type"
+    },
+    {
+      "calculate": "datum['__4__']",
+      "as": "_event_id"
+    },
+    {
+      "calculate": "datum['__5__']",
+      "as": "_event_name"
+    },
+    {
+      "calculate": "datum['__6__']",
+      "as": "_event_start"
+    },
+    {
+      "calculate": "datum['__7__']",
+      "as": "_event_end"
+    },
+    {
+      "calculate": "round( datum['__9__'] )",
+      "as": "_event_duration"
+    },
+    {
+      "calculate": "datum['__8__']",
+      "as": "_event_parent_id"
+    },
+    {
+      "calculate": "datum['__10__']",
+      "as": "_hierarchy_level"
+    },
+    // further development needed: this is a "quick-and-dirty" "hard-coded" sorting method and will not sort properly if additional event names are present in the dataset 
+    {
+      "calculate": "indexof( ['Visual Container Lifecycle', 'Resolve Parameters', 'Query', 'Query Generation', 'Query Pending', 'Execute Semantic Query', 'Execute DAX Query', 'Execute Query', 'Serialize Rowset', 'Parse Query Result', 'Render', 'Data View Transform', 'Visual Update', 'Visual Update Async'], datum['_event_name'] )",
+      "as": "_event_order"
+    },
+    // adjust Power BI theme colours as desired
+    {
+      "calculate": "datum['_event_name'] == 'Visual Container Lifecycle' ? _event_colour_1 : datum['_event_name'] == 'Query' ? _event_colour_2 : datum['_event_name'] == 'Render' ? _event_colour_2 : datum['_event_name'] == 'Execute Semantic Query' ? _event_colour_3 : pbiColor(7)",
+      "as": "_event_colour"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "min",
+          "field": "_event_start",
+          "as": "_min_event_start"
+        }
+      ],
+      "groupby": [
+        "_visual_id"
+      ]
+    },
+    {
+      "calculate": "round( datum['_event_start'] - datum['_min_event_start'] )",
+      "as": "_event_start_zero"
+    },
+    {
+      "calculate": "round( datum['_event_end'] - datum['_min_event_start'] )",
+      "as": "_event_end_zero"
+    },
+    {
+      "extent": "_event_end_zero",
+      "param": "_event_end_zero_extent_array"
+    }
+  ],
+  "params": [
+    {
+      "name": "_max_event_duration",
+      "expr": "_event_end_zero_extent_array[1]"
+    },
+    {
+      // visual container lifecycle
+      "name": "_event_colour_1",
+      "value": "#E3E3E3"
+    },
+    // query, render
+    {
+      "name": "_event_colour_2",
+      "expr": "pbiColor(3)"
+    },
+    {
+      // execution task
+      "name": "_event_colour_3",
+      "expr": "pbiColor(5)"
+    },
+    {
+      // 0ms event
+      "name": "_event_colour_4",
+      "expr": "pbiColor(7)"
+    }
+  ],
+  "vconcat": [
+    {
+      "name": "LEGEND",
+      "data": {
+        "values": [
+          {
+            "_legend_id": 1,
+            "_legend_size": 1,
+            "_legend_label": "Parent Phase"
+          },
+          {
+            "_legend_id": 2,
+            "_legend_size": 1,
+            "_legend_label": "Execution Task"
+          },
+          {
+            "_legend_id": 3,
+            "_legend_size": 1,
+            "_legend_label": "Container Lifecycle"
+          },
+          {
+            "_legend_id": 4,
+            "_legend_size": 1,
+            "_legend_label": "0ms Event"
+          }
+        ]
+      },
+      "hconcat": [
+        {
+          "name": "LEGEND_LEFT",
+          "width": 370,
+          "height": 20,
+          "transform": [
+            {
+              "filter": "datum['_legend_id'] <= 3"
+            }
+          ],
+          "mark": {
+            "type": "arc",
+            "radius": 0
+          },
+          "encoding": {
+            "theta": {
+              "field": "_legend_size",
+              "type": "quantitative"
+            },
+            "color": {
+              "field": "_legend_label",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "Parent Phase",
+                  "Execution Task",
+                  "Container Lifecycle"
+                ],
+                "range": [
+                  {
+                    "expr": "_event_colour_2"
+                  },
+                  {
+                    "expr": "_event_colour_3"
+                  },
+                  {
+                    "expr": "_event_colour_1"
+                  }
+                ]
+              },
+              "legend": {
+                "orient": "none", // none, top-left, top-right
+                "direction": "horizontal",
+                "legendX": -200,
+                "offset": 0,
+                "symbolType": "square"
+              }
+            }
+          }
+        },
+        {
+          "name": "LEGEND_RIGHT",
+          "width": 370,
+          "height": 20,
+          "transform": [
+            {
+              "filter": "datum['_legend_id'] > 3"
+            }
+          ],
+          "mark": {
+            "type": "arc",
+            "radius": 0
+          },
+          "encoding": {
+            "theta": {
+              "field": "_legend_size",
+              "type": "quantitative"
+            },
+            "color": {
+              "field": "_legend_label",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "0ms Event"
+                ],
+                "range": [
+                  {
+                    "expr": "_event_colour_4"
+                  }
+                ]
+              },
+              "legend": {
+                "orient": "none", // none, top-left, top-right
+                "direction": "horizontal",
+                "legendX": 340,
+                "offset": 0,
+                "symbolType": "diamond"
+              }
+            }
+          }
+        }
+      ],
+      "resolve": {
+        "scale": {
+          "color": "independent"
+        }
+      }
+    },
+    {
+      "facet": {
+        "row": {
+          "field": "_visual_title",
+          "type": "nominal",
+          "header": {
+            "title": null
+          }
+        }
+      },
+      "spec": {
+        "name": "TIMELINE",
+        "transform": [
+          // use an internal development ID for easy dataset identification
+          {
+            "calculate": "4",
+            "as": "_DEV_ID"
+          },
+          {
+            "calculate": "pad( datum['_hierarchy_level'], 2, '0', 'left' ) + '-' + datum['_event_name']",
+            "as": "_event_level_event_name_label"
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "max",
+                "field": "_event_end_zero",
+                "as": "_max_event_duration_x"
+              }
+            ],
+            "groupby": [
+              "_visual_id"
+            ]
+          }
+        ],
+        "encoding": {
+          "y": {
+            "field": "_event_level_event_name_label",
+            "type": "nominal",
+            "axis": {
+              "title": null,
+              "labelAlign": "left",
+              "labelPadding": {
+                "expr": "200 - 10 * ( toNumber( slice( datum.value, 0, 2 ) ) - 1 )"
+              },
+              "labelExpr": "slice( datum.value, 3, 100 ) == 'Visual Container Lifecycle' ? upper( slice( datum.value, 3, 100 ) ) : slice( datum.value, 3, 100 )",
+              "labelFontWeight": {
+                "expr": "indexof( ['Visual Container Lifecycle', 'Query', 'Render'], slice( datum.value, 3, 100 ) ) > -1 ? 'bold' : 'normal'"
+              }
+            },
+            "sort": {
+              "field": "_event_order",
+              "order": "ascending"
+            }
+          },
+          "x": {
+            "type": "quantitative",
+            "axis": {
+              "title": null,
+              "orient": "top",
+              "labelExpr": "datum.value + 'ms'"
+            },
+            "scale": {
+              "domainMax": {
+                // set X axis scale to 10% above maximum
+                "expr": "_max_event_duration + ( _max_event_duration / 10 )"
+              }
+            }
+          }
+        },
+        "layer": [
+          {
+            "name": "NON_ZER0_DURATION_EVENTS_BAR",
+            "width": 780,
+            "height": 300,
+            "transform": [
+              {
+                "filter": "datum['_event_duration'] > 0"
+              }
+            ],
+            "mark": {
+              "type": "bar",
+              "style": "_non_zero_duration_bar_style"
+            },
+            "encoding": {
+              "x": {
+                "field": "_event_start_zero",
+                "axis": {
+                  "labels": false
+                }
+              },
+              "x2": {
+                "field": "_event_end_zero"
+              },
+              "color": {
+                "field": "_event_colour",
+                "type": "nominal",
+                "scale": null
+              }
+            }
+          },
+          {
+            "name": "ZER0_DURATION_EVENTS_DIAMOND",
+            "width": 780,
+            "height": 300,
+            "transform": [
+              {
+                "filter": "datum['_event_duration'] == 0"
+              }
+            ],
+            "mark": {
+              "type": "point",
+              "shape": "diamond",
+              "style": "_zero_duration_point_style"
+            },
+            "encoding": {
+              "x": {
+                "field": "_event_start_zero",
+                "type": "quantitative",
+                "axis": {
+                  "title": null,
+                  "orient": "bottom",
+                  "labelExpr": "datum.value + 'ms'"
+                },
+                "scale": {
+                  "domainMax": {
+                    // set X axis scale to 10% above maximum
+                    "expr": "_max_event_duration + ( _max_event_duration / 10 )"
+                  }
+                }
+              },
+              "color": {
+                "field": "_event_colour",
+                "type": "nominal",
+                "scale": null
+              }
+            }
+          },
+          {
+            "name": "MAX_DURATION",
+            "mark": {
+              "type": "rule",
+              "style": "_max_duration_rule_style"
+            },
+            "encoding": {
+              "x": {
+                "field": "_max_event_duration_x",
+                "type": "quantitative"
+              },
+              // turn off the Y axis
+              "y": null
+            }
+          },
+          {
+            "name": "DURATION_LABELS",
+            "transform": [
+              {
+                "calculate": "datum['_event_duration'] == 0 ? datum['_event_end_zero'] + if( datum['_event_end_zero'] <= 40, 1, 2) : datum['_event_name'] == 'Visual Container Lifecycle' ? datum['_event_end_zero'] : datum['_event_name'] == 'Query' ? datum['_event_start_zero'] : datum['_event_name'] == 'Render' ? datum['_event_start_zero'] : datum['_event_duration'] < 50 ? datum['_event_end_zero'] : datum['_event_start_zero']",
+                "as": "_event_duration_label_x"
+              },
+              {
+                "calculate": "datum['_event_end_zero'] - datum['_event_start_zero']",
+                "as": "_event_duration"
+              }
+            ],
+            "mark": {
+              "type": "text",
+              "align": "left",
+              // adjust offsets as desired
+              "xOffset": 4,
+              "yOffset": 1,
+              "fontWeight": {
+                "expr": "indexof( ['Visual Container Lifecycle', 'Query', 'Render'], datum['_event_name'] ) > -1 ? 'bold' : 'normal'"
+              },
+              "color": {
+                "expr": "indexof( ['Query', 'Render'], datum['_event_name'] ) > -1 ? 'white' : '#4A4A4A'"
+              },
+              "style": "_duration_text_style"
+            },
+            "encoding": {
+              "text": {
+                "field": "_event_duration",
+                "type": "quantitative",
+                "formatType": "pbiFormat",
+                "format": "#,0ms"
+              },
+              "x": {
+                "field": "_event_duration_label_x",
+                "type": "quantitative",
+                "axis": {
+                  "labels": false
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

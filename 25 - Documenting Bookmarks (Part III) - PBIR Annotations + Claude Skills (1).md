@@ -90,7 +90,8 @@ The five interview questions are:
 5. Related Bookmarks: Does this interact with other bookmarks? If so, how?
 ```
 
-<img width="2000" height="1200" alt="VSC_BookmarkQuestions" src="https://github.com/user-attachments/assets/da439369-acbe-44a6-8643-a30576850625" />
+<img width="998" height="280" alt="VSC_BookmarkQuestions" src="https://github.com/user-attachments/assets/abca9cd8-faa6-4bfa-849a-faead8fba109" />
+
 
 
 

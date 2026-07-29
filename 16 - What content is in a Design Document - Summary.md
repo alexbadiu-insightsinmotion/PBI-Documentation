@@ -1,4 +1,5 @@
-![16 - Image - Title - Summary](https://github.com/user-attachments/assets/07269e54-ca4d-4647-99b0-fa8d9e30f425)
+<img width="720" height="360" alt="453031986-07269e54-ca4d-4647-99b0-fa8d9e30f425" src="https://github.com/user-attachments/assets/c7269671-0b88-481b-8739-ff3078ae450f" />
+
 
 **What is a Summary of the main content points in a Design Document?**
 

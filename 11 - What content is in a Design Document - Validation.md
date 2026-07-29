@@ -1,4 +1,5 @@
-<img width="1920" alt="11 - Image - Title - Validation" src="https://github.com/user-attachments/assets/f3e173c7-ea82-461b-bb10-206ec33d1878" />
+<img width="1920" height="960" alt="430164386-f3e173c7-ea82-461b-bb10-206ec33d1878" src="https://github.com/user-attachments/assets/f1f0905b-b135-47fd-bd40-751ff21828cc" />
+
 
 **What Validation characteristics should be described in a Design Document?**
 

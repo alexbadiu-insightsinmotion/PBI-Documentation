@@ -1,4 +1,5 @@
-<img width="1920" alt="15 - Image - Title - Model" src="https://github.com/user-attachments/assets/9806fa6b-945c-4e83-84e6-57e2e5009b59" />
+<img width="1920" height="960" alt="437132339-9806fa6b-945c-4e83-84e6-57e2e5009b59" src="https://github.com/user-attachments/assets/5394d34e-8b71-494e-8645-ca8a9e3cc046" />
+
 
 **What Model characteristics should be described in a Design Document?**
 

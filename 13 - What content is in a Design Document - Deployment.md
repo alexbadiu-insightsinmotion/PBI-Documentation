@@ -1,4 +1,5 @@
-<img width="1920" alt="13 - Image - Title - Deployment" src="https://github.com/user-attachments/assets/b3042ccf-942c-4c28-94d4-a93cc7187c1f" />
+<img width="1920" height="960" alt="435425580-b3042ccf-942c-4c28-94d4-a93cc7187c1f" src="https://github.com/user-attachments/assets/2fc92e49-5e63-49da-a877-e93b33c63606" />
+
 
 **What Deployment characteristics should be described in a Design Document?**
 

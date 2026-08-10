@@ -1185,13 +1185,13 @@ NOTE: include all tooltip values to enable them to be passed to Power BI
 
 Here's the template:
 
-[918.1 - JSON - Deneb Template - Calendar Heat Map - Multiple Languages](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/916.1%20-%20deneb_template.dynamic_sunburst_chart.v1.8.2.json) *** FIX *** <br>
-[918.2 - JSON - Deneb Template - Calendar Heat Map - Single Language](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/916.1%20-%20deneb_template.dynamic_sunburst_chart.v1.8.2.json) *** FIX *** <br>
+[918.1 - JSON - Deneb Template - Calendar Heat Map - Multiple Languages](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/918.1%20-%20deneb_template.calendar_heat_map_multiple_languages.v1.9.1.json) <br>
+[918.2 - JSON - Deneb Template - Calendar Heat Map - Single Language](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/918.2%20-%20deneb_template.calendar_heat_map_single_language.v1.9.1.json) <br>
 
 <br>
 
 Here's an example Power BI file using the template:
 
-[918.3 - PBIX - Deneb Example - Calendar Heat Map](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/916.2%20-%20Deneb%20Reusable%20Components%20-%20Dynamic%20Sunburst%20Chart%20-%20V1.8.2.pbix) *** FIX *** <br>
+[918.3 - PBIX - Deneb Example - Calendar Heat Map](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/918.3%20-%20Deneb%20Reusable%20Components%20-%20Calendar%20Heat%20Map%20-%20V1.9.1.pbix) <br>
 
 *- eof*

@@ -116,7 +116,7 @@ Here's a listing of the assets contained herein:
 
 <br><br>
 
-- [218 - Calendar Heat Map](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/217%20-%20Performance%20Analysis%20(Deneb%20Template).md)
+- [218 - Calendar Heat Map](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/218%20-%20Calendar%20Heat%20Map%20(Deneb%20Template).md)
 
 https://github.com/user-attachments/assets/ffa650f0-a8f1-48a1-a8a1-4ac53a6e7ac9
 

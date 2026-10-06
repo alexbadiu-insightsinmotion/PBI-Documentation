@@ -4,7 +4,7 @@ Here's a listing of the assets contained herein:
 
 ### Deneb templates:
 
-- [219 - Sentiment Analysys](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/218%20-%20Calendar%20Heat%20Map%20(Deneb%20Template).md)
+- [219 - Sentiment Analysys](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/219%20-%20Sentiment%20Analysis%20(Deneb%20Template).md)
 
 https://github.com/user-attachments/assets/4c326af1-9fa6-49ef-9b52-9e45d2d7a6d7
 

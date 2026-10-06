@@ -1,0 +1,1492 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "usermeta": {
+    "information": {
+      "uuid": "9b791ac6-5d44-4d1a-8e6a-8c2c818b2e1b",
+      "generated": "2026-10-05T10:35:51.961Z",
+      "previewImageBase64PNG": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
+      "name": "Sentiment Analysis",
+      "description": "A divergent stacked sentiment bar chart with a separate neutral panel; both panels share one common scale. A custom tooltip is used for the non-neutral (positive, negative) responses, while a  standard Deneb/Vega-Lite tooltip is passed to the Power BI tooltip handler for the neutral responses.",
+      "author": "Greg Philps"
+    },
+    "deneb": {
+      "build": "2.0.0",
+      "metaVersion": 2,
+      "provider": "vegaLite",
+      "providerVersion": "6.4.3"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "contextMenuSelector": true,
+      "selection": false,
+      "selectionMode": "simple",
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "config": "{\r\n  \"view\": {\r\n    \"stroke\": null\r\n  },\r\n  \"autosize\": {\r\n    \"type\": \"fit\",\r\n    \"contains\": \"padding\"\r\n  },\r\n  \"font\": \"Segoe UI\", // global font\r\n  // use the same height for all bars\r\n  \"bar\": {\r\n    \"height\": {\r\n      \"band\": 0.65\r\n    },\r\n    \"stroke\": \"white\",\r\n    \"strokeWidth\": 1\r\n  },\r\n  // use the same values for both the visual title and the chart titles\r\n  \"title\": {\r\n    \"font\": \"Georgia, 'Segoe UI'\", // specific font (c/w fallback)\r\n    \"fontSize\": 24,\r\n    \"fontWeight\": \"bold\",\r\n    \"fontStyle\": \"italic\",\r\n    \"color\": \"#4A4A4A\",\r\n    \"subtitleFont\": \"Georgia, 'Segoe UI'\", // specific font (c/w fallback)\r\n    \"subtitleFontSize\": 12,\r\n    \"subtitleFontWeight\": \"normal\",\r\n    \"subtitleFontStyle\": \"italic\",\r\n    \"subtitleColor\": \"#969696\"\r\n  },\r\n  \"axisX\": {\r\n    \"ticks\": false,\r\n    \"domain\": true,\r\n    \"domainColor\": \"#A3A3A3\",\r\n    \"grid\": true,\r\n    \"gridColor\": \"#E3E3E3\",\r\n    \"labelFontStyle\": \"normal\",\r\n    \"labelColor\": \"#969696\"\r\n  },\r\n  \"axisY\": {\r\n    \"ticks\": false,\r\n    \"grid\": false,\r\n    \"domain\": false,\r\n    \"labelFontSize\": 14,\r\n    \"labelFontWeight\": \"normal\",\r\n    \"labelFontStyle\": \"normal\",\r\n    \"labelColor\": \"#4A4A4A\"\r\n  },\r\n  \"style\": {\r\n    // legend strip in the HEADER panel\r\n    \"_header_rule_style\": {\r\n      \"color\": \"#D9D2C7\",\r\n      \"strokeWidth\": 1\r\n    },\r\n    \"_legend_label_text_style\": {\r\n      \"fontSize\": 12,\r\n      \"fontWeight\": \"normal\",\r\n      \"fontStyle\": \"normal\",\r\n      \"color\": \"#7D7D7D\"\r\n    },\r\n    \"_sentiment_title_text_style\": {\r\n      \"font\": \"Georgia, 'Segoe UI'\", // specific font (c/w fallback)\r\n      \"fontSize\": 14,\r\n      \"fontWeight\": \"normal\",\r\n      \"fontStyle\": \"normal\",\r\n      \"color\": \"#A29889\"\r\n    },\r\n    \"_sentiment_divider_rule_style\": {\r\n      \"strokeWidth\": 1,\r\n      \"color\": \"#A29889\"\r\n    },\r\n    \"_non_neutral_vertical_zero_rule_style\": {\r\n      \"color\": \"#A3A3A3\"\r\n    },\r\n    \"_question_class_percent_text_style\": {\r\n      \"font\": \"Georgia, 'Segoe UI'\", // specific font (c/w fallback)\r\n      \"fontSize\": 16,\r\n      \"fontWeight\": \"bold\",\r\n      \"fontStyle\": \"italic\",\r\n      \"color\": \"#575757\"\r\n    },\r\n    \"_tooltip_card_rect_style\": {\r\n      \"color\": \"#FFFFFF\",\r\n      \"opacity\": 1,\r\n      \"stroke\": \"#E6E0D6\",\r\n      \"strokeWidth\": 1,\r\n      \"cornerRadius\": 8\r\n    },\r\n    \"_tooltip_category_text_style\": {\r\n      \"font\": \"'Segoe UI', Tahoma\", // specific font (c/w fallback)\r\n      \"fontSize\": 12,\r\n      \"fontWeight\": \"normal\",\r\n      \"fontStyle\": \"italic\",\r\n      \"color\": \"#A29889\"\r\n    },\r\n    \"_tooltip_choice_text_style\": {\r\n      \"font\": \"Georgia, 'Segoe UI'\", // specific font (c/w fallback)\r\n      \"fontSize\": 17,\r\n      \"fontWeight\": \"normal\",\r\n      \"fontStyle\": \"italic\",\r\n      \"color\": \"#3D3A36\"\r\n    },\r\n    \"_tooltip_divider_rect_style\": {\r\n      \"color\": \"#E6E0D6\",\r\n      \"opacity\": 1\r\n    },\r\n    \"_tooltip_labels_text_style\": {\r\n      \"font\": \"'Segoe UI', Tahoma\", // specific font (c/w fallback)\r\n      \"fontSize\": 11,\r\n      \"fontWeight\": \"normal\",\r\n      \"fontStyle\": \"normal\",\r\n      \"color\": \"#5A4A38\"\r\n    },\r\n    \"_tooltip_values_text_style\": {\r\n      \"font\": \"'Segoe UI', Tahoma\", // specific font (c/w fallback)\r\n      \"fontSize\": 11,\r\n      \"fontWeight\": \"bold\",\r\n      \"fontStyle\": \"normal\",\r\n      \"color\": \"#3D3A36\"\r\n    }\r\n  }\r\n}",
+    "datasets": {
+      "dataset": [
+        {
+          "key": "__dataset.0__",
+          "name": "Question Group ID",
+          "description": "",
+          "kind": "column",
+          "type": "numeric",
+          "supportFieldConfiguration": {
+            "highlight": false,
+            "highlightStatus": false,
+            "highlightComparator": false,
+            "format": false,
+            "formatted": false,
+            "names": false
+          }
+        },
+        {
+          "key": "__dataset.1__",
+          "name": "Question Short",
+          "description": "",
+          "kind": "column",
+          "type": "text"
+        },
+        {
+          "key": "__dataset.2__",
+          "name": "Question",
+          "description": "",
+          "kind": "column",
+          "type": "text",
+          "supportFieldConfiguration": {
+            "highlight": false,
+            "highlightStatus": false,
+            "highlightComparator": false,
+            "format": false,
+            "formatted": false,
+            "names": false
+          }
+        },
+        {
+          "key": "__dataset.3__",
+          "name": "Question ID",
+          "description": "",
+          "kind": "column",
+          "type": "numeric",
+          "supportFieldConfiguration": {
+            "highlight": false,
+            "highlightStatus": false,
+            "highlightComparator": false,
+            "format": false,
+            "formatted": false,
+            "names": false
+          }
+        },
+        {
+          "key": "__dataset.4__",
+          "name": "Category",
+          "description": "",
+          "kind": "column",
+          "type": "text",
+          "supportFieldConfiguration": {
+            "highlight": false,
+            "highlightStatus": false,
+            "highlightComparator": false,
+            "format": false,
+            "formatted": false,
+            "names": false
+          }
+        },
+        {
+          "key": "__dataset.5__",
+          "name": "Choice ID",
+          "description": "",
+          "kind": "column",
+          "type": "numeric",
+          "supportFieldConfiguration": {
+            "highlight": false,
+            "highlightStatus": false,
+            "highlightComparator": false,
+            "format": false,
+            "formatted": false,
+            "names": false
+          }
+        },
+        {
+          "key": "__dataset.6__",
+          "name": "Choice",
+          "description": "",
+          "kind": "column",
+          "type": "text",
+          "supportFieldConfiguration": {
+            "highlight": false,
+            "highlightStatus": false,
+            "highlightComparator": false,
+            "format": false,
+            "formatted": false,
+            "names": false
+          }
+        },
+        {
+          "key": "__dataset.7__",
+          "name": "Choice Class",
+          "description": "",
+          "kind": "measure",
+          "type": "text",
+          "supportFieldConfiguration": {
+            "highlight": false,
+            "highlightStatus": false,
+            "highlightComparator": false,
+            "format": false,
+            "formatted": false,
+            "names": false
+          }
+        },
+        {
+          "key": "__dataset.8__",
+          "name": "Count of Responses",
+          "description": "",
+          "kind": "measure",
+          "type": "numeric",
+          "supportFieldConfiguration": {
+            "highlight": false,
+            "highlightStatus": false,
+            "highlightComparator": false,
+            "format": false,
+            "formatted": false,
+            "names": false
+          }
+        }
+      ]
+    }
+  },
+  /*
+  "usermeta": {
+    "title": "Deneb Sentiment Analysis",
+    "author": "Greg Philps",
+    "date": "2026-10-05",
+    "deneb version": "2.0.0",
+    "power bi desktop version": "2.158.1177.0",
+    "description": "Divergent stacked sentiment bar with a separate neutral panel; all three panels share one common scale", 
+    "notes": "The tooltip CARD is drawn as marks inside the panel and uses named styles for formatting: the standard Deneb/Vega-Lite tooltip passed to the Power BI tooltip handler cannot be styled, so a designed card has to be purpose-built in the spec",
+    "template notes": "usermeta object is used by the Deneb template generation process and is thus overwritten, hence added here as a comment"
+  },
+  */
+  "title": {
+    "anchor": "start",
+    "align": "left",
+    "offset": 20,
+    "text": "Deneb Sentiment Analysis",
+    // in statistic reporting, n = sample size
+    "subtitle": {
+      "expr": "['Fictitious vehicle satisfaction survey data | n = ' + pbiFormat( data('data_0')[0]['_category_total'], '#,#' ) + ' responses', 'Category and class totals may not sum to exactly 100% due to rounding']"
+    }
+  },
+  // standard Power BI dataset  
+  "data": {
+    "name": "dataset"
+  },
+  "transform": [
+    // assign dev id to help identify dataset in data pane
+    {
+      "calculate": "1",
+      "as": "_DEV_ID"
+    },
+    // assign internal names to dataset fields
+    {
+      "calculate": "datum['__dataset.0__']",
+      "as": "_question_group_id"
+    },
+    {
+      "calculate": "datum['__dataset.1__']",
+      "as": "_question_group_short"
+    },
+    {
+      "calculate": "datum['__dataset.2__']",
+      "as": "_question"
+    },
+    {
+      "calculate": "datum['__dataset.3__']",
+      "as": "_question_id"
+    },
+    {
+      "calculate": "datum['__dataset.4__']",
+      "as": "_category"
+    },
+    {
+      "calculate": "datum['__dataset.6__']",
+      "as": "_choice"
+    },
+    {
+      "calculate": "datum['__dataset.5__']",
+      "as": "_choice_id"
+    },
+    {
+      "calculate": "datum['__dataset.7__']",
+      "as": "_choice_class"
+    },
+    {
+      "calculate": "datum['__dataset.8__']",
+      "as": "_count_of_responses"
+    },
+    // discard any groups/questions/choices with no responses
+    {
+      "filter": "datum['_count_of_responses'] != null"
+    },
+    // rank the questions
+    {
+      "window": [
+        {
+          "op": "dense_rank",
+          "as": "_question_id_rank_asc"
+        }
+      ],
+      "groupby": [
+        "_question_group_id"
+      ],
+      "sort": [
+        {
+          "field": "_question_id",
+          "order": "ascending"
+        }
+      ]
+    },
+    // calculate the bar colour
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "_choice_rank_asc"
+        }
+      ],
+      "groupby": [
+        "_question_id"
+      ],
+      "sort": [
+        {
+          "field": "_choice_id",
+          "order": "ascending"
+        }
+      ]
+    },
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "_choice_rank_desc"
+        }
+      ],
+      "groupby": [
+        "_question_id"
+      ],
+      "sort": [
+        {
+          "field": "_choice_id",
+          "order": "descending"
+        }
+      ]
+    },
+    // calculate the [shadePercent] value to use with the use of Power Bi theme colours (in this case, sentiment colours) as enabled by Deneb
+    // https://deneb.guide/docs/schemes#expression-based-access-using-pbicolor
+    {
+      "calculate": "datum['_choice_class'] == 'Positive' ? -0.1 + ( datum['_choice_rank_asc'] * _shade_percent_reduction ) : datum['_choice_class'] == 'Negative' ? -0.1 + ( datum['_choice_rank_desc'] * _shade_percent_reduction ) : datum['_choice_class'] == 'Neutral' ? 1 : 1",
+      "as": "_choice_bar_shade_percent"
+    },
+    // round the value to 2 decimal places
+    {
+      "calculate": "toNumber( format( datum['_choice_bar_shade_percent'], '.2f' ) )",
+      "as": "_choice_bar_shade_percent"
+    },
+    {
+      "calculate": "datum['_choice_class'] == 'Positive' ? pbiColor('positive', datum['_choice_bar_shade_percent']) : datum['_choice_class'] == 'Negative' ? pbiColor('negative', datum['_choice_bar_shade_percent']) : datum['_choice_class'] == 'Neutral' ? pbiColor('neutral') : 'blue'",
+      "as": "_choice_bar_colour"
+    },
+    // 1st ranked choice in each class is white, else #5A4A38
+    {
+      "calculate": "datum['_choice_class'] == 'Positive' && datum['_choice_rank_asc'] > 1 ? '#5A4A38' : datum['_choice_class'] == 'Negative' && datum['_choice_rank_desc'] > 1 ? '#5A4A38' : '#FFFFFF'",
+      "as": "_choice_label_colour"
+    },
+    // compose a composite category label
+    {
+      "calculate": "pad( datum['_question_id'], 2, '0', 'left') + '-' + datum['_category']",
+      "as": "_category_label"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "_count_of_responses",
+          "as": "_category_total"
+        }
+      ],
+      "groupby": [
+        "_category"
+      ]
+    },
+    {
+      "calculate": "100 * datum['_count_of_responses'] / datum['_category_total']",
+      "as": "_category_percent"
+    },
+    {
+      "calculate": "datum['_category_percent'] / 100",
+      "as": "_category_percent_decimal"
+    },
+    {
+      "calculate": "if( datum['_choice_class'] == 'Negative', datum['_category_percent'], 0 )",
+      "as": "_negative_percent"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "_count_of_responses",
+          "as": "_category_class_responses"
+        },
+        {
+          "op": "sum",
+          "field": "_category_percent_decimal",
+          "as": "_category_class_percent_decimal"
+        }
+      ],
+      "groupby": [
+        "_question_id",
+        "_choice_class"
+      ]
+    },
+    // round the value to 2 decimal places
+    {
+      "calculate": "toNumber( format( datum['_category_class_percent_decimal'], '.4f' ) )",
+      "as": "_category_class_percent_decimal"
+    },
+    // stack the choice bars within a class/category and determine the stacked starting and ending X data values
+    {
+      "stack": "_category_percent",
+      "as": [
+        "_v1",
+        "_v2"
+      ],
+      "groupby": [
+        "_category"
+      ],
+      "sort": [
+        {
+          "field": "_choice_rank_desc",
+          "order": "ascending"
+        }
+      ]
+    },
+    // determine the offset required to display both negative and positive values on the same visual
+    {
+      "joinaggregate": [
+        {
+          "field": "_negative_percent",
+          "op": "sum",
+          "as": "_offset"
+        }
+      ],
+      "groupby": [
+        "_category"
+      ]
+    },
+    {
+      "calculate": "if( datum['_choice_class'] == 'Neutral', datum['_category_percent'], 0 )",
+      "as": "_neutral_percent"
+    },
+    // determine the adjustment of neutral choice bars
+    {
+      "joinaggregate": [
+        {
+          "field": "_neutral_percent",
+          "op": "sum",
+          "as": "_neutral_adjustment_base"
+        }
+      ],
+      "groupby": [
+        "_category"
+      ]
+    },
+    {
+      "calculate": "datum['_choice_class'] == 'Positive' ? datum['_neutral_adjustment_base'] : 0",
+      "as": "_neutral_adjustment"
+    },
+    {
+      "calculate": "datum['_v1'] - datum['_offset'] - datum['_neutral_adjustment']",
+      "as": "_choice_x_start"
+    },
+    {
+      "calculate": "datum['_v2'] - datum['_offset'] - datum['_neutral_adjustment']",
+      "as": "_choice_x_end"
+    },
+    {
+      "calculate": "datum['_choice_x_start'] + ( ( datum['_choice_x_end'] - datum['_choice_x_start'] ) / 2 )",
+      "as": "_choice_x_mid"
+    },
+    {
+      "calculate": "replace( datum['_question'], '<category>', lower( datum['_category'] ) )",
+      "as": "_question_with_category"
+    },
+    // =====================================================================
+    // >>> CUSTOM TOOLTIP - positioning support (start)
+    // Pixel geometry of the hovered segment within the NON-NEUTRAL panel.
+    // The card is placed off the segment END: to the right if it fits there,
+    // otherwise to the left, then clamped so it can never leave the panel
+    // (a mark outside a concat child's bounds grows those bounds and reflows
+    // the whole chart on every pointer move).
+    // =====================================================================
+    // row index as the y band scale orders it (nominal, ascending on _category_label)
+    {
+      "window": [
+        {
+          "op": "dense_rank",
+          "as": "_tt_row_index"
+        }
+      ],
+      "sort": [
+        {
+          "field": "_category_label",
+          "order": "ascending"
+        }
+      ]
+    },
+    // number of rows in the y band scale, so the card can be clamped vertically
+    {
+      "joinaggregate": [
+        {
+          "op": "distinct",
+          "field": "_category_label",
+          "as": "_tt_row_count"
+        }
+      ]
+    },
+    // segment midpoint / end / start, converted from percent space to pixels
+    {
+      "calculate": "( datum['_choice_x_mid'] - _tt_domain_min ) * _tt_px_per_percent",
+      "as": "_tt_label_px"
+    },
+    {
+      "calculate": "( datum['_choice_x_end'] - _tt_domain_min ) * _tt_px_per_percent",
+      "as": "_tt_right_px"
+    },
+    {
+      "calculate": "( datum['_choice_x_start'] - _tt_domain_min ) * _tt_px_per_percent",
+      "as": "_tt_left_px"
+    },
+    // 1 = card to the right of the segment, -1 = to the left
+    {
+      "calculate": "datum['_tt_right_px'] + _tt_gap + _tt_width <= _tt_panel_width ? 1 : -1",
+      "as": "_tt_side"
+    },
+    // horizontal offset of the card centre, measured from the segment midpoint
+    // (the x channel of the tooltip layer encodes _choice_x_mid)
+    {
+      "calculate": "clamp( ( datum['_tt_side'] == 1 ? datum['_tt_right_px'] : datum['_tt_left_px'] ) + datum['_tt_side'] * ( _tt_gap + _tt_width / 2 ), _tt_width / 2, _tt_panel_width - _tt_width / 2 ) - datum['_tt_label_px']",
+      "as": "_tt_dx"
+    },
+    // vertical offset: centred on the hovered row, clamped to the top and bottom of the panel
+    {
+      "calculate": "clamp( 0, _tt_height / 2 - ( datum['_tt_row_index'] - 0.5 ) * _tt_row_step, datum['_tt_row_count'] * _tt_row_step - _tt_height / 2 - ( datum['_tt_row_index'] - 0.5 ) * _tt_row_step )",
+      "as": "_tt_dy"
+    }
+    // =====================================================================
+    // <<< CUSTOM TOOLTIP - positioning support (end)
+    // =====================================================================      
+  ],
+  "params": [
+    {
+      // the amount each successive choice within a class reduced the shading
+      "name": "_shade_percent_reduction",
+      "value": 0.25
+    },
+    // width of the gutter left of the panels
+    {
+      "name": "_label_gutter",
+      "value": 200
+    },
+    // full width of the header rule / legend strip
+    {
+      "name": "_strip_width",
+      "value": 1640
+    },
+    // =====================================================================
+    // >>> CUSTOM TOOLTIP - params (start)
+    // =====================================================================
+    // ---- geometry of the NON-NEUTRAL panel ------------------------------
+    // Vega-Lite width / height do NOT accept {"expr": ...}, so these mirror
+    // literals written elsewhere in the spec. KEEP THEM IN SYNC:
+    //   _tt_domain_min / _tt_domain_max  <->  NON-NEUTRAL_BAR x scale domain
+    //   _tt_panel_width                  <->  NON-NEUTRAL_BAR "width"
+    //   _tt_row_step                     <->  NON-NEUTRAL_CLASS_LABEL "height": {"step"}
+    {
+      "name": "_tt_domain_min",
+      "value": -100
+    },
+    {
+      "name": "_tt_domain_max",
+      "value": 100
+    },
+    {
+      "name": "_tt_panel_width",
+      "value": 800
+    },
+    {
+      "name": "_tt_row_step",
+      "value": 60
+    },
+    // derived: pixels per 1% on the NON-NEUTRAL x scale
+    {
+      "name": "_tt_px_per_percent",
+      "expr": "_tt_panel_width / ( _tt_domain_max - _tt_domain_min )"
+    },
+    // the tooltip "CARD" panel must be at least [_tt_height] tall (rows * _tt_row_step), otherwise the card overflows it; reduce _tt_height for short charts
+    {
+      "name": "_tt_width",
+      "value": 370
+    },
+    {
+      "name": "_tt_height",
+      "value": 230
+    },
+    // gap between the hovered segment and the near edge of the card
+    {
+      "name": "_tt_gap",
+      "value": 18
+    },
+    // inner padding
+    {
+      "name": "_tt_pad",
+      "value": 22
+    },
+    // baseline-to-baseline spacing of the four value rows
+    {
+      "name": "_tt_row_height",
+      "value": 29
+    },
+    // vertical offsets of the card's contents, measured from the card's top edge
+    {
+      "name": "_tt_category_y",
+      "value": 20
+    },
+    {
+      "name": "_tt_choice_y",
+      "value": 46
+    },
+    {
+      "name": "_tt_divider_y",
+      "value": 83
+    },
+    {
+      "name": "_tt_rows_y",
+      "value": 102
+    }
+    // =====================================================================
+    // <<< CUSTOM TOOLTIP - params (end)
+    // =====================================================================
+  ],
+  "vconcat": [
+    {
+      "name": "HEADER",
+      "height": 10,
+      "width": 1200,
+      "transform": [
+        // assign dev id to help identify dataset in data pane
+        {
+          "calculate": "2",
+          "as": "_DEV_ID"
+        },
+        {
+          "calculate": "( datum['_choice_rank_desc'] - 1 ) * 240",
+          "as": "_legend_shape_x"
+        },
+        {
+          "filter": "datum['_question_id_rank_asc'] == 1"
+        }
+      ],
+      "layer": [
+        {
+          "name": "HEADER_RULE",
+          "transform": [
+            // one row only, so the rule is drawn once
+            {
+              "filter": "datum['_choice_rank_asc'] == 1"
+            }
+          ],
+          "mark": {
+            "type": "rule",
+            "style": "_header_rule_style",
+            "yOffset": -30
+          },
+          "encoding": {
+            "x": {
+              "datum": -40,
+              "type": "quantitative",
+              "axis": null
+            },
+            "x2": {
+              "datum": 1800,
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "name": "LEGEND_SHAPES",
+          "mark": {
+            "type": "circle",
+            "size": 300,
+            "xOffset": -24 // adjust as desired
+          },
+          "encoding": {
+            "x": {
+              "field": "_legend_shape_x",
+              "type": "quantitative",
+              "scale": {
+                // origin shifted left by _label_gutter so the strip starts flush with the category labels rather than at the panel edge
+                "domain": [
+                  {
+                    "expr": "_label_gutter"
+                  },
+                  {
+                    "expr": "_strip_width"
+                  }
+                ],
+                // zero:false / nice:false are mandatory: Vega-Lite otherwise forces 0 into the domain and rounds it, which silently discards the shifted origin
+                "zero": false,
+                "nice": false
+              },
+              "axis": null
+            },
+            "color": {
+              "field": "_choice_bar_colour",
+              "type": "nominal",
+              "scale": null
+            }
+          }
+        },
+        {
+          "name": "LEGEND_LABELS",
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "xOffset": 8,
+            "yOffset": 1,
+            "limit": 160, // maximum length of the text mark in pixels (ellipsis added to truncated text) adjust as desired
+            "style": "_legend_label_text_style"
+          },
+          "encoding": {
+            "x": {
+              "field": "_legend_shape_x",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "_choice",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "spacing": 60, // make room for the positive class/question totals; adjust as desired
+      "hconcat": [
+        {
+          "name": "NON-NEUTRAL",
+          "layer": [
+            {
+              "name": "NON-NEUTRAL_BAR",
+              "width": 800, // set to 2x width of [NEUTRAL_BAR]
+              "transform": [
+                // assign dev id to help identify dataset in data pane
+                {
+                  "calculate": "3",
+                  "as": "_DEV_ID"
+                },
+                {
+                  "filter": "datum['_choice_class'] != 'Neutral'"
+                }
+              ],
+              // =====================================================================
+              // >>> CUSTOM TOOLTIP (start)
+              // drives the tooltip card and the hovered segment outline. A plain
+              // Vega-Lite point selection, NOT Power BI cross-filtering: Deneb's
+              // selection interactivity stays off, so this is purely local view state.
+              // =====================================================================
+              "params": [
+                {
+                  "name": "_tt_hover_non_neutral",
+                  "select": {
+                    "type": "point",
+                    "fields": [
+                      "_question_id",
+                      "_choice_id"
+                    ],
+                    "on": "pointerover",
+                    "clear": "pointerout",
+                    "resolve": "global"
+                  }
+                }
+              ],
+              // =====================================================================
+              // <<< CUSTOM TOOLTIP (end)
+              // =====================================================================
+              "mark": {
+                "type": "bar",
+                // round the ends of only rank = 1 (asc OR desc), else 0
+                // adjust rounding as desired
+                "cornerRadiusTopLeft": {
+                  "expr": "datum['_choice_class'] == 'Negative' && datum['_choice_rank_desc'] == 1 ? 2 : 0"
+                },
+                "cornerRadiusBottomLeft": {
+                  "expr": "datum['_choice_class'] == 'Negative' && datum['_choice_rank_desc'] == 1 ? 2 : 0"
+                },
+                "cornerRadiusTopRight": {
+                  "expr": "datum['_choice_class'] == 'Positive' && datum['_choice_rank_asc'] == 1 ? 2 : 0"
+                },
+                "cornerRadiusBottomRight": {
+                  "expr": "datum['_choice_class'] == 'Positive' && datum['_choice_rank_asc'] == 1 ? 2 : 0"
+                }
+                // native Power BI tooltip removed: the custom card (NON_NEUTRAL_TOOLTIP) replaces it
+              },
+              "encoding": {
+                "x": {
+                  "field": "_choice_x_start",
+                  "type": "quantitative",
+                  "scale": {
+                    "domain": [
+                      -100,
+                      100
+                    ],
+                    "clamp": true // If true, values that exceed the data domain are clamped to either the minimum or maximum range value
+                  },
+                  "axis": {
+                    "title": null,
+                    "tickCount": 10,
+                    "labelExpr": "abs( datum.value )",
+                    "labelFontSize": {
+                      "expr": "datum.value == 0 ? 18 : 12"
+                    },
+                    "labelFontWeight": {
+                      "expr": "datum.value == 0 ? 'bold' : 'normal'"
+                    }
+                  }
+                },
+                "x2": {
+                  "field": "_choice_x_end"
+                },
+                "y": {
+                  "field": "_category_label",
+                  "type": "nominal",
+                  "axis": {
+                    "title": null,
+                    "labelExpr": "substring( datum.value, 3, 100 )",
+                    "labelAlign": "left",
+                    "labelBaseline": "middle",
+                    "labelPadding": 200 // offset the Y-axis labels to the left
+                  }
+                },
+                "color": {
+                  "field": "_choice_bar_colour",
+                  "type": "nominal",
+                  "scale": null
+                }
+              }
+            },
+            {
+              "name": "NON-NEUTRAL_LABEL",
+              "transform": [
+                // assign dev id to help identify dataset in data pane
+                {
+                  "calculate": "4",
+                  "as": "_DEV_ID"
+                },
+                {
+                  "filter": "datum['_choice_class'] != 'Neutral'"
+                },
+                {
+                  "filter": "datum['_category_percent'] >= 5"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "baseline": "middle",
+                "align": "center",
+                "yOffset": 1 // adjust vertical placement of data label
+              },
+              "encoding": {
+                "text": {
+                  "field": "_category_percent_decimal",
+                  "type": "quantitative",
+                  "formatType": "pbiFormat",
+                  // adjust Power BI format string as desired
+                  "format": "#.%"
+                },
+                "x": {
+                  "field": "_choice_x_mid",
+                  "type": "quantitative"
+                },
+                "y": {
+                  "field": "_category_label",
+                  "type": "nominal"
+                },
+                "color": {
+                  "field": "_choice_label_colour",
+                  "type": "nominal",
+                  "scale": null
+                }
+              }
+            },
+            {
+              "name": "NON-NEUTRAL_CLASS_LABEL",
+              "height": {
+                "step": 60
+              },
+              "transform": [
+                // assign dev id to help identify dataset in data pane
+                {
+                  "calculate": "5",
+                  "as": "_DEV_ID"
+                },
+                {
+                  "filter": "datum['_choice_class'] != 'Neutral'"
+                },
+                {
+                  "filter": "datum['_choice_rank_asc'] == 1 || datum['_choice_rank_desc'] == 1"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": {
+                  "expr": "datum['_choice_class'] == 'Positive' ? 'left' : 'right'"
+                },
+                "x": {
+                  "expr": "datum['_choice_class'] == 'Positive' ? 800 : 0"
+                },
+                "xOffset": {
+                  "expr": "datum['_choice_class'] == 'Positive' ? 4 : -4"
+                },
+                "style": "_question_class_percent_text_style"
+              },
+              "encoding": {
+                "text": {
+                  "field": "_category_class_percent_decimal",
+                  "type": "quantitative",
+                  "formatType": "pbiFormat",
+                  // adjust Power BI format string as desired
+                  "format": "#.%"
+                },
+                "y": {
+                  "field": "_category_label",
+                  "type": "nominal"
+                }
+              }
+            },
+            {
+              "name": "NON_NETURAL_SINGLE_MARKS",
+              "transform": [
+                // assign dev id to help identify dataset in data pane
+                {
+                  "calculate": "6",
+                  "as": "_DEV_ID"
+                },
+                // restrict dataset to a single row
+                {
+                  "filter": "datum['__row__'] == 0"
+                }
+              ],
+              "layer": [
+                {
+                  "name": "NON_NEUTRAL_VERTICAL_ZERO_RULE",
+                  "mark": {
+                    "type": "rule",
+                    "style": "_non_neutral_vertical_zero_rule_style"
+                  },
+                  "encoding": {
+                    "x": {
+                      "datum": 0
+                    }
+                  }
+                },
+                {
+                  "name": "NEGATIVE_HORIZONTAL_RULE",
+                  "mark": {
+                    "type": "rule",
+                    "style": "_sentiment_divider_rule_style"
+                  },
+                  "encoding": {
+                    "x": {
+                      "datum": -100
+                    },
+                    "x2": {
+                      "datum": -1
+                    },
+                    "y": {
+                      "value": -10
+                    }
+                  }
+                },
+                {
+                  "name": "POSITIVE_HORIZONTAL_RULE",
+                  "mark": {
+                    "type": "rule",
+                    "style": "_sentiment_divider_rule_style"
+                  },
+                  "encoding": {
+                    "x": {
+                      "datum": 1
+                    },
+                    "x2": {
+                      "datum": 100
+                    },
+                    "y": {
+                      "value": -10
+                    }
+                  }
+                },
+                {
+                  "name": "NEGATIVE_TITLE",
+                  "mark": {
+                    "type": "text",
+                    "style": "_sentiment_title_text_style"
+                  },
+                  "encoding": {
+                    "text": {
+                      "value": "NEGATIVE"
+                    },
+                    "x": {
+                      "datum": -50
+                    },
+                    "y": {
+                      "value": -24
+                    }
+                  }
+                },
+                {
+                  "name": "POSITIVE_TITLE",
+                  "mark": {
+                    "type": "text",
+                    "style": "_sentiment_title_text_style"
+                  },
+                  "encoding": {
+                    "text": {
+                      "value": "POSITIVE"
+                    },
+                    "x": {
+                      "datum": 50
+                    },
+                    "y": {
+                      "value": -24
+                    }
+                  }
+                }
+              ]
+            },
+            // =================================================================
+            // >>> CUSTOM TOOLTIP - hovered segment outline
+            // Separate overlay so NON-NEUTRAL_BAR keeps its original encoding
+            // (and the segment gaps coming from its default stroke).
+            // =================================================================
+            {
+              "name": "NON_NEUTRAL_HOVER_OUTLINE",
+              "transform": [
+                // assign dev id to help identify dataset in data pane
+                {
+                  "calculate": "12",
+                  "as": "_DEV_ID"
+                },
+                {
+                  "filter": "datum['_choice_class'] != 'Neutral'"
+                },
+                // Resolve the hovered key out of the selection and compare it in an
+                // expression. Consuming a selection through "filter": {"param": ...} or
+                // "condition": {"param": ...} is not supported in Deneb and renders blank.
+                {
+                  "filter": "datum['_question_id'] == _tt_hover_non_neutral._question_id && datum['_choice_id'] == _tt_hover_non_neutral._choice_id"
+                }
+              ],
+              "mark": {
+                "type": "bar",
+                // named styles don't work here for bar formatting, so included here
+                "fill": null,
+                "stroke": "#3D3A36",
+                "strokeWidth": 2
+              },
+              "encoding": {
+                "x": {
+                  "field": "_choice_x_start",
+                  "type": "quantitative"
+                },
+                "x2": {
+                  "field": "_choice_x_end"
+                },
+                "y": {
+                  "field": "_category_label",
+                  "type": "nominal"
+                }
+              }
+            },
+            // =================================================================
+            // <<< CUSTOM TOOLTIP - hovered segment outline
+            // =================================================================
+            // >>> CUSTOM TOOLTIP - card layer (start)
+            // NOTE: Must stay the LAST layer of NON-NEUTRAL so it paints on top
+            // =================================================================
+            {
+              "name": "NON_NEUTRAL_TOOLTIP",
+              "transform": [
+                // assign dev id to help identify dataset in data pane
+                {
+                  "calculate": "11",
+                  "as": "_DEV_ID"
+                },
+                {
+                  "filter": "datum['_choice_class'] != 'Neutral'"
+                },
+                {
+                  "calculate": "datum['_question_id'] == _tt_hover_non_neutral._question_id && datum['_choice_id'] == _tt_hover_non_neutral._choice_id",
+                  "as": "_tt_is_hovered"
+                },
+                // only the hovered segment survives, so the card is drawn once
+                {
+                  "filter": "datum['_tt_is_hovered']"
+                }
+              ],
+              "encoding": {
+                // anchor on the SHARED percent-space x scale, exactly as the bars do;
+                // a pixel-space domain here would be silently unioned with the bar domain
+                "x": {
+                  "field": "_choice_x_mid",
+                  "type": "quantitative"
+                },
+                "y": {
+                  "field": "_category_label",
+                  "type": "nominal"
+                }
+              },
+              "layer": [
+                {
+                  "name": "TOOLTIP_SHADOW",
+                  "mark": {
+                    "type": "rect",
+                    "fill": "#3D3A36",
+                    "fillOpacity": 0.06,
+                    "stroke": null,
+                    "cornerRadius": 8,
+                    "width": {
+                      "expr": "_tt_width + 4"
+                    },
+                    "height": {
+                      "expr": "_tt_height + 4"
+                    },
+                    "xOffset": {
+                      "expr": "datum['_tt_dx']"
+                    },
+                    "yOffset": {
+                      "expr": "datum['_tt_dy'] + 2"
+                    }
+                  }
+                },
+                {
+                  "name": "TOOLTIP_CARD",
+                  "mark": {
+                    "type": "rect",
+                    "width": {
+                      "expr": "_tt_width"
+                    },
+                    "height": {
+                      "expr": "_tt_height"
+                    },
+                    "xOffset": {
+                      "expr": "datum['_tt_dx']"
+                    },
+                    "yOffset": {
+                      "expr": "datum['_tt_dy']"
+                    },
+                    "style": "_tooltip_card_rect_style"
+                  }
+                },
+                {
+                  "name": "TOOLTIP_CATEGORY",
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "top",
+                    "limit": {
+                      "expr": "_tt_width - 2 * _tt_pad"
+                    },
+                    "xOffset": {
+                      "expr": "datum['_tt_dx'] - _tt_width / 2 + _tt_pad"
+                    },
+                    "yOffset": {
+                      "expr": "datum['_tt_dy'] - _tt_height / 2 + _tt_category_y"
+                    },
+                    "style": "_tooltip_category_text_style"
+                  },
+                  "encoding": {
+                    "text": {
+                      "value": {
+                        "expr": "upper( datum['_category'] )"
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "TOOLTIP_CHOICE",
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "top",
+                    "limit": {
+                      "expr": "_tt_width - 2 * _tt_pad"
+                    },
+                    "xOffset": {
+                      "expr": "datum['_tt_dx'] - _tt_width / 2 + _tt_pad"
+                    },
+                    "yOffset": {
+                      "expr": "datum['_tt_dy'] - _tt_height / 2 + _tt_choice_y"
+                    },
+                    "style": "_tooltip_choice_text_style"
+                  },
+                  "encoding": {
+                    "text": {
+                      "field": "_choice",
+                      "type": "nominal"
+                    }
+                  }
+                },
+                {
+                  "name": "TOOLTIP_DIVIDER",
+                  "mark": {
+                    "type": "rect",
+                    "width": {
+                      "expr": "_tt_width - 2 * _tt_pad"
+                    },
+                    "height": 1,
+                    "xOffset": {
+                      "expr": "datum['_tt_dx']"
+                    },
+                    "yOffset": {
+                      "expr": "datum['_tt_dy'] - _tt_height / 2 + _tt_divider_y"
+                    },
+                    "style": "_tooltip_divider_rect_style"
+                  }
+                },
+                {
+                  "name": "TOOLTIP_LABELS",
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "top",
+                    "lineHeight": {
+                      "expr": "_tt_row_height"
+                    },
+                    "xOffset": {
+                      "expr": "datum['_tt_dx'] - _tt_width / 2 + _tt_pad"
+                    },
+                    "yOffset": {
+                      "expr": "datum['_tt_dy'] - _tt_height / 2 + _tt_rows_y"
+                    },
+                    "style": "_tooltip_labels_text_style"
+                  },
+                  "encoding": {
+                    // an array renders one line per element
+                    "text": {
+                      "value": {
+                        "expr": "[ 'Share of responses', 'Responses', datum['_choice_class'] + ' total', '__dataset.2__' ]"
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "TOOLTIP_VALUES",
+                  "mark": {
+                    "type": "text",
+                    "align": "right",
+                    "baseline": "top",
+                    "lineHeight": {
+                      "expr": "_tt_row_height"
+                    },
+                    // keeps a long question short from running into the labels column
+                    "limit": {
+                      "expr": "_tt_width / 2"
+                    },
+                    "xOffset": {
+                      "expr": "datum['_tt_dx'] + _tt_width / 2 - _tt_pad"
+                    },
+                    "yOffset": {
+                      "expr": "datum['_tt_dy'] - _tt_height / 2 + _tt_rows_y"
+                    },
+                    "style": "_tooltip_values_text_style"
+                  },
+                  "encoding": {
+                    // an array renders one line per element
+                    // adjust Power BI format strings as desired
+                    "text": {
+                      "value": {
+                        "expr": "[ pbiFormat( datum['_category_percent_decimal'], '0%' ), pbiFormat( datum['_count_of_responses'], '#,0' ), pbiFormat( datum['_category_class_percent_decimal'], '0%' ), datum['_question_group_short'] ]"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+            // =================================================================
+            // <<< CUSTOM TOOLTIP - card layer (end)
+            // =================================================================
+          ]
+        },
+        {
+          "name": "NEUTRAL",
+          "width": 50,
+          "layer": [
+            {
+              "name": "NEUTRAL_BAR",
+              "width": 400, // set to 1/2x width of [NON-NEUTRAL_BAR]
+              "transform": [
+                // assign dev id to help identify dataset in data pane
+                {
+                  "calculate": "7",
+                  "as": "_DEV_ID"
+                },
+                {
+                  "filter": "datum['_choice_class'] == 'Neutral' && datum['_choice_x_end'] > 0"
+                }
+              ],
+              "mark": {
+                "type": "bar",
+                "cornerRadiusEnd": 4,
+                "tooltip": true
+              },
+              "encoding": {
+                "x": {
+                  "field": "_category_percent",
+                  "type": "quantitative",
+                  "title": "Percentage",
+                  "sort": {
+                    "op": "min",
+                    "field": "_choice_id",
+                    "order": "ascending"
+                  },
+                  "scale": {
+                    "domain": [
+                      0,
+                      100
+                    ]
+                  },
+                  "axis": {
+                    "title": null,
+                    "tickCount": 5,
+                    "labelExpr": "abs( datum.value )",
+                    "labelFontSize": {
+                      "expr": "datum.value == 0 ? 18 : 12"
+                    },
+                    "labelFontWeight": {
+                      "expr": "datum.value == 0 ? 'bold' : 'normal'"
+                    }
+                  }
+                },
+                "y": {
+                  "field": "_category_label",
+                  "type": "nominal",
+                  "axis": null
+                },
+                "color": {
+                  "field": "_choice_bar_colour",
+                  "type": "nominal",
+                  "scale": null
+                },
+                "tooltip": [
+                  {
+                    "field": "_question_group_short",
+                    "type": "nominal",
+                    "title": "Question Group"
+                  },
+                  {
+                    "field": "_question_with_category",
+                    "type": "nominal",
+                    "title": "__dataset.2__"
+                  },
+                  {
+                    "field": "_choice",
+                    "type": "nominal",
+                    "title": "__dataset.6__"
+                  },
+                  {
+                    "field": "_category_percent_decimal",
+                    "type": "quantitative",
+                    "formatType": "pbiFormat",
+                    // adjust Power BI format string as desired
+                    "format": "#%",
+                    "title": "Share of Responses"
+                  },
+                  {
+                    "field": "_count_of_responses",
+                    "type": "quantitative",
+                    "formatType": "pbiFormat",
+                    // adjust Power BI format string as desired
+                    "format": "#,#",
+                    "title": "Neutral Responses"
+                  }
+                  // un-comment the below lines if your survey data contains multiple netral answers
+                  // ,
+                  // {
+                  //   "field": "_category_class_responses",
+                  //   "type": "quantitative",
+                  //   "formatType": "pbiFormat",
+                  //   // adjust Power BI format string as desired
+                  //   "format": "#,#",
+                  //   "title": "Class Responses"
+                  // },
+                  // {
+                  //   "field": "_category_class_percent_decimal",
+                  //   "type": "quantitative",
+                  //   "formatType": "pbiFormat",
+                  //   // adjust Power BI format string as desired
+                  //   "format": "#%",
+                  //   "title": "Share of Class Responses"
+                  // }
+                ]
+              }
+            },
+            {
+              "name": "NEUTRAL_LABEL",
+              "height": {
+                "step": 60
+              },
+              "transform": [
+                // assign dev id to help identify dataset in data pane
+                {
+                  "calculate": "8",
+                  "as": "_DEV_ID"
+                },
+                {
+                  "filter": "datum['_choice_class'] == 'Neutral'"
+                },
+                {
+                  "filter": "datum['_category_percent'] >= 5"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "center",
+                "color": "white" // adjust as desired to suit theme neutral sentiment colour
+              },
+              "encoding": {
+                "text": {
+                  "field": "_category_percent_decimal",
+                  "type": "quantitative",
+                  "formatType": "pbiFormat",
+                  // adjust Power BI format string as desired
+                  "format": "#%"
+                },
+                "x": {
+                  "field": "_choice_x_start_mid",
+                  "type": "quantitative"
+                },
+                "y": {
+                  "field": "_category_label",
+                  "type": "nominal"
+                }
+              }
+            },
+            {
+              "name": "NEUTRAL_CLASS_LABEL",
+              "height": {
+                "step": 60
+              },
+              "transform": [
+                // assign dev id to help identify dataset in data pane
+                {
+                  "calculate": "9",
+                  "as": "_DEV_ID"
+                },
+                {
+                  "filter": "datum['_choice_class'] == 'Neutral'"
+                },
+                {
+                  "joinaggregate": [
+                    {
+                      "op": "sum",
+                      "field": "_category_percent_decimal",
+                      "as": "_category_class_percent_decimal"
+                    }
+                  ],
+                  "groupby": [
+                    "_question_id",
+                    "_choice_class"
+                  ]
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "x": 400,
+                "xOffset": 4,
+                "style": "_question_class_percent_text_style"
+              },
+              "encoding": {
+                "text": {
+                  "field": "_category_class_percent_decimal",
+                  "type": "quantitative",
+                  "formatType": "pbiFormat",
+                  // adjust Power BI format string as desired
+                  "format": "#.%"
+                },
+                "y": {
+                  "field": "_category_label",
+                  "type": "nominal"
+                }
+              }
+            },
+            {
+              "name": "NETURAL_SINGLE_MARKS",
+              "transform": [
+                // assign dev id to help identify dataset in data pane
+                {
+                  "calculate": "10",
+                  "as": "_DEV_ID"
+                },
+                {
+                  "filter": "datum['__row__'] == 0"
+                }
+              ],
+              "layer": [
+                {
+                  "name": "NEUTRAL_HORIZONTAL_RULE",
+                  "mark": {
+                    "type": "rule",
+                    "style": "_sentiment_divider_rule_style"
+                  },
+                  "encoding": {
+                    "x": {
+                      "datum": 1
+                    },
+                    "x2": {
+                      "datum": 100
+                    },
+                    "y": {
+                      "value": -10
+                    }
+                  }
+                },
+                {
+                  "name": "NEUTRAL_TITLE",
+                  "mark": {
+                    "type": "text",
+                    "style": "_sentiment_title_text_style"
+                  },
+                  "encoding": {
+                    "text": {
+                      "value": "NEUTRAL"
+                    },
+                    "x": {
+                      "datum": 50
+                    },
+                    "y": {
+                      "value": -24
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

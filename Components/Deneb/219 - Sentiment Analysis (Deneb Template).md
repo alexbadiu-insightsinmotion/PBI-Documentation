@@ -331,18 +331,18 @@ This template uses the latest Deneb version (2.0.0; September 2026) and illustra
 
 Here's the template:
 
-[919.1 - JSON - Deneb Template - Sentiment Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/918.1%20-%20deneb_template.calendar_heat_map_multiple_languages.v2.0.0.json) *** FIX *** <br> 
+[919.1 - JSON - Deneb Template - Sentiment Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/919.1%20-%20deneb_template.sentiment_analysis.v2.0.0.json) <br> 
 
 <br>
 
 Here's an example Power BI file using the template:
 
-[919.2 - PBIX - Deneb Example - Sentiment Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/918.3%20-%20Deneb%20Reusable%20Components%20-%20Calendar%20Heat%20Map%20-%20V2.0.0.pbix) *** FIX *** <br>
+[919.2 - PBIX - Deneb Example - Sentiment Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/919.2%20-%20Deneb%20Reuseable%20Components%20-%20Sentiment%20Analysis%20-%20v2.0.0.pbix) <br>
 
 <br>
 
 Hers's the fictitious sample survey data used:
 
-[919.3 - XLSX - Sample Vehicle Survey Data - Sentiment Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/918.1%20-%20deneb_template.calendar_heat_map_multiple_languages.v2.0.0.xlsx) *** FIX *** <br>
+[919.3 - XLSX - Sample Vehicle Survey Data - Sentiment Analysis](https://github.com/alexbadiu-insightsinmotion/PBI-Documentation/blob/main/Components/Deneb/919.3%20-%20Sample%20Vehicle%20Survey%20Data.xlsx) <br>
 
 *- eof*
